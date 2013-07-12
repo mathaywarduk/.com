@@ -1,0 +1,75 @@
+/////////////////
+// Text Styles //
+/////////////////
+html {
+    font-size: $text__base-font-size * 1px;
+}
+
+body {
+    font-size: 100%;
+    line-height: $text__base-line/$text__base-font-size;
+    font-family: $font__base--sans;
+    color: $color__neutral--dark;
+}
+
+@mixin text($size, $line, $family: $font__base--sans) {
+    font-size: $size * 1px;
+    font-size: calc-rem($size);
+    line-height: ($line/$size);
+    @if $family != "" {
+        font-family: $family;
+    }
+}
+
+h1 {
+    @include text($text__size--alpha, $text__line--alpha, $font__base--serif);
+    @include rems(margin-bottom, $text__base-margin);
+    color: $color--black;
+    font-style: italic;
+}
+
+h2 {
+    @include text($text__size--beta, $text__line--beta, $font__base--sans);
+    @include rems(margin-bottom, $text__base-margin);
+    color: $color__primary;
+}
+
+h3 {
+    @include text($text__size--gamma, $text__line--gamma);
+    @include rems(margin-bottom, $text__base-margin);
+}
+
+p {
+    @include text($text__size--delta, $text__line--delta);
+    @include rems(margin-bottom, $text__base-margin);
+}
+
+a {
+    color: $color__highlight;
+}
+
+.lead {
+    font-size: 120%;
+    font-weight: normal;
+}
+
+em {
+    font-style: italic;
+    color: $color__primary;
+}
+
+strong {
+    font-weight: bold;
+    color: $color__primary;
+
+    p & {
+        font-weight: normal;
+    }
+}
+
+%text--replaced {
+    @include inline-block();
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}

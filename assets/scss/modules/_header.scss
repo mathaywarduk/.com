@@ -1,0 +1,82 @@
+///////////////////
+// Header styles //
+///////////////////
+
+$home__circle__width: 300 !default;
+
+.header {
+
+}
+
+.header--home {
+    background-color: $color--white;
+    @include rems(padding, 100, 40, 40, 40);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include rems(border-radius, ($home__circle__width/2));
+    @include rems(height, $home__circle__width);
+    @include rems(width, $home__circle__width);
+    @include rems(margin, -($home__circle__width/2), 0, 0, -($home__circle__width/2));
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+        .header__sub--home {
+            @include opacity(1);
+        }
+    }
+
+    h1 {
+        text-align: center;
+        @include text($text__size--beta, $text__line--beta, $font__base--serif);
+        @include rems(padding, 0, 40);
+    }
+}
+
+.header__sub--home {
+    @include opacity(0);
+    @include transition(opacity .5s);
+    background-color: $color--black;
+    @include rems(padding, 75, 40, 40, 40);
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include rems(border-radius, ($home__circle__width/2));
+    @include rems(height, $home__circle__width);
+    @include rems(width, $home__circle__width);
+    z-index: 2;
+
+    h2 {
+        color: $color--white;
+        @include text($text__size--gamma, $text__line--gamma, $font__base--serif);
+        font-style: italic;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        @include text($text__size--delta, $text__line--gamma);
+        color: $color--white;
+        font-weight: 200;
+
+        a {
+            font-style: italic;
+            @include text($text__size--gamma, $text__line--gamma, $font__base--serif);
+        }
+    }
+
+    .hr {
+        height: 1px;
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        clear: both;
+        background-color: $color--white;
+        @include rems(margin, 25, 0);
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        border: none;
+    }
+}

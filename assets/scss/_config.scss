@@ -19,15 +19,47 @@
 // 1.1 Text //
 //////////////
 
+$font__base--serif: "adobe-garamond-pro", serif;
+$font__base--sans: "pt-sans",sans-serif;
 
+$text__base-line: 20;
+$text__base-font-size: 15;
+
+// Setting base sizes
+$text__size--alpha: 40;
+$text__size--beta: 32;
+$text__size--gamma: 18;
+$text__size--delta: 15;
+
+$text__line--alpha: 44;
+$text__line--beta: 36;
+$text__line--gamma: 22;
+$text__line--delta: 18;
+
+$text__base-margin: 15;
 
 
 /////////////////
 // 1.2 Colours //
 /////////////////
 
+$color--white: #FFFFFF;
+$color--black: #000000;
 
+$color__neutral--super-light: #F4F4F4;
+$color__neutral--light: #DDDDDD;
+$color__neutral: #999999;
+$color__neutral--dark: #666666;
+$color__neutral--super-dark: #353535;
 
+$color__primary--light: #DDDDFF;
+$color__primary: #3333FF;
+$color__primary--dark: #0000C1;
+
+$color__highlight--super-light: #FF8888;
+$color__highlight--light: #EE0000;
+$color__highlight: #E8C678;
+$color__highlight--dark: #990000;
 
 /////////////////////
 // 1.3 Breakpoints //

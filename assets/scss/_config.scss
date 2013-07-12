@@ -1,0 +1,66 @@
+// SCSS CONFIGURATION
+
+// @author: Mat Hayward @ Erskine Design
+
+// CONTENTS ------------
+//  - BASE VARIABLES
+//      - TEXT
+//      - COLOURS
+//      - BREAKPOINTS
+//  - COMPONENT CONFIGURATION
+//  - MODULE CONFIGURATION
+// ---------------------
+
+////////////////////////////////////////////////////////////////////////////////////
+//  1. Base Variables                                                             //
+////////////////////////////////////////////////////////////////////////////////////
+
+//////////////
+// 1.1 Text //
+//////////////
+
+
+
+
+/////////////////
+// 1.2 Colours //
+/////////////////
+
+
+
+
+/////////////////////
+// 1.3 Breakpoints //
+/////////////////////
+
+$width__small: 481px;
+$width__medium: 767px;
+$width__large: 1200px;
+
+
+////////////////////////////////////////////////////////////////////////////////////
+//  2. Component Configurations                                                   //
+////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////
+// 2.1 Breakpoint //
+///////////////////
+
+$breakpoint-to-ems: true;
+
+$breakpoints: 'small only' (max-width $width__small),
+              'small and above' ($width__small),
+              'between small and medium' ($width__small $width__medium),
+              'between medium and large' ($width__medium $width__large),
+              'medium and below' (max-width $width__medium),
+              'medium and above' ($width__medium),
+              'large only' ($width__large),
+              'high resolution' (min-resolution 1.5dppx),
+              'landscape' (orientation landscape),
+              'portrait' (orientation portrait);
+
+
+////////////////////////////////////////////////////////////////////////////////////
+//  3. Module Configurations                                                      //
+////////////////////////////////////////////////////////////////////////////////////

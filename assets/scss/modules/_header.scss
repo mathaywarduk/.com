@@ -10,7 +10,7 @@ $home__circle__width: 300 !default;
 
 .header--home {
     background-color: $color--white;
-    @include rems(padding, 100, 40, 40, 40);
+    @include rems(padding, 110, 40, 40, 40);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,6 +23,10 @@ $home__circle__width: 300 !default;
     &:hover,
     &:focus {
         .header__sub--home {
+            @include opacity(1);
+        }
+
+        .nav--home {
             @include opacity(1);
         }
     }
@@ -38,7 +42,7 @@ $home__circle__width: 300 !default;
     @include opacity(0);
     @include transition(opacity .5s);
     background-color: $color--black;
-    @include rems(padding, 75, 40, 40, 40);
+    @include rems(padding, 65, 40, 40, 40);
     position: absolute;
     top: 0;
     left: 0;

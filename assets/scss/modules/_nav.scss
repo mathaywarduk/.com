@@ -6,7 +6,31 @@
 }
 
 
+.nav--home {
+    @include opacity(0);
+    @include transition(opacity .5s);
+    position: relative;
+    z-index: 3;
+    display: block;
+    color: $color__white;
+    font-weight: 200;
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+    @include rems(margin-top, 45);
+    font-family: $font__base--serif;
 
+    > a {
+        // color: $color__white;
+        @include rems(padding, 5, 7);
+        font-family: $font__base--sans;
+        font-size: 80%;
+        font-style: normal;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+}
 
 
 .nav__subnav--home {

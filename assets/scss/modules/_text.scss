@@ -45,7 +45,13 @@ p {
 }
 
 a {
-    color: $color__highlight;
+    color: $color__highlight--light;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $color__highlight--super-light;
+    }
 }
 
 .lead {

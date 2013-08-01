@@ -1,6 +1,16 @@
 /////////////////
 // Text Styles //
 /////////////////
+
+%text--replaced {
+    @include inline-block();
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
 html {
     font-size: $text__base-font-size * 1px;
 }
@@ -29,53 +39,72 @@ h1 {
 }
 
 h2 {
-    @include text($text__size--beta, $text__line--beta, $font__base--sans);
+    @include text($text__size--beta, $text__line--beta);
     @include rems(margin-bottom, $text__base-margin);
-    color: $color__primary;
+    color: $color__highlight;
 }
 
 h3 {
-    @include text($text__size--gamma, $text__line--gamma);
+    @include text($text__size--gamma, $text__line--delta);
     @include rems(margin-bottom, $text__base-margin);
 }
 
 p {
-    @include text($text__size--delta, $text__line--delta);
+    @include text($text__size--gamma, $text__line--gamma);
     @include rems(margin-bottom, $text__base-margin);
-}
+    font-weight: 200;
 
-a {
-    color: $color__highlight--light;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-        color: $color__highlight--super-light;
+    blockquote & {
+        margin: 0;
     }
 }
 
 .lead {
-    font-size: 120%;
-    font-weight: normal;
+    font-size: 150%;
+    font-family: $font__base--serif;
+    font-style: italic;
+    border-top: 1px dotted $color__neutral;
+    border-bottom: 1px dotted $color__neutral;
+    @include rems(padding, 10, 15);
+}
+
+small {
+    font-size: 75%;
+}
+
+blockquote {
+    @include rems(padding, 10, 15, 10, 15);
+    @include rems(margin, 0, 0, $text__base-margin, $text__base-margin);
+    border-left: 3px solid $color__primary--light;
 }
 
 em {
     font-style: italic;
-    color: $color__primary;
 }
 
 strong {
-    font-weight: bold;
-    color: $color__primary;
-
-    p & {
-        font-weight: normal;
-    }
+    font-weight: normal;
 }
 
-%text--replaced {
-    @include inline-block();
-    text-indent: 100%;
-    overflow: hidden;
-    white-space: nowrap;
+a {
+    color: $color__primary--light;
+
+    &:hover,
+    &:focus {
+        color: $color__primary;
+    }
+}
+.hr {
+        height: 1px;
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        clear: both;
+        background-color: $color__neutral;
+        @include rems(margin, 40, 0);
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        border: none;
+
 }

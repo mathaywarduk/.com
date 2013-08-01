@@ -1,0 +1,87 @@
+.post__header {
+    @include rems(padding, 30, 15, 20);
+
+    background-image: image-url("icons/article.png");
+    background-repeat: no-repeat;
+    @include rems(background-size, 45);
+    background-position-x: center;
+    @include rems(background-position-y, 35);
+    @include rems(padding-top, 100);
+
+    @include respond-to("small and above") {
+        @include rems(padding, 100, 30, 20);
+    }
+
+    h1 {
+        @include rems(margin-bottom, 5);
+        text-align: center;
+    }
+}
+
+.post__date {
+    @include text($text__size--delta, $text__line--delta, $font__base--serif);
+    text-align: center;
+}
+
+.post__content {
+    @include rems(padding, 0, 15, 30);
+
+    @include respond-to("small and above") {
+        @include rems(padding, 0, 30, 30);
+    }
+}
+
+.post__footer {
+    background-color: $color--black;
+    @include rems(padding, 30, 15);
+
+    @include respond-to("small and above") {
+        @include rems(padding, 30);
+    }
+}
+
+
+// POSTS LIST
+
+.posts-list {
+
+
+}
+
+.posts-list__header {
+    @extend .post__header;
+
+    h1 {
+        a {
+            color: $color--black;
+            text-decoration: none;
+
+            &:hover, &:focus {
+                color: $color__neutral--dark;
+            }
+        }
+    }
+
+    .post__date {
+        @include text($text__size--delta, $text__line--delta, $font__base--serif);
+        text-align: center;
+        a {
+            color: $color__highlight;
+            text-decoration: none;
+
+            &:hover, &:focus {
+                color: $color__highlight--dark;
+            }
+        }
+    }
+}
+
+
+.posts-list__header--twitter {
+    background-image: image-url("icons/twitter.png");
+    @include rems(padding-top, 80);
+}
+
+.posts-lists__content {
+    @extend .post__content;
+}

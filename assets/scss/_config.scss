@@ -9,6 +9,7 @@
 //      - BREAKPOINTS
 //  - COMPONENT CONFIGURATION
 //  - MODULE CONFIGURATION
+//      - BUTTONS
 // ---------------------
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -33,8 +34,8 @@ $text__size--delta: 15;
 
 $text__line--alpha: 44;
 $text__line--beta: 36;
-$text__line--gamma: 22;
-$text__line--delta: 18;
+$text__line--gamma: 28;
+$text__line--delta: 22;
 
 $text__base-margin: 15;
 
@@ -52,9 +53,9 @@ $color__neutral: #999999;
 $color__neutral--dark: #666666;
 $color__neutral--super-dark: #353535;
 
-$color__primary--light: #84D85E;
-$color__primary: #7AAC5E;
-$color__primary--dark: #6A9769;
+$color__primary--light: #009999;
+$color__primary: #006666;
+$color__primary--dark: #003333;
 
 $color__highlight--super-light: #E8D5AF;
 $color__highlight--light: #E8C678;
@@ -92,7 +93,22 @@ $breakpoints: 'small only' (max-width $width__small),
               'landscape' (orientation landscape),
               'portrait' (orientation portrait);
 
+$breakpoint--logo: 1166px;
+
 
 ////////////////////////////////////////////////////////////////////////////////////
 //  3. Module Configurations                                                      //
 ////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////
+// 3.1 Buttons //
+/////////////////
+
+$btn__background: $color__primary;
+$btn__foreground: $color--white;
+$btn__box-shadow: none;
+// $btn__padding: 10px 15px !default;
+// $btn__margin: 10px 0px !default;
+$btn__border-radius: 2px;
+$btn__background--focus: $color__primary--light;
+$btn__foreground--focus: $color--white;

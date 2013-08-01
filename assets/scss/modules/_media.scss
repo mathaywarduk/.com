@@ -1,0 +1,35 @@
+//////////////////
+// Media Styles //
+//////////////////
+
+.media {
+    @include rems(padding, 20);
+    display: inline-block;
+}
+
+.media--right {
+    float: right;
+    margin: 0 0 calc-em(10) calc-em(10);
+}
+
+.media--left {
+    float: left;
+    margin: 0 calc-em(10) calc-em(10) 0;
+}
+
+.media__item {
+    display: block;
+    max-width: 100%;
+    @include box-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+}
+
+.media__caption {
+    float: right;
+    border-left: 2px solid $color__primary;
+    width: auto;
+    display: inline;
+    font-style: italic;
+    @include rems(margin, 10, 0);
+    @include rems(padding, 0, 5, 0, 10);
+    @include text($text__size--delta, $text__line--delta, $font__base--serif);
+}

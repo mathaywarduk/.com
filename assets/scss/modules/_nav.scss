@@ -3,25 +3,15 @@
 ////////////////
 
 .nav {
-}
-
-
-.nav--home {
-    @include opacity(0);
-    @include transition(opacity .5s);
     position: relative;
-    z-index: 3;
-    display: block;
-    color: $color__white;
+    z-index: 2;
+    color: $color__neutral;
     font-weight: 200;
     text-align: center;
-    width: auto;
-    margin: 0 auto;
-    @include rems(margin-top, 45);
+    @include rems(margin-top, 0);
     font-family: $font__base--serif;
 
-    > a {
-        // color: $color__white;
+    .nav__item {
         @include rems(padding, 5, 7);
         font-family: $font__base--sans;
         font-size: 80%;
@@ -33,6 +23,33 @@
 }
 
 
-.nav__subnav--home {
-    // display: none;
+
+.nav--footer {
+
+    color: $color--white;
+    text-align: center;
+
+    p {
+        font-size: 100%;
+    }
+
+    .nav__item {
+
+        color: $color__highlight--light;
+        text-decoration: none;
+        font-weight: 200;
+
+        &:hover,
+        &:focus {
+            color: $color__highlight--super-light;
+        }
+    }
+
+    .nav__item--top {
+
+        &:before {
+            content: "↑";
+            @include rems(padding-right, 5);
+        }
+    }
 }

@@ -5,30 +5,23 @@
 $home__circle__width: 300 !default;
 
 .header {
-
-}
-
-.header--home {
     background-color: $color--white;
-    @include rems(padding, 110, 40, 40, 40);
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    @include box-shadow(-2px -2px 2px rgba(0, 0, 0, 0.2));
+    @include rems(padding, 100, 40, 40, 40);
     @include rems(border-radius, ($home__circle__width/2));
     @include rems(height, $home__circle__width);
     @include rems(width, $home__circle__width);
-    @include rems(margin, -($home__circle__width/2), 0, 0, -($home__circle__width/2));
-    z-index: 1;
+    @include rems(margin-top, 30);
+    margin-left: auto;
+    margin-right: auto;
 
-    &:hover,
-    &:focus {
-        .header__sub--home {
-            @include opacity(1);
-        }
+    @include respond-to("small and above") {
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        @include rems(top, 0);
+        @include rems(margin-left, -($home__circle__width/2));
 
-        .nav--home {
-            @include opacity(1);
-        }
     }
 
     h1 {
@@ -36,20 +29,21 @@ $home__circle__width: 300 !default;
         @include text($text__size--beta, $text__line--beta, $font__base--serif);
         @include rems(padding, 0, 40);
     }
+
 }
 
-.header__sub--home {
+.header__sub {
     @include opacity(0);
     @include transition(opacity .5s);
     background-color: $color--black;
-    @include rems(padding, 65, 40, 40, 40);
+    @include rems(padding, 80, 40, 40, 40);
     position: absolute;
     top: 0;
     left: 0;
     @include rems(border-radius, ($home__circle__width/2));
     @include rems(height, $home__circle__width);
     @include rems(width, $home__circle__width);
-    z-index: 2;
+    z-index: 3;
 
     h2 {
         color: $color--white;
@@ -71,16 +65,9 @@ $home__circle__width: 300 !default;
     }
 
     .hr {
-        height: 1px;
-        font-size: 0;
-        line-height: 0;
-        display: block;
-        clear: both;
         background-color: $color--white;
-        @include rems(margin, 25, 0);
-        margin-left: auto;
-        margin-right: auto;
+        @include rems(margin-top, 25);
+        @include rems(margin-bottom, 25);
         width: 30%;
-        border: none;
     }
 }

@@ -1,110 +1,63 @@
-
 <!DOCTYPE html>
 <html dir="ltr" lang="en-GB" class="rems">
     <head>
-        <link rel="shortcut icon" type="image/png" href="favicon.png" />
+        <link rel="shortcut icon" type="image/png" href="static/images/icons/favicon.png" />
         <meta charset="UTF-8" />
-        <title>Mat Hayward</title>
+        <title>Front-end Developer ~ Mat Hayward</title>
         <link rel="stylesheet" type="text/css" media="all" href="static/css/screen.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script type="text/javascript" src="//use.typekit.net/rgc4dxh.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
     <body>
-        <header class="header--home">
+        <b id="#top"></b>
+        <header class="header">
             <h1>Mat Hayward</h1>
-            <section class="header__sub--home">
-                <h2>31 /  Digital developer &amp; designer / Nottingham</h2>
-                <hr class="hr" />
-                <h3>Front-ender at <a href="http://www.erskinedesign.com">Erskine Design</a>.
-                <hr class="hr" />
-            </section>
-            <nav class="nav--home">
-                <a href="#" title="Blog posts and selected tweets">Read</a> |
-                <a href="#" title="Details of where I've worked with selected projects">Work</a> |
-                <a href="mailto:mat.hayward+website@gmail.com" title="Email me">Email</a>
+            <nav class="nav">
+                <a href="/" class="nav__item" title="Ramblings and such">Read</a> |
+                <!--<a href="work" class="nav__item" title="Details of where I've worked with selected projects">Work</a> |-->
+                <a href="http://www.twitter.com/mathaywarduk" class="nav__item" title="Follow me">Twitter</a> |
+                <a href="mailto:mat.hayward+website@gmail.com" class="nav__item" title="Email me">Email</a>
             </nav>
-
-
         </header>
-        <section class="carousel">
-            <div class="carousel__container">
-                <ul class="carousel__scroll-container">
-                    <li class="carousel__item">
-                        <div class="carousel__item-media">
-                            <img src="http://www.placekitten.com/800/800" alt="Nash Interiors" />
-                        </div>
-                        <div class="carousel__item-meta">
-                            <h1 class="carousel__item-title">Lorem ipsum dolor</h1>
-                            <h2 class="carousel__item-subtitle">Lorem ipsum dolor sit amet consecteteur</h2>
-                        </div>
-                        <a href="#" class="carousel__item-cta">View more</a>
-                    </li>
-                    <li class="carousel__item">
-                        <div class="carousel__item-media">
-                            <img src="http://www.placekitten.com/900/800" alt="Haro Bikes" />
-                        </div>
-                        <div class="carousel__item-meta">
-                            <h1 class="carousel__item-title">Lorem ipsum dolor</h1>
-                            <h2 class="carousel__item-subtitle">Lorem ipsum dolor sit amet consecteteur</h2>
-                        </div>
-                        <a href="#" class="carousel__item-cta">View more</a>
-                    </li>
-                    <li class="carousel__item">
-                        <div class="carousel__item-meta">
-                            <h1 class="carousel__item-title">The Black Eye Project</h1>
-                            <h2 class="carousel__item-subtitle">Award winning integrated agency</h2>
-                        </div>
-                        <a href="#" class="carousel__item-cta">View more</a>
-                    </li>
-                    <li class="carousel__item">
-                        <div class="carousel__item-meta">
-                            <h1 class="carousel__item-title">Tribe latest news</h1>
-                            <h2 class="carousel__item-subtitle">Responsive email newsletter</h2>
-                        </div>
-                        <a href="#" class="carousel__item-cta">View more</a>
-                    </li>
-                    <li class="carousel__item">
-                        <div class="carousel__item-meta">
-                            <h1 class="carousel__item-title">Vision Express welcome emails</h1>
-                            <h2 class="carousel__item-subtitle">Nationwide opticians</h2>
-                        </div>
-                        <a href="#" class="carousel__item-cta">View more</a>
-                    </li>
-                    <li class="carousel__item">
-                        <div class="carousel__item-meta">
-                            <h1 class="carousel__item-title">Tribe-athlon website</h1>
-                            <h2 class="carousel__item-subtitle">Just for charity</h2>
-                        </div>
-                        <a href="#" class="carousel__item-cta">View more</a>
-                    </li>
-                    <li class="carousel__item">
-                        <div class="carousel__item-meta">
-                            <h1 class="carousel__item-title">Tribe-athlon training video</h1>
-                            <h2 class="carousel__item-subtitle">Just for fun</h2>
-                        </div>
-                        <a href="#" class="carousel__item-cta">View more</a>
-                    </li>
-                    <li class="carousel__item">
-                        <div class="carousel__item-meta">
-                            <h1 class="carousel__item-title">The randomiser</h1>
-                            <h2 class="carousel__item-subtitle">Popular online tool</h2>
-                        </div>
-                        <a href="#" class="carousel__item-cta">View more</a>
-                    </li>
-                    <li class="carousel__item">
-                        <div class="carousel__item-meta">
-                            <h1 class="carousel__item-title">Tropo renewables</h1>
-                            <h2 class="carousel__item-subtitle">Part of Henry Boot construction</h2>
-                        </div>
-                        <a href="#" class="carousel__item-cta">View more</a>
-                    </li>
-                </ul>
-            </div>
-            <ul class="carousel__controls">
-                <li class="carousel__control--prev"><a href="#">Previous</a></li>
-                <li class="carousel__control--next"><a href="#">Next</a></li>
-            </ul>
-        </section>
+
+        <section class="content-block posts-list" id="article-top">
+            <article>
+                <header class="posts-list__header">
+                    <h1><a href="a-rant-about-seo">A rant about SEO</a></h1>
+                    <h2 class="post__date"><a href="a-rant-about-seo">Thursday 1st August 2013</a></h2>
+                </header>
+                <section class="post__content">
+                    <p class="lead">SEO shouldn’t exist. In a perfect world, there would be no place for Brian the Search Engine Optimisation Consultant* or any of his&nbsp;cronies.</p>
+                    <a href="a-rant-about-seo" class="btn btn--cta btn--forward">Read on</a>
+                </section>
+            </article>
+            <article>
+                <header class="posts-list__header posts-list__header--twitter">
+                    <h1>Tweet</h1>
+                    <h2 class="post__date"><a href="https://twitter.com/mathaywarduk/status/361853239857123328">Tuesday 29th July 2013</a></h2>
+                    <p class="lead">So not only were Derby the worst top-flight team in history, we were also the first team to concede a league goal! <a href="http://www.bbc.co.uk/sport/0/football/23397062">bbc.co.uk/sport/0/footba...</a></p>
+                </header>
+                <section class="post__content">
+                    <a href="https://twitter.com/mathaywarduk/status/361853239857123328" class="btn btn--cta btn--forward">View on Twitter</a>
+                </section>
+            </article>
+            <article>
+                <header class="posts-list__header posts-list__header--twitter">
+                    <h1>Tweet</h1>
+                    <h2 class="post__date"><a href="https://twitter.com/mathaywarduk/status/352439427303346176">Wednesday 3rd July 2013</a></h2>
+                    <p class="lead">Today's <a href="https://twitter.com/search?q=%23musicmixup&amp;src=hash">#musicmixup</a> at <a href="http://www.twitter.com/erskinedesign">@erskinedesign</a> is Destiny's Child and Beastie Boys. Not sure which I like more...</p>
+                </header>
+                <section class="post__content">
+                    <a href="https://twitter.com/mathaywarduk/status/352439427303346176" class="btn btn--cta btn--forward">View on Twitter</a>
+                </section>
+            </article>
+            <footer class="post__footer">
+                <nav class="nav--footer">
+                    <p>&copy; Mat Hayward 2013</p>
+                    <a href="#top" class="nav__item nav__item--top">Back to top</a>
+                </nav>
+            </footer>
+        </article>
     </body>
 </html>

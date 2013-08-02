@@ -74,5 +74,15 @@
             <guid>tweet-321298599831035904</guid>
             <pubDate>Mon, 8 Apr 2013 17:28:00 +0000 </pubDate>
         </item>
+        <item>
+            <title>Tweet</title>
+            <description>
+                <p class="lead">RT <a href="http://www.twitter.com/tribeuk">@tribeuk</a> See what responsive newsletters are topping <a href="http://www.twitter.com/mathaywarduk">@mathaywarduk</a>'s list over at <a href="http://www.creativebloq.com/responsive-web-design/email-newsletters-2132023">creativebloq.com/responsive-web...</a></p>
+                <a href="https://twitter.com/tribeuk/status/306759292873228288">View on Twitter</a>
+            </description>
+            <link>https://twitter.com/tribeuk/status/306759292873228288</link>
+            <guid>tweet-306759292873228288</guid>
+            <pubDate>Wed, 27 Feb 2013 17:34:00 +0000 </pubDate>
+        </item>
     </channel>
 </rss>

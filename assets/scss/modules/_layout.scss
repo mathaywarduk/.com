@@ -8,9 +8,13 @@ body, html {
 }
 
 body {
-   background-image: url("../images/bgs/bg.jpg");
-   background-size: cover;
-   background-attachment: fixed;
+    background-image: url("../images/bgs/bg_sml.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    @include respond-to("small and above") {
+        background-image: url("../images/bgs/bg.jpg");
+    }
 }
 
 * {

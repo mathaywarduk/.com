@@ -30,7 +30,7 @@ $circle__width--large: 300 !default;
 
     h1 {
         text-align: center;
-        @include text($text__size--beta, $text__line--beta, $font__base--serif);
+        @include text(36, 32, $font__base--serif);
         @include rems(padding, 0, 20);
         @include respond-to("small and above") {
             @include rems(padding, 0, 40);

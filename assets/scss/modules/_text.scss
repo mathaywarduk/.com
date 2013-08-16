@@ -40,8 +40,11 @@ h1 {
 
 h2 {
     @include text($text__size--beta, $text__line--beta);
-    @include rems(margin-bottom, $text__base-margin);
     color: $color__highlight;
+    text-transform: uppercase;
+    border-bottom: 1px dotted;
+    @include rems(margin-bottom, ($text__base-margin/3));
+    @include rems(margin-top, ($text__base-margin * 2));
 }
 
 h3 {
@@ -94,6 +97,19 @@ a {
         color: $color__primary;
     }
 }
+
+pre {
+    @include rems(margin-bottom, ($text__base-margin * 1.5));
+    overflow: auto;
+    @include rems(padding, $text__base-margin);
+    border: 1px solid $color__highlight--super-light;
+
+    code {
+        @include text($text__size--delta, $text__line--delta, $font__base--mono);
+        color: $color__primary--light;
+    }
+}
+
 .hr {
         height: 1px;
         font-size: 0;

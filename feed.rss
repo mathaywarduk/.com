@@ -14,6 +14,16 @@
             <description>Articles and selected tweets by Mat Hayward</description>
         </image>
         <item>
+            <title>Tweet</title>
+            <description>
+                <p class="lead">RT <a href="http://www.twitter.com/erskinedesign">@erskinedesign</a> Nottingham folks! We’ve planned a little breakfast event with two great speakers on web design and development — <a href="http://erskinedesign.com/blog/erskine-breakfast/">erskinedesign.com/blog/erskine-b...</a></p>
+                <a href="https://twitter.com/erskinedesign/status/367678650231316480">View on Twitter</a>
+            </description>
+            <link>https://twitter.com/erskinedesign/status/367678650231316480</link>
+            <guid>tweet-367678650231316480</guid>
+            <pubDate>Wed, 14 Aug 2013 17:53:00 +0000 </pubDate>
+        </item>
+        <item>
             <title>A rant about SEO</title>
             <description>
                 <p class="lead">SEO shouldn't exist. In a perfect world, there would be no place for Brian the Search Engine Optimisation Consultant* or any of his cronies.</p>

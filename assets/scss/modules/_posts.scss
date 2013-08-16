@@ -21,6 +21,9 @@
 .post__date {
     @include text($text__size--delta, $text__line--delta, $font__base--serif);
     text-align: center;
+    text-transform: none;
+    margin: 0;
+    border: none;
 }
 
 .post__content {

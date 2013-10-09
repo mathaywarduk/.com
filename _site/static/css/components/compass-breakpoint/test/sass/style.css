@@ -1,0 +1,437 @@
+/*
+ * BREAKPOINT TESTS
+ */
+/*
+ * Assume $breakpoint-default-feature
+ * if only a number
+ * $single-pixel-value: 500px;
+ * $single-em-value: 30em;
+ */
+@media (min-width: 500px) {
+  /* line 45, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .breakpoint-default-feature {
+    content: '$single-pixel-value';
+    content: '@media (min-width: 500px)';
+  }
+}
+@media (min-width: 30em) {
+  /* line 45, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .breakpoint-default-feature {
+    content: '$single-em-value';
+    content: '@media (min-width: 30em)';
+  }
+}
+@media (min-width: 500px) {
+  /* line 45, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .breakpoint-default-feature {
+    content: '$single-pixel-value';
+    content: '@media (min-width: 500px)';
+  }
+}
+@media (min-width: 30em) {
+  /* line 45, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .breakpoint-default-feature {
+    content: '$single-em-value';
+    content: '@media (min-width: 30em)';
+  }
+}
+
+/* $breakpoint-to-ems: true; */
+@media (min-width: 31.25em) {
+  /* line 66, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .breakpoint-default-feature-to-ems {
+    content: '$single-pixel-value';
+    content: '@media (min-width: 31.25em)';
+  }
+}
+@media (min-width: 30em) {
+  /* line 66, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .breakpoint-default-feature-to-ems {
+    content: '$single-em-value';
+    content: '@media (min-width: 30em)';
+  }
+}
+
+/*
+ * Single value with feature
+ * $feature-first : height 500px;
+ * $value-first : 500px height;
+ * $arbitrary-feature : lion 500px;
+ * $feature-value-both-strings : portrait orientation;
+ */
+@media (height: 500px) {
+  /* line 91, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .feature-value-pair {
+    content: '$feature-first';
+    content: '@media (height: 500px)';
+  }
+}
+@media (height: 500px) {
+  /* line 91, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .feature-value-pair {
+    content: '$value-first';
+    content: '@media (height: 500px)';
+  }
+}
+@media (lion: 500px) {
+  /* line 91, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .feature-value-pair {
+    content: '$arbitrary-feature';
+    content: '@media (lion: 500px)';
+  }
+}
+@media (orientation: portrait) {
+  /* line 91, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .feature-value-pair {
+    content: '$feature-value-both-strings';
+    content: '@media (orientation: portrait)';
+  }
+}
+
+/* $breakpoint-to-ems: true; */
+@media (height: 31.25em) {
+  /* line 111, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .feature-value-pair-to-ems {
+    content: '$feature-first';
+    content: '@media (height: 31.25em)';
+  }
+}
+@media (height: 31.25em) {
+  /* line 111, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .feature-value-pair-to-ems {
+    content: '$value-first';
+    content: '@media (height: 31.25em)';
+  }
+}
+@media (lion: 31.25em) {
+  /* line 111, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .feature-value-pair-to-ems {
+    content: '$arbitrary-feature';
+    content: '@media (lion: 31.25em)';
+  }
+}
+
+/*
+ * Set min-width/max-width
+ * if both values are numbers
+ * $min-max-default-feature : 500px 700px;
+ */
+@media (min-width: 500px) and (max-width: 700px) {
+  /* line 135, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .min-max-default-feature {
+    content: '$min-max-default-feature';
+    content: '@media (min-width: 500px) and (max-width: 700px)';
+  }
+}
+
+/* $breakpoint-to-ems: true; */
+@media (min-width: 31.25em) and (max-width: 43.75em) {
+  /* line 143, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .min-max-default-feature-to-ems {
+    content: '$min-max-default-feature';
+    content: '@media (min-width: 31.25em) and (max-width: 43.75em)';
+  }
+}
+
+/*
+ * Set min/max of feature
+ * if there are two numbers and a feature
+ * $feature-min-max : height 300px 700px;
+ * $min-max-feature : 300px 700px height;
+ * $arbitrary-feature-min-max : lion 300px 700px;
+ */
+@media (min-height: 300px) and (max-height: 700px) {
+  /* line 163, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .min-max-feature {
+    content: '$feature-min-max';
+    content: '@media (min-height: 300px) and (max-height: 700px)';
+  }
+}
+@media (min-height: 300px) and (max-height: 700px) {
+  /* line 163, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .min-max-feature {
+    content: '$min-max-feature';
+    content: '@media (min-height: 300px) and (max-height: 700px)';
+  }
+}
+@media (min-lion: 300px) and (max-lion: 700px) {
+  /* line 163, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .min-max-feature {
+    content: '$arbitrary-feature-min-max';
+    content: '@media (min-lion: 300px) and (max-lion: 700px)';
+  }
+}
+
+/* $breakpoint-to-ems: true; */
+@media (min-height: 18.75em) and (max-height: 43.75em) {
+  /* line 179, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .min-max-feature-to-ems {
+    content: '$feature-min-max';
+    content: '@media (min-height: 18.75em) and (max-height: 43.75em)';
+  }
+}
+@media (min-height: 18.75em) and (max-height: 43.75em) {
+  /* line 179, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .min-max-feature-to-ems {
+    content: '$min-max-feature';
+    content: '@media (min-height: 18.75em) and (max-height: 43.75em)';
+  }
+}
+@media (min-lion: 18.75em) and (max-lion: 43.75em) {
+  /* line 179, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .min-max-feature-to-ems {
+    content: '$arbitrary-feature-min-max';
+    content: '@media (min-lion: 18.75em) and (max-lion: 43.75em)';
+  }
+}
+
+/*
+ * Multidimensional lists,
+ * assume each item is a feature value pair
+ * $multidimensional : max-width 700px orientation portrait;
+ */
+@media (max-width: 700px) and (orientation: portrait) {
+  /* line 202, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .multidimensional {
+    content: '$multidimensional';
+    content: '@media (max-width: 700px) and (orientation: portrait)';
+  }
+}
+
+/* $breakpoint-to-ems: true; */
+@media (max-width: 43.75em) and (orientation: portrait) {
+  /* line 210, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .multidimensional-to-ems {
+    content: '$multidimensional';
+    content: '@media (max-width: 43.75em) and (orientation: portrait)';
+  }
+}
+
+/*
+ * 'OR' mediaqueries.
+ * tests separated by commas
+ * $basic-or : 500px, tv 700px color;
+ */
+@media (min-width: 500px), tv and (min-width: 700px) and (color) {
+  /* line 227, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .basic-or {
+    content: '$basic-or';
+    content: '@media (max-width: 700px) and (orientation: portrait)';
+  }
+}
+@media (min-width: 500px), tv and (min-width: 700px) and (color) {
+  /* line 227, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .basic-or {
+    content: '$basic-or';
+    content: '@media (max-width: 700px) and (orientation: portrait)';
+  }
+}
+
+/* $breakpoint-to-ems: true; */
+@media (min-width: 31.25em), tv and (min-width: 43.75em) and (color) {
+  /* line 239, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .basic-or-to-ems {
+    content: '$basic-or';
+    content: '@media (max-width: 43.75em) and (orientation: portrait)';
+  }
+}
+
+/*
+ * One-sided features (ie. monochrome)
+ * $monochrome : monochrome;
+ * $monochrome-double : 300px monochrome;
+ * $multidimensional-plus-one-sided : max-width 700px orientation portrait monochrome;
+ */
+@media (monochrome) {
+  /* line 257, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .one-sided {
+    content: '$monochrome';
+    content: '@media (monochrome)';
+  }
+}
+@media (monochrome) and (min-width: 300px) {
+  /* line 257, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .one-sided {
+    content: '$monochrome-double';
+    content: '@media (monochrome) and (min-width: 300px)';
+  }
+}
+@media (max-width: 700px) and (orientation: portrait) and (monochrome) {
+  /* line 257, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .one-sided {
+    content: '$multidimensional-plus-one-sided';
+    content: '@media (max-width: 700px) and (orientation: portrait) and (monochrome)';
+  }
+}
+
+/* $breakpoint-to-ems: true; */
+@media (monochrome) and (min-width: 18.75em) {
+  /* line 273, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .one-sided-to-ems {
+    content: '$monochrome-double';
+    content: '@media (monochrome) and (min-width: 18.75em)';
+  }
+}
+@media (max-width: 43.75em) and (orientation: portrait) and (monochrome) {
+  /* line 273, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .one-sided-to-ems {
+    content: '$multidimensional-plus-one-sided';
+    content: '@media (max-width: 43.75em) and (orientation: portrait) and (monochrome)';
+  }
+}
+
+/*
+ * One-sided features (ie. monochrome)
+ * $not : not screen;
+ */
+@media not screen {
+  /* line 292, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .not {
+    content: '$not';
+    content: '@media not screen';
+  }
+}
+@media not tv and (min-width: 500px) {
+  /* line 292, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .not {
+    content: '$not-plus-default';
+    content: '@media not tv and (min-width: 500px)';
+  }
+}
+
+/*
+ * Double string feature (i.e. string: string)
+ * $aspect-ratio : "min-aspect-ratio" "300/250";
+ * $device-aspect-ratio : "max-device-aspect-ratio" "320/480";
+ */
+@media (min-aspect-ratio: 300 / 250) {
+  /* line 312, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .aspect-ratio {
+    content: '$aspect-ratio';
+    content: '@media (min-aspect-ratio: 300/250)';
+  }
+}
+@media (max-device-aspect-ratio: 320 / 480) {
+  /* line 312, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .aspect-ratio {
+    content: '$device-aspect-ratio';
+    content: '@media (max-device-pixel-ratio: 320/480)';
+  }
+}
+
+/*
+ * One-sided features (ie. monochrome)
+ * $not : not screen;
+ */
+@media not screen and (min-width: 500px) {
+  /* line 330, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .legacy {
+    content: '$legacy';
+    content: '@media not screen and (min-width: 500px)';
+  }
+}
+
+/*
+ * Resolution queries, device pixel ratio and standard resolution
+ * $device-pixel-ratio: "resolution" 2dppx
+ * $resolution: "min-resolution" 192dpi
+ */
+@media (resolution: 2dppx), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2), (resolution: 192dpi) {
+  /* line 348, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .resolution {
+    content: "resolution" 2dppx;
+    content: '@media (resolution: 2dppx), (-webkit-device-pixel-ratio: 2), (-mox-device-pixel-ratio: 2), (resolution: 192dpi)';
+  }
+}
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2) {
+  /* line 348, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .resolution {
+    content: "min-resolution" 192dpi;
+    content: '@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2)';
+  }
+}
+@media (resolution: 2dppx), (-webkit-device-pixel-ratio: 2), (-moz-device-pixel-ratio: 2), (resolution: 192dpi) {
+  /* line 348, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .resolution {
+    content: "resolution" 2dppx;
+    content: '@media (resolution: 2dppx), (-webkit-device-pixel-ratio: 2), (-mox-device-pixel-ratio: 2), (resolution: 192dpi)';
+  }
+}
+
+/*
+ * Queries to test Breakpoint Get Context
+ * $context-simple: 500px
+ * $context-single: monochrome
+ * $context-and: 500px 700px
+ * $context-max: max-width 700px
+ * $context-string: orientation portrait
+ * $context-triple: height 800px 1000px
+ * $context-media-type: print
+ * $context-or: 500px max-height 1200px, 600px 700px
+ * $context-complex: 500px, screen 500px 700px, 300px monochrome
+ */
+@media (min-width: 500px) {
+  /* line 385, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .context {
+    content: '@media (min-width: 500px)';
+  }
+}
+@media (monochrome) {
+  /* line 385, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .context {
+    content: '@media (monochrome)';
+  }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  /* line 385, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .context {
+    content: '@media (min-width: 500px) and (max-width: 700px)';
+  }
+}
+@media (max-width: 700px) {
+  /* line 385, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .context {
+    content: '@media (max-width: 700px)';
+  }
+}
+@media (orientation: portrait) {
+  /* line 385, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .context {
+    content: '@media (orientation: portrait)';
+  }
+}
+@media (min-height: 800px) and (max-height: 1000px) {
+  /* line 385, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .context {
+    content: '@media (min-height: 800px) and (max-height: 1000px)';
+  }
+}
+@media print {
+  /* line 385, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .context {
+    content: '@media print';
+  }
+}
+@media (min-width: 500px) and (max-height: 1200px), (min-width: 600px) and (max-width: 700px) {
+  /* line 385, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .context {
+    content: '@media (min-width: 500px) and (max-height: 1200px), (min-width: 600px) and (max-width: 700px)';
+  }
+}
+@media (min-width: 500px), screen and (min-width: 500px) and (max-width: 700px), (monochrome) and (min-width: 300px) {
+  /* line 385, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  .context {
+    content: '@media (min-width: 500px), screen and (min-width: 500px) and (max-width: 700px), (monochrome) and (min-width: 300px)';
+  }
+}
+
+/* line 461, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+#dynamic {
+  content: 'No Context!';
+}
+@media (min-width: 400px) and (min-height: 200px), (min-width: 300px) and (max-width: 325px) and (orientation: portriat) and (monochrome) {
+  /* line 461, ../../../../../../assets/scss/components/compass-breakpoint/test/sass/style.scss */
+  #dynamic {
+    content: 'No Context!';
+  }
+}

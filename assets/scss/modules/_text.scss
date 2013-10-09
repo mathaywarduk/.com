@@ -62,7 +62,7 @@ p {
     }
 }
 
-.lead {
+.lead, .post__content > p:first-of-type {
     font-size: 150%;
     font-family: $font__base--serif;
     font-style: italic;

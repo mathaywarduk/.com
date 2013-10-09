@@ -1,0 +1,5 @@
+name: Front-end Developer ~ Mat Hayward
+markdown: redcarpet
+pygments: true
+permalink: /:title
+exclude: [assets, config.rb]

@@ -1,0 +1,8 @@
+---
+type: tweet
+date: 2013-07-03 15:51:00
+pub-date: 2013-07-03T15:51
+url-out: https://twitter.com/mathaywarduk/status/352439427303346176
+---
+
+Today's [#musicmixup](https://twitter.com/search?q=%23musicmixup&amp;src=hash) at [@erskinedesign](http://www.twitter.com/erskinedesign) is Destiny's Child and Beastie Boys. Not sure which I like more...

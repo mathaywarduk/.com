@@ -1,53 +1,24 @@
+---
+layout: none
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://www.mathayward.com</loc>
-		<lastmod>2013-08-01</lastmod>
+		<lastmod>2013-09-19</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
+    {% for post in site.posts %}
+    {% if post.type != 'tweet' %}
 	<url>
-		<loc>http://www.mathayward.com/behind-the-scenes</loc>
-		<lastmod>2013-09-19</lastmod>
+		<loc>http://www.mathayward.com{{ post.url }}</loc>
+		<lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
-	<url>
-		<loc>http://www.mathayward.com/behind-the-scenes</loc>
-		<lastmod>2013-08-29</lastmod>
-		<changefreq>never</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://www.mathayward.com/a-rant-about-seo</loc>
-		<lastmod>2013-08-01</lastmod>
-		<changefreq>never</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://www.mathayward.com/the-responsive-web</loc>
-		<lastmod>2013-08-01</lastmod>
-		<changefreq>never</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://www.mathayward.com/responsive-email-newsletters</loc>
-		<lastmod>2013-08-01</lastmod>
-		<changefreq>never</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://www.mathayward.com/are-you-alienating-half-of-your-audience</loc>
-		<lastmod>2013-08-01</lastmod>
-		<changefreq>never</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://www.mathayward.com/whats-behind-the-mask</loc>
-		<lastmod>2013-08-01</lastmod>
-		<changefreq>never</changefreq>
-		<priority>0.5</priority>
-	</url>
+    {% endif %}
+    {% endfor %}
 	<url>
 		<loc>http://www.mathayward.com/randomiser</loc>
 		<lastmod>2013-01-19</lastmod>

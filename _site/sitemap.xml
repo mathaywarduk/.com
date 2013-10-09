@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://www.mathayward.com</loc>
+		<lastmod>2013-09-19</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+    
+    
+	<url>
+		<loc>http://www.mathayward.com/behind-the-scenes</loc>
+		<lastmod>2013-09-19</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://www.mathayward.com/teach-me-web-design</loc>
+		<lastmod>2013-08-19</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+    
+    
+	<url>
+		<loc>http://www.mathayward.com/a-rant-about-seo</loc>
+		<lastmod>2013-08-01</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	<url>
+		<loc>http://www.mathayward.com/the-responsive-web</loc>
+		<lastmod>2013-04-16</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+    
+    
+	<url>
+		<loc>http://www.mathayward.com/responsive-email-newsletters</loc>
+		<lastmod>2013-02-27</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://www.mathayward.com/are-you-alienating-half-of-your-audience</loc>
+		<lastmod>2013-02-14</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://www.mathayward.com/whats-behind-the-mask</loc>
+		<lastmod>2012-05-02</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+	<url>
+		<loc>http://www.mathayward.com/randomiser</loc>
+		<lastmod>2013-01-19</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+</urlset>

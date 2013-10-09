@@ -17,23 +17,23 @@
         <!-- Meta -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="Learning how to build your own modular front-end framework will reduce the amount of time spent repeating styles between projects and it’s not as difficult to achieve as it might sound." />
+        <meta name="description" content="While there are already many front-end frameworks available for free, it’s often preferable to write code ourselves. We can build a Sass and BEM based living framework to use as a basis for any project." />
         <meta name="author" content="Mat Hayward" />
         <meta name="title" content="Modular front-end development with BEM and Sass" />
         <meta name="keywords" content="BEM and Sass" />
 
         <!-- RSS -->
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://mathayward.com/feed.rss" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://mathayward.com/feed.xml" />
 
         <!-- Facebook Open Graph -->
         <meta property="og:site_name" content="Mat Hayward"/>
-        <meta property="og:description" content="Learning how to build your own modular front-end framework will reduce the amount of time spent repeating styles between projects and it’s not as difficult to achieve as it might sound."/>
+        <meta property="og:description" content="While there are already many front-end frameworks available for free, it’s often preferable to write code ourselves. We can build a Sass and BEM based living framework to use as a basis for any project."/>
         <meta property="og:title" content="Modular front-end development with BEM and Sass"/>
         <meta property="og:type" content="article"/>
         <meta property="og:url" content="http://mathayward.com/modular-front-end-development-with-bem-and-sass"/>
         <meta property="og:image" content="http://mathayward.com/static/images/social/default.jpg"/>
         <meta itemprop="image" content="http://mathayward.com/static/images/social/default.jpg"/>
-        <meta property="article:published_time" content="2013-08-01T18:20:0+00:00">
+        <meta property="article:published_time" content="2013-08-01T18:20:00+00:00">
 
 
         <!-- Twitter Card -->
@@ -42,14 +42,24 @@
         <meta name="twitter:domain" content="mathayward.com"/>
         <meta name="twitter:creator" content="@mathaywarduk"/>
         <meta name="twitter:image:src" content="http://mathayward.com/static/images/social/default.jpg"/>
-        <meta name="twitter:description" content="Learning how to build your own modular front-end framework will reduce the amount of time spent repeating styles between projects and it’s not as difficult to achieve as it might sound."/>
+        <meta name="twitter:description" content="While there are already many front-end frameworks available for free, it’s often preferable to write code ourselves. We can build a Sass and BEM based living framework to use as a basis for any project."/>
         <meta name="twitter:title" content="Modular front-end development with BEM and Sass"/>
         <meta name="twitter:url" content="http://mathayward.com/modular-front-end-development-with-bem-and-sass"/>
     </head>
     <body>
         <b id="#top"></b>
-        <header class="header">
-            <h1>Mat Hayward</h1>
+        <header class="header" itemscope itemtype="http://data-vocabulary.org/Person">
+            <h1 itemprop="name">Mat Hayward</h1>
+            <div class="layout--hidden">
+                <a href="http://www.mathayward.com" itemprop="url">www.mathayward.com</a>.
+                <span itemprop="address" itemscope
+                itemtype="http://data-vocabulary.org/Address">
+                <span itemprop="locality">Nottingham</span>
+                <span itemprop="country-name">United Kingdom</span>
+                </span>
+                <span itemprop="title">Front-end developer</span>
+                <span itemprop="affiliation">Erskine Design</span>
+            </div>
             <nav class="nav">
                 <a href="/" class="nav__item" title="Ramblings and such">Read</a> |
                 <!--<a href="work" class="nav__item" title="Details of where I've worked with selected projects">Work</a> |-->
@@ -63,158 +73,105 @@
                 <h2 class="post__date">Wednesday 14th August 2013</h2>
             </header>
             <section class="post__content">
-                <p class="lead">Front-end development has come a long way in the past few years with the rise of <a href="http://alistapart.com/article/responsive-web-design">responsive design</a> and <a href="http://www.stubbornella.org/content/2009/02/12/css-doesn%E2%80%99t-suck-you%E2%80%99re-just-doing-it-wrong/">object-oriented CSS</a>. But by far my favourite advancement is in CSS preprocessors, like <a href="http://lesscss.org">LESS</a> and <a href="http://sass-lang.com">Sass</a>.</p>
+                <p class="lead">While there are already many front-end frameworks available for free, it’s often preferable to write code ourselves. We can build a Sass and BEM based living framework to use as a basis for any project.</p>
 
-                <p>CSS can get a little tiresome at times. Repeating HEX values, including font-sizes in em’s as well as px’s, over and over and over again. CSS Preprocessors help to alleviate these pains, and some others we may not have thought of.</p>
+                <p>Sass, a CSS preprocessor, allows us to write our CSS in small, easy to navigate modules, meaning we can start with base styles and bolt-on any components we might need for the system we’re currently building.</p>
 
-                <p>Not only that, we can save more time by making our code easier to understand using well constructed comments and clear naming conventions on our classes. The BEM methodology gives us this clarity. BEM stands for Block-Element-Modifier and is designed to help modularise front-end development by breaking everything into blocks, then elements and then use modifiers to tweak them.</p>
+                <p>We can also save time by making our code easier to understand using well constructed comments and clear naming conventions for our classes and variables. The BEM methodology gives us this clarity. BEM stands for Block-Element-Modifier and is designed to help modularise front-end development by breaking everything into blocks containing elements and then using modifiers to tweak them.</p>
 
-                <p>To apply the BEM methodology, we give each element within a block a class. Consider an unordered list for example:</p>
+                <p>To apply the BEM methodology, we give each element within a block a class. Consider an unordered list for a basic example:</p>
 
 <pre><code>&lt;ul class=&quot;list&quot;&gt;
     &lt;li class=&quot;list__item&quot;&gt;Item 1&lt;/li&gt;
     &lt;li class=&quot;list__item&quot;&gt;Item 2&lt;/li&gt;
     &lt;li class=&quot;list__item list__item--end&quot;&gt;Item 3&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
+&lt;/ul&gt;</code></pre>
 
-                <p>Our unordered list has the block class “list” while each list item has the element class “list__item”. Only the final list item has the additional modifier class “list__item--end”. Each class follows the BEM syntax:</p>
+                <p>Our unordered list has the block class “list” while each list item has the element class “list__item”. Only the final list item has the additional modifier class “list__item--end”. Each class follows the BEM syntax: </p>
 
                 <pre><code>.BLOCK{__ELEMENT[--MODIFIER]}</code></pre>
 
-                <h2>Getting started</h2>
+                <figure class="media">
+                    <img src="/static/images/blog/BEM_Sass_4.png" alt="BEM" class="media__item" />
+                    <figcaption class="media__caption">BEM helps modularise front-end development by breaking everything into blocks containing elements and then using modifiers to tweak them.</figcaption>
+                </figure>
 
-                <p>As with all development, I feel, the easiest (and often quickest) way to learn is to jump straight in.</p>
+                <h2>Get Started</h2>
+                <p>Set up the project by creating two directories; <em>assets</em> and <em>static</em>. The static directory will contain the compiled CSS and everything else that must be deployed, while the assets folder contains any resources that don’t need to be deployed (in this instance our Sass files).</p>
 
-                <p>First things first, we have to change the way we think about building websites. Previously we might build a number of page templates for a site and populate the content within it. But this could lead to bloated stylesheets and highly specific selectors as some templates differed, only slightly, from others.</p>
+                <p>To compile the Sass into CSS set a watch process running in a terminal window between /assets/sass and /static/css. (Note: The sass directory will need to exist for this to work).</p>
 
-                <p>Designing systems rather than pages means there are no solid page templates; any part of the system can contain any group of components; and specificity is somewhat thrown out of the window, making the overall design of the site tighter and its footprint much lighter.</p>
+                <p>Although we want our modules to be independent, there are always variables, functions and mixins that are used by multiple modules. With this in mind we create <em>_base.scss</em> in our /assets/sass directory and include them here. These might be a mixin for outputting rems with a pixel fallback or site-wide colour variables. </p>
 
-                <p>Let’s set up the project by creating two directories in the root; <em>assets</em> and <em>static</em>. The static directory will contain the compiled CSS and everything else that must be deployed, along with the HTML, for the website to work. While the assets folder contains any resources that won’t necessarily need to be deployed to the webserver (in this instance our Sass files).</p>
+                <p>Using BEM as a basis for our variable names will reduce the number of variables used and further aid other developers who might pick up the framework later on. </p>
 
-                <p>There are many ways to install Sass, depending on your development environment. The easiest being if you have Gem installed on OS X. Simply open a terminal window and ask Gem to do the legwork:</p>
+                <p>Using this we can add some colour and sizing variables to our <em>_base.scss</em> file, for example: </p>
 
-                <pre><code>gem install sass</code></pre>
-
-                <p><small>For more installation instructions <a href="http://sass-lang.com/tutorial.html">visit the Sass website</a>.</small></p>
-
-                <p>Once Sass is installed on an environment, it’s necessary to ask it to watch for changes in the SCSS files and update the static CSS files accordingly. This is a pretty simple, one-liner in a terminal window:</p>
-
-                <pre><code>sass --watch assets/sass/screen.scss:static/css/screen.css</code></pre>
-
-                <p>or to watch the entire directory:</p>
-
-                <pre><code>sass --watch assets/sass:static/css</code></pre>
-
-                <p>Using the later, means we can include additional Sass files (like print.scss) and not have to start a separate watch process for each.</p>
-
-                <p>Sass should have now created a screen.css file in our /static/css/ directory. Although at this point the file is empty, we will link to it from our index.html file.</p>
-
-                <pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;static/css/screen.css&quot; /&gt;</code></pre>
-
-                <h2>Base Sass files</h2>
-
-                <p>We’re going to write our CSS in small, easy to navigate modules. This will save time in the future when making changes, and make it easier for other developers to pick up a project part way through.</p>
-
-                <p>Although we want to keep our modules as separate as possible, there will always be variables, functions and mixins that are used by multiple modules, so it wouldn’t make sense to include them repeatedly each time. With this in mind we create <em>_base.scss</em> in our /assets/sass directory. In here we keep anything that is shared over modules.</p>
-
-                <p>Some developers like to base their naming convention for colour variables on the modules they’re used for. Personally I like to simplify this into neutral, primary, secondary and, if need be, tertiary colour tones. It sounds like a lot, but in the long term we’ll usually find that the number of variables is vastly reduced as duplication is avoided.</p>
-
-                <p>So we’ll go ahead and add in our colour variables using this convention:</p>
-
-<pre><code>$color__white: #FFFFFF !default;
-$color__black: #000000 !default;
-
-$color__primary--xlight: #F70000 !default;
-$color__primary--light: #DD0000 !default;
+<pre><code>$color__primary--light: #DD0000 !default;
 $color__primary: #C10000 !default;
 $color__primary--dark: #990000 !default;
-$color__primary--xdark: #330000 !default;
 
-$color__secondary--xlight: #00F700 !default;
-$color__secondary--light: #00DD00 !default;
-$color__secondary: #00C100 !default;
-$color__secondary--dark: #009900 !default;
-$color__secondary--xdark: #003300 !default;
-
-$color__neutral--xlight: #F7F7F7 !default;
-$color__neutral--light: #DDDDDD !default;
-$color__neutral: #999999 !default;
-$color__neutral--dark: #666666 !default;
-$color__neutral--xdark: #333333 !default;</code></pre>
-
-                <p>followed by base sizing units:</p>
-
-<pre><code>$width__small: 481px !default;
-$width__medium: 767px !default;
-$width__large: 1200px !default;
-
-$base__vertical-unit: 5 !default;
-$base__horiz-unit: $base__vertical-unit !default;
 $base__font-size: 15 !default;
 $base__line: 20 !default;</code></pre>
 
-                <p>and functions, like this one which calculate em sizes from pixels:</p>
-
-<pre><code>@function calc-em($target, $context: $base__font-size) {
-    @return ($target / $context) * 1em;
-}</code></pre>
-
-                <p>We’ll also create a <em>_config.scss</em> file in the same directory. Later this will be used to override our default base and module variables, keeping everything we might change regularly in one place.</p>
-
-                <p>Finally, create a master Sass file (<em>screen.scss</em>). This will import all our necessary modules and will be compiled into CSS for use on our website. Start by importing the base and config modules.</p>
+                <p>Next, create <em>_config.scss</em>, which will later be used to override our default module variables, and <em>screen.scss</em>, our master Sass file. This will import the modules to be compiled into CSS for use on our website. Start by importing the base and config modules.</p>
 
 <pre><code>@import &quot;base&quot;;
 @import &quot;config&quot;;</code></pre>
 
-                <p>Rather than asking Sass to create multiple CSS files and linking each one into our HTML document, we’re using the Sass @import directive to combine all modules into our master CSS file. The underscore prefix on the base and config modules prevents the Sass watch process creating these additional CSS files, reducing the amount of HTTP requests required and, hopefully, improving performance.</p>
+                <p>Rather than asking Sass to create multiple CSS files and linking each one into our HTML document, we’re using the Sass @import directive to combine all modules into one master CSS file. This reduces the amount of HTTP requests required, improving performance.</p>
 
                 <h2>Adding modules</h2>
+                <p>Create a directory in /assets/sass called <em>modules</em>. This will house all the additional modules we add to our site for styling different forms of content.</p>
 
-                <p>Create a directory in /assets/sass called <em>modules</em>. This will house all the additional modules we add to our site for styling the different types of content.</p>
+                <p>First off, add a CSS reset module (<em>_reset.scss</em>), paste in the reset code of our choice and import it into our master file in the same way as before.</p>
 
-                <p>We’ll start by adding a CSS reset module (<em>_reset.scss</em>) and pasting in the reset code of our choice. In this case it’s <a href="http://meyerweb.com/eric/tools/css/reset">Eric Meyer’s Reset CSS</a>.</p>
+                <p>When you save the changes to the master file, notice that your terminal process has detected changes and overwritten the screen.css file used by our webpage. Opening the file, you can see the contents of the reset have been ported across.</p>
 
-                <p>We’ll import it into our master CSS file in the same way as before:</p>
+                <p>At this point you can begin to see the principle in action. Being able to import snippets of code into a master file means we can easily toggle certain modules on or off as needed.</p>
 
-<pre><code>@import &quot;modules/reset&quot;;</code></pre>
+                <figure class="media">
+                    <img src="/static/images/blog/BEM_Sass_1.png" alt="Simple Sass framework" class="media__item" />
+                    <figcaption class="media__caption">Base and module styles are altered by our configuration file before being imported into the master for processing into CSS.</figcaption>
+                </figure>
 
-                <p>When you save the changes to the master file, notice that your terminal process has detected changes and overwritten the screen.css file used by our webpage. Opening the file, you can see the contents of the reset ported across.</p>
+                <p>We can create a module called <em>_text.scss</em> and start adding base styles for headers and paragraphs etc.</p>
 
-                <p>At this point we probably haven’t saved any time and definitely haven’t achieved anything extraordinary, but you can see the principle in action. Being able to import snippets of code into a master Sass file means we can easily toggle certain modules on or off as we need to.</p>
+<pre><code>h1 {
+    font-size: calc-em(36);
+    line-height: (40/36);
+    font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+    margin-bottom: calc-em(10, 40);
+    font-weight: bold;
+    color: $color__primary;
+}
 
-                <p>If we create a module called <em>_text.scss</em> and import as before. We can then add all variables, functions and mixins specific to text styling into that module.</p>
+p {
+    font-size: calc-em(15);
+    line-height: (20/15);
+    font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+    margin-bottom: calc-em(10, 15);
+}</code></pre>
+
+                <p>Abstracting these out into variables and a mixin for text styling, reduces the amount of code used and makes any future tweaks quicker.</p>
 
 <pre><code>$text__family-sans:  &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif !default;
-$text__family-serif: &quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif !default;
 
 $text__size--alpha: 36 !default;
 $text__size--beta: 30 !default;
-$text__size--gamma: 20 !default;
+$text__size--gamma: 24 !default;
 $text__size--delta: 15 !default;
-
-$text__size--alpha--desktop: 48 !default;
-$text__size--beta--desktop: 36 !default;
-$text__size--gamma--desktop: 24 !default;
-$text__size--delta--desktop: 15 !default;
 
 $text__line--alpha: 40 !default;
 $text__line--beta: 36 !default;
-$text__line--gamma: 22 !default;
+$text__line--gamma: 30 !default;
 $text__line--delta: 20 !default;
 
-$text__line--alpha--desktop: 54 !default;
-$text__line--beta--desktop: 40 !default;
-$text__line--gamma--desktop: 30 !default;
-$text__line--delta--desktop: 20 !default;
-
-@mixin text($size, $line, $margin: 0, $family: &quot;&quot;) {
+@mixin text($size, $line, $margin: 0, $family: $text__family-sans) {
     font-size: calc-em($size);
-    margin-bottom: calc-em($margin, $size);
     line-height: ($line/$size);
-    @if $family != &quot;&quot; {
-        font-family: $family;
-    }
+    font-family: $family;
+    margin-bottom: calc-em($margin, $size);
 }
 
 html {
@@ -222,93 +179,43 @@ html {
 }
 
 body {
-    font-size: 100%;
-    line-height: $base__line/$base__font-size;
-    color: $color__neutral--dark;
-    font-family: $text__family-sans;
+    @include text($base__font-size, $base__line);
 }
 
 h1 {
-    @include text($text__size--alpha, $text__line--alpha, 15);
+    @include text($text__size--delta, $text__line--delta, 15);
     font-weight: bold;
     color: $color__primary;
-}
-
-h2 {
-    @include text($text__size--beta, $text__line--beta, 15);
-    color: $color__primary;
-}
-
-h3 {
-    @include text($text__size--gamma, $text__line--gamma, 15);
-    text-transform: uppercase;
 }
 
 p {
     @include text($text__size--delta, $text__line--delta, 10);
 }</code></pre>
 
-                <p>Here we have a mixin which allows us to include all our text styling on one line and variables, which allow us to change CSS values quickly and easily. Each variable is given a <code>!default</code> flag, which allows us to override them in our <em>_config.scss</em> file:</p>
+                <p>Each variable is given a <code>!default</code> flag, which allows us to override them in our <em>_config.scss</em> file if we prefer: </p>
 
 <pre><code>$text__family-sans: &quot;Proxima Nova&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
-// $text__family-serif: &quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif !default;
+$text__size--beta: 30;
+$text__line--beta: 36;</code></pre>
 
-// Base font-sizes
-$text__size--alpha: 30;
-$text__size--beta: 24;
-$text__size--gamma: 15;
-// $text__size--delta: 15 !default;
-
-$text__size--alpha--desktop: 36;
-$text__size--beta--desktop: 28;
-$text__size--gamma--desktop: 15;
-// $text__size--delta--desktop: 15 !default;
-
-// // Base line-heights
-$text__line--alpha: 32;
-$text__line--beta: 26;
-$text__line--gamma: 20;
-// $text__line--delta: 20 !default;
-
-$text__line--alpha--desktop: 38;
-$text__line--beta--desktop: 32;
-$text__line--gamma--desktop: 20;
-// $text__line--delta--desktop: 20 !default;</code></pre>
-
-                <p>As we do not need to change the values for some variables, we have no need to override them in our configuration file but, personally, I prefer to include them, commented out, so I can easily see that the value is being set by the module.</p>
-
-<pre><code>// $base__line: 20 !default;
-// $base__font-size: 15 !default;</code></pre>
-
-                <p>You might ask what the point of declaring and then overriding these variables is, and for one-off use there really isn’t any. But what we now have is the beginnings of a modular Sass framework that we can use again and again as a basis for any front-end project.</p>
+                <p>You might ask what the point of declaring and then overriding these variables is, and for one-off use there really isn’t any. But what we now have is the beginnings of a modular framework that we can use regularly as a basis for any front-end project adding and importing more modules as we add more elements to our system.</p>
 
                 <figure class="media">
-                    <img src="/static/images/blog/bem-sass-3.png" alt="Our project framework" class="media__item" />
-                    <figcaption class="media__caption">Our project framework</figcaption>
+                    <img src="/static/images/blog/BEM_Sass_3.png" alt="Module files" class="media__item" />
+                    <figcaption class="media__caption">Module files, which set out base styles for different content types, are self-contained, meaning they are used only when needed.</figcaption>
                 </figure>
 
-                <p>As we add more elements to our system, we add more modules and import as we wish.</p>
+                <figure class="media">
+                    <img src="/static/images/blog/BEM_Sass_2.png" alt="Modular design" class="media__item" />
+                    <figcaption class="media__caption">Building a modular framework is much easier when design is approached in a modular sense.</figcaption>
+                </figure>
 
                 <h2>Make it easy to understand</h2>
+                <p>With the foundations built and modules being added as and when we need them, you could be forgiven for thinking that any developer could pick up your work and understand it almost instantly, but that’s not always the case.</p>
 
-                <p>With the framework foundations built and modules being added as and when we need them, you could be forgiven for thinking that any developer could pick up your work and understand it almost instantly.</p>
+                <p>Fortunately there are ways to make it even easier to understand. Firstly,  Sass comments will not add any weight to our compiled CSS file, and so we can write as much as we like to be helpful.</p>
 
-                <p>But that’s not always the case. Fortunately there are ways to make it even easier to understand. Firstly, commenting our Sass files using double forward slashes will not add any weight to our compiled CSS file, and so we can write as much as we like to be helpful.</p>
-
-<pre><code>...
-
-/////////////////////////////////
-// Mixins and Functions        //
-/////////////////////////////////
-
-// ## Includes standard text styling properties.
-// $size: (required) Required font size in pixels
-// $line: (required) Required line height in pixels
-// $family (optional) Font family stack string
-@mixin text($size, $line, $margin: 0, $family: &quot;&quot;) {
-...</code></pre>
-
-                <p>Secondly, as mentioned before, we can use the BEM methodology. Using BEM we can include a Sass module for lists where inheritance is obvious.</p>
+                <p>Secondly, as mentioned before, we can use the BEM methodology. As an example we could create a Sass module for lists where inheritance is obvious:</p>
 
 <pre><code>.list {
     padding-left: calc-em(10);
@@ -322,105 +229,50 @@ $text__line--gamma--desktop: 20;
     margin-bottom: 0;
 }</code></pre>
 
-                <p>Due to our reset module, the items within this list would not have any markers. So what if wanted to use simple bullets?</p>
+                <p>To add bullets to this list we could then create a modifier and include that class on the unordered list element.</p>
 
-                <p>We could just add <code>list-style-type: disc;</code> to the styles for the .list class, but that would mean that all lists would display bullets as soon as they are assigned the base <em>list</em> class.</p>
-
-                <p>Instead we use a modifier and include that class on the unordered list element.</p>
-
-<pre><code>&lt;ul class=&quot;list list--bullet&quot;&gt;
-    ...
-&lt;/ul&gt;</code></pre>
+<pre><code>&lt;ul class=&quot;list list--bullet&quot;&gt;...&lt;/ul&gt;</code></pre>
 
 <pre><code>.list--bullet {
     list-style-type: disc;
     padding-left: calc-em(25);
 }</code></pre>
-
-                <p>Then if we need the list items within the bulleted class to behave differently, we can use nesting to ensure it does.
-
-<pre><code>.list--bullet {
-    list-style-type: disc;
-    padding-left: calc-em(25);
-
-    .list__item {
-        margin-bottom: calc-em(5);
-    }
-}</code></pre>
-
-                <p>It’s not advisable to exceed 2 levels of nesting, or your CSS could become highly-specific, leading to a recurrence of the problems we’re trying to overcome; bloated page weight and ease of code navigation.</p>
 
                 <h2>Putting it all together</h2>
-
-                <p>Using the styles we have created, let’s put together a very simple page base on one of my favourite subjects.</p>
+                <p>Using the styles we have created, let’s put together a very simple page based on one of my favourite subjects:</p>
 
 <pre><code>&lt;article class=&quot;layout__container&quot;&gt;
-    &lt;header&gt;
-        &lt;h1&gt;Hair styling for beginners&lt;/h1&gt;
-        &lt;h2&gt;Tips and tricks on creating a masterful quiff.&lt;/h2&gt;
-    &lt;/header&gt;
-    &lt;section&gt;
-        &lt;p&gt;Getting your hair to stand up, and stay up during a busy day in the office can be a bit of a
-            hassle at times. But here&amp;rsquo;s a full-proof method to achieving follicular greatness.&lt;/p&gt;
-        &lt;hr /&gt;
-        &lt;figure class=&quot;media media--full&quot;&gt;
-            &lt;img class=&quot;media__item&quot; src=&quot;http://static.fashionbeans.com/wp-content/uploads/2011/03/quiffmain1.jpg&quot; /&gt;
-            &lt;figcaption class=&quot;media__caption&quot;&gt;Dude with a quiff&lt;/figcaption&gt;
-        &lt;/figure&gt;
-        &lt;hr /&gt;
-        &lt;h3&gt;Requirements&lt;/h3&gt;
-        &lt;ul class=&quot;list list--bullet&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;Hair dryer&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;Styling putty&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;Finishing spray&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;h3&gt;Method&lt;/h3&gt;
-        &lt;ol class=&quot;list list--number list--method&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;Wash and condition your hair as normal.&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;Towel dry you hair until it is only slightly damp.&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;Rub a small amount of styling putty between the tips of your fingers and style your quiff.&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;Blow dry into shape, using a brush to pull your hair up.&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;Add shine and extra hold by applying some finishing spray.&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/section&gt;
+&lt;header&gt;
+    &lt;h1&gt;Hair styling for beginners&lt;/h1&gt;
+    &lt;h2&gt;Tips and tricks on creating a masterful quiff.&lt;/h2&gt;
+&lt;/header&gt;
+&lt;p&gt;Getting your hair to stand up, and stay up during a busy day in the office can be a bit of a hassle at times. But here&amp;rsquo;s a full-proof method to achieving follicular greatness.&lt;/p&gt;
+&lt;figure class=&quot;media media--full&quot;&gt;
+    &lt;img class=&quot;media__item&quot; src=&quot;http://static.fashionbeans.com/wp-content/uploads/2011/03/quiffmain1.jpg&quot; /&gt;
+    &lt;figcaption class=&quot;media__caption&quot;&gt;Young Elvis had a magnificent quiff.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3&gt;Requirements&lt;/h3&gt;
+&lt;ul class=&quot;list list--bullet&quot;&gt;
+    &lt;li class=&quot;list__item&quot;&gt;Hair dryer&lt;/li&gt;
+    &lt;li class=&quot;list__item&quot;&gt;Styling putty&lt;/li&gt;
+    &lt;li class=&quot;list__item&quot;&gt;Finishing spray&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Method&lt;/h3&gt;
+&lt;ol class=&quot;list list--number list--method&quot;&gt;
+    &lt;li class=&quot;list__item&quot;&gt;Wash and condition your hair as normal.&lt;/li&gt;
+    &lt;li class=&quot;list__item&quot;&gt;Towel dry you hair until it is only slightly damp.&lt;/li&gt;
+    &lt;li class=&quot;list__item&quot;&gt;Rub a small amount of styling putty between the tips of your fingers and style your quiff.&lt;/li&gt;
+    &lt;li class=&quot;list__item&quot;&gt;Blow dry into shape, using a brush to pull your hair up.&lt;/li&gt;
+    &lt;li class=&quot;list__item&quot;&gt;Add shine and extra hold by applying some finishing spray.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/article&gt;</code></pre>
 
-                <p>In our browser our HTML page now needs a bit of styling:</p>
+                <p>In our browser our HTML page needs a bit of styling, so we can go ahead and create additional modules for layout and media, while including additional styles for the number and method list modifiers.</p>
 
-                <figure class="media">
-                    <img src="/static/images/blog/bem-sass-1.png" alt="Our HTML without styling" class="media__item" />
-                    <figcaption class="media__caption">Our HTML without styling</figcaption>
-                </figure>
+                <p>Here’s how the modifiers in <em>_lists.scss</em> might look, with module specific variables being included at the top.</p>
 
-                <p>So we will go ahead and create an additional module for media and include additional styles for the number and method list modifiers.</p>
+<pre><code>$list__number-color: #CC0000 !default;
 
-                <h3>_media.scss</h3>
-<pre><code>.media {
-    // no styles necessary yet
-}
-
-.media__item {
-    display: block;
-}
-
-.media__caption {
-    text-align: center;
-    font-style: italic;
-    margin-top: calc-em(5);
-}
-
-.media--full {
-    width: 100%;
-    margin: 0 0 calc-em(10) 0;
-
-.media__item {
-    width: 100%;
-}</code></pre>
-
-                <h3>_lists.scss</h3>
-<pre><code>$list_number-color: #CC0000 !default;
-
-// Number modifier
 .list--number {
     counter-reset: items;
 
@@ -431,121 +283,40 @@ $text__line--gamma--desktop: 20;
             counter-increment: items 1;
             content: counter(items, decimal) &quot;.&quot;;
             color: $list__number-color;
+            margin-right: calc-em(5);
         }
     }
 }
 
-// Method modifier
 .list--method {
     @extend .list--number;
 
     .list__item {
-        position: relative;
-        padding-left: calc-em(25);
         margin-bottom: calc-em(15);
 
         &amp;:before {
             @include text($text__size--beta, $text__line--beta);
             font-style: italic;
-            position: absolute;
-            left: 0;
-            top: 0;
         }
     }
 }</code></pre>
 
-                <p>At this point, the content of these files shouldn’t need any explanation as we’re using the same principles as previously with default variables within modules.</p>
-
-                <p>Adding a layout module then allows us to include a maximum width on the content container, some horizontal rules and a background image.</p>
-
-                <h3>_layout.scss</h3>
-
-<pre><code>$layout__max-width: 675 !default;
-$layout__padding-top: 20 !default;
-$layout__padding-right: 20 !default;
-$layout__padding-bottom: 20 !default;
-$layout__padding-left: 20 !default;
-
-$layout__hr-style: dotted !default;
-$layout__hr-width: 1px !default;
-$layout__hr-color: #CCCCCC !default;
-$layout__hr-margin: 20 !default;
-
-$layout__border-width: 10px !default;
-$layout__border-style: solid !default;
-$layout__border-color: #C10000 !default;
-
-$layout__bg-color: #DDDDDD !default;
-$layout__bg-image: none !default;
-$layout__bg-repeat: no-repeat !default;
-$layout__bg-position: top center !default;
-$layout__bg-size: 100% !default;
-
-// Centre content placeholder
-%layout__block--centered {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-html {
-    min-height: 100%;
-}
-
-body {
-    background-color: $layout__bg-color;
-    background-image: $layout__bg-image;
-    background-repeat: $layout__bg-repeat;
-    background-position: $layout__bg-position;
-    background-size: $layout__bg-size;
-
-   min-height: 100%;
-
-    * {
-        box-sizing: border-box;
-    }
-
-}
-
-.layout__container {
-    max-width: calc-em($layout__max-width);
-    padding: calc-em($layout__padding-top) calc-em($layout__padding-right) calc-em($layout__padding-bottom) calc-em($layout__padding-left);
-    @extend %layout__block--centered;
-    background-color: $color__white;
-    border-top: $layout__border-width $layout__border-style $layout__border-color;
-}
-
-hr {
-    border: none;
-    border-bottom: $layout__hr-width $layout__hr-style $layout__hr-color;
-    height: 0;
-    line-height: 0;
-    width: 100%;
-    display: block;
-    margin-bottom: calc-em($layout__hr-margin);
-}</code></pre>
-
-                <p>We can also override the default variables from our Sass configuration module, just to get it how we like it. These are just the one’s I tweaked, but feel free to play around.</p>
-
-<pre><code>$layout__bg-image: url(&quot;/static/images/bg.jpg&quot;);
-$layout__bg-size: cover;</code></pre>
+                <p>You can decide yourself how to build the layout and media modules, but there are examples in the Github repository.</p>
 
                 <figure class="media">
-                    <img src="/static/images/blog/bem-sass-2.png" alt="Our newly styled page" class="media__item" />
-                    <figcaption class="media__caption">Our newly styled page</figcaption>
+                    <img src="/static/images/blog/BEM_Sass_5.png" alt="Elvis" class="media__item" />
+                    <figcaption class="media__caption">The finished ‘page’ looks very simple, but behind it is a Sass and BEM based framework that can be scaled easily.</figcaption>
                 </figure>
 
                 <h2>The next step</h2>
-
                 <p>Obviously this is a very simple example of how we can build our own Sass and BEM based front-end framework, but the opportunity here is huge. </p>
 
-                <p>Even though there are already good frameworks out there, like <a href="http://inuitcss.com">Inuit</a> and <a href="http://gumbyframework.com">Gumby</a>, which can do all this work for us, I’ve always been an advocate of writing your own code, whether that’s personally, or part of a development team. That way, we know exactly what’s going on, changes aren’t difficult to implement, and when something goes wrong, which it no doubt will, we’ll be more inclined to fix it.</p>
+                <p>It’s important to remember that while you are building one system, you should make the base module as simple, and therefore reusable, as possible. Specificity can then be added using the <strong>_config.scss</strong> file and BEM modifiers.</p>
 
-                <p>By using this method we can build a starting block to use on all our projects, however large or small, which we can improve over time as and when new modules are written.</p>
-
-                <p>Erskine’s UP2.0 framework is exactly this, a living framework, that will never be ‘finished’. It’s current version is <a href="https://github.com/erskinedesign/ultimate_package_2.0">available on Github</a>, but why not just build your own?</p>
+                <p>By using this method we can build a starting block to use on all our projects, however large or small, which will expand over time as new modules are included.</p>
 
                 <hr class="hr" />
+                <a href="https://github.com/mathaywarduk/simple-sass-framework" class="btn btn--cta btn--forward">Fork on GitHub</a>
                 <a href="/#article-top" class="btn btn--cta btn--back">Back to articles</a>
                 <hr class="hr" />
                 <div id="disqus_thread"></div>
@@ -568,5 +339,18 @@ $layout__bg-size: cover;</code></pre>
                 </nav>
             </footer>
         </article>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-580668-8']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
     </body>
 </html>

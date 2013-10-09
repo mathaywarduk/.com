@@ -23,7 +23,7 @@
         <meta name="keywords" content="Front-end Developer Nottingham" />
 
         <!-- RSS -->
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://mathayward.com/feed.rss" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://mathayward.com/feed.xml" />
 
         <!-- Facebook Open Graph -->
         <meta property="og:site_name" content="Mat Hayward"/>
@@ -33,7 +33,7 @@
         <meta property="og:url" content="http://mathayward.com"/>
         <meta property="og:image" content="http://mathayward.com/static/images/social/default.jpg"/>
         <meta itemprop="image" content="http://mathayward.com/static/images/social/default.jpg"/>
-        <meta property="article:published_time" content="2013-08-01T18:20:0+00:00">
+        <meta property="article:published_time" content="2013-09-19T18:07:00+00:00">
 
 
         <!-- Twitter Card -->
@@ -50,8 +50,18 @@
     </head>
     <body>
         <b id="#top"></b>
-        <header class="header">
-            <h1>Mat Hayward</h1>
+        <header class="header" itemscope itemtype="http://data-vocabulary.org/Person">
+            <h1 itemprop="name">Mat Hayward</h1>
+            <div class="layout--hidden">
+                <a href="http://www.mathayward.com" itemprop="url">www.mathayward.com</a>.
+                <span itemprop="address" itemscope
+                itemtype="http://data-vocabulary.org/Address">
+                <span itemprop="locality">Nottingham</span>
+                <span itemprop="country-name">United Kingdom</span>
+                </span>
+                <span itemprop="title">Front-end developer</span>
+                <span itemprop="affiliation">Erskine Design</span>
+            </div>
             <nav class="nav">
                 <a href="/" class="nav__item" title="Ramblings and such">Read</a> |
                 <!--<a href="work" class="nav__item" title="Details of where I've worked with selected projects">Work</a> |-->
@@ -60,6 +70,26 @@
         </header>
 
         <section class="content-block posts-list" id="article-top">
+            <article>
+                <header class="posts-list__header">
+                    <h1><a href="behind-the-scenes#article-top">Behind the scenes</a></h1>
+                    <h2 class="post__date"><a href="behind-the-scenes#article-top">Thursday 19th September 2013</a></h2>
+                </header>
+                <section class="post__content">
+                    <p class="lead">A while back I started working on a pretty nice, but simple, interactive HTML5 video.</p>
+                    <a href="behind-the-scenes#article-top" class="btn btn--cta btn--forward">Read on</a>
+                </section>
+            </article>
+            <article>
+                <header class="posts-list__header">
+                    <h1><a href="teach-me-web-design#article-top">Teach me web design</a></h1>
+                    <h2 class="post__date"><a href="teach-me-web-design#article-top">Thursday 29th August 2013</a></h2>
+                </header>
+                <section class="post__content">
+                    <p class="lead">As a web developer of some 10 years, there are two things I&rsquo;m regularly asked by friends and acquaintances: &ldquo;Can you build me a website?&rdquo; and &ldquo;Can you teach me web design?&rdquo;</p>
+                    <a href="teach-me-web-design#article-top" class="btn btn--cta btn--forward">Read on</a>
+                </section>
+            </article>
             <article>
                 <header class="posts-list__header posts-list__header--twitter">
                     <h1>Tweet</h1>
@@ -121,6 +151,16 @@
                 </section>
             </article>
             <article>
+                <header class="posts-list__header">
+                    <h1><a href="the-responsive-web#article-top">The responsive web</a></h1>
+                    <h2 class="post__date">Posted on <a href="http://www.tribeuk.co.uk/blog/the-responsive-web/" target="_blank">Tribe UK</a> on <a href="the-responsive-web#article-top">Tuesday 16th April 2013</a></h2>
+                </header>
+                <section class="post__content">
+                    <p class="lead">Last month Craig and I gave a talk at <a href="http://www.secondwednesday.org.uk/" target="_blank">Second Wednesday</a>, a monthly Nottingham-based event for creative and digital people, entitled The Responsive Web.</p>
+                    <a href="the-responsive-web#article-top" class="btn btn--cta btn--forward">Read on</a>
+                </section>
+            </article>
+            <article>
                 <header class="posts-list__header posts-list__header--twitter">
                     <h1>Tweet</h1>
                     <h2 class="post__date"><a href="https://twitter.com/mathaywarduk/status/321298599831035904">Monday 8th April 2013</a></h2>
@@ -131,13 +171,33 @@
                 </section>
             </article>
             <article>
-                <header class="posts-list__header posts-list__header--twitter">
-                    <h1>Tweet</h1>
-                    <h2 class="post__date"><a href="https://twitter.com/tribeuk/status/306759292873228288">Wednesday 27th February 2013</a></h2>
+                <header class="posts-list__header">
+                    <h1><a href="responsive-email-newsletters#article-top">Responsive email newsletters</a></h1>
+                    <h2 class="post__date">Posted on <a href="http://www.creativebloq.com/responsive-web-design/email-newsletters-2132023" target="_blank">Creative Bloq</a> on <a href="responsive-email-newsletters#article-top">Wednesday 27th February 2013</a></h2>
                 </header>
                 <section class="post__content">
-                    <p class="lead">RT <a href="http://www.twitter.com/tribeuk">@tribeuk</a> See what responsive newsletters are topping <a href="http://www.twitter.com/mathaywarduk">@mathaywarduk</a>'s list over at <a href="http://www.creativebloq.com/responsive-web-design/email-newsletters-2132023">creativebloq.com/responsive-web...</a></p>
-                    <a href="https://twitter.com/tribeuk/status/306759292873228288" class="btn btn--cta btn--forward">View on Twitter</a>
+                    <p class="lead">I recently wrote a feature about responsive email design for Creative Bloq, an online magazine covering 3D, graphic design, illustration, web design.</p>
+                    <a href="responsive-email-newsletters#article-top" class="btn btn--cta btn--forward">Read on</a>
+                </section>
+            </article>
+            <article>
+                <header class="posts-list__header">
+                    <h1><a href="are-you-alienating-half-of-your-audience#article-top">Are you alienating half of your audience?</a></h1>
+                    <h2 class="post__date">Posted on <a href="http://www.tribeuk.co.uk/blog/are-you-alienating-half-of-your-audience/" target="_blank">Tribe UK</a> on <a href="are-you-alienating-half-of-your-audience#article-top">Friday 14th February 2013</a></h2>
+                </header>
+                <section class="post__content">
+                    <p class="lead">There are always buzzwords and phrases going around the industry and one buzzphrase you will hear cropping up more and more over the next year will be &lsquo;Responsive Design&rsquo;. So what is it and what&rsquo;s the big deal?</p>
+                    <a href="are-you-alienating-half-of-your-audience#article-top" class="btn btn--cta btn--forward">Read on</a>
+                </section>
+            </article>
+            <article>
+                <header class="posts-list__header">
+                    <h1><a href="whats-behind-the-mask#article-top">What's behind the mask?</a></h1>
+                    <h2 class="post__date">Posted on <a href="http://www.tribeuk.co.uk/blog/whats-behind-the-mask/" target="_blank">Tribe UK</a> on <a href="whats-behind-the-mask#article-top">Friday 2nd March 2012</a></h2>
+                </header>
+                <section class="post__content">
+                    <p class="lead">Rob Antill recently launched his website showcasing his talent for Stereographic photography. By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit.</p>
+                    <a href="whats-behind-the-mask#article-top" class="btn btn--cta btn--forward">Read on</a>
                 </section>
             </article>
             <footer class="post__footer">
@@ -146,6 +206,19 @@
                     <a href="#top" class="nav__item nav__item--top">Back to top</a>
                 </nav>
             </footer>
-        </article>
+        </section>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-580668-8']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
     </body>
 </html>

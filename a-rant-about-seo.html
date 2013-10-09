@@ -23,7 +23,7 @@
         <meta name="keywords" content="SEO is evil" />
 
         <!-- RSS -->
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://mathayward.com/feed.rss" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://mathayward.com/feed.xml" />
 
         <!-- Facebook Open Graph -->
         <meta property="og:site_name" content="Mat Hayward"/>
@@ -33,7 +33,7 @@
         <meta property="og:url" content="http://mathayward.com/a-rant-about-seo"/>
         <meta property="og:image" content="http://mathayward.com/static/images/social/default.jpg"/>
         <meta itemprop="image" content="http://mathayward.com/static/images/social/default.jpg"/>
-        <meta property="article:published_time" content="2013-08-01T18:20:0+00:00">
+        <meta property="article:published_time" content="2013-08-01T18:20:00+00:00">
 
 
         <!-- Twitter Card -->
@@ -48,8 +48,18 @@
     </head>
     <body>
         <b id="#top"></b>
-        <header class="header">
-            <h1>Mat Hayward</h1>
+        <header class="header" itemscope itemtype="http://data-vocabulary.org/Person">
+            <h1 itemprop="name">Mat Hayward</h1>
+            <div class="layout--hidden">
+                <a href="http://www.mathayward.com" itemprop="url">www.mathayward.com</a>.
+                <span itemprop="address" itemscope
+                itemtype="http://data-vocabulary.org/Address">
+                <span itemprop="locality">Nottingham</span>
+                <span itemprop="country-name">United Kingdom</span>
+                </span>
+                <span itemprop="title">Front-end developer</span>
+                <span itemprop="affiliation">Erskine Design</span>
+            </div>
             <nav class="nav">
                 <a href="/" class="nav__item" title="Ramblings and such">Read</a> |
                 <!--<a href="work" class="nav__item" title="Details of where I've worked with selected projects">Work</a> |-->
@@ -129,5 +139,18 @@
                 </nav>
             </footer>
         </article>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-580668-8']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
     </body>
 </html>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+        <title>Front End Developer ~ Mat Hayward</title>
+        <subtitle/>
+        <icon>
+            http://http://www.mathayward.com/static/images/icons/favicon.png
+        </icon>
+        <updated>2013-09-19T18:07:00+00:00</updated>
+        <id>http://www.theverge.com/feed.xml</id>
+        <link type="text/html" href="http://www.mathayward.com/" rel="alternate"/>
+        <entry>
+            <title>Behind the scenes</title>
+            <content type="html">
+                <img src="http://mathayward.com/static/images/blog/behind-the-scenes.jpg" alt="" />
+                <p class="lead">A while back I started working on a pretty nice, but simple, interactive HTML5 video.</p>
+                <a href="http://mathayward.com/behind-the-scenes">Read on</a>
+            </content>
+            <link href="http://mathayward.com/behind-the-scenes" type="text/html" rel="alternate" />
+            <id>http://mathayward.com/behind-the-scenes</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-09-19T18:07:00+00:00</published>
+        </entry>
+        <entry>
+            <title>Teach me web design</title>
+            <content type="html">
+                <p class="lead">As a web developer of some 10 years, there are two things I'm regularly asked by friends and acquaintances: "Can you build me a website? and "Can you teach me web design?"</p>
+                 <p>The answer to the first question has changed a bit over the years from "Yes, for a price" to "No, but I know someone who can". I've come to value my free time more and more as I've got older.</p>
+                <a href="http://mathayward.com/teach-me-web-design">Read on</a>
+            </content>
+            <link href="http://mathayward.com/teach-me-web-design" type="text/html" rel="alternate" />
+            <id>http://mathayward.com/teach-me-web-design</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-08-29T16:34:00+00:00</published>
+        </entry>
+        <entry>
+            <title>Tweet</title>
+            <content type="html">
+                <p class="lead">RT <a href="http://www.twitter.com/erskinedesign">@erskinedesign</a> Nottingham folks! We’ve planned a little breakfast event with two great speakers on web design and development — <a href="http://erskinedesign.com/blog/erskine-breakfast/">erskinedesign.com/blog/erskine-b...</a></p>
+                <a href="https://twitter.com/erskinedesign/status/367678650231316480">View on Twitter</a>
+            </content>
+            <link href="https://twitter.com/erskinedesign/status/367678650231316480" type="text/html" rel="alternate" />
+            <id>https://twitter.com/erskinedesign/status/367678650231316480</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-08-14T17:53:00+00:00</published>
+        </entry>
+        <entry>
+            <title>A rant about SEO</title>
+            <content type="html">
+                <p class="lead">SEO shouldn't exist. In a perfect world, there would be no place for Brian the Search Engine Optimisation Consultant* or any of his cronies.</p>
+                <p>Every client includes it on a brief, 'first page rantnking', 'top of Google'. That's easy. Almost every page on every site on the internet is top of Google, if the search term is specific enough. But that's not what they want. What they really want is conversions.</p>
+                <a href="http://mathayward.com/a-rant-about-seo">Read on</a>
+            </content>
+            <link href="http://mathayward.com/a-rant-about-seo" type="text/html" rel="alternate" />
+            <id>http://mathayward.com/a-rant-about-seo</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-08-01T18:20:00+00:00</published>
+        </entry>
+        <entry>
+            <title>Tweet</title>
+            <content type="html">
+                <p class="lead">So not only were Derby the worst top-flight team in history, we were also the first team to concede a league goal! <a href="http://www.bbc.co.uk/sport/0/football/23397062">bbc.co.uk/sport/0/footba...</a></p>
+                <a href="https://twitter.com/mathaywarduk/status/361853239857123328">View on Twitter</a>
+            </content>
+            <link href="https://twitter.com/mathaywarduk/status/361853239857123328" type="text/html" rel="alternate" />
+            <id>https://twitter.com/mathaywarduk/status/361853239857123328</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-07-29T15:18:00+00:00</published>
+        </entry>
+        <entry>
+            <title>Tweet</title>
+            <content type="html">
+                <p class="lead">Today's <a href="https://twitter.com/search?q=%23musicmixup&amp;src=hash">#musicmixup</a> at <a href="http://www.twitter.com/erskinedesign">@erskinedesign</a> is Destiny's Child and Beastie Boys. Not sure which I like more...</p>
+                <a href="https://twitter.com/mathaywarduk/status/352439427303346176">View on Twitter</a>
+            </content>
+            <link href="https://twitter.com/mathaywarduk/status/352439427303346176" type="text/html" rel="alternate" />
+            <id>https://twitter.com/mathaywarduk/status/352439427303346176</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-07-03T15:31:00+00:00</published>
+        </entry>
+        <entry>
+            <title>Tweet</title>
+            <content type="html">
+                <p class="lead">Currently two job openings in Erskine's Nottingham office (Designer &amp; Project Manager). Fancy it? <a href="http://erskinedesign.com/jobs/">erskinedesign.com/jobs/</a></p>
+                <a href="https://twitter.com/mathaywarduk/status/336526205924827136">View on Twitter</a>
+            </content>
+            <link href="https://twitter.com/mathaywarduk/status/336526205924827136" type="text/html" rel="alternate" />
+            <id>https://twitter.com/mathaywarduk/status/336526205924827136</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-05-20T17:57:00+00:00</published>
+        </entry>
+        <entry>
+            <title>Tweet</title>
+            <content type="html">
+                <p class="lead">Tribe Latest - Time to get your shades on and start selling <a href="http://t.co/LXktEQgqF2">createsend.com/t/r-036A7F4F19...</a></p>
+                <a href="https://twitter.com/mathaywarduk/status/329590037769515009">View on Twitter</a>
+            </content>
+            <link href="https://twitter.com/mathaywarduk/status/329590037769515009" type="text/html" rel="alternate" />
+            <id>https://twitter.com/mathaywarduk/status/329590037769515009</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-05-01T14:36:00+00:00</published>
+        </entry>
+        <entry>
+            <title>The responsive web</title>
+            <content type="html">
+                <p class="lead">Last month Craig and I gave a talk at Second Wednesday, a monthly Nottingham-based event for creative and digital people, entitled The Responsive Web.</p>
+                <a href="http://mathayward.com/the-responsive-web">Read on</a>
+            </content>
+            <link href="http://mathayward.com/the-responsive-web" type="text/html" rel="alternate" />
+            <id>http://mathayward.com/the-responsive-web</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-04-16T14:42:00+00:00</published>
+        </entry>
+        <entry>
+            <title>Tweet</title>
+            <content type="html">
+                <p class="lead">Been working on a pretty nifty HTML5 interactive video today. Keep 'em peeled. <a href="https://twitter.com/search?q=%flashisdead&amp;src=hash">#flashisdead</a></p>
+                <a href="https://twitter.com/mathaywarduk/status/321298599831035904">View on Twitter</a>
+            </content>
+            <link href="https://twitter.com/mathaywarduk/status/321298599831035904" type="text/html" rel="alternate" />
+            <id>https://twitter.com/mathaywarduk/status/321298599831035904</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-04-08T17:28:00+00:00</published>
+        </entry>
+        <entry>
+            <title>Responsive email newsletters</title>
+            <content type="html">
+                <p class="lead">I recently wrote a feature about responsive email design for Creative Bloq, an online magazine covering 3D, graphic design, illustration, web design.</p>
+                <a href="http://mathayward.com/responsive-email-newsletter">Read on</a>
+            </content>
+            <link href="http://mathayward.com/responsive-email-newsletter" type="text/html" rel="alternate" />
+            <id>http://mathayward.com/responsive-email-newsletter</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-02-27T12:17:00+00:00</published>
+        </entry>
+        <entry>
+            <title>Are you alienating half of your audience?</title>
+            <content type="html">
+                <p class="lead">There are always buzzwords and phrases going around the industry and one buzzphrase you will hear cropping up more and more over the next year will be 'Responsive Design'. So what is it and what’s the big deal?</p>
+                <a href="http://mathayward.com/are-you-alienating-half-of-your-audience">Read on</a>
+            </content>
+            <link href="http://mathayward.com/are-you-alienating-half-of-your-audience" type="text/html" rel="alternate" />
+            <id>http://mathayward.com/are-you-alienating-half-of-your-audience</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2013-02-14T13:07:00+00:00</published>
+        </entry>
+        <entry>
+            <title>What's behind the mask?</title>
+            <content type="html">
+                <p class="lead">Rob Antill recently launched his website showcasing his talent for Stereographic photography. By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit.</p>
+                <a href="http://mathayward.com/whats-behind-the-mask">Read on</a>
+            </content>
+            <link href="http://mathayward.com/whats-behind-the-mask" type="text/html" rel="alternate" />
+            <id>http://mathayward.com/whats-behind-the-mask</id>
+            <author>
+                <name>Mat Hayward</name>
+            </author>
+            <published>2012-03-02T11:13:00+00:00</published>
+        </entry>
+    </feed>

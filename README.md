@@ -10,7 +10,9 @@
 
 ## Running
 
-Clone repo and cd to directory
+Clone repository on local machine:
+
+    $ git clone git://github.com/mathaywarduk/.com.git
 
 In one terminal window:
 
@@ -19,3 +21,5 @@ In one terminal window:
 In another terminal window
 
     $ jekyll serve --watch 
+
+Navigate to http://localhost:4000

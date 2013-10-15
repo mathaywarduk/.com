@@ -14,8 +14,8 @@ Clone repo and cd to directory
 
 In one terminal window:
 
-$ compass watch
+ $ compass watch
 
 In another terminal window
 
-$ jekyll serve --watch 
+ $ jekyll serve --watch 

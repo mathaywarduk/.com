@@ -1,8 +1,8 @@
 ---
 type: tweet
 date: 2013-04-08 17:28:00
-pub-date: 2013-04-08T17:28
+pub-time: 2013-04-08T17:28
 url-out: https://twitter.com/mathaywarduk/status/321298599831035904
 ---
 
-Been working on a pretty nifty HTML5 interactive video today. Keep 'em peeled. [#flashisdead](https://twitter.com/search?q=%flashisdead&amp;src=hash)
+Been working on a pretty nifty HTML5 interactive video today. Keep 'em peeled. [#flashisdead](https://twitter.com/search?q=%23flashisdead&amp;src=hash)

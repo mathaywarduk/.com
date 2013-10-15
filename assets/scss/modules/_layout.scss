@@ -33,7 +33,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         @include rems(border-radius, 10, 10, 0, 0);
-        @include rems(margin-top, 360);
+        @include rems(margin-top, 260);
         position: relative;
         z-index: 2;
     }

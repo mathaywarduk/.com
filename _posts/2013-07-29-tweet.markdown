@@ -1,7 +1,7 @@
 ---
 type: tweet
 date: 2013-07-29 15:18:00
-pubdate: 2013-07-29T15:18
+pub-time: 2013-07-29T15:18
 url-out: https://twitter.com/mathaywarduk/status/361853239857123328
 ---
 

@@ -1,7 +1,7 @@
 ---
 type: tweet
 date: 2013-08-14 17:06:00
-pub-date: 2013-08-14T17:06
+pub-time: 2013-08-14T17:06
 url-out: https://twitter.com/erskinedesign/status/367678650231316480
 ---
 

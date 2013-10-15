@@ -3,12 +3,11 @@
 ///////////////////
 
 $circle__width: 200 !default;
-$circle__width--large: 300 !default;
 
 .header {
     background-color: $color--white;
     @include box-shadow(-2px -2px 2px rgba(0, 0, 0, 0.2));
-    @include rems(padding, 40, 20);
+    @include rems(padding, 60, 20, 40, 20);
     border-radius: 50%;
     @include rems(height, $circle__width);
     @include rems(width, $circle__width);
@@ -21,20 +20,14 @@ $circle__width--large: 300 !default;
         z-index: 1;
         left: 50%;
         @include rems(top, 0);
-        @include rems(padding, 100, 40, 40, 40);
-        @include rems(margin-left, -($circle__width--large/2));
-        @include rems(height, $circle__width--large);
-        @include rems(width, $circle__width--large);
+        @include rems(margin-left, -($circle__width/2));
 
     }
 
     h1 {
         text-align: center;
-        @include text(36, 32, $font__base--serif);
-        @include rems(padding, 0, 20);
-        @include respond-to("small and above") {
-            @include rems(padding, 0, 40);
-        }
+        @include text(30, 28, $font__base--serif);
+        @include rems(padding, 0, 10);
     }
 
 }

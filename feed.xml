@@ -30,9 +30,11 @@ layout: none
         <entry>
             <title>{{ post.title }}</title>
             <content type="html">
-                <![CDATA[<img src="http://mathayward.com/static/images/{{ post.share-img }}" alt="{{ post.title }}" />
-                {{ post.content | markdownify }}
-                <a href="http://mathayward.com/{{ post.url }}">Read on</a>]]>
+                <![CDATA[
+                    <img src="http://mathayward.com/static/images/{{ post.share-img }}" alt="{{ post.title }}" />
+                    {{ post.content | markdownify }}
+                    <a href="http://mathayward.com/{{ post.url }}">Read on</a>
+                ]]>
             </content>
             <link href="http://mathayward.com/{{ post.url }}" type="text/html" rel="alternate" />
             <id>http://mathayward.com/{{ post.url }}</id>

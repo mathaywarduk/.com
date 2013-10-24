@@ -4,7 +4,7 @@
     background-image: image-url("icons/article.png");
     background-repeat: no-repeat;
     @include rems(background-size, 45);
-    background-position-x: center;
+    background-position: center 35px;
     @include rems(background-position-y, 35);
     @include rems(padding-top, 100);
 

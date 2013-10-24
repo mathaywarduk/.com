@@ -12,13 +12,13 @@ body {
     background-size: cover;
     background-attachment: fixed;
 
+    * {
+        @include box-sizing(border-box);
+    }
+
     @include respond-to("small and above") {
         background-image: url("../images/bgs/bg.jpg");
     }
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .content-block {

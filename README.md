@@ -22,4 +22,4 @@ In another terminal window
 
     $ jekyll serve --watch 
 
-Navigate to [http://localhost:4000](http://localhost:4000)
+Navigate to [http://localhost:4000](http://localhost:6000)

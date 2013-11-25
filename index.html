@@ -35,6 +35,8 @@ pub-time: 2013-09-19T18:07
         {% if post.posted-on %}
 
         {% capture posted_on %}Posted on <a href="{{ post.posted-on-url }}">{{ post.posted-on }}</a> on {% endcapture %}
+        {% else %}
+        {% capture posted_on %}{% endcapture %}
 
         {% endif %}
 

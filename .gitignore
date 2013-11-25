@@ -1,4 +1,5 @@
-.sass-cache/
-_drafts/
-_site/
-static/css/
+_drafts
+_site
+.sass-cache
+static/images/blog/web_celeb_1*
+static/css

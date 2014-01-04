@@ -107,7 +107,6 @@ pre {
 .intro {
     border-bottom: 1px dotted $color__neutral--light;
     @include rems(padding, 0, 15, 30);
-    @extend %mh-push-padding;
 
     @include respond-to("small and above") {
         @include rems(padding, 0, 30, 30);

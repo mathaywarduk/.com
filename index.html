@@ -9,6 +9,13 @@ share-img: default.jpg
 pub-time: 2013-09-19T18:07
 ---
 
+    <div class="content-block intro">
+        <p>I&rsquo;m a front-end developer working at <a href="http://www.erskinedesign.com">Erskine&nbsp;Design</a> in Nottingham.</p>
+        <p>Have a read of some of my rants and ramblings&nbsp;below.</p>
+    </div>
+
+    <div class="content-wrapper">
+
     {% for post in site.posts %}
 
         {% comment %} Produce a date string {% endcomment %}
@@ -43,29 +50,35 @@ pub-time: 2013-09-19T18:07
 
         {% if post.type == 'tweet' %}
 
-        <article>
+        <article class="posts-list__item--twitter">
             <header class="posts-list__header posts-list__header--twitter">
                 <h1>Tweet</h1>
                 <h2 class="post__date"><a href="{{ post.url-out }}">{{ date_string }}</a></h2>
             </header>
-            <section class="post__content">
+            <section class="posts-list__content posts-list__content--twitter">
                 {{ post.content }}
-                <a href="{{ post.url-out }}" class="btn btn--cta btn--forward">View on Twitter</a>
+                <div class="post__link">
+                    <a href="{{ post.url-out }}" class="btn btn--cta btn--forward">View on Twitter</a>
+                </div>
             </section>
         </article>
 
         {% else %}
 
-        <article>
+        <article class="posts-list__item">
             <header class="posts-list__header">
-                <h1><a href="{{ post.url }}#article-top">{{ post.title }}</a></h1>
-                <h2 class="post__date">{{ posted_on }}<a href="{{ post.url }}#article-top">{{ date_string }}</a></h2>
+                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                <h2 class="post__date">{{ posted_on }}<a href="{{ post.url }}">{{ date_string }}</a></h2>
             </header>
-            <section class="post__content">
+            <section class="posts-list__content">
                 {{ post.snippet | markdownify }}
-                <a href="{{ post.url }}#article-top" class="btn btn--cta btn--forward">Read on</a>
+
+                <div class="post__link">
+                    <a href="{{ post.url }}" class="btn btn--cta btn--forward">Read on</a>
+                </div>
             </section>
         </article>
 
         {% endif %}
     {% endfor %}
+    </div>

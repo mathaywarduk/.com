@@ -3,7 +3,7 @@
 //////////////////
 
 .media {
-    @include rems(padding, 20);
+    @include rems(padding, 20, 0);
     display: inline-block;
 }
 
@@ -24,25 +24,25 @@
 }
 
 .media__caption {
-    float: right;
-    border-left: 2px solid $color__primary;
-    width: auto;
-    display: inline;
     font-style: italic;
     @include rems(margin, 10, 0);
-    @include rems(padding, 0, 5, 0, 10);
-    @include text($text__size--delta, $text__line--delta, $font__base--serif);
+    @include text($text__size--gamma, $text__line--gamma, $font__base--headings);
+    @include respond-to("small and above") {
+        float: right;
+        border-left: 2px solid $color__primary;
+        width: auto;
+        display: inline;
+        @include rems(padding, 0, 5, 0, 10);
+    }
 }
 
 .media__video {
-    
     position: relative;
     padding-bottom: 56.25%;
     @include rems(padding-top, 30);
     @include rems(margin, 10, 0, 20, 0);
     height: 0;
     overflow: hidden;
-
 
     iframe,
     object,

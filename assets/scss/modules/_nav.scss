@@ -7,17 +7,30 @@
     z-index: 2;
     color: $color__neutral;
     font-weight: 200;
-    text-align: center;
-    @include rems(margin-top, 0);
-    font-family: $font__base--serif;
+    @include rems(padding-top, 5);
+    @include rems(padding-bottom, 5);
+    @include rems(margin-top, 15);
+    @extend %mh-pushpadding;
+    border-top: 1px solid $color__neutral--light;
+    border-bottom: 1px solid $color__neutral--light;
+    font-family: $font__base--headings;
+
 
     .nav__item {
         @include rems(padding, 5, 7);
-        font-family: $font__base--sans;
+        font-family: $font__base--body;
         font-size: 80%;
         font-style: normal;
         text-transform: uppercase;
         text-decoration: underline;
+
+        &:first-child {
+            @include rems(margin-left, -7);
+        }
+        
+        @include respond-to("large only") {
+            font-size: 100%;
+        }
     }
 
 }
@@ -26,7 +39,7 @@
 
 .nav--footer {
 
-    color: $color--white;
+    color: $color__neutral--dark;
     text-align: center;
 
     p {
@@ -35,13 +48,13 @@
 
     .nav__item {
 
-        color: $color__highlight--light;
+        color: $color__highlight--dark;
         text-decoration: none;
         font-weight: 200;
 
         &:hover,
         &:focus {
-            color: $color__highlight--super-light;
+            color: $color__highlight;
         }
     }
 

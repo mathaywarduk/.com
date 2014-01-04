@@ -20,8 +20,8 @@
 // 1.1 Text //
 //////////////
 
-$font__base--serif: "adobe-garamond-pro", serif;
-$font__base--sans: "pt-sans",sans-serif;
+$font__base--headings: "adobe-garamond-pro", serif;
+$font__base--body: "acta-display", serif;
 $font__base--mono: "courier", "courier new", monospace;
 
 $text__base-line: 20;
@@ -35,7 +35,7 @@ $text__size--delta: 15;
 
 $text__line--alpha: 44;
 $text__line--beta: 24;
-$text__line--gamma: 28;
+$text__line--gamma: 30;
 $text__line--delta: 22;
 
 $text__base-margin: 15;

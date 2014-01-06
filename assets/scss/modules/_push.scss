@@ -1,0 +1,33 @@
+@mixin push-padding($l, $r: $l) {
+    @include rems(margin-left, -$l);
+    @include rems(margin-right, -$r);
+    @include rems(padding-left, $l);
+    @include rems(padding-right, $r);
+}
+
+%mh-pushpadding {
+    @include push-padding(15);
+    @include respond-to("small and above") {
+        @include push-padding(30);
+    }
+}
+
+%push-text {
+    @include respond-to("small and above") {
+        padding-right: 15%;
+    }
+
+    @include respond-to("medium and above") {
+        padding-right: 35%;        
+    }
+
+    @include respond-to("large and above") {
+        padding-right: 20%;
+        padding-left: 20%;        
+    }
+
+    @include respond-to("xlarge and above") {
+        padding-right: 30%;
+        padding-left: 30%;        
+    }
+}

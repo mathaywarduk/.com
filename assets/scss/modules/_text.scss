@@ -9,8 +9,6 @@
     white-space: nowrap;
 }
 
-
-
 html {
     font-size: $text__base-font-size * 1px;
 }
@@ -18,11 +16,11 @@ html {
 body {
     font-size: 100%;
     line-height: $text__base-line/$text__base-font-size;
-    font-family: $font__base--sans;
+    font-family: $font__base--body;
     color: $color__neutral--dark;
 }
 
-@mixin text($size, $line, $family: $font__base--sans) {
+@mixin text($size, $line, $family: $font__base--body) {
     font-size: $size * 1px;
     font-size: calc-rem($size);
     line-height: ($line/$size);
@@ -32,7 +30,7 @@ body {
 }
 
 h1 {
-    @include text($text__size--alpha, $text__line--alpha, $font__base--serif);
+    @include text($text__size--alpha, $text__line--alpha, $font__base--headings);
     @include rems(margin-bottom, $text__base-margin);
     color: $color--black;
     font-style: italic;
@@ -41,7 +39,7 @@ h1 {
 h2 {
     @include text($text__size--beta, $text__line--beta);
     color: $color__highlight;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     border-bottom: 1px dotted;
     @include rems(margin-bottom, ($text__base-margin/3));
     @include rems(margin-top, ($text__base-margin * 2));
@@ -55,20 +53,13 @@ h3 {
 p {
     @include text($text__size--gamma, $text__line--gamma);
     @include rems(margin-bottom, $text__base-margin);
-    font-weight: 200;
 
     blockquote & {
         margin: 0;
+        font-size: 150%;
+        font-style: italic;
+        font-weight: 200;
     }
-}
-
-.lead, .post__content > p:first-of-type {
-    font-size: 150%;
-    font-family: $font__base--serif;
-    font-style: italic;
-    border-top: 1px dotted $color__neutral;
-    border-bottom: 1px dotted $color__neutral;
-    @include rems(padding, 10, 15);
 }
 
 small {
@@ -76,9 +67,11 @@ small {
 }
 
 blockquote {
-    @include rems(padding, 10, 15, 10, 15);
-    @include rems(margin, 0, 0, $text__base-margin, $text__base-margin);
-    border-left: 3px solid $color__primary--light;
+    @include rems(margin, 30, 0, ($text__base-margin * 2), 0);
+    border-top: 1px dotted $color__neutral;
+    border-bottom: 1px dotted $color__neutral;
+    @include rems(padding, 10, 15);
+    @include rems(max-width, 600);
 }
 
 em {
@@ -91,6 +84,7 @@ strong {
 
 a {
     color: $color__primary--light;
+    word-wrap: break-word;
 
     &:hover,
     &:focus {
@@ -99,10 +93,10 @@ a {
 }
 
 pre {
+    background-color: $color--black;
     @include rems(margin-bottom, ($text__base-margin * 1.5));
     overflow: auto;
     @include rems(padding, $text__base-margin);
-    border: 1px solid $color__highlight--super-light;
 
     code {
         @include text($text__size--delta, $text__line--delta, $font__base--mono);
@@ -110,17 +104,26 @@ pre {
     }
 }
 
-.hr {
-        height: 1px;
-        font-size: 0;
-        line-height: 0;
-        display: block;
-        clear: both;
-        background-color: $color__neutral;
-        @include rems(margin, 40, 0);
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-        border: none;
+.intro {
+    border-bottom: 1px dotted $color__neutral--light;
+    @include rems(padding, 0, 15, 30);
 
+    @include respond-to("small and above") {
+        @include rems(padding, 0, 30, 30);
+    }
+
+    p {
+        font-size: 150%;
+        font-weight: 200;
+        font-style: italic;
+        @extend %push-text;
+
+        @include respond-to("medium and above") {
+            font-size: 200%;
+        }
+
+        @include respond-to("large and above") {
+            text-align: center;
+        }
+    }
 }

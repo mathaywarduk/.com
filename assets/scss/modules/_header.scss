@@ -2,72 +2,27 @@
 // Header styles //
 ///////////////////
 
-$circle__width: 200 !default;
-
 .header {
-    background-color: $color--white;
-    @include box-shadow(-2px -2px 2px rgba(0, 0, 0, 0.2));
-    @include rems(padding, 60, 20, 40, 20);
-    border-radius: 50%;
-    @include rems(height, $circle__width);
-    @include rems(width, $circle__width);
     @include rems(margin-top, 30);
-    margin-left: auto;
-    margin-right: auto;
+    @include rems(padding, 0, 15);
 
     @include respond-to("small and above") {
-        position: fixed;
-        z-index: 1;
-        left: 50%;
-        @include rems(top, 0);
-        @include rems(margin-left, -($circle__width/2));
+        @include rems(padding, 0, 30);
+    }
 
+    @include respond-to("large and above") {
+        text-align: center;
     }
 
     h1 {
-        text-align: center;
-        @include text(30, 28, $font__base--serif);
-        @include rems(padding, 0, 10);
-    }
-
-}
-
-.header__sub {
-    @include opacity(0);
-    @include transition(opacity .5s);
-    background-color: $color--black;
-    @include rems(padding, 80, 40, 40, 40);
-    position: absolute;
-    top: 0;
-    left: 0;
-    @include rems(border-radius, ($circle__width/2));
-    @include rems(height, $circle__width);
-    @include rems(width, $circle__width);
-    z-index: 3;
-
-    h2 {
-        color: $color--white;
-        @include text($text__size--gamma, $text__line--gamma, $font__base--serif);
+        @include text(30, 28, $font__base--headings);
         font-style: italic;
-        text-align: center;
-    }
+        @include rems(margin-bottom, 5);
 
-    h3 {
-        text-align: center;
-        @include text($text__size--delta, $text__line--gamma);
-        color: $color--white;
-        font-weight: 200;
-
-        a {
-            font-style: italic;
-            @include text($text__size--gamma, $text__line--gamma, $font__base--serif);
+        @include respond-to("large and above") {
+            @include rems(font-size, $text__size--alpha);
+        
         }
     }
 
-    .hr {
-        background-color: $color--white;
-        @include rems(margin-top, 25);
-        @include rems(margin-bottom, 25);
-        width: 30%;
-    }
 }

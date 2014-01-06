@@ -56,8 +56,6 @@ Buttons
 
 
 .btn--cta {
-    margin-left: auto;
-    margin-right: auto;
     @include rems(width, 200);
     display: block;
     position: relative;

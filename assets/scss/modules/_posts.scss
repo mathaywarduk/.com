@@ -1,45 +1,91 @@
-.post__header {
-    @include rems(padding, 30, 15, 20);
+%post__header {
+    @include rems(padding, 0, 0, 0, 60);
+    @include rems(margin, 50, 0, 40, 0);
 
     background-image: image-url("icons/article.png");
     background-repeat: no-repeat;
     @include rems(background-size, 45);
-    background-position: center 35px;
-    @include rems(background-position-y, 35);
-    @include rems(padding-top, 100);
-
-    @include respond-to("small and above") {
-        @include rems(padding, 100, 30, 20);
-    }
+    @include rems(background-position, 0, 5);
 
     h1 {
         @include rems(margin-bottom, 5);
-        text-align: center;
+    }
+
+    @include respond-to("small and above") {
+        @include rems(padding, 0, 0, 0, 60);
     }
 }
 
+%post__content {
+    @include rems(padding, 0, 0, 30);
+}
+
+
+
+
+
+.post {
+    @include rems(padding, 0, 15);
+
+    @include respond-to("small and above") {
+        @include rems(padding, 0, 30);
+    }
+}
+
+.post__header {
+    @extend %post__header;
+}
+
 .post__date {
-    @include text($text__size--delta, $text__line--delta, $font__base--serif);
-    text-align: center;
+    @include text($text__size--delta, $text__line--delta, $font__base--headings);
     text-transform: none;
     margin: 0;
     border: none;
 }
 
 .post__content {
-    @include rems(padding, 0, 15, 30);
+    @extend %post__content;
+}
 
-    @include respond-to("small and above") {
-        @include rems(padding, 0, 30, 30);
+.post__text-wrapper {
+    @extend %push-text;
+}
+
+.post__link {
+    border-bottom: 1px dotted $color__neutral--light;
+    @include rems(margin-top, 10);
+    @include rems(margin-bottom, 30);
+    @include rems(padding-top, 10);
+    @include rems(padding-bottom, 10);
+    @extend %mh-pushpadding;
+
+    .post & {
+        @include respond-to("large and above") {
+            padding-left: 20%;
+
+            a {
+                @include rems(margin-left, 30);
+            }
+        }
+        @include respond-to("xlarge and above") {
+            padding-left: 30%;
+        }
     }
 }
 
-.post__footer {
-    background-color: $color--black;
-    @include rems(padding, 30, 15);
+#disqus_thread {
+    @extend %push-text;
 
-    @include respond-to("small and above") {
-        @include rems(padding, 30);
+}
+
+.post__footer {
+    clear: both;
+    border-top: 1px dotted $color__neutral--light;
+    @include rems(padding-top, 30);
+    @include rems(padding-bottom, 30);
+
+    .post & {
+        @extend %mh-pushpadding;
     }
 }
 
@@ -47,12 +93,48 @@
 // POSTS LIST
 
 .posts-list {
+    .content-wrapper {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    article {
+        @include rems(padding, 0, 15);
+
+        @include respond-to("small and above") {
+            @include rems(padding, 0, 30);
+        }
+        @include respond-to("medium and above") {
+            float: left;
+            width: 48%;
+            margin-left: 2%;
+
+            &:nth-child(odd) {
+                clear: left;
+                margin-left: 0;
+            }
+        }
 
 
+        @include respond-to("large and above") {
+            width: percentage(94/300);
+
+            &:nth-child(odd) {
+                clear: none;
+                margin-left: 2%;
+            }
+
+            &:nth-child(3n+1) {
+                clear: left;
+                margin-left: 0;
+            }
+
+        }
+    }
 }
 
 .posts-list__header {
-    @extend .post__header;
+    @extend %post__header;
 
     h1 {
         a {
@@ -66,8 +148,7 @@
     }
 
     .post__date {
-        @include text($text__size--delta, $text__line--delta, $font__base--serif);
-        text-align: center;
+        @include text($text__size--delta, $text__line--delta, $font__base--headings);
         a {
             color: $color__highlight;
             text-decoration: none;
@@ -82,9 +163,31 @@
 
 .posts-list__header--twitter {
     background-image: image-url("icons/twitter.png");
-    @include rems(padding-top, 80);
 }
 
-.posts-lists__content {
-    @extend .post__content;
+.posts-list__content {
+    @extend %post__content;
+    padding-bottom: 0;
+
+    .post__link {
+        margin-bottom: 0;
+
+        article:last-child & {
+            border-bottom: 0;
+        }
+
+        @include respond-to("medium and above") {
+            border-bottom: 0;
+            @include rems(margin-bottom, 30);
+        }
+    }
+}
+
+.posts-list__content--twitter {
+
+    p {
+        font-size: 125%;
+        font-style: italic;
+        font-weight: 200;
+    }
 }

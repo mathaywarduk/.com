@@ -2,43 +2,50 @@
 // Layout Styles //
 ///////////////////
 
-body, html {
-    min-width: 100%;
-    min-height: 100%;
+body {
+    @include rems(min-width, 300);
+    @include box-sizing(border-box);
 }
 
 body {
-    background-image: url("../images/bgs/bg_sml.jpg");
-    background-size: cover;
+    background-image: image-url("bgs/bg_sml.jpg");
+    @include rems(background-size, 15);
+    @include rems(padding, 0, 0, 0, 15);
     background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-position: bottom left;
 
     * {
         @include box-sizing(border-box);
     }
 
     @include respond-to("small and above") {
-        background-image: url("../images/bgs/bg.jpg");
+        background-image: image-url("bgs/bg.jpg");
     }
 }
 
-.content-block {
-    background-color: $color--white;
-    @include box-shadow(-2px -2px 2px rgba(0, 0, 0, 0.2));
-    @include rems(margin, 30, 0, 0);
+.content-wrapper {
+    overflow: hidden;
+}
 
-    @include respond-to("small and above") {
-        width: 75%;
-        @include rems(min-width, 480);
-        @include rems(max-width, 760);
-        margin-left: auto;
-        margin-right: auto;
-        @include rems(border-radius, 10, 10, 0, 0);
-        @include rems(margin-top, 260);
-        position: relative;
-        z-index: 2;
+.content-block {
+
+    &.intro {
+        @include rems(margin-top, 30);
     }
+
 }
 
 .layout--hidden {
     display: none;
+}
+
+::selection, {
+    background-color: $color__primary--light;
+    color: $color--white;
+}
+
+::-moz-selection {
+    background-color: $color__primary--light;
+    color: $color--white;
 }

@@ -1,0 +1,14 @@
+.island {
+    background-color: $color__highlight--dark;
+    @include border-radius(2px);
+    @include rems(padding, 8, 10, 7);
+    color: $color--white;
+
+    a {
+        color: $color--white;
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+}

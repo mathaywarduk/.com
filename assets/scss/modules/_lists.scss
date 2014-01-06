@@ -1,0 +1,16 @@
+ul {
+    > li {
+        @include rems(padding-left, 15);
+        position: relative;
+
+        &:before {
+            content: "\002B";
+            position: absolute;
+            @include rems(top, 3);
+            left: 0;
+            font-weight: bold;
+            color: $color__highlight;
+            @include rems(font-size, $text__size--beta);
+        }
+    }
+}

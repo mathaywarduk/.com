@@ -1,14 +1,13 @@
-
+{% assign divider = " ~ "%}
+{% if page.content-type == 'posts-list' %}
+{% assign divider = '' %}
+{% endif %}
+{% capture title %}{{ page.title }}{{ divider }}Front-end Developer ~ Mat Hayward{% endcapture %}
 <!DOCTYPE html>
 <html dir="ltr" lang="en-GB" class="rems">
     <head>
-
-        {% assign divider = " ~ "%}
-        {% if page.content-type == 'posts-list' %}
-        {% assign divider = '' %}
-        {% endif %}
-        {% capture title %}{{ page.title }}{{ divider }}Front-end Developer ~ Mat Hayward{% endcapture %}
         <title>{{ title }}</title>
+        {% if page.posted-on-url %}<link rel="canonical" href="{{ page.posted-on-url }}"/>{% endif %}
 
         <!-- Icons -->
         <link rel="shortcut icon" type="image/png" href="/static/images/icons/favicon.png" />
@@ -58,14 +57,15 @@
     <body>
         <b id="top"></b>
         <header class="header" itemscope itemtype="http://data-vocabulary.org/Person">
-            <h1 itemprop="name">Mat Hayward</h1>
-            <div class="subheader"><span itemprop="title">Front-ender</span> @ <span itemprop="affiliation">Erskine Design</span></div>
+            <h1 itemprop="name"><a href="/">Mat Hayward</a></h1>
+            <div class="subheader">{{ site.strapline }}</div>
             <div class="layout--hidden">
                 <a href="http://www.mathayward.com" itemprop="url">www.mathayward.com</a>.
                 <span itemprop="address" itemscope
                 itemtype="http://data-vocabulary.org/Address">
                 <span itemprop="locality">Nottingham</span>
                 <span itemprop="country-name">United Kingdom</span>
+                <span itemprop="title">Front-end developer</span> at <span itemprop="affiliation">Erskine Design</span>
                 </span>
             </div>
             <nav class="nav">

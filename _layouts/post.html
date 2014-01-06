@@ -19,6 +19,17 @@ layout: default
 {% endcase %}
 
 {% capture date_string %}{{ page.date | date: "%A" }} {{ d }}{{ suffix }} {{ page.date | date: "%B" }} {{ page.date | date: "%Y" }}{% endcapture %}
+
+
+{% comment %} Check if posted on third-party website {% endcomment %}
+
+
+{% if page.posted-on %}
+
+{% capture posted_on %}This article was originally posted on {{ page.posted-on }}. <a href="{{ page.posted-on-url }}">Read the original</a>.{% endcapture %}
+
+{% endif %}
+
 <div class="post__text-wrapper">
     <header class="post__header">
         <h1>{{ page.title }}</h1>
@@ -28,6 +39,11 @@ layout: default
 
 <section class="post__content">
     <div class="post__text-wrapper">
+        {% if page.posted-on %}
+
+        <div class="post__callout island">{{ posted_on }}</div>
+
+        {% endif %}
         {{ content }}
     </div>
     <div class="post__link">

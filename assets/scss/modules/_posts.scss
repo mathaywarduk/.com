@@ -41,6 +41,20 @@
     text-transform: none;
     margin: 0;
     border: none;
+    
+    a {
+        color: $color__highlight;
+        text-decoration: none;
+
+        &:hover, &:focus {
+            color: $color__highlight--dark;
+        }
+    }
+}
+
+.post__callout {
+    @include rems(margin-bottom, 25);
+    font-style: italic; 
 }
 
 .post__content {
@@ -145,18 +159,6 @@
 
             &:hover, &:focus {
                 color: $color__neutral--dark;
-            }
-        }
-    }
-
-    .post__date {
-        @include text($text__size--delta, $text__line--delta, $font__base--headings);
-        a {
-            color: $color__highlight;
-            text-decoration: none;
-
-            &:hover, &:focus {
-                color: $color__highlight--dark;
             }
         }
     }

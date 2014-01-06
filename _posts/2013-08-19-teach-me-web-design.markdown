@@ -11,14 +11,14 @@ date: 2013-08-19 16:34:00
 pub-time: 2013-08-29T16:34
 
 share-img: "social/default.jpg"
-snippet: "As a web developer of some 10 years, there are two things I&rsquo;m regularly asked by friends and acquaintances: &ldquo;Can you build me a website?&rdquo; and &ldquo;Can you teach me web design?&rdquo;"
+snippet: "As a web developer of some 10 years, there are two things I&rsquo;m regularly asked by friends and acquaintances: <em>&ldquo;Can you build me a website?&rdquo;</em> and <em>&ldquo;Can you teach me web design?&rdquo;</em>"
 ---
 
-As a web developer of some 10 years, there are two things I&rsquo;m regularly asked by friends and acquaintances: &ldquo;Can you build me a website?&rdquo; and &ldquo;Can you teach me web design?&rdquo;
+As a web developer of some 10 years, there are two things I&rsquo;m regularly asked by friends and acquaintances: <em>&ldquo;Can you build me a website?&rdquo;</em> and <em>&ldquo;Can you teach me web design?&rdquo;</em>
 
-The answer to the first question has changed a bit over the years from &ldquo;Yes, for a price&rdquo; to &ldquo;No, but I know someone who can&rdquo;. I&rsquo;ve come to value my free time more and more as I&rsquo;ve got older. The answer to the other has always been:
+The answer to the first question has changed a bit over the years from <em>&ldquo;Yes, for a price&rdquo;</em> to <em>&ldquo;No, but I know someone who can&rdquo;</em>. I&rsquo;ve come to value my free time more and more as I&rsquo;ve got older. The answer to the other has always been:
 
-> “Sure, have you got 5 years?”
+> &ldquo;Sure, have you got 5 years?&rdquo;
 
 A number plucked arbitrarily from the air, but large enough to make a point; learning &lsquo;web design&rsquo; is not a quick thing.
 
@@ -34,9 +34,9 @@ This has got me thinking recently;
 
 First of all, I could only teach [HTML](http://www.w3.org/html/wg/drafts/html/master/) and [CSS](http://www.w3.org/TR/CSS/) to the latest W3C draft (and so I should) but unfortunately it would take an age to go through every little browser quirk and the preferred solution (if there is one).
 
-Secondly, Javascript is a much bigger fish than people give credit for and it has many uses. Within the 5 days it would most likely only be possible to touch the basics of DOM interaction, animation and AJAX. I wouldn&rsquo;t call this &ldquo;learning Javascript&rdquo;, it&rsquo;s more &ldquo;learning to use Javascript to enhance website interactions&rdquo; - but that&rsquo;s a bit of a mouthful.
+Secondly, Javascript is a much bigger fish than people give credit for and it has many uses. Within the 5 days it would most likely only be possible to touch the basics of DOM interaction, animation and AJAX. I wouldn&rsquo;t call this &lsquo;learning Javascript&rsquo;, it&rsquo;s more &lsquo;learning to use Javascript to enhance website interactions&rsquo; - but that&rsquo;s a bit of a mouthful.
 
-And I can only teach the way I work. This is important. In a small case where I might show someone the ropes, the fact that those ropes are Mat Hayward&trade; branded makes no difference to the industry; just another average developer to add to the pool. However, if someone (or someones) is teaching a whole bunch of people at once, churning out &ldquo;job-ready&rdquo; graduates and they&rsquo;ve all learnt to code in the same way, then what differentiates them from each other when they apply for those jobs? Nothing. So how can an employer make that choice? Personally, I&rsquo;d go to the person with some experience.
+And I can only teach the way I work. This is important. In a small case where I might show someone the ropes, the fact that those ropes are Mat Hayward&trade; branded makes no difference to the industry; just another average developer to add to the pool. However, if someone (or someones) is teaching a whole bunch of people at once, churning out &lsquo;job-ready&rsquo; graduates and they&rsquo;ve all learnt to code in the same way, then what differentiates them from each other when they apply for those jobs? Nothing. So how can an employer make that choice? Personally, I&rsquo;d go to the person with some experience.
 
 I think it&rsquo;s important to realise, if you&rsquo;re thinking of taking one (or more) of these courses that, although you&rsquo;ll no doubt learn a lot and will definitely be able to build a website when you&rsquo;ve finished, you should never be done learning. In this industry, that I love and hate in equal measures things change very quickly, and before you know it you&rsquo;re looking over your shoulder at the [young, up-and-coming kids](http://www.robinrendle.com) that make you question how much your experience actually counts for.
 

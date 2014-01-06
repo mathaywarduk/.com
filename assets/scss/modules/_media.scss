@@ -7,6 +7,13 @@
     display: inline-block;
 }
 
+
+.media--full {
+    &, .media__item {
+        width: 100%;
+    }
+}
+
 .media--right {
     float: right;
     margin: 0 0 calc-em(10) calc-em(10);
@@ -16,11 +23,14 @@
     float: left;
     margin: 0 calc-em(10) calc-em(10) 0;
 }
-
 .media__item {
     display: block;
     max-width: 100%;
-    @include box-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+    @include box-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));   
+}
+
+.media__item--noshadow {
+    box-shadow: none;
 }
 
 .media__caption {

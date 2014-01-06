@@ -39,7 +39,6 @@ h1 {
 h2 {
     @include text($text__size--beta, $text__line--beta);
     color: $color__highlight;
-    // text-transform: uppercase;
     border-bottom: 1px dotted;
     @include rems(margin-bottom, ($text__base-margin/3));
     @include rems(margin-top, ($text__base-margin * 2));
@@ -48,6 +47,8 @@ h2 {
 h3 {
     @include text($text__size--gamma, $text__line--delta);
     @include rems(margin-bottom, $text__base-margin);
+    font-weight: bold;
+    @include rems(margin-top, ($text__base-margin * 2));
 }
 
 p {

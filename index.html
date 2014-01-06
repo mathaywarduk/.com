@@ -10,8 +10,7 @@ pub-time: 2013-09-19T18:07
 ---
 
     <div class="content-block intro">
-        <p>I&rsquo;m a front-end developer working at <a href="http://www.erskinedesign.com">Erskine&nbsp;Design</a> in&nbsp;Nottingham.</p>
-        <p>Have a read of some of my rants and ramblings&nbsp;below.</p>
+        <p>Front-ender at <a href="http://www.erskinedesign.com">Erskine&nbsp;Design</a> / Uncle / Weekend&nbsp;goalkeeper / Handsome bastard.</p>
     </div>
 
     <div class="content-wrapper">
@@ -36,18 +35,6 @@ pub-time: 2013-09-19T18:07
         {% capture date_string %}{{ post.date | date: "%A" }} {{ d }}{{ suffix }} {{ post.date | date: "%B" }} {{ post.date | date: "%Y" }}{% endcapture %}
 
 
-        {% comment %} Check if posted on third-party website {% endcomment %}
-
-
-        {% if post.posted-on %}
-
-        {% capture posted_on %}Posted on <a href="{{ post.posted-on-url }}">{{ post.posted-on }}</a> on {% endcapture %}
-        {% else %}
-        {% capture posted_on %}{% endcapture %}
-
-        {% endif %}
-
-
         {% if post.type == 'tweet' %}
 
         <article class="posts-list__item--twitter">
@@ -68,7 +55,7 @@ pub-time: 2013-09-19T18:07
         <article class="posts-list__item">
             <header class="posts-list__header">
                 <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-                <h2 class="post__date">{{ posted_on }}<a href="{{ post.url }}">{{ date_string }}</a></h2>
+                <h2 class="post__date"><a href="{{ post.url }}">{{ date_string }}</a></h2>
             </header>
             <section class="posts-list__content">
                 {{ post.snippet | markdownify }}

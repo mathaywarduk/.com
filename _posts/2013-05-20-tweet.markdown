@@ -1,8 +1,0 @@
----
-type: tweet
-date: 2013-05-20 17:57:00
-pub-time: 2013-05-20T17:57
-url-out: https://twitter.com/mathaywarduk/status/336526205924827136
----
-
-Currently two job openings in Erskine's Nottingham office (Designer &amp; Project Manager). Fancy it? [erskinedesign.com/jobs/](http://erskinedesign.com/jobs/)

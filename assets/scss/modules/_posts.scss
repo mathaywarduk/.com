@@ -94,8 +94,10 @@
 
 .posts-list {
     .content-wrapper {
-        padding-left: 20%;
-        padding-right: 20%;
+        @include repsond-to("xlarge and above") {
+            padding-left: 20%;
+            padding-right: 20%;
+        }
     }
 
     article {

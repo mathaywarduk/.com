@@ -21,8 +21,13 @@
         padding-right: 35%;        
     }
 
-    @include respond-to("large only") {
+    @include respond-to("large and above") {
         padding-right: 20%;
         padding-left: 20%;        
+    }
+
+    @include respond-to("xlarge and above") {
+        padding-right: 30%;
+        padding-left: 30%;        
     }
 }

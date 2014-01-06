@@ -60,12 +60,15 @@
     @extend %mh-pushpadding;
 
     .post & {
-        @include respond-to("large only") {
+        @include respond-to("large and above") {
             padding-left: 20%;
 
             a {
                 @include rems(margin-left, 30);
             }
+        }
+        @include respond-to("xlarge and above") {
+            padding-left: 30%;
         }
     }
 }
@@ -90,6 +93,11 @@
 // POSTS LIST
 
 .posts-list {
+    .content-wrapper {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
     article {
         @include rems(padding, 0, 15);
 
@@ -108,7 +116,7 @@
         }
 
 
-        @include respond-to("large only") {
+        @include respond-to("large and above") {
             width: percentage(94/300);
 
             &:nth-child(odd) {

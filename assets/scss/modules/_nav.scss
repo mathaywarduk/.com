@@ -28,7 +28,7 @@
             @include rems(margin-left, -7);
         }
         
-        @include respond-to("large only") {
+        @include respond-to("large and above") {
             font-size: 100%;
         }
     }

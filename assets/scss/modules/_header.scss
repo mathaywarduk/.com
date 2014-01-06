@@ -10,7 +10,7 @@
         @include rems(padding, 0, 30);
     }
 
-    @include respond-to("large only") {
+    @include respond-to("large and above") {
         text-align: center;
     }
 
@@ -19,7 +19,7 @@
         font-style: italic;
         @include rems(margin-bottom, 5);
 
-        @include respond-to("large only") {
+        @include respond-to("large and above") {
             @include rems(font-size, $text__size--alpha);
         
         }

@@ -70,6 +70,7 @@ $color__highlight--dark: #A66D5F;
 $width__small: 481px;
 $width__medium: 767px;
 $width__large: 1200px;
+$width__xlarge: 1500px;
 
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -89,7 +90,8 @@ $breakpoints: 'small only' (max-width $width__small),
               'between medium and large' ($width__medium $width__large),
               'medium and below' (max-width $width__medium),
               'medium and above' ($width__medium),
-              'large only' ($width__large),
+              'large and above' ($width__large),
+              'xlarge and above' ($width__xlarge),
               'high resolution' (min-resolution 1.5dppx),
               'landscape' (orientation landscape),
               'portrait' (orientation portrait);

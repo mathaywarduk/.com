@@ -50,10 +50,13 @@
         <meta name="twitter:title" content="{{ title }}"/>
         <meta name="twitter:url" content="http://mathayward.com{{ page.url }}"/>
 
+        <!-- Scripts -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="/static/js/plugins.js"></script>
+
     </head>
     <body>
-
-        <b id="#top"></b>
+        <b id="top"></b>
         <header class="header" itemscope itemtype="http://data-vocabulary.org/Person">
             <h1 itemprop="name">Mat Hayward</h1>
             <div class="subheader"><span itemprop="title">Front-ender</span> @ <span itemprop="affiliation">Erskine Design</span></div>
@@ -79,7 +82,7 @@
             <footer class="post__footer">
                 <nav class="nav--footer">
                     <p>&copy; Mat Hayward</p>
-                    <a href="#top" class="nav__item nav__item--top">Back to top</a>
+                    <a href="#top" class="nav__item nav__item--top" data-scroll-to-target>Back to top</a>
                 </nav>
             </footer>
         </{{ page.container-type }}>

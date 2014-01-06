@@ -3,11 +3,10 @@
 ///////////////////
 
 .header {
-    @include rems(margin-top, 30);
-    @include rems(padding, 0, 15);
+    @include rems(padding, 30, 15, 0);
 
     @include respond-to("small and above") {
-        @include rems(padding, 0, 30);
+        @include rems(padding, 30, 30, 0);
     }
 
     @include respond-to("large and above") {

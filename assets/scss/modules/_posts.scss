@@ -94,7 +94,7 @@
 
 .posts-list {
     .content-wrapper {
-        @include repsond-to("xlarge and above") {
+        @include respond-to("xlarge and above") {
             padding-left: 20%;
             padding-right: 20%;
         }

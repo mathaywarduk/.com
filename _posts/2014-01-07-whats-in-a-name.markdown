@@ -12,7 +12,7 @@ pub-time: 2014-01-07T11:30
 posted-on: Erskine Design
 posted-on-url: http://www.erskinedesign.com/blog/whats-name/
 
-share-img: "social/default.jpg"
+share-img: "social/name.jpg"
 snippet: "This is a real discussion within the Erskine front-end team about CSS naming conventions for a button."
 keywords: "css naming conventions"
 ---

@@ -12,7 +12,7 @@ pub-time: 2012-05-02T11:13
 posted-on: Tribe UK
 posted-on-url: http://www.tribeuk.co.uk/blog/whats-behind-the-mask/
 
-share-img: "social/default.jpg"
+share-img: "social/mask.jpg"
 snippet: "Rob Antill recently launched his website showcasing his talent for Stereographic photography. By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit."
 ---
 

@@ -12,7 +12,7 @@ pub-time: 2013-02-16T14:42
 posted-on: Tribe UK
 posted-on-url: http://www.tribeuk.co.uk/blog/the-responsive-web/
 
-share-img: "social/default.jpg"
+share-img: "social/responsive-web.jpg"
 snippet: "Last month Craig and I gave a talk at Second Wednesday, a monthly Nottingham-based event for creative and digital people, entitled The Responsive Web."
 ---
 

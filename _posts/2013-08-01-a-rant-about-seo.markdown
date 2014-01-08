@@ -10,7 +10,7 @@ keywords: "SEO is evil"
 date: 2013-08-01 11:15:00
 pub-time: 2013-08-01T11:15
 
-share-img: "social/default.jpg"
+share-img: "social/seo.jpg"
 snippet: "SEO shouldn&rsquo;t exist. In a perfect world, there would be no place for Brian the Search Engine Optimisation Consultant or any of his&nbsp;cronies."
 ---
 

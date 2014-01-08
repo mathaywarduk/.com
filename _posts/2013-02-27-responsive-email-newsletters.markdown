@@ -12,7 +12,7 @@ pub-time: 2013-02-27T12:17
 posted-on: Creative Bloq
 posted-on-url: http://www.creativebloq.com/responsive-web-design/email-newsletters-2132023
 
-share-img: "social/default.jpg"
+share-img: "blog/responsive-email-size.jpg"
 snippet: "I recently wrote a feature about responsive email design for Creative Bloq, an online magazine covering 3D, graphic design, illustration, web design."
 ---
 

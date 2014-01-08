@@ -10,7 +10,7 @@ keywords: "Teaching web design"
 date: 2013-08-19 16:34:00
 pub-time: 2013-08-29T16:34
 
-share-img: "social/default.jpg"
+share-img: "social/teach.jpg"
 snippet: "As a web developer of some 10 years, there are two things I&rsquo;m regularly asked by friends and acquaintances: <em>&ldquo;Can you build me a website?&rdquo;</em> and <em>&ldquo;Can you teach me web design?&rdquo;</em>"
 ---
 

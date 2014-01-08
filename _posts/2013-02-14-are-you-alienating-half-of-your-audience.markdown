@@ -12,7 +12,7 @@ pub-time: 2013-02-14T13:07
 posted-on: Tribe UK
 posted-on-url: http://www.tribeuk.co.uk/blog/are-you-alienating-half-of-your-audience/
 
-share-img: "social/default.jpg"
+share-img: "blog/alienating-tribenews_responsive.png"
 snippet: "There are always buzzwords and phrases going around the industry and one buzzphrase you will hear cropping up more and more over the next year will be &lsquo;Responsive Design&rsquo;. So what is it and what&rsquo;s the big deal?"
 ---
 

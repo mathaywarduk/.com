@@ -82,3 +82,19 @@ Buttons
         content: '←';
     }
 }
+
+.btn--link {
+    margin: 0;
+    @include rems(padding, 8, 5, 10);
+    background: none;
+
+    &:first-child {
+        @include rems(margin-left, -5);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color: $color__highlight--super-light;
+    }
+}

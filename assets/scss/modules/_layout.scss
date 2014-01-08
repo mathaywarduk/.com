@@ -49,3 +49,19 @@ body {
     background-color: $color__primary--light;
     color: $color--white;
 }
+
+.hr {
+    border: none;
+    background: none;
+    display: block;
+    border-bottom: 1px dotted $color__neutral--light;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+}
+
+.hidden--small {
+    @include respond-to("medium and above") {
+        display: none;
+    }
+}

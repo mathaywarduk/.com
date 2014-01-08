@@ -125,7 +125,7 @@
             width: 48%;
             margin-left: 2%;
 
-            &:nth-child(odd) {
+            &:nth-of-type(odd) {
                 clear: left;
                 margin-left: 0;
             }
@@ -135,12 +135,12 @@
         @include respond-to("large and above") {
             width: percentage(94/300);
 
-            &:nth-child(odd) {
+            &:nth-of-type(odd) {
                 clear: none;
                 margin-left: 2%;
             }
 
-            &:nth-child(3n+1) {
+            &:nth-of-type(3n+1) {
                 clear: left;
                 margin-left: 0;
             }
@@ -164,11 +164,6 @@
     }
 }
 
-
-.posts-list__header--twitter {
-    background-image: image-url("icons/twitter.png");
-}
-
 .posts-list__content {
     @extend %post__content;
     padding-bottom: 0;
@@ -188,10 +183,41 @@
 }
 
 .posts-list__content--twitter {
+    @include rems(padding, 75, 15, 0);
+    @include rems(margin, 30, 0, 30, 0);
+    background-color: $color__primary--dark;
+    background-image: image-url("icons/twitter--white.png");
+    background-repeat: no-repeat;
+    background-position: center 25px;
+    @include rems(background-size, 45);
+    @include border-radius(5px);
+
+    @include respond-to("medium and above") {
+        @include rems(margin-top, 50);
+        @include rems(margin-bottom, 40);
+    }
+
 
     p {
-        font-size: 125%;
         font-style: italic;
         font-weight: 200;
+        color: $color--white;
+
+        a {
+            color: $color__highlight--super-light;
+        }
+    }
+
+    .post__date {
+        text-align: right;
+        a {
+            color: $color__highlight--super-light;
+        }
+    }
+
+    .post__link {
+        border-top: 1px dotted $color__neutral--light;
+        color: $color--white;
+        border-bottom: 0;
     }
 }

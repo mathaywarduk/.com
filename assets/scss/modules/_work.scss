@@ -34,11 +34,11 @@ $work__places: erskine, tribe, bep, chemistry;
         width: percentage(96/200);
         margin-right: 4%;
 
-        &:nth-child(2n+1) {
+        &:nth-of-type(2n+1) {
             clear: left;
         }
 
-        &:nth-child(2n+2) {
+        &:nth-of-type(2n+2) {
             margin-right: 0;
         }
     }
@@ -47,13 +47,13 @@ $work__places: erskine, tribe, bep, chemistry;
 
         width: percentage(92/300);
 
-        &:nth-child(2n+1) {
+        &:nth-of-type(2n+1) {
             clear: none;
         }
-        &:nth-child(2n+2) {
+        &:nth-of-type(2n+2) {
             margin-right: 4%;
         }
-        &:nth-child(3n+4) {
+        &:nth-of-type(3n+4) {
             margin-right: 0;
         }
     }

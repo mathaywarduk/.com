@@ -186,8 +186,8 @@
 .posts-list__content--twitter {
     @include rems(padding, 75, 15, 0);
     @include rems(margin, 30, 0, 30, 0);
-    background-color: $color__primary--dark;
-    background-image: image-url("icons/twitter--white.png");
+    border: 1px dotted transparentize($color__primary--dark, 0.9);
+    background-image: image-url("icons/twitter.png");
     background-repeat: no-repeat;
     background-position: center 25px;
     @include rems(background-size, 45);
@@ -202,27 +202,37 @@
     p {
         font-style: italic;
         font-weight: 200;
-        color: $color--white;
+        color: $color__primary--dark;
 
         a {
-            color: $color__highlight--super-light;
+            color: $color__highlight;
         }
     }
 
     .post__date {
         text-align: right;
         a {
-            color: $color__highlight--super-light;
+            color: $color__highlight;
         }
     }
 
     .post__link {
         border-top: 1px dotted $color__neutral--light;
-        color: $color--white;
+        color: $color__primary--dark;
         border-bottom: 0;
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
+        
+        a {
+            color: $color__primary--dark;
+
+            &:hover,
+            &:focus {
+                color: $color__highlight;
+            }
+        }
     }
 }

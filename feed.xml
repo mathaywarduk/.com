@@ -12,21 +12,7 @@ layout: none
         <id>http://www.mathayward.com/feed.xml</id>
         <link type="text/html" href="http://www.mathayward.com/" rel="alternate"/>
     {% for post in site.posts %}
-        {% if post.type == 'tweet' %}
-        <entry>
-            <title>Tweet</title>
-            <content type="html">
-                <![CDATA[{{ post.content }}
-                <a href="{{ post.url-out }}">View on Twitter</a>]]>
-            </content>
-            <link href="{{ post.url-out }}" type="text/html" rel="alternate"/>
-            <id>{{ post.url-out }}</id>
-            <author>
-                <name>Mat Hayward</name>
-            </author>
-            <published>{{ post.pub-time }}:00+00:00</published>
-        </entry>
-        {% else %}
+        {% if post.type != 'tweet' %}
         <entry>
             <title>{{ post.title }}</title>
             <content type="html">

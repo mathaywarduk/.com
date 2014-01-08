@@ -236,3 +236,37 @@
         }
     }
 }
+
+.posts-list__content--twitter--prominent {
+    border: none;
+    background-color: $color__primary--dark;
+    background-image: image-url("icons/twitter--white.png");
+
+    p {
+        color: $color--white;
+
+        a {
+            color: $color__highlight--super-light;
+        }
+    }
+
+    .post__date {
+        a {
+            color: $color__highlight--super-light;
+        }
+    }
+
+    .post__link {
+        
+        color: $color--white;
+        
+        a {
+            color: $color--white;
+
+            &:hover,
+            &:focus {
+                color: $color__highlight--super-light;
+            }
+        }
+    }
+}

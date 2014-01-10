@@ -186,7 +186,7 @@
 .posts-list__content--twitter {
     @include rems(padding, 75, 15, 0);
     @include rems(margin, 30, 0, 30, 0);
-    border: 1px dotted transparentize($color__primary--dark, 0.9);
+    border: 1px dotted transparentize($color__primary--dark, 0.7);
     background-image: image-url("icons/twitter.png");
     background-repeat: no-repeat;
     background-position: center 25px;

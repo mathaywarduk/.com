@@ -66,3 +66,123 @@
         }
     }
 }
+
+// Cycle through posts
+.nav--cycle {
+    @include rems(padding-bottom, 20);
+    @include rems(margin-bottom, 30);
+    border-bottom: 1px dotted $color__neutral--light;
+    overflow: auto;
+    @include rems(margin-left, -15);
+    @include rems(margin-right, -15);
+
+    @include respond-to("small and above") {
+        @include rems(margin-left, -30);
+        @include rems(margin-right, -30);
+    }
+
+    @include respond-to("medium and above") {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include respond-to("large and above") {
+        border: none;
+    }
+}
+
+.nav__item--cycle {
+    text-decoration: none;
+    @include rems(padding, 10);
+    background-color: $color__highlight;
+    position: relative;
+    @include rems(margin-bottom, 5);
+    float: left;
+    width: 49%;
+
+    &:before {
+        position: absolute;
+        @include rems(top, 10);
+        color: $color--white;
+    }
+
+    &:hover {
+        background-color: $color__highlight--super-light;
+
+        h2, &:before {
+            color: $color__neutral--dark;
+        }
+    }
+
+    @include respond-to("large and above") {
+        position: fixed;
+        top: 25%;
+        @include rems(min-height, 38);
+        @include rems(width, 35);
+        @include box-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+
+        &:hover, 
+        &:focus {
+            width: auto;
+            h2 {
+                display: block;
+            }
+        }
+
+    }
+
+    img {
+        display: none;
+
+        @include respond-to("large and above") {
+            display: block;
+            @include rems(width, 100);
+            background-color: $color--white;
+        }
+    }
+
+    h2 {
+        border: none;
+        color: $color--white;
+        margin: 0;
+        @include rems(font-size, $text__size--delta);
+
+        @include respond-to("large and above") {
+            display: none;
+        }
+    }
+
+}
+
+.nav__item--cycle--previous {
+    @include border-top-right-radius(2px);
+    @include border-bottom-right-radius(2px);
+    @include rems(padding-left, 30);
+    margin-right: 2%;
+    text-align: right;
+
+    @include respond-to("large and above") {
+        @include rems(left, 15);
+    }
+
+    &:before {
+        @include rems(left, 10);    
+        content: '←';
+    }
+}
+
+.nav__item--cycle--next {
+    @include border-top-left-radius(2px);
+    @include border-bottom-left-radius(2px);
+    @include rems(padding-right, 30);
+
+    @include respond-to("large and above") {
+        @include rems(right, 0);
+    }
+
+    &:before {
+        @include rems(right, 10);
+        content: '→';
+    }
+    
+}

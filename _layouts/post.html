@@ -30,6 +30,32 @@ layout: default
 
 {% endif %}
 
+
+{% comment %} Get previous page link {% endcomment %}
+
+{% assign previous = page.previous %}
+
+{% if previous.twitter-id %}
+    {% assign previous = previous.previous %}
+    {% if previous.twitter-id %}
+        {% assign previous = previous.previous %}
+    {% endif %}
+{% endif %}
+
+
+{% comment %} Get next page link {% endcomment %}
+
+{% assign next = page.next %}
+
+{% if next.twitter-id %}
+    {% assign next = next.next %}
+    {% if next.twitter-id %}
+        {% assign next = next.next %}
+    {% endif %}
+{% endif %}
+
+
+
 <div class="post__text-wrapper">
     <header class="post__header">
         <h1>{{ page.title }}</h1>
@@ -49,6 +75,30 @@ layout: default
     <div class="post__link">
         <a href="/#article-top" class="btn btn--cta btn--back">Back to articles</a>
     </div>
+
+
+    {% if previous.url || next.url %}
+        <div class="nav--cycle">
+    {% endif %}
+    
+    {% if previous.url %}
+        <a href="{{previous.url}}" class="nav__item--cycle nav__item--cycle--previous">
+            <h2>{{previous.title}}</h2>
+        </a>
+    {% endif %}
+    {% if next.url %}
+        <a href="{{next.url}}" class="nav__item--cycle nav__item--cycle--next">
+            <h2>{{next.title}}</h2>
+        </a>
+    {% endif %}
+
+    {% if previous.url || next.url %}
+        </div>
+    {% endif %}
+
+
+
+
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

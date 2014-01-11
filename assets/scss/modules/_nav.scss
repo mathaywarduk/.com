@@ -120,12 +120,16 @@
         @include rems(min-height, 38);
         @include rems(width, 35);
         @include box-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+        @include transition(width 100ms, background-color 250ms);
 
         &:hover, 
         &:focus {
-            width: auto;
+            @include rems(width, 200);
+            width: 27.5%;
+
             h2 {
-                display: block;
+                @include opacity(1);
+                @include transition(opacity 250ms);
             }
         }
 
@@ -148,7 +152,9 @@
         @include rems(font-size, $text__size--delta);
 
         @include respond-to("large and above") {
-            display: none;
+            white-space: nowrap;
+            @include opacity(0);
+            @include transition(color 250ms);
         }
     }
 

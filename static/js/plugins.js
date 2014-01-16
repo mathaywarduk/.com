@@ -1,4 +1,6 @@
 var screenw = $(window).width();
+var breakpoint = 766;
+var hires = (screenw > breakpoint);
 
 $(document).ready( function() {
     
@@ -16,24 +18,25 @@ $(document).ready( function() {
 });
 
 
-$(window).load( function() {
+$(window).on('load', function() {
     // Initialise grid on load, so images are loaded
-    sizePhotoGrid();
+    hiresImages();
 
     $("body").removeClass("no-js");
 });
 
 
-$(window).resize( function() {
-    screenw = $(window).width();
-    sizePhotoGrid();
-});
 
+$(window).on('resize', function() {
+    screenw = $(window).width();
+    hires = (screenw > breakpoint);
+    hiresImages();
+});
 
 // Change height of images to fit rows in grid
 function sizePhotoGrid() {
 
-    if (screenw > 480) {
+    if (screenw > breakpoint) {
 
         var baseHeight = 250;
 
@@ -43,12 +46,16 @@ function sizePhotoGrid() {
             var baseWidth = 0;
 
             $imgs.each( function() {
+                var $img = $(this);
 
                 // get ratio
-                var ratio = $(this).height()/$(this).width(); 
+                var ratio = $img.height()/$img.width();
 
                 // calculate base width and add to var
                 baseWidth += baseHeight / ratio;
+
+                // reset that image 
+                $(this).removeAttr("style");
             });
 
 
@@ -59,6 +66,12 @@ function sizePhotoGrid() {
             // check all widths don't exceed desiredwidth
             var w = 0;
             $imgs.each( function() {
+                // set width = width if hires images are going to be replaced
+                if (hires) {
+                    $(this).width($(this).width());
+                }
+
+                // add width to var
                 w += $(this).width();
             });
 
@@ -66,13 +79,32 @@ function sizePhotoGrid() {
             if (w != desiredWidth) {
                 var $lastimg = $(this).find("img:last");
                 var tweakWidth = $lastimg.width() + (desiredWidth - w);
-                $lastimg.width(tweakWidth)/*.css("height", "auto")*/;
+                $lastimg.width(tweakWidth);
             }
+
 
         });
 
+    }
+}
+
+function hiresImages() {
+
+    if (hires) {
+
+        $("[data-hires]").each( function() {
+            var $img = $(this);
+            var hiresImg = $(this).attr("data-hires");
+            $("<img/>").attr("src", hiresImg).on('load', function() {
+                $img.attr("src", hiresImg).removeAttr("data-hires");
+            });
+        });
+
+        // only sort the photo grid after the larger images have loaded
+        sizePhotoGrid();
     } else {
         // if mobile, reset
         $("[data-grid-row] img").removeAttr("style");
     }
+
 }

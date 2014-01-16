@@ -9,12 +9,14 @@
 
 .photo-grid__item {
     @include inline-block;
-    @include rems(margin, 0, 5, 5, 0);
+    @include rems(padding, 0, 5, 5, 0);
     position: relative;
     overflow: hidden;
+    width: 100%;
 
-    @include respond-to("small and above") {
+    @include respond-to("medium and above") {
         float: left;
+        width: auto;
     }
 
     &:hover,
@@ -29,11 +31,13 @@
     img {
         max-width: 100%;
         float: left;
+        width: 100%;
+        @include respond-to("medium and above") {
+            width: auto;
+        }
 
         .no-js & {
-            width: 100%;
             @include respond-to("medium and above") {
-                width: auto;
                 @include rems(height, 400);
             }
 
@@ -47,21 +51,21 @@
     background-color: transparentize($color--white, 0.1);
     width: 100%;
 
-    @include respond-to("small and above") {
+    @include respond-to("medium and above") {
         @include rems(padding-bottom, 100);
         position: absolute;
-        @include rems(bottom, -250);
+        @include rems(bottom, -300);
         left: 0;
         @include transition(bottom 250ms);
         @include rems(padding, 10, 10, 30, 10);
     }
 
     @include respond-to("large and above") {
-        @include rems(padding-bottom, 100);
+        @include rems(padding-bottom, 50);
+        @include rems(bottom, -400);
     }
 
     @include respond-to("xlarge and above") {
-        @include rems(bottom, -300);
         @include rems(padding-bottom, 150);
     }
 
@@ -72,13 +76,29 @@
         @include text(24, 24, $font__base--headings);
         font-style: italic;
         color: $color--black;
-        @include rems(margin-bottom, 5);
+        @include rems(margin-bottom, 8);
+
+        @include respond-to("small and above") {
+            max-width: 80%;
+        }
+
+        @include respond-to("large and above") {
+            @include text(30, 34, $font__base--headings);
+        }
     }
 
     p {
         padding: 0;
         margin: 0;
-        @include text(13, 15);
+        @include text(13, 20);
         font-style: italic;
+
+        @include respond-to("small and above") {
+            max-width: 80%;
+        }
+
+        @include respond-to("large and above") {
+            @include text($text__size--gamma, $text__line--gamma);
+        }
     }
 }

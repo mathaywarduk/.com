@@ -10,7 +10,7 @@ keywords: "music"
 date: 2013-11-07 15:39:00
 pub-time: 2013-11-07T15:39
 
-share-img: "social/tune.jpg"
+share-img: "social/tune.png"
 snippet: "Music is an important part of advertising. It can evoke feelings which influence a consumers mood."
 ---
 

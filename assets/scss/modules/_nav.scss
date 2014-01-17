@@ -70,9 +70,9 @@
 
 // Cycle through posts
 .nav--cycle {
-    @include rems(padding-bottom, 20);
-    @include rems(margin-bottom, 30);
-    border-bottom: 1px dotted $color__neutral--light;
+    @include rems(padding-top, 20);
+    @include rems(margin-top, 50);
+    // border-top: 1px dotted $color__neutral--light;
     overflow: auto;
     @include rems(margin-left, -15);
     @include rems(margin-right, -15);
@@ -95,7 +95,7 @@
 .nav__item--cycle {
     text-decoration: none;
     @include rems(padding, 10);
-    background-color: $color__highlight;
+    background-color: $color__neutral;
     position: relative;
     @include rems(margin-bottom, 5);
     float: left;
@@ -108,7 +108,7 @@
     }
 
     &:hover {
-        background-color: $color__highlight--super-light;
+        background-color: $color__neutral--super-light;
         @include transition(background-color 250ms);
 
         h2, &:before {
@@ -188,6 +188,7 @@
     @include border-top-left-radius(2px);
     @include border-bottom-left-radius(2px);
     @include rems(padding-right, 30);
+    float: right;
 
     @include respond-to("medium and above") {
         @include border-radius(2px);

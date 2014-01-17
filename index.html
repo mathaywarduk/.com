@@ -41,7 +41,7 @@ pub-time: 2013-09-19T18:07
             <section class="posts-list__content posts-list__content--twitter">
                 {{ post.content }}
                 <h2 class="post__date"><a href="{{ post.url-out }}">{{ date_string }}</a></h2>
-                <div class="post__link">
+                <div class="post__links">
                     <a href="https://twitter.com/intent/tweet?in_reply_to={{ post.twitter-id }}" class="btn btn--link">Reply</a> | <a href="https://twitter.com/intent/retweet?tweet_id={{ post.twitter-id }}" class="btn btn--link">Retweet</a> | <a href="https://twitter.com/intent/favorite?tweet_id={{ post.twitter-id }}" class="btn btn--link">Favourite</a>
                 </div>
             </section>
@@ -58,7 +58,7 @@ pub-time: 2013-09-19T18:07
             <section class="posts-list__content">
                 {{ post.snippet | markdownify }}
 
-                <div class="post__link">
+                <div class="post__links">
                     <a href="{{ post.url }}" class="btn btn--cta btn--forward">Read on</a>
                 </div>
             </section>

@@ -198,4 +198,4 @@ The more we know about the user, the more we can structure the content to suit t
 
 And remember that
 
-> &rdquo;Devices don&rsquo;t use websites, people do.&ldquo;
+> &ldquo;Devices don&rsquo;t use websites, people do.&rdquo;

@@ -335,4 +335,6 @@ Obviously, this is a very simple example, but the potential of such a Sass and B
 
 It&rsquo;s important to remember that while you are building one system, you should make the base module as simple, and therefore reusable, as possible. Specificity can then be added using the **_config.scss** file and BEM modifiers.
 
-<div class="post__callout island">This article originally appeared in issue 249 of <a href="http://www.netmagazine.com">Net Magazine</a>.</div>
+<hr />
+
+<p>This article originally appeared in issue 249 of <a href="http://www.netmagazine.com">Net Magazine</a>.</p>

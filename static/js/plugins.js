@@ -6,7 +6,7 @@ $(document).ready( function() {
     
 
     // Scroll top
-    $("[data-scroll-to-target]").click( function(e) {
+    $("[data-scroll-to-target]").on('click', function(e) {
         e.preventDefault();
         var $target = $($(this).attr("href"));
         var top = $target.offset().top;
@@ -15,6 +15,18 @@ $(document).ready( function() {
             scrollTop: top
         }, 1000);
     });
+
+
+    // Pop up windows for share links
+
+    $("[data-popup]").on('click', function(e) {
+        e.preventDefault();
+        var url = $(this).attr("href");
+        var windowName = "popup";
+        var windowSize = "width=" + $(this).attr("data-popup-width") + ",height=" + $(this).attr("data-popup-height") + ",scrollbars=no,resizable=no,toolbar=no" 
+        window.open(url, windowName, windowSize);
+    });
+
 });
 
 

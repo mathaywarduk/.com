@@ -67,12 +67,12 @@ layout: default
 
 <section class="post__content">
     <div class="post__text-wrapper">
+        {{ content }}
         {% if page.posted-on %}
 
         <div class="post__callout island">{{ posted_on }}</div>
 
         {% endif %}
-        {{ content }}
     </div>
     <div class="post__link">
         <a href="/#article-top" class="btn btn--cta btn--back">Back to articles</a>

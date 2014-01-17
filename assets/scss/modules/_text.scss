@@ -18,6 +18,9 @@ body {
     line-height: $text__base-line/$text__base-font-size;
     font-family: $font__base--body;
     color: $color__neutral--dark;
+    @include respond-to("medium and above") {
+        text-rendering: optimizeLegibility;
+    }
 }
 
 @mixin text($size, $line, $family: $font__base--body) {

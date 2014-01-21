@@ -65,7 +65,7 @@ layout: default
     </header>
 </div>
 
-<section class="post__content">
+<section class="post__content" role="main">
     <div class="post__text-wrapper">
         {{ content }}
 
@@ -79,8 +79,8 @@ layout: default
     <div class="social">
         <h4 class="social__header">Share <em>&ldquo;{{ page.title }}&rdquo;</em></h4>
         <ul class="social__links">
-            <li><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;related=mathaywarduk&amp;text=%E2%80%9C{{ page.title | UrlEncode }}%E2%80%9D+(via+@mathaywarduk)" class="social__link social__link--twitter"data-popup data-popup-width="685" data-popup-height="500">on Twitter</a></li>
-            <li><a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;u=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;t=%E2%80%9C{{ page.title | UrlEncode }}%E2%80%9D+by+Mat+Hayward" class="social__link social__link--facebook" data-popup data-popup-width="685" data-popup-height="500">on Facebook</a></li>
+            <li><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;related=mathaywarduk&amp;text=%E2%80%9C{{ page.title | UrlEncode | replace: "&amp;", "%26" }}%E2%80%9D+(via+@mathaywarduk)" class="social__link social__link--twitter"data-popup data-popup-width="685" data-popup-height="500">on Twitter</a></li>
+            <li><a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;u=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;t=%E2%80%9C{{ page.title | UrlEncode | replace: "&amp;", "%26" }}%E2%80%9D+by+Mat+Hayward" class="social__link social__link--facebook" data-popup data-popup-width="685" data-popup-height="500">on Facebook</a></li>
         </ul>
     </div>
 

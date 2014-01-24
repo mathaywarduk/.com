@@ -40,10 +40,12 @@ h1 {
 }
 
 h2 {
-    @include text($text__size--beta, $text__line--beta);
-    color: $color__highlight;
-    border-bottom: 1px dotted;
-    @include rems(margin-bottom, ($text__base-margin/3));
+    @include text($text__size--beta, $text__line--beta, $font__base--headings);
+    color: $color--black;
+    font-style: italic;
+    border-bottom: 1px dotted transparentize($color__black, 0.7);
+    @include rems(padding-bottom, ($text__base-margin/3));
+    @include rems(margin-bottom, ($text__base-margin));
     @include rems(margin-top, ($text__base-margin * 2));
 }
 
@@ -63,6 +65,10 @@ p {
         font-size: 150%;
         font-style: italic;
         font-weight: 200;
+
+        @include respond-to("large and above") {
+            font-size: 200%;
+        }
     }
 }
 
@@ -76,6 +82,15 @@ blockquote {
     border-bottom: 1px dotted $color__neutral;
     @include rems(padding, 10, 15);
     @include rems(max-width, 600);
+
+    @include respond-to("medium and above") {
+        @include rems(margin-left, -15);
+    }
+
+    @include respond-to("large and above") {
+        margin-left: -10%;
+        @include rems(margin-bottom, $text__base-margin * 3)
+    }
 }
 
 em {
@@ -84,7 +99,7 @@ em {
 
 strong {
     font-weight: bold;
-    color: $color__highlight;
+    color: $color__neutral--super-dark;
 }
 
 a {
@@ -98,7 +113,7 @@ a {
 }
 
 pre {
-    background-color: $color--black;
+    border: 1px solid $color--neutral--super-light;
     @include rems(margin-bottom, ($text__base-margin * 1.5));
     overflow: auto;
     @include rems(padding, $text__base-margin);
@@ -130,5 +145,32 @@ pre {
         @include respond-to("large and above") {
             text-align: center;
         }
+    }
+}
+
+.inline-tweet {
+    text-decoration: none;
+    color: $color__highlight;
+
+    &:after {
+        content: "";
+        background-image: image-url('logos/twitter.png');
+        @include rems(width, 15);
+        @include rems(height, 15);
+        @include inline-block();
+        @include rems(background-size, 15);
+        background-repeat: no-repeat;
+        @include rems(margin-left, 5);
+    }
+
+    @include respond-to("large and above") {
+
+        &:after {
+            @include rems(width, 25);
+            @include rems(height, 25);
+            @include rems(background-size, 25);
+            @include rems(margin-left, 10);
+        }
+
     }
 }

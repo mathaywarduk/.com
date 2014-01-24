@@ -27,7 +27,9 @@ Here it is.
 
 While there are already many frontend frameworks available for free, it&rsquo;s often preferable to write the code yourself. In this tutorial, we will explore how to use the [Sass](http://www.sass-lang.com) CSS preprocessor and the [BEM](http://bem.info/) methodology to write a ‘living framework&rsquo; that can be adapted to suit any development project.
 
-Sass enables us to write CSS in small, easy-to- navigate modules, meaning we can start with base styles and bolt on any components we might need for the system we&rsquo;re currently building.
+> Sass enables us to write CSS in small, easy-to-navigate modules.
+
+Meaning we can start with base styles and bolt on any components we might need for the system we&rsquo;re currently building.
 
 We can also make our code easier to understand using well-constructed comments and clear naming conventions for our classes and variables. The BEM methodology gives us this clarity. BEM stands for Block-Element-Modifier and is designed to help modularise frontend development by breaking everything into blocks containing elements, then using modifiers to tweak them.
 
@@ -42,11 +44,6 @@ To apply the BEM methodology, we give each element within a block a class. Consi
 <p>The unordered list has the block class list while each list item has the element class <strong>list__item</strong>. Only the final list item has the additional modifier class <strong>list__item—end</strong>. Each class follows the BEM syntax:</p>
 
 <pre><code>.BLOCK{__ELEMENT[--MODIFIER]}</code></pre>
-
-<figure class="media">
-    <img src="/static/images/blog/BEM_Sass_4.png" alt="BEM" class="media__item" />
-    <figcaption class="media__caption">BEM breaks code into blocks containing elements, then uses modifiers to tweak.</figcaption>
-</figure>
 
 ## Get Started
 Set up the project by creating two directories: **assets** and **static**. The static directory will contain the compiled CSS and everything else that must be deployed, while the assets folder will contain any resources that don&rsquo;t need to be deployed (in this instance, our Sass files).
@@ -87,11 +84,6 @@ Create a directory in **/assets/sass** called **modules**. This will house all t
 When you save the changes to the master file, notice that your Terminal process has detected changes and overwritten the **screen.css** file used by your web page. Opening the file, you can see the contents of the reset have been ported across.
 
 At this point, you can begin to see the workflow in action. Being able to import snippets of code into a master file means we can easily toggle individual modules on or off as needed.
-
-<figure class="media">
-    <img src="/static/images/blog/BEM_Sass_1.png" alt="Simple Sass framework" class="media__item" />
-    <figcaption class="media__caption">Self-contained module files set out base styles for content types. They’re used only when needed.</figcaption>
-</figure>
 
 We can create a module called **_text.scss** and then start adding base styles for headers, paragraphs, and so on:
 
@@ -197,12 +189,9 @@ $text__colour--delta: $text__colour--base;</code></pre>
 
 You may ask what the point of declaring then overriding these variables is, and, for one-off use, there isn&rsquo;t one. But what we have now is the beginnings of a modular framework that we can use as a basis for any frontend project, adding and importing more modules as we add more elements to our system.
 
-Redeclaring variables simply reduces the need for dependency between modules and gives us a cleaner starting point for each new project.
+> Redeclaring variables simply reduces the need for dependency between modules.
 
-<figure class="media">
-    <img src="/static/images/blog/BEM_Sass_3.png" alt="Module files" class="media__item" />
-    <figcaption class="media__caption">Self-contained module files set out base styles for content types. They&rsquo;re used only when needed</figcaption>
-</figure>
+And gives us a cleaner starting point for each new project.
 
 ## Making code easier to understand
 You could be forgiven for thinking that any developer could now pick up your work and understand italmost instantly, but that&rsquo;s not always the case. Fortunately, there are ways to make your code even easier to understand. Firstly, Sass comments are not compiled, so will not add any weight to our compiled CSS file, so we can write as much as we like to be extra helpful. For instance, I always like to add comment blocks to mixins and functions.
@@ -311,8 +300,8 @@ For example:
 There are examples of a layout and a media module in the [Github repository](https://github.com/mathaywarduk/simple-sass-framework) that accompanies this tutorial, but I&rsquo;ll let you be creative here and decide for yourself how to build them.
 
 <figure class="media">
-    <img src="/static/images/blog/BEM_Sass_5.png" alt="Elvis" class="media__item" />
-    <figcaption class="media__caption">The finished ‘page&rsquo; looks very simple, but behind it is a Sass and BEM based framework that can be scaled easily.</figcaption>
+    <img src="/static/images/blog/BEM_Sass_3.png" alt="Module files" class="media__item" />
+    <figcaption class="media__caption">Self-contained module files set out base styles for content types. They&rsquo;re used only when needed</figcaption>
 </figure>
 
 ## Converting to ems
@@ -331,7 +320,10 @@ Then we would write a function to calculate rems and use that in place or our or
 Rems are supported in later versions of [all major browsers](caniuse.com/rem), but for legacy support, we can use a pixel fallback.
 
 ## Going further
-Obviously, this is a very simple example, but the potential of such a Sass and BEM-based framework is enormous. Using the workflow outlined in this tutorial, you can create an essential building block that you can make use of for all your future projects, no matter how large they are, simply by adding modules as necessary.
+
+This is a very simple example, but the potential of a Sass and BEM-based framework is enormous.
+
+Using the workflow outlined in this tutorial, you can create an essential building block that you can make use of for all your future projects, no matter how large they are, simply by adding modules as necessary.
 
 It&rsquo;s important to remember that while you are building one system, you should make the base module as simple, and therefore reusable, as possible. Specificity can then be added using the **_config.scss** file and BEM modifiers.
 

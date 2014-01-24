@@ -37,14 +37,11 @@
     font-style: italic;
     @include rems(margin, 10, 0);
     @include text($text__size--delta, $text__line--delta);
-    border-left: 2px solid $color__primary;
-    @include rems(padding, 0, 0, 0, 10);
     
     @include respond-to("small and above") {
         float: right;
         width: auto;
         display: inline;
-        @include rems(padding, 0, 5, 0, 10);
     }
 }
 

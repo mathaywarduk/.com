@@ -18,6 +18,7 @@
 
 %post__content {
     @include rems(padding, 0, 0, 15);
+    position: relative;
 }
 
 

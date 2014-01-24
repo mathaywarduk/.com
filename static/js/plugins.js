@@ -1,6 +1,6 @@
 var screenw = $(window).width();
-var breakpoint = 766;
-var hires = (screenw > breakpoint);
+var breakpoints = [481, 767, 1200, 1500];
+var hires = (screenw >= breakpoints[1]);
 
 $(document).ready( function() {
     
@@ -19,7 +19,7 @@ $(document).ready( function() {
 
     // Pop up windows for share links
 
-    $("[data-popup]").on('click', function(e) {
+    $(document).on('click', "[data-popup]", function(e) {
         e.preventDefault();
         var url = $(this).attr("href");
         var windowName = "popup";
@@ -34,6 +34,9 @@ $(window).on('load', function() {
     // Initialise grid on load, so images are loaded
     hiresImages();
 
+    // change blockquotes to tweet intents
+    blockquoteTweets();
+
     $("body").removeClass("no-js");
 });
 
@@ -41,14 +44,14 @@ $(window).on('load', function() {
 
 $(window).on('resize', function() {
     screenw = $(window).width();
-    hires = (screenw > breakpoint);
+    hires = (screenw >= breakpoints[1]);
     hiresImages();
 });
 
 // Change height of images to fit rows in grid
 function sizePhotoGrid() {
 
-    if (screenw > breakpoint) {
+    if (screenw >= breakpoints[1]) {
 
         var baseHeight = 250;
 
@@ -119,4 +122,23 @@ function hiresImages() {
         $("[data-grid-row] img").removeAttr("style");
     }
 
+}
+
+function blockquoteTweets() {
+    $(".post__content blockquote").each( function() {
+        var content = $(this).find("p").text();
+        var url = "http://mathayward.com" + window.location.pathname;
+        var tweetUrl = "https://twitter.com/intent/tweet?url=" + encodeURIComponent(url) + "&related=mathaywarduk&text=%E2%80%9C" + content.replace(/ /g, "+") + "%E2%80%9D";
+        var $anchor = $("<a/>").attr({
+            'data-popup'          : '',
+            'data-popup-width'    : '685',
+            'data-popup-height'   : '500',
+            'href'                : tweetUrl,
+            'title'               : 'Tweet this'
+        }).text(content).addClass("inline-tweet");
+
+        $(this).find("p").html($anchor);
+        console.log($anchor);
+        // <blockquote><p><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fmathayward.com/a-rant-about-seo&amp;related=mathaywarduk&amp;text=%E2%80%9CHow+do+you+convince+the+search+engines+that+your+page+is+the+best+result?+Start+by+being+the+best+result.%E2%80%9D" class="inline-tweet" title="Tweet this" data-popup data-popup-width="685" data-popup-height="500">How do you convince the search engines that your page is the best result? Start by being the best result.</a></p></blockquote>
+    });
 }

@@ -36,7 +36,7 @@ A page with a large amount of inbound links is obviously influential. A page wit
 
 If the content is good enough that it will be linked to, and linked to from influential sites, then the ranking will improve. But it&rsquo;s possible to help it along without being naughty. If a website is for a business that operates in a localised area, it&rsquo;s useful to add it to web directories to improve in-linking. The most influential of these are [Google Places](http://www.google.co.uk/business/placesforbusiness/), [Yell](http://yell.com) and [Dmoz](http://dmoz.org).
 
-Good developers will always write valid, semantic code and keep page load to a minimum. Search engines like both of these things.
+> Good developers will always write valid, semantic code and keep page load to a minimum. Search engines like both of these things.
 
 Firstly, semantic code often presents less code and more content, so a greater percentage of the document read by a search engine index will be keywords.
 

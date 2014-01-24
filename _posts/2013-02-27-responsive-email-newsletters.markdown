@@ -20,8 +20,6 @@ While responsive web design has taken off over the last year or so, responsive e
 
 There are some brands that have already realised the benefit of making life easier for their customers. Here are 10 examples to inspire your own efforts...
 
-Find out how to build a responsive email by following this tutorial, and read all our responsive web design articles here
-
 ## 01. MailChimp
 
 <figure class="media media--full">

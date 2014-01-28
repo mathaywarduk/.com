@@ -10,7 +10,7 @@ keywords: "Living framework"
 date: 2014-01-17 09:45:00
 pub-time: 2014-01-17T09:45
 
-share-img: "social/default.jpg"
+share-img: "blog/write-modular-css-with-sass-and-bem.jpg"
 snippet: "I wrote a feature for Net magazine's December issue about creating a living modular framework."
 ---
 

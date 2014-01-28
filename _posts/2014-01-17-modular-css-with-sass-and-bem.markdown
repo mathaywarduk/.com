@@ -11,10 +11,10 @@ date: 2014-01-17 09:45:00
 pub-time: 2014-01-17T09:45
 
 share-img: "social/default.jpg"
-snippet: "I wrote a feature for the projects section of Net magazine's December issue about creating a living modular framework."
+snippet: "I wrote a feature for Net magazine's December issue about creating a living modular framework."
 ---
 
-I wrote a feature for the projects section of <a href="http://netmagazine.com">Net magazine</a>&rsquo;s December issue about creating a living modular framework.
+I wrote a feature for <a href="http://netmagazine.com">Net magazine</a>&rsquo;s December issue about creating a living modular framework.
 
 
 <figure class="media">

@@ -3,9 +3,9 @@ mathayward.com
 
 ## Requires
 
-* Sass
-* Compass
-* Jekyll
+* [Sass](http://sass-lang.com/)
+* [Compass](http://compass-style.org/)
+* [Jekyll](http://jekyllrb.com/)
  
 
 ## Running

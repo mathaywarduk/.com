@@ -6,7 +6,7 @@ ul {
         &:before {
             content: "\002B";
             position: absolute;
-            @include rems(top, 3);
+            @include rems(top, -3);
             left: 0;
             font-weight: bold;
             color: $color__highlight;

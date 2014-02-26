@@ -25,7 +25,6 @@
 }
 
 .search__found-string {
-    display: none;
     @include rems(padding, 10, 15);
     border-bottom: 1px dotted $color__neutral--light;
     

@@ -116,6 +116,11 @@
         }
     }
 
+    h2 {        
+        font-family: $font__base--body;
+        padding: 0;
+    }
+
     @include respond-to("large and above") {
         position: fixed;
         top: 25%;

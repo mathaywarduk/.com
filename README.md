@@ -1,4 +1,4 @@
-.com
+mathayward.com
 ====
 
 ## Requires

@@ -16,7 +16,6 @@ snippet: "I wrote a feature for Net magazine's December issue about creating a l
 
 I wrote a feature for <a href="http://netmagazine.com">Net magazine</a>&rsquo;s December issue about creating a living modular framework.
 
-
 <figure class="media">
     <img src="/static/images/blog/write-modular-css-with-sass-and-bem.jpg" alt="Net Magazine" class="media__item" />
 </figure>

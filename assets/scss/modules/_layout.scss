@@ -66,3 +66,15 @@ body {
         display: none;
     }
 }
+
+.is--nojs-hidden {
+    .no-js & {
+        display: none;
+    }
+}
+
+.is--js-hidden {
+    .js & {
+        display: none;
+    }
+}

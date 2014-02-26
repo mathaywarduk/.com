@@ -116,7 +116,7 @@
         }
     }
 
-    article {
+    article, .posts-list__item {
         @include rems(padding, 0, 15);
 
         @include respond-to("small and above") {

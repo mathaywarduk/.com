@@ -4,7 +4,6 @@ var hires = (screenw >= breakpoints[1]);
 
 $(document).ready( function() {
     
-
     // Scroll top
     $("[data-scroll-to-target]").on('click', function(e) {
         e.preventDefault();
@@ -18,7 +17,6 @@ $(document).ready( function() {
 
 
     // Pop up windows for share links
-
     $(document).on('click', "[data-popup]", function(e) {
         e.preventDefault();
         var url = $(this).attr("href");
@@ -26,6 +24,15 @@ $(document).ready( function() {
         var windowSize = "width=" + $(this).attr("data-popup-width") + ",height=" + $(this).attr("data-popup-height") + ",scrollbars=no,resizable=no,toolbar=no" 
         window.open(url, windowName, windowSize);
     });
+
+    // Search function
+    if (getParameterByName('q')) {
+        var q =  decodeURIComponent(getParameterByName('q'));
+        getSearchResults(q);
+        $("[data-search-input]").val(q);
+    }
+
+    initSearch();
 
 });
 
@@ -37,7 +44,7 @@ $(window).on('load', function() {
     // change blockquotes to tweet intents
     blockquoteTweets();
 
-    $("body").removeClass("no-js");
+    $("body").removeClass("no-js").addClass("js");
 });
 
 
@@ -138,7 +145,98 @@ function blockquoteTweets() {
         }).text(content).addClass("inline-tweet");
 
         $(this).find("p").html($anchor);
-        console.log($anchor);
-        // <blockquote><p><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fmathayward.com/a-rant-about-seo&amp;related=mathaywarduk&amp;text=%E2%80%9CHow+do+you+convince+the+search+engines+that+your+page+is+the+best+result?+Start+by+being+the+best+result.%E2%80%9D" class="inline-tweet" title="Tweet this" data-popup data-popup-width="685" data-popup-height="500">How do you convince the search engines that your page is the best result? Start by being the best result.</a></p></blockquote>
     });
 }
+
+function getParameterByName(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function initSearch() {
+    var $searchForm = $("[data-search-form]"),
+        $searchInput = $("[data-search-input]");
+
+    $(document).on("submit", $searchForm, function(e) {
+        e.preventDefault();
+        var q = $searchInput.val();
+        getSearchResults(q);
+    });
+
+
+}
+
+function getSearchResults(q) {
+    var jsonFeed = "/feed.json"
+        $resultTemplate = $("#search-result"),
+        $resultsWrapper = $("[data-search-results]"),
+        count = 0,
+        results = "";
+
+
+    // remove results and show loader
+    $resultsWrapper.addClass("is--loading");
+    $("[data-search-found-string]").addClass("is--loading");
+
+    // get new results
+    $.get(jsonFeed, 'json', function(data) {
+        $.each(data, function(index, item) {
+            if (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1) {
+                var result = populateSearchResult($resultTemplate.html(), item);
+                count++;
+                results += result;
+            }
+        });
+
+        // hide loader
+        $resultsWrapper.html("").removeClass("is--loading").append(results);
+        
+        // show results
+        $("[data-search-term]").text(q);
+        $("[data-search-count]").text(count);
+        $resultsWrapper.parent().show();
+        $("[data-search-found-string]").removeClass("is--loading").show();
+
+        if (count > 0) {
+            $resultsWrapper.show();
+        }
+
+    });
+}
+
+function populateSearchResult(html, item) {
+
+    var pubdate = new Date(item.published);
+
+    html = injectContent(html, item.title, '##Title##');
+    html = injectContent(html, item.link, '##Url##');
+    html = injectContent(html, item.excerpt, '##Excerpt##');
+    html = injectContent(html, formatDate(pubdate), '##PubDate##');
+    return html;
+}
+
+function injectContent(originalContent, injection, placeholder) {
+    var regex = new RegExp(placeholder, 'g');
+    return originalContent.replace(regex, injection);
+}
+
+function formatDate(date) {
+    var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"),
+        months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"),
+        n = date.getDate(),
+        suffix = "th";
+
+        if (n == 1 || n == 21 || n ==31) {
+            suffix = "st";
+        }
+        else if (n == 2 || n == 22) {
+            suffix = "nd";
+        }
+        else if (n == 3 || n == 23) {
+            suffix = "rd";
+        }
+
+        return "" + days[date.getDay()] + " " + n + suffix + " " + months[date.getMonth()] + " " + date.getFullYear();
+}
+
+

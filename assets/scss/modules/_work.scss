@@ -81,6 +81,7 @@ $work__places: erskine, tribe, bep, chemistry;
         @include rems(padding, 20, 0, 100);
         float: none;
         overflow: hidden;
+        text-align: center;
     }
 
 }
@@ -139,8 +140,21 @@ $work__places: erskine, tribe, bep, chemistry;
 .work__related {
     > li {
         @include rems(margin-bottom, 5);
+
+
         &:before {
             @include rems(top, -3);
+        }
+
+        @include respond-to("large and above") {
+            width: auto;
+            @include rems(line-height, 20);
+            padding-left: 0;
+            &:before {
+                @include rems(top, 1);
+                position: relative;
+                @include rems(margin-right, 5);
+            }
         }
     }
 }

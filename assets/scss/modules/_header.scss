@@ -17,10 +17,14 @@
         @include text(30, 28, $font__base--headings);
         font-style: italic;
         @include rems(margin-bottom, 5);
+        @include rems(margin-top, 25);
+
+        @include respond-to("medium and above") {
+            @include rems(margin-top, 0);
+        }
 
         @include respond-to("large and above") {
             @include rems(font-size, $text__size--alpha);
-        
         }
 
         a {
@@ -29,4 +33,33 @@
         }
     }
 
+}
+
+.header__avatar {
+    display: none;
+
+    @include respond-to("small and above") {
+        display: block;
+        @include rems(width, 100);
+        @include rems(height, 100);
+        @include border-radius(50px);
+        overflow: hidden;
+        float: left;
+        @include rems(margin-right, 20);
+        @include rems(margin-bottom, 10);
+    }
+
+    @include respond-to("medium and above") {
+        float: none;
+    }
+
+    @include respond-to("large and above") {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img {
+        @include rems(width, 100);
+        @include rems(height, 100);
+    }
 }

@@ -16,7 +16,7 @@ share-img: "social/getting-started.jpg"
 snippet: "Being approached by a couple of enthusiastic students and asked <em>&ldquo;how do we get a job in the industry?&rdquo;</em> was a surprisingly awkward experience."
 ---
 
-Being approached by a couple of enthusiastic students and asked <em>&ldquo;how do we get a job in the industry?&rdquo;</em> was a surprisingly awkward experience.
+Being approached by a couple of enthusiastic students and asked <em>&ldquo;how do we get a job in the industry?&rdquo;</em> was a surprisingly awkward experience. I had no idea at first. I just told them how I got into it and then the ideas starting spouting out, from myself, from other members of the Erskine team, and other industry professionals who were around at the time.
 
 All of them were different. That&rsquo;s our industry, there&rsquo;s no set path into it. Some will have been to university, some will be &lsquo;self-taught&rsquo; and some will have progressed from an internship.
 
@@ -28,7 +28,9 @@ The first thing I&rsquo;d suggest to any budding developer or designer is to put
 
 When a potential employer is looking through CVs and portfolios the fact that you might have done some work for a big brand like Nike or the BBC definitely stands out. But the likelihood is that you haven&rsquo;t, so you need to stand out in other ways. Real enthusiasm can beat qualifications and experience.
 
-Start by not doing the same as everyone else. No redesigns of Twitter, Facebook or whatever. Do some real work if you can, for friends or family, they might even agree to throw you some cash for it, but remember that, at this point, it&rsquo;s not about the money. Go all out and produce something you&rsquo;re proud of, it&rsquo;ll pay off later.
+> Start by not doing the same as everyone else. No redesigns of Twitter, Facebook or whatever.
+
+Do some real work if you can, for friends or family, they might even agree to throw you some cash for it, but remember that, at this point, it&rsquo;s not about the money. Go all out and produce something you&rsquo;re proud of, it&rsquo;ll pay off later.
 
 And if you can&rsquo;t find jobs to do, make some up. Build a site for a fictional company, redesign a website that actually needs it, build up that portfolio until you&rsquo;re proud of it.
 
@@ -66,7 +68,7 @@ If you received an application that was riddled with errors, you&rsquo;d assume 
 
 Check everything you send out, from the CV to the portfolio itself. Have someone you trust check it too (there&rsquo;s a reason we never check our own work) and be open to suggestions.
 
-Only when you are 100% happy with what you&rsquo;re sending should you send it.
+> Only when you are 100% happy with what you&rsquo;re sending should you send it.
 
 ## Good luck
 

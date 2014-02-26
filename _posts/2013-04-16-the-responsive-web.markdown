@@ -30,7 +30,7 @@ We&rsquo;re going to talk today about the Responsive Web, and how we can build w
 
 We&rsquo;ll start with a bit of a history lesson. This is taken from Mat&rsquo;s personal portfolio back in 2002. It was common back then as the number of different screen sizes was low, and I have to admit I put something similar on a website back then.
 
-This website is best viewed at 1024×768 resolution using Internet Explorer 6.0 or higher.
+> This website is best viewed at 1024×768 resolution using Internet Explorer 6.0 or higher.
 
 But it&rsquo;s just not acceptable nowadays, because there are so many different screen sizes (I have seven just in my house). So we can&rsquo;t afford to be complacent and expect the user to do the work. Users want it to be easy, and they want it to be quick.
 
@@ -40,7 +40,7 @@ And it&rsquo;s not like we can aim for one or two screen sizes and that will ser
 
 So that&rsquo;s the challenge:
 
-How can we keep the user happy, whatever device they might be using?
+> How can we keep the user happy, whatever device they might be using?
 
 And we thought of 3 solutions for that:
 
@@ -50,7 +50,7 @@ The first solution is to just leave it. It&rsquo;s the easy way out, they&rsquo;
 
 <figure class="media media--full">
     <img src="/static/images/blog/responsive-web-apple.png" alt="The Apple website" class="media__item media__item--noshadow" />
-    <figcaption class="media__caption">The apple website is not optimised for mobile in anyway</figcaption>
+    <figcaption class="media__caption">The apple website is not optimised for mobile in any way</figcaption>
 </figure>
 
 ## 2. Mobile version
@@ -64,7 +64,7 @@ Then the second option would be to build a separate mobile site. Two sites means
 
 ## 3. Make it Responsive
 
-So the last option, which is the one we&rsquo;re going to focus on is to Make it Responsive. And to explain what Responsive Design is we&rsquo;ll use our old friend Dave.
+The last option, which is the one we&rsquo;re going to focus on is to Make it Responsive. And to explain what Responsive Design is we&rsquo;ll use our old friend Dave.
 
 ## Dave
 
@@ -189,13 +189,13 @@ And so many websites have a welcome message on their homepage. But if I&rsquo;ve
     <img src="/static/images/blog/responsive-web-facebook.png" alt="WWF navigation" class="media__item media__item--noshadow" />
 </figure>
 
-And this is the holy grail of information on our users. If we have a site that allows users to login, we can make it easier for them to sign up by adding a Connect with Facebook feature. It&rsquo;s a bit of work for us as developers, but the benefit is huge. We can know everything about them&hellip; age, gender, relationship status, hobbies, favourite films and music.
+This is the holy grail of information on our users. If we have a site that allows users to login, we can make it easier for them to sign up by adding a Connect with Facebook feature. It&rsquo;s a bit of work for us as developers, but the benefit is huge. We can know everything about them&hellip; age, gender, relationship status, hobbies, favourite films and music.
 
 What if we logged into Ticketmaster and it told us <em>&ldquo;We know you like Arcade Fire and they&rsquo;re playing at the Ice Arena next Wednesday, your calendar says you&rsquo;re free.&rdquo;</em>
 
 ## Finally
 The more we know about the user, the more we can structure the content to suit them. And while Responsive Web Design is a great idea, being responsive can be so much more than that. Hopefully this has given some insight into the thinking behind building a truly responsive website, on all levels.
 
-And remember that
+And remember that:
 
-> &rdquo;Devices don&rsquo;t use websites, people do.&ldquo;
+> &ldquo;Devices don&rsquo;t use websites, people do.&rdquo;

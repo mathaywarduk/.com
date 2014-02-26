@@ -41,6 +41,7 @@ Buttons
     vertical-align: middle;
     white-space: nowrap;
     box-shadow: $btn__box-shadow;
+    @include transition(color 250ms, background-color 250ms);
 
 
     &:hover,

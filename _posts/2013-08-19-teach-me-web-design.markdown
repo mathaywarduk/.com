@@ -10,7 +10,7 @@ keywords: "Teaching web design"
 date: 2013-08-19 16:34:00
 pub-time: 2013-08-29T16:34
 
-share-img: "social/teach.jpg"
+share-img: "social/teach.png"
 snippet: "As a web developer of some 10 years, there are two things I&rsquo;m regularly asked by friends and acquaintances: <em>&ldquo;Can you build me a website?&rdquo;</em> and <em>&ldquo;Can you teach me web design?&rdquo;</em>"
 ---
 
@@ -28,9 +28,7 @@ More recently however, we&rsquo;ve seen services like [Treehouse](http://teamtre
 
 This has got me thinking recently;
 
-> Q. Could I teach someone all this in 5 days?
->
-> A. Most probably, but with a few caveats.
+> Q. Could I teach someone all this in 5 days? A. Most probably, but with a few caveats.
 
 First of all, I could only teach [HTML](http://www.w3.org/html/wg/drafts/html/master/) and [CSS](http://www.w3.org/TR/CSS/) to the latest W3C draft (and so I should) but unfortunately it would take an age to go through every little browser quirk and the preferred solution (if there is one).
 

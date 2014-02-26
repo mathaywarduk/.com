@@ -10,7 +10,7 @@ keywords: "music"
 date: 2013-11-07 15:39:00
 pub-time: 2013-11-07T15:39
 
-share-img: "social/tune.jpg"
+share-img: "social/tune.png"
 snippet: "Music is an important part of advertising. It can evoke feelings which influence a consumers mood."
 ---
 
@@ -32,7 +32,9 @@ Volkswagen&rsquo;s latest advert, Woofswagen, illustrates the diversity of it&rs
 	<iframe width="700" height="525" src="//www.youtube.com/embed/65Rrl6Lka18?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-So that&rsquo;s the good, but now for the reason I thought about this article in the first place. I&rsquo;ve seen a few adverts recently that really ground on me, like the cliched &lsquo;nails on a blackboard&rsquo;.
+So that&rsquo;s the good, but now for the reason I thought about this article in the first place.
+
+> I&rsquo;ve seen a few adverts recently that really ground on me, like the clich&eacute;d &lsquo;nails on a blackboard&rsquo;.
 
 First off, Volvo&rsquo;s new ad for the V40 R-Design is lazy, in that it looks like every other car advert. Close ups of the vehicle as it drives down the road, through an interesting landscape. Make your own mind up whether this is a tried and tested technique or just the cheapest way to put something together quickly. 
 

@@ -36,13 +36,12 @@
 .media__caption {
     font-style: italic;
     @include rems(margin, 10, 0);
-    @include text($text__size--gamma, $text__line--gamma, $font__base--headings);
+    @include text($text__size--delta, $text__line--delta);
+    
     @include respond-to("small and above") {
         float: right;
-        border-left: 2px solid $color__primary;
         width: auto;
         display: inline;
-        @include rems(padding, 0, 5, 0, 10);
     }
 }
 

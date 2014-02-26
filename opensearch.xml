@@ -1,0 +1,14 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Mat Hayward</ShortName>
+    <LongName>Mat Hayward Search</LongName>
+    <Description>Search articles on Mat Hayward</Description>
+    <InputEncoding>UTF-8</InputEncoding>
+    <OutputEncoding>UTF-8</OutputEncoding>
+    <Language>en-gb</Language>
+    <Developer>Mat Hayward</Developer>
+    <Contact>mat@mathayward.com</Contact>
+    <SyndicationRight>open</SyndicationRight>
+    <Query role="example" searchTerms="Apple"/>
+    <Image height="128" width="128" type="image/png">http://mathayward.com//static/images/icons/favicon.png</Image>
+    <Url type="text/html" template="http://mathayward.com/search/?q={searchTerms}"/>
+</OpenSearchDescription>

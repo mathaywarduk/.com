@@ -4,7 +4,7 @@
 {% endif %}
 {% capture title %}{{ page.title }}{{ divider }}Front-end Developer ~ Mat Hayward{% endcapture %}
 <!DOCTYPE html>
-<html dir="ltr" lang="en-GB" class="rems">
+<html dir="ltr" lang="en-GB">
     <head>
         <title>{{ title }}</title>
         {% if page.posted-on-url %}<link rel="canonical" href="{{ page.posted-on-url }}"/>{% endif %}
@@ -27,16 +27,19 @@
         <meta name="keywords" content="{{ page.keywords }}" />
 
         <!-- RSS -->
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://mathayward.com/feed.xml" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
+
+        <!-- SEARCH -->
+        <link rel="search" type="application/opensearchdescription+xml" title="Mat Hayward" href="/opensearch.xml" />
 
         <!-- Facebook Open Graph -->
         <meta property="og:site_name" content="Mat Hayward"/>
         <meta property="og:description" content="{{ page.description }}"/>
         <meta property="og:title" content="{{ title }}"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="http://mathayward.com{{ page.url }}"/>
-        <meta property="og:image" content="http://mathayward.com/static/images/{{ page.share-img }}"/>
-        <meta property="article:published_time" content="{{ page.pub-time }}:00+00:00">
+        <meta property="og:url" content="{{site.baseurl}}{{ page.url }}/"/>
+        <meta property="og:image" content="{{site.baseurl}}/static/images/{{ page.share-img }}"/>
+        <meta property="og:updated_time" content="{{ page.pub-time }}:00+00:00">
 
 
         <!-- Twitter Card -->
@@ -44,23 +47,27 @@
         <meta name="twitter:site" content="@mathaywarduk"/>
         <meta name="twitter:domain" content="mathayward.com"/>
         <meta name="twitter:creator" content="@mathaywarduk"/>
-        <meta name="twitter:image:src" content="http://mathayward.com/static/images/{{ page.share-img }}"/>
+        <meta name="twitter:image:src" content="{{site.baseurl}}/static/images/{{ page.share-img }}"/>
         <meta name="twitter:description" content="{{ page.description }}"/>
         <meta name="twitter:title" content="{{ title }}"/>
-        <meta name="twitter:url" content="http://mathayward.com{{ page.url }}"/>
+        <meta name="twitter:url" content="{{site.baseurl}}{{ page.url }}/"/>
 
         <!-- Scripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="/static/js/plugins.js"></script>
 
     </head>
-    <body>
+    <body class="no-js">
         <b id="top"></b>
         <header class="header" itemscope itemtype="http://data-vocabulary.org/Person">
+            <div class="header__avatar">
+                <a href="/"><img src="https://lh3.googleusercontent.com/-QlmUfD33DRk/AAAAAAAAAAI/AAAAAAAABig/NVgoYx97Y1U/s120-c/photo.jpg" alt="Oooo yeah, click my face!" title="Oooo yeah, click my face!" /></a>
+            </div>
+
             <h1 itemprop="name"><a href="/">Mat Hayward</a></h1>
             <div class="subheader">{{ site.strapline }}</div>
             <div class="layout--hidden">
-                <a href="http://www.mathayward.com" itemprop="url">www.mathayward.com</a>.
+                <a href="{{site.baseurl}}" itemprop="url">mathayward.com</a>.
                 <span itemprop="address" itemscope
                 itemtype="http://data-vocabulary.org/Address">
                 <span itemprop="locality">Nottingham</span>
@@ -71,7 +78,8 @@
             <nav class="nav">
                 <a href="/" class="nav__item" title="Ramblings and such">Read</a> |
                 <a href="/work" class="nav__item" title="Details of where I've worked with selected projects">Work</a> |
-                <a href="http://www.twitter.com/mathaywarduk" class="nav__item" title="Follow me">Twitter</a>
+                <a href="/photography" class="nav__item" title="Some of the photographs I've taken">Photography</a> |
+                <a href="/search" class="nav__item" title="Feeling lazy? Use the search function to find things quickly">Search</a></b>
             </nav>
         </header>
 
@@ -81,7 +89,7 @@
 
             <footer class="post__footer">
                 <nav class="nav--footer">
-                    <p>&copy; Mat Hayward</p>
+                    <p>&copy; Mat Hayward | <a href="http://www.twitter.com/mathaywarduk" class="nav__item" title="Follow me">Twitter</a></p>
                     <a href="#top" class="nav__item nav__item--top" data-scroll-to-target>Back to top</a>
                 </nav>
             </footer>

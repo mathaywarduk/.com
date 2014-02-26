@@ -1,0 +1,75 @@
+///////////////////
+// Social Styles //
+///////////////////
+
+.social {
+    background-color: $color__highlight;
+    @include rems(margin-top, 30);
+    @include rems(margin-bottom, 0);
+    @include rems(padding-top, 15);
+    @include rems(padding-bottom, 15);
+    @extend %mh-pushpadding;
+
+    @include respond-to("medium and above") {
+        margin-left: 0;
+        margin-right: 35%;
+        @include border-radius(2px);
+        @include rems(padding, 15);
+    }
+
+    @include respond-to("large and above") {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    @include respond-to("xlarge and above") {
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+
+}
+
+.social__header {
+    color: $color--white;
+    border-bottom: 1px solid white;
+    @include rems(padding-bottom, 9);
+    @include rems(margin-bottom, 15);
+    @extend %mh-pushpadding;
+}
+
+.social__links {
+    > li {
+        padding: 0;
+        display: inline;
+        @include rems(margin-right, 15);
+
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.social__link {
+    @include rems(width, 30);
+    @include rems(height, 30);
+    @include rems(padding, 5);
+    @extend %text--replaced;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include transition(top, 100ms);
+
+    &:hover {
+        position: relative;
+        @include rems(top, -2);
+    }
+}
+
+.social__link--twitter {
+    background-image: image-url("logos/twitter--white.png");
+}
+
+.social__link--facebook {
+    background-image: image-url("logos/facebook--white.png");
+
+}

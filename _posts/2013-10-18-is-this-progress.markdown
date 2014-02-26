@@ -20,9 +20,9 @@ That same colleague also couldn't remember if CSS selectors were nested within m
 
 I've done it. The other weekend I made a quick holding page for my parent's allotment association. For the first time in months I wasn't using Sass and Compass and so I couldn't use a nice mixin for rem sizing. Instead I had to calculate the values myself using good old fashioned mathematics. Google was my saviour. As it was with text-shadow, box-shadow and border-radius.
 
-So, are these tools, that make our lives as developers easier, actually progressing our skills or reducing our basic skillset? Can I still put CSS on my CV?
+> Are these tools, that make our lives as developers easier, progressing our skills or reducing our basic skillset?
 
-Yeah, and of course I can. Not that I need a CV, <a href="/mark-as-spam">LinkedIn recruiters</a> have every job anyone could ever want, and they're gonna tell you about them whether you like it or not!
+ Can I still put CSS on my CV? Yeah, and of course I can. Not that I need a CV, <a href="/mark-as-spam">LinkedIn recruiters</a> have every job anyone could ever want, and they're gonna tell you about them whether you like it or not!
 
 On one hand, I think preprocessors are great tools. Not only do they reduce the amount you have to write (do I really need to write all those vendor prefixes?), they also highlight any errors you might make in the process.
 

@@ -1,0 +1,22 @@
+---
+layout: none
+---
+[
+{% for post in site.posts %}{% if post.type != 'tweet' %}   {
+        "title": "{{post.title}} ",
+        "content": "{{post.content | markdownify | strip_html | strip_newlines | replace: '"', '\"'}}",
+        "link": "{{ site.baseurl }}{{ post.url }}",
+        "published": "{{ post.pub-time }}",
+        "excerpt": "{{ post.snippet }}"
+    },{% endif %}{% endfor %}
+
+    {% for page in site.pages %}
+    {% if page.layout != 'none' and page.layout != 'none' and page.title != null and page.title != empty %}
+    {
+        "title": "{{page.title}} ",
+        "content": "{{page.content | strip_html | strip_newlines | replace: '"', '\"'}}",
+        "link": "{{ site.baseurl }}{{ page.url | replace: 'index.html', '' }}",
+        "published": "{{ page.pub-time }}",
+        "excerpt": "{{ page.description }}"
+    }{% if forloop.index < forloop.length%},{%endif%}{%endif%}{% endfor %}
+]

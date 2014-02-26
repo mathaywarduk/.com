@@ -17,7 +17,8 @@
 }
 
 %post__content {
-    @include rems(padding, 0, 0, 30);
+    @include rems(padding, 0, 0, 15);
+    position: relative;
 }
 
 
@@ -66,7 +67,7 @@
     @extend %push-text;
 }
 
-.post__link {
+.post__links {
     border-bottom: 1px dotted $color__neutral--light;
     @include rems(margin-top, 10);
     @include rems(margin-bottom, 30);
@@ -115,7 +116,7 @@
         }
     }
 
-    article {
+    article, .posts-list__item {
         @include rems(padding, 0, 15);
 
         @include respond-to("small and above") {
@@ -169,7 +170,7 @@
     @extend %post__content;
     padding-bottom: 0;
 
-    .post__link {
+    .post__links {
         margin-bottom: 0;
 
         article:last-child & {
@@ -186,7 +187,7 @@
 .posts-list__content--twitter {
     @include rems(padding, 75, 15, 0);
     @include rems(margin, 30, 0, 30, 0);
-    border: 1px dotted transparentize($color__primary--dark, 0.9);
+    border: 1px dotted transparentize($color__primary--dark, 0.7);
     background-image: image-url("icons/twitter.png");
     background-repeat: no-repeat;
     background-position: center 25px;
@@ -216,7 +217,7 @@
         }
     }
 
-    .post__link {
+    .post__links {
         border-top: 1px dotted $color__neutral--light;
         color: $color__primary--dark;
         border-bottom: 0;
@@ -256,7 +257,7 @@
         }
     }
 
-    .post__link {
+    .post__links {
         
         color: $color--white;
         

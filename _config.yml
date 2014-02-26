@@ -5,4 +5,4 @@ pygments: true
 permalink: /:title
 exclude: [assets, config.rb, README.md]
 strapline: Nottingham&rsquo;s answer to a question nobody asked.
-baseurl: http://mathayward.com
+url: http://mathayward.com

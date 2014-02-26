@@ -4,6 +4,7 @@ date: 2013-12-04 10:38:00
 pub-time: 2013-12-04T10:38
 twitter-id: 408183560550359040
 url-out: https://twitter.com/mathaywarduk/status/408183560550359040
+search_omit: true
 ---
 
 If you've got a copy of [@netmag](https://twitter.com/netmag) this month, check out my lovely face (and read my article) on page 84&hellip; [instagram.com/p/hfxsDCS19w/](http://instagram.com/p/hfxsDCS19w/)

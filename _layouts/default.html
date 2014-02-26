@@ -27,7 +27,7 @@
         <meta name="keywords" content="{{ page.keywords }}" />
 
         <!-- RSS -->
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.url}}/feed.xml" />
 
         <!-- SEARCH -->
         <link rel="search" type="application/opensearchdescription+xml" title="Mat Hayward" href="/opensearch.xml" />
@@ -37,8 +37,8 @@
         <meta property="og:description" content="{{ page.description }}"/>
         <meta property="og:title" content="{{ title }}"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="{{site.baseurl}}{{ page.url }}/"/>
-        <meta property="og:image" content="{{site.baseurl}}/static/images/{{ page.share-img }}"/>
+        <meta property="og:url" content="{{site.url}}{{ page.url }}"/>
+        <meta property="og:image" content="{{site.url}}/static/images/{{ page.share-img }}"/>
         <meta property="og:updated_time" content="{{ page.pub-time }}:00+00:00">
 
 
@@ -47,10 +47,10 @@
         <meta name="twitter:site" content="@mathaywarduk"/>
         <meta name="twitter:domain" content="mathayward.com"/>
         <meta name="twitter:creator" content="@mathaywarduk"/>
-        <meta name="twitter:image:src" content="{{site.baseurl}}/static/images/{{ page.share-img }}"/>
+        <meta name="twitter:image:src" content="{{site.url}}/static/images/{{ page.share-img }}"/>
         <meta name="twitter:description" content="{{ page.description }}"/>
         <meta name="twitter:title" content="{{ title }}"/>
-        <meta name="twitter:url" content="{{site.baseurl}}{{ page.url }}/"/>
+        <meta name="twitter:url" content="{{site.url}}{{ page.url }}/"/>
 
         <!-- Scripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -67,7 +67,7 @@
             <h1 itemprop="name"><a href="/">Mat Hayward</a></h1>
             <div class="subheader">{{ site.strapline }}</div>
             <div class="layout--hidden">
-                <a href="{{site.baseurl}}" itemprop="url">mathayward.com</a>.
+                <a href="{{site.url}}" itemprop="url">mathayward.com</a>.
                 <span itemprop="address" itemscope
                 itemtype="http://data-vocabulary.org/Address">
                 <span itemprop="locality">Nottingham</span>

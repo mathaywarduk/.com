@@ -7,6 +7,7 @@ description: Search mathayward.com
 keywords: Front-end Developer Nottingham
 share-img: default.jpg
 pub-time: 2014-02-20T18:07
+search_omit: true
 ---
 
 
@@ -20,8 +21,8 @@ pub-time: 2014-02-20T18:07
     </div>
 
     <div class="content-wrapper search__results-wrapper posts-list">
-        <div class="search__found-string" data-search-found-string>
-            <p><span data-search-count></span> result(s) found for &ldquo;<span data-search-term></span>&rdquo;.</p>
+        <div class="search__found-string">
+            <p data-search-found><span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.</p>
         </div>
         <div class="search__results" data-search-results></div>
     </div>
@@ -30,7 +31,7 @@ pub-time: 2014-02-20T18:07
         <div class="posts-list__item search__item">
             <header class="posts-list__header">
                 <h1><a href="##Url##">##Title##</a></h1>
-                <h2 class="post__date"><a href="##Url##">##PubDate##</a></h2>
+                <h2 class="post__date"><a href="##Url##">##Date##</a></h2>
             </header>
             <section class="posts-list__content">
                 <p>##Excerpt##</p>
@@ -40,3 +41,6 @@ pub-time: 2014-02-20T18:07
             </section>
         </div>
     </script>
+
+      <!-- Search script - Must appear after template -->
+      <script src="/static/js/search.js"></script>

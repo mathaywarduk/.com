@@ -6,24 +6,24 @@ layout: none
         <title>{{ site.name }}</title>
         <subtitle/>
         <icon>
-           {{site.baseurl}}/static/images/icons/favicon.png
+           {{site.url}}/static/images/icons/favicon.png
         </icon>
         <updated>2013-09-19T18:07:00+00:00</updated>
-        <id>{{site.baseurl}}/feed.xml</id>
-        <link type="text/html" href="{{site.baseurl}}" rel="alternate"/>
+        <id>{{site.url}}/feed.xml</id>
+        <link type="text/html" href="{{site.url}}" rel="alternate"/>
     {% for post in site.posts %}
         {% if post.type != 'tweet' %}
         <entry>
             <title>{{ post.title }}</title>
             <content type="html">
                 <![CDATA[
-                    <img src="{{site.baseurl}}/static/images/{{ post.share-img }}" alt="{{ post.title }}" />
+                    <img src="{{site.url}}/static/images/{{ post.share-img }}" alt="{{ post.title }}" />
                     {{ post.content | markdownify }}
-                    <a href="{{site.baseurl}}{{ post.url }}">Read on</a>
+                    <a href="{{site.url}}{{ post.url }}">Read on</a>
                 ]]>
             </content>
-            <link href="{{site.baseurl}}{{ post.url }}" type="text/html" rel="alternate" />
-            <id>{{site.baseurl}}{ post.url }}</id>
+            <link href="{{site.url}}{{ post.url }}" type="text/html" rel="alternate" />
+            <id>{{site.url}}{ post.url }}</id>
             <author>
                 <name>{{site.author}}</name>
             </author>

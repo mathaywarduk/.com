@@ -40,4 +40,4 @@ Build the project
 
     $ jekyll build
     
-Upload the contents _site directory to the webroot
+Upload the contents of ```_site``` directory to the webroot

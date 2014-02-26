@@ -10,6 +10,8 @@ mathayward.com
 
 ## Running
 
+If search function is required, change ```url``` in ```config.yml``` to http://localhost:4000 
+
 Clone repository on local machine:
 
     $ git clone git://github.com/mathaywarduk/.com.git
@@ -25,6 +27,8 @@ In another terminal window
 Navigate to [http://localhost:4000](http://localhost:4000)
 
 ## Deploying
+
+Ensure ```url``` in ```config.yml``` is set to http://mathayward.com 
 
 Close any running watch processes (compass and jekyll)
 

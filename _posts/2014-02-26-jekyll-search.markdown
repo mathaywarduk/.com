@@ -18,7 +18,24 @@ You may or may not know that this site is built using [Jekyll](http://jekyllrb.c
 
 Without a database though, there's nothing to query when needed, i.e. when wanting a [search function](/search), so I went about building a work around.
 
-With the [Liquid templating](http://jekyllrb.com/docs/templates/) language, used by Jekyll, I built a [JSON encoded feed](/feeds/feed.json) for posts and pages on the site which I wanted to show up in search results. I then wrote some Javascript which takes a search term, reads the JSON and a template partial, containing the HTML for a search result, and outputs HTML directly into the DOM.
+With the [Liquid templating](http://jekyllrb.com/docs/templates/) language, used by Jekyll, I built a [JSON encoded feed](/feeds/feed.json) for posts and pages on the site which I wanted to show up in search results.
+
+{% raw %}
+<pre><code>[
+    {
+        "title": "{{post.title}}",
+        "content": "{{post.content | markdownify | strip_html"}}",
+        "link": "{{site.url}}{{post.url}}",
+        "date": "{{post.date}}",
+        "excerpt": "{{post.snippet}}"
+    }
+    ...
+]</code></pre>
+{% endraw %}
+
+I then wrote a Javascript plugin which receives a search term, either from a querystring or a form submission, and looks for the term within the JSON feed.
+
+With this data, it's pretty simple to output the results directly into the DOM using a template partial.
 
 <figure class="media">
     <img src="/static/images/blog/jekyll-search.png" alt="Jekyll search" class="media__item" />

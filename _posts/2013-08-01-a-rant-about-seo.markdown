@@ -22,7 +22,7 @@ Every client includes it on a brief, &lsquo;first page ranking&rsquo;, &lsquo;to
 
 The SEO _wizards_ know the &lsquo;tricks-of-the-trade&rsquo; to falsify your web page&rsquo;s relevance for the keywords required, giving your page a higher ranking than it actually deserves, and they&rsquo;ll happily charge you to do it. They&rsquo;ll have you believe it&rsquo;s some kind of magical dark art, passed from generation-to-generation. It&rsquo;s not. And there are two problems with their ideals and their methods. When Google, Yahoo!, Bing and the others find out these tricks, they change their algorithms in order to nullify them. What&rsquo;s worse, users tricked into visiting the wrong page, leave. Leading to reduced conversion rates and increased bounce rates.
 
-Google (et al) are in the game to make money, and they do this by serving the most relevant results to their users. Repeated users equal more advertising revenue. And what makes a search engine popular? Getting the best results first time every time. Relevance. It&rsquo;s in thire interest to remove the false results.
+Google (et al) are in the game to make money, and they do this by serving the most relevant results to their users. Repeated users equal more advertising revenue. And what makes a search engine popular? Getting the best results first time every time. Relevance. It&rsquo;s in their interest to remove the false results.
 
 To achieve a high ranking that leads to conversions, don&rsquo;t use tricks and cheats that will be out-of-date by the time your next birthday comes around. Look at the content from the users&rsquo; point of view. The best way to appear relevant is to **actually be&nbsp;relevant**.
 

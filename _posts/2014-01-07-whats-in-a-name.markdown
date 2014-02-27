@@ -97,7 +97,7 @@ This is a real discussion (with most of the swearing removed) within the Erskine
 
 **M:** *&ldquo;Just say yes!&rdquo;*
 
-**T:** *&ldquo;With sizes is our mistake to start at one end of the range? By defining alpha to early etc.&rdquo;*
+**T:** *&ldquo;With sizes is our mistake to start at one end of the range? By defining alpha too early etc.&rdquo;*
 
 **M:** *&ldquo;Yeah but if we assume that&rsquo;s going to happen, we can prepare for it. Sorted.&rdquo;*
 

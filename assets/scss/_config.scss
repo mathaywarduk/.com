@@ -84,17 +84,11 @@ $width__xlarge: 1500px;
 
 $breakpoint-to-ems: true;
 
-$breakpoints: 'small only' (max-width $width__small),
-              'small and above' ($width__small),
-              'between small and medium' ($width__small $width__medium),
-              'between medium and large' ($width__medium $width__large),
-              'medium and below' (max-width $width__medium),
-              'medium and above' ($width__medium),
-              'large and above' ($width__large),
-              'xlarge and above' ($width__xlarge),
-              'high resolution' (min-resolution 1.5dppx),
-              'landscape' (orientation landscape),
-              'portrait' (orientation portrait);
+
+$breakpoints: add-breakpoint('small and above', $width__small);
+$breakpoints: add-breakpoint('medium and above', $width__medium);
+$breakpoints: add-breakpoint('large and above', $width__large);
+$breakpoints: add-breakpoint('xlarge and above', $width__xlarge);
 
 $breakpoint--logo: 1166px;
 

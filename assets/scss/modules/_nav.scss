@@ -16,17 +16,28 @@
     font-family: $font__base--headings;
     clear: left;
 
+    @include respond-to("small and above") {
+    }
+
 
     .nav__item {
-        @include rems(padding, 5, 7);
+        @include rems(padding, 7);
+        @include rems(margin-left, -7);
         font-family: $font__base--body;
         font-size: 80%;
         font-style: normal;
         text-transform: uppercase;
         text-decoration: underline;
+        display: block;
 
-        &:first-child {
-            @include rems(margin-left, -7);
+        @include respond-to("small and above") {
+            display: inline-block;
+            @include rems(padding, 5, 7);
+            margin-left: 0;
+
+            &:first-child {
+                @include rems(margin-left, -7);
+            }
         }
         
         @include respond-to("large and above") {
@@ -34,6 +45,13 @@
         }
     }
 
+    .nav__divider {
+        display: none;
+        
+        @include respond-to("small and above") {
+            display: inline;
+        }
+    }
 }
 
 

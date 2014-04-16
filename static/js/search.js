@@ -114,7 +114,7 @@ function processData() {
 
         $.each(data, function(index, item) {
             // check if search term is in content or title 
-            if (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1) {
+            if (item.seach_omit != "true" && (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1)) {
                 var result = populateResultContent($resultTemplate.html(), item);
                 resultsCount++;
                 results += result;
@@ -149,10 +149,23 @@ function showSearchResults(results) {
  * @return {String} Populated HTML
  */
 function populateResultContent(html, item) {
-    var d = new Date(item.date);
+    if (item.date != "") {
+        var dateString = $("#search-date").html();
+        html = injectContent(html, populateDateString(dateString, item), '##SubTitle##');
+    } else {
+        html = injectContent(html, "", '##SubTitle##');
+    }
     html = injectContent(html, item.title, '##Title##');
     html = injectContent(html, item.link, '##Url##');
     html = injectContent(html, item.excerpt, '##Excerpt##');
+    return html;
+}
+
+
+function populateDateString(html, item) {
+    var d = new Date(item.date);
+
+    html = injectContent(html, item.link, '##Url##');
     html = injectContent(html, formatDate(d), '##Date##');
     return html;
 }

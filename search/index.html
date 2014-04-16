@@ -31,7 +31,7 @@ search_omit: true
         <div class="posts-list__item search__item">
             <header class="posts-list__header">
                 <h1><a href="##Url##">##Title##</a></h1>
-                <h2 class="post__date"><a href="##Url##">##Date##</a></h2>
+                ##SubTitle##
             </header>
             <section class="posts-list__content">
                 <p>##Excerpt##</p>
@@ -41,6 +41,9 @@ search_omit: true
             </section>
         </div>
     </script>
+    <script type="text/x-template" id="search-date">
+        <h2 class="post__date"><a href="##Url##">##Date##</a></h2>
+    </script>
 
-      <!-- Search script - Must appear after template -->
-      <script src="/static/js/search.js"></script>
+    <!-- Search script - Must appear after template -->
+    <script src="/static/js/search.js"></script>

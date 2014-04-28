@@ -3,6 +3,6 @@ author: Mat Hayward
 markdown: redcarpet
 pygments: true
 permalink: /:title
-exclude: [assets, config.rb, README.md]
+exclude: [assets, config.rb, README.md, Gruntfile.js, package.json, node_modules]
 strapline: Nottingham&rsquo;s answer to a question nobody asked.
 url: http://mathayward.com

@@ -23,6 +23,11 @@ body {
     }
 }
 
+.wf-loading * {
+    visibility: hidden;
+}
+
+
 @mixin text($size, $line, $family: $font__base--body) {
     font-size: $size * 1px;
     font-size: calc-rem($size);

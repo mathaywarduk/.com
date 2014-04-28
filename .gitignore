@@ -3,3 +3,4 @@ _site
 .sass-cache
 static/images/blog/web_celeb_1*
 static/css
+/node_modules

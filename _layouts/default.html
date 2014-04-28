@@ -9,15 +9,15 @@
         <title>{{ title }}</title>
         {% if page.posted-on-url %}<link rel="canonical" href="{{ page.posted-on-url }}"/>{% endif %}
 
+        <!-- Scripts -->
+        <script src="/static/js/build/app.min.js" async></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
         <!-- Icons -->
         <link rel="shortcut icon" type="image/png" href="/static/images/icons/favicon.png" />
 
         <!-- Styles -->
-        <link rel="stylesheet" type="text/css" media="all" href="/static/css/screen.css" />
-
-        <!-- Fonts -->
-        <script type="text/javascript" src="//use.typekit.net/rgc4dxh.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <link rel="stylesheet" type="text/css" media="all" href="/static/css/screen.css" async />
 
         <!-- Meta -->
         <meta charset="UTF-8" />
@@ -51,10 +51,6 @@
         <meta name="twitter:description" content="{{ page.description }}"/>
         <meta name="twitter:title" content="{{ title }}"/>
         <meta name="twitter:url" content="{{site.url}}{{ page.url }}/"/>
-
-        <!-- Scripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="/static/js/plugins.js"></script>
 
     </head>
     <body class="no-js">
@@ -94,18 +90,5 @@
                 </nav>
             </footer>
         </{{ page.container-type }}>
-        <script type="text/javascript">
-
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-580668-8']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-        </script>
     </body>
 </html>

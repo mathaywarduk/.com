@@ -6,6 +6,7 @@ mathayward.com
 * [Sass](http://sass-lang.com/)
 * [Compass](http://compass-style.org/)
 * [Jekyll](http://jekyllrb.com/)
+* [Grunt](http://gruntjs.com/)
  
 
 ## Running
@@ -16,9 +17,13 @@ Clone repository on local machine:
 
     $ git clone git://github.com/mathaywarduk/.com.git
 
+Install grunt dependencies
+
+    $ sudo npm install
+
 In one terminal window:
 
-    $ compass watch
+    $ grunt watch
 
 In another terminal window
 

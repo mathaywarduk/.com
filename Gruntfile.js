@@ -51,7 +51,7 @@ module.exports = function(grunt) {
             }
         },
 
-        //Auto watch files/folders for fiel changes & run set tasks above
+        //Auto watch files/folders for file changes & run set tasks above
         watch: {
 
             //Setup config options for watch
@@ -87,9 +87,6 @@ module.exports = function(grunt) {
 
     //Minify JS files - aka Uglify
     grunt.loadNpmTasks('grunt-contrib-uglify');
-
-    //Sass to css compilation
-    // grunt.loadNpmTasks('grunt-contrib-sass');
 
     //Sass to css compilation
     grunt.loadNpmTasks('grunt-contrib-compass');

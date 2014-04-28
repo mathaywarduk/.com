@@ -23,7 +23,7 @@ There are some brands that have already realised the benefit of making life easi
 ## 01. MailChimp
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-email-mailchimp.jpg" alt="Mailchimp newsletter" class="media__item" />
+    <img src="/static/images/blog/responsive-email-mailchimp.jpg" alt="Mailchimp newsletter" class="media__item">
     <figcaption class="media__caption">Mailchimp have made their email newsletters ultra-easy to read</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ As you'd expect from an email marketing service that sends over 4billion emails 
 ## 02. Toms
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-email-toms.jpg" alt="Toms newsletter" class="media__item" />
+    <img src="/static/images/blog/responsive-email-toms.jpg" alt="Toms newsletter" class="media__item">
     <figcaption class="media__caption">Shoe store Toms has removed the header and footer from its newsletters</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ Shoe store [Toms](http://www.toms.com/)' approach to mobile email design is to r
 ## 03. Smashing Magazine
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-email-smashingmag.jpg" alt="Smashing Magazine's newsletter" class="media__item" />
+    <img src="/static/images/blog/responsive-email-smashingmag.jpg" alt="Smashing Magazine's newsletter" class="media__item">
     <figcaption class="media__caption">Smashing Magazine has centred its newsletter around the text</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ Web design blog [Smashing Magazine](http://www.smashingmagazine.com/)'s newslett
 ## 04. Moo.com
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-email-moo.jpg" alt="Moo's newsletter" class="media__item" />
+    <img src="/static/images/blog/responsive-email-moo.jpg" alt="Moo's newsletter" class="media__item">
     <figcaption class="media__caption">Moo's newsletter adapts well to smaller screen sizes</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ The MOOsLetter provides readers with special offers, tips and creative ideas rel
 ## 05. Twitter
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-email-twitter.jpg" alt="Twitters's newsletter" class="media__item" />
+    <img src="/static/images/blog/responsive-email-twitter.jpg" alt="Twitters's newsletter" class="media__item">
     <figcaption class="media__caption">Twitter has increased the space between elements of its newsletter to make it easier to navigate by thumb</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ The MOOsLetter provides readers with special offers, tips and creative ideas rel
 ## 06. Gilt
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-email-gilt.jpg" alt="Gilt's newsletter" class="media__item" />
+    <img src="/static/images/blog/responsive-email-gilt.jpg" alt="Gilt's newsletter" class="media__item">
     <figcaption class="media__caption">Designer label store Gilt wants users to move quickly through to purchase</figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ The MOOsLetter provides readers with special offers, tips and creative ideas rel
 ## 07. Rdio
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-email-rdio.jpg" alt="Rdio's newsletter" class="media__item" />
+    <img src="/static/images/blog/responsive-email-rdio.jpg" alt="Rdio's newsletter" class="media__item">
     <figcaption class="media__caption">Rdio's emails are fluid with a minimum width</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ The MOOsLetter provides readers with special offers, tips and creative ideas rel
 ## 08. Size?
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-email-size.jpg" alt="Size?'s newsletter" class="media__item" />
+    <img src="/static/images/blog/responsive-email-size.jpg" alt="Size?'s newsletter" class="media__item">
     <figcaption class="media__caption">Clothing store Size?'s email newsletter stretches the buttons to fit the width of the screen</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ Emails from question mark-toting clothing store [Size?](http://www.size.co.uk/) 
 ## 09. Mr Porter
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-email-mrporter.jpg" alt="Mr Porter's newsletter" class="media__item" />
+    <img src="/static/images/blog/responsive-email-mrporter.jpg" alt="Mr Porter's newsletter" class="media__item">
     <figcaption class="media__caption">Isolated images and short and sweet descriptions make navigation easy</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ This email from clothes shopping site [Mr Porter](http://www.mrporter.com/) does
 ## 10. Tribe Latest
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-email-tribe.jpg" alt="Tribe Latest" class="media__item" />
+    <img src="/static/images/blog/responsive-email-tribe.jpg" alt="Tribe Latest" class="media__item">
     <figcaption class="media__caption">Tribe's newsletter has large links for easy pressing</figcaption>
 </figure>
 

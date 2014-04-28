@@ -69,7 +69,7 @@ The last option, which is the one we&rsquo;re going to focus on is to Make it Re
 ## Dave
 
 <figure class="media media--full">
-    <img src="/static/images/blog/responsive-web-dave.jpg" alt="What is responsive design?" class="media__item" />
+    <img src="/static/images/blog/responsive-web-dave.jpg" alt="What is responsive design?" class="media__item">
 </figure>
 
 Here&rsquo;s Dave, he couldn&rsquo;t be with us tonight, but he&rsquo;s useful here as an analogy. We all like Dave, in whatever capacity he&rsquo;s in, whether it&rsquo;s Olympic Ambassador, unpaid Footballer or Forgetter of Clothes, but whatever he&rsquo;s wearing, or not wearing, and whatever he&rsquo;s doing, he&rsquo;s always the same Dave. His content never changes, but the way that content is displayed changes. And it&rsquo;s always displayed in the best way for the situation.

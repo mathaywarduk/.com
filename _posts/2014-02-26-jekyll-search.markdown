@@ -38,7 +38,7 @@ I then wrote a Javascript plugin which receives a search term, either from a que
 With this data, it's pretty simple to output the results directly into the DOM using a template partial.
 
 <figure class="media">
-    <img src="/static/images/blog/jekyll-search.png" alt="Jekyll search" class="media__item" />
+    <img src="/static/images/blog/jekyll-search.png" alt="Jekyll search" class="media__item">
 </figure>
 
 That's it explained in it's simplest form anyway. Try it out for yourself over on the [search page](/search) and let me know what you think.

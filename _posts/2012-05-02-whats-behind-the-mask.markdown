@@ -21,24 +21,24 @@ Our resident photography genius, Rob, recently launched his new website: [panodr
 We started with the basic mask, a cut out of the logo placed on top of an image of pure white using CSS. Together these created the part of logo that changes.
 
 <figure class="media">
-    <img src="/static/images/blog/pano_hole_step_1.jpg" alt="Step 1" class="media__item" />
+    <img src="/static/images/blog/pano_hole_step_1.jpg" alt="Step 1" class="media__item">
 </figure>
 
 That was our default view. Then we inserted a hidden div between the mask and the white background, which would act as a placeholder for the dynamic background.
 
 <figure class="media">
-    <img src="/static/images/blog/pano_hole_step_2.jpg" alt="Step 2" class="media__item" />
+    <img src="/static/images/blog/pano_hole_step_2.jpg" alt="Step 2" class="media__item">
 </figure>
 
 
 Then, using Javascript, all we had to do was to change the background of the hidden div to whatever the user was hovering over and change the background position to follow the cursor.
 
 <figure class="media">
-    <img src="/static/images/blog/pano_hole_step_3.jpg" alt="Step 3" class="media__item" />
+    <img src="/static/images/blog/pano_hole_step_3.jpg" alt="Step 3" class="media__item">
 </figure>
 
 <figure class="media">
-    <img src="/static/images/blog/pano_hole_step_4.jpg" alt="Step 4" class="media__item" />
+    <img src="/static/images/blog/pano_hole_step_4.jpg" alt="Step 4" class="media__item">
 </figure>
 
 One issue we came across was when hovering near the corners of images, the corners were visible in the logo. Not nice!
@@ -47,7 +47,7 @@ To fix this we used a bit of maths in the Javascript to implement a &ldquo;safe-
 
 
 <figure class="media">
-    <img src="/static/images/blog/pano_hole_step_5.jpg" alt="Step 5" class="media__item" />
+    <img src="/static/images/blog/pano_hole_step_5.jpg" alt="Step 5" class="media__item">
 </figure>
 
 

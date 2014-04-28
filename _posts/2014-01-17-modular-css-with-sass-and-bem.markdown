@@ -17,7 +17,7 @@ snippet: "I wrote a feature for Net magazine's December issue about creating a l
 I wrote a feature for <a href="http://netmagazine.com">Net magazine</a>&rsquo;s December issue about creating a living modular framework.
 
 <figure class="media">
-    <img src="/static/images/blog/write-modular-css-with-sass-and-bem.jpg" alt="Net Magazine" class="media__item" />
+    <img src="/static/images/blog/write-modular-css-with-sass-and-bem.jpg" alt="Net Magazine" class="media__item">
 </figure>
 
 Here it is.
@@ -299,7 +299,7 @@ For example:
 There are examples of a layout and a media module in the [Github repository](https://github.com/mathaywarduk/simple-sass-framework) that accompanies this tutorial, but I&rsquo;ll let you be creative here and decide for yourself how to build them.
 
 <figure class="media">
-    <img src="/static/images/blog/BEM_Sass_3.png" alt="Module files" class="media__item" />
+    <img src="/static/images/blog/BEM_Sass_3.png" alt="Module files" class="media__item">
     <figcaption class="media__caption">Self-contained module files set out base styles for content types. They&rsquo;re used only when needed</figcaption>
 </figure>
 

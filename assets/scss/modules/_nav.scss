@@ -21,10 +21,9 @@
 
 
     .nav__item {
-        @include rems(padding, 7);
-        @include rems(margin-left, -7);
+        @include rems(padding, 10);
+        @include rems(margin-left, -10);
         font-family: $font__base--body;
-        font-size: 80%;
         font-style: normal;
         text-transform: uppercase;
         text-decoration: underline;

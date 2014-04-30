@@ -35,11 +35,11 @@ Navigate to [http://localhost:4000](http://localhost:4000)
 
 Ensure ```url``` in ```config.yml``` is set to http://mathayward.com 
 
-Close any running watch processes (compass and jekyll)
+Close any running watch processes (grunt and jekyll)
 
-Ensure the latest CSS is present
+Ensure the latest CSS and JS is present
 
-    $ compass compile
+    $ grunt
     
 Build the project
 

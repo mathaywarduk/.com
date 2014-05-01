@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://mathayward.com</loc>
+		<lastmod>2013-09-19</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+    
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/jekyll-search</loc>
+		<lastmod>2014-02-26</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/modular-css-with-sass-and-bem</loc>
+		<lastmod>2014-01-17</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/whats-in-a-name</loc>
+		<lastmod>2014-01-07</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+    
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/getting-started</loc>
+		<lastmod>2013-11-18</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/playing-the-wrong-tune</loc>
+		<lastmod>2013-11-07</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/is-this-progress</loc>
+		<lastmod>2013-10-18</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/mark-as-spam</loc>
+		<lastmod>2013-10-18</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/behind-the-scenes</loc>
+		<lastmod>2013-09-19</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/teach-me-web-design</loc>
+		<lastmod>2013-08-19</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/a-rant-about-seo</loc>
+		<lastmod>2013-08-01</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/the-responsive-web</loc>
+		<lastmod>2013-04-16</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/responsive-email-newsletters</loc>
+		<lastmod>2013-02-27</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+    
+	<url>
+		<loc>http://mathayward.com/whats-behind-the-mask</loc>
+		<lastmod>2012-05-02</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+    
+    
+	<url>
+		<loc>http://mathayward.com/work</loc>
+		<lastmod>2014-01-16</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://mathayward.com/photography</loc>
+		<lastmod>2014-01-16</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://mathayward.com/search</loc>
+		<lastmod>2014-02-20</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://mathayward.com/randomiser</loc>
+		<lastmod>2013-01-19</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+</urlset>

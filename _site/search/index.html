@@ -1,0 +1,127 @@
+
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-GB">
+    <head>
+        <title>Search ~ Front-end Developer ~ Mat Hayward</title>
+        
+
+        <!-- Scripts -->
+        <script src="/static/js/build/app.min.js" async></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <!-- Icons -->
+        <link rel="shortcut icon" type="image/png" href="/static/images/icons/favicon.png">
+
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" media="all" href="/static/css/screen.css">
+
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Search mathayward.com">
+        <meta name="author" content="Mat Hayward">
+        <meta name="keywords" content="Front-end Developer Nottingham">
+
+        <!-- RSS -->
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://mathayward.com/feed.xml">
+
+        <!-- SEARCH -->
+        <link rel="search" type="application/opensearchdescription+xml" title="Mat Hayward" href="/opensearch.xml">
+
+        <!-- Facebook Open Graph -->
+        <meta property="og:site_name" content="Mat Hayward">
+        <meta property="og:description" content="Search mathayward.com">
+        <meta property="og:title" content="Search ~ Front-end Developer ~ Mat Hayward">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://mathayward.com/search/index.html">
+        <meta property="og:image" content="http://mathayward.com/static/images/default.jpg">
+        <meta property="og:updated_time" content="2014-02-20T18:07:00+00:00">
+
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@mathaywarduk">
+        <meta name="twitter:domain" content="mathayward.com">
+        <meta name="twitter:creator" content="@mathaywarduk">
+        <meta name="twitter:image:src" content="http://mathayward.com/static/images/default.jpg">
+        <meta name="twitter:description" content="Search mathayward.com">
+        <meta name="twitter:title" content="Search ~ Front-end Developer ~ Mat Hayward">
+        <meta name="twitter:url" content="http://mathayward.com/search/index.html/">
+
+    </head>
+    <body class="no-js">
+        <b id="top"></b>
+        <header class="header" itemscope itemtype="http://data-vocabulary.org/Person">
+            <div class="header__avatar">
+                <a href="/"><img src="https://lh3.googleusercontent.com/-QlmUfD33DRk/AAAAAAAAAAI/AAAAAAAABig/NVgoYx97Y1U/s120-c/photo.jpg" alt="Oooo yeah, click my face!" title="Oooo yeah, click my face!"></a>
+            </div>
+
+            <h1 itemprop="name"><a href="/">Mat Hayward</a></h1>
+            <div class="subheader">Nottingham&rsquo;s answer to a question nobody asked.</div>
+            <div class="layout--hidden">
+                <a href="http://mathayward.com" itemprop="url">mathayward.com</a>.
+                <span itemprop="address" itemscope
+                itemtype="http://data-vocabulary.org/Address">
+                <span itemprop="locality">Nottingham</span>
+                <span itemprop="country-name">United Kingdom</span>
+                <span itemprop="title">Front-end developer</span> at <span itemprop="affiliation">Erskine Design</span>
+                </span>
+            </div>
+            <nav class="nav">
+                <a href="/" class="nav__item" title="Ramblings and such">Read</a><span class="nav__divider"> | </span>
+                <a href="/work" class="nav__item" title="Details of where I've worked with selected projects">Work</a><span class="nav__divider"> | </span>
+                <a href="/photography" class="nav__item" title="Some of the photographs I've taken">Photography</a><span class="nav__divider"> | </span>
+                <a href="/search" class="nav__item" title="Feeling lazy? Use the search function to find things quickly">Search</a></b>
+            </nav>
+        </header>
+
+        <section class="content-block " id="article-top">
+
+                <div class="content-block intro search">
+        <noscript><p>This search relies on Javascript, sorry!</p></noscript>
+        <form method="get" action="/search" data-search-form class="search__form">
+            <label for="q" class="search__label">Search term</label>
+            <input type="search" name="q" id="q" placeholder="What are you looking for?" data-search-input autocomplete="off" class="search__input" />
+            <input type="submit" value="Go" class="search__button btn btn--cta btn--forward" />
+        </form>
+    </div>
+
+    <div class="content-wrapper search__results-wrapper posts-list">
+        <div class="search__found-string">
+            <p data-search-found><span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.</p>
+        </div>
+        <div class="search__results" data-search-results></div>
+    </div>
+
+    <script type="text/x-template" id="search-result">
+        <div class="posts-list__item search__item">
+            <header class="posts-list__header">
+                <h1><a href="##Url##">##Title##</a></h1>
+                ##SubTitle##
+            </header>
+            <section class="posts-list__content">
+                <p>##Excerpt##</p>
+                <div class="post__links">
+                    <a href="##Url##" class="btn btn--cta btn--forward">Read on</a>
+                </div>
+            </section>
+        </div>
+    </script>
+    <script type="text/x-template" id="search-date">
+        <h2 class="post__date"><a href="##Url##">##Date##</a></h2>
+    </script>
+
+    <!-- Search script - Must appear after template -->
+    <script src="/static/js/search.js"></script>
+
+            <footer class="post__footer">
+                <nav class="nav--footer">
+                    <p>&copy; <a href="https://plus.google.com/117510067130914002427?rel=author" class="nav__item">Mat Hayward</a> | <a href="http://www.twitter.com/mathaywarduk" class="nav__item" title="Follow me">Twitter</a></p>
+                    <a href="#top" class="nav__item nav__item--top" data-scroll-to-target>Back to top</a>
+                </nav>
+            </footer>
+        </section>
+    </body>
+</html>

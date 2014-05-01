@@ -1,0 +1,206 @@
+
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-GB">
+    <head>
+        <title>What's behind the mask? ~ Front-end Developer ~ Mat Hayward</title>
+        <link rel="canonical" href="http://www.tribeuk.co.uk/blog/whats-behind-the-mask/"/>
+
+        <!-- Scripts -->
+        <script src="/static/js/build/app.min.js" async></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <!-- Icons -->
+        <link rel="shortcut icon" type="image/png" href="/static/images/icons/favicon.png">
+
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" media="all" href="/static/css/screen.css">
+
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Rob Antill recently launched his website showcasing his talent for Stereographic photography. By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit">
+        <meta name="author" content="Mat Hayward">
+        <meta name="keywords" content="Sexy javascript">
+
+        <!-- RSS -->
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://mathayward.com/feed.xml">
+
+        <!-- SEARCH -->
+        <link rel="search" type="application/opensearchdescription+xml" title="Mat Hayward" href="/opensearch.xml">
+
+        <!-- Facebook Open Graph -->
+        <meta property="og:site_name" content="Mat Hayward">
+        <meta property="og:description" content="Rob Antill recently launched his website showcasing his talent for Stereographic photography. By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit">
+        <meta property="og:title" content="What's behind the mask? ~ Front-end Developer ~ Mat Hayward">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://mathayward.com/whats-behind-the-mask">
+        <meta property="og:image" content="http://mathayward.com/static/images/social/mask.jpg">
+        <meta property="og:updated_time" content="2012-05-02T11:13:00+00:00">
+
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@mathaywarduk">
+        <meta name="twitter:domain" content="mathayward.com">
+        <meta name="twitter:creator" content="@mathaywarduk">
+        <meta name="twitter:image:src" content="http://mathayward.com/static/images/social/mask.jpg">
+        <meta name="twitter:description" content="Rob Antill recently launched his website showcasing his talent for Stereographic photography. By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit">
+        <meta name="twitter:title" content="What's behind the mask? ~ Front-end Developer ~ Mat Hayward">
+        <meta name="twitter:url" content="http://mathayward.com/whats-behind-the-mask/">
+
+    </head>
+    <body class="no-js">
+        <b id="top"></b>
+        <header class="header" itemscope itemtype="http://data-vocabulary.org/Person">
+            <div class="header__avatar">
+                <a href="/"><img src="https://lh3.googleusercontent.com/-QlmUfD33DRk/AAAAAAAAAAI/AAAAAAAABig/NVgoYx97Y1U/s120-c/photo.jpg" alt="Oooo yeah, click my face!" title="Oooo yeah, click my face!"></a>
+            </div>
+
+            <h1 itemprop="name"><a href="/">Mat Hayward</a></h1>
+            <div class="subheader">Nottingham&rsquo;s answer to a question nobody asked.</div>
+            <div class="layout--hidden">
+                <a href="http://mathayward.com" itemprop="url">mathayward.com</a>.
+                <span itemprop="address" itemscope
+                itemtype="http://data-vocabulary.org/Address">
+                <span itemprop="locality">Nottingham</span>
+                <span itemprop="country-name">United Kingdom</span>
+                <span itemprop="title">Front-end developer</span> at <span itemprop="affiliation">Erskine Design</span>
+                </span>
+            </div>
+            <nav class="nav">
+                <a href="/" class="nav__item" title="Ramblings and such">Read</a><span class="nav__divider"> | </span>
+                <a href="/work" class="nav__item" title="Details of where I've worked with selected projects">Work</a><span class="nav__divider"> | </span>
+                <a href="/photography" class="nav__item" title="Some of the photographs I've taken">Photography</a><span class="nav__divider"> | </span>
+                <a href="/search" class="nav__item" title="Feeling lazy? Use the search function to find things quickly">Search</a></b>
+            </nav>
+        </header>
+
+        <article class="content-block post" id="article-top">
+
+            
+
+
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="post__text-wrapper">
+    <header class="post__header">
+        <h1>What's behind the mask?</h1>
+        <h2 class="post__date">Wednesday 2nd May 2012</h2>
+    </header>
+</div>
+
+<section class="post__content" role="main">
+    <div class="post__text-wrapper">
+        <p>Our resident photography genius, Rob, recently launched his new website: <a href="http://www.panodrop.com/">panodrop.com</a>, showcasing his talent for Stereographic photography. By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit. So with all the interest, we thought we&rsquo;d share, roughly, how we did it.</p>
+
+<p>We started with the basic mask, a cut out of the logo placed on top of an image of pure white using CSS. Together these created the part of logo that changes.</p>
+
+<figure class="media">
+    <img src="/static/images/blog/pano_hole_step_1.jpg" alt="Step 1" class="media__item">
+</figure>
+
+<p>That was our default view. Then we inserted a hidden div between the mask and the white background, which would act as a placeholder for the dynamic background.</p>
+
+<figure class="media">
+    <img src="/static/images/blog/pano_hole_step_2.jpg" alt="Step 2" class="media__item">
+</figure>
+
+<p>Then, using Javascript, all we had to do was to change the background of the hidden div to whatever the user was hovering over and change the background position to follow the cursor.</p>
+
+<figure class="media">
+    <img src="/static/images/blog/pano_hole_step_3.jpg" alt="Step 3" class="media__item">
+</figure>
+
+<figure class="media">
+    <img src="/static/images/blog/pano_hole_step_4.jpg" alt="Step 4" class="media__item">
+</figure>
+
+<p>One issue we came across was when hovering near the corners of images, the corners were visible in the logo. Not nice!</p>
+
+<p>To fix this we used a bit of maths in the Javascript to implement a &ldquo;safe-zone&rdquo; on the image.</p>
+
+<figure class="media">
+    <img src="/static/images/blog/pano_hole_step_5.jpg" alt="Step 5" class="media__item">
+</figure>
+
+<p>Simple as that! We&rsquo;re really pleased with it and Rob is pleased with the conversation it&rsquo;s sparked online. Hopefully it will help him sell some prints&hellip;</p>
+
+
+        
+        <hr />
+        <p>This article was originally posted on Tribe UK. <a href="http://www.tribeuk.co.uk/blog/whats-behind-the-mask/">Read the original</a>.</p>
+        
+    </div>
+
+
+    <div class="social">
+        <h4 class="social__header">Share <em>&ldquo;What's behind the mask?&rdquo;</em></h4>
+        <ul class="social__links">
+            <li><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fmathayward.com/whats-behind-the-mask&amp;related=mathaywarduk&amp;text=%E2%80%9CWhat's behind the mask?%E2%80%9D+(via+@mathaywarduk)" class="social__link social__link--twitter"data-popup data-popup-width="685" data-popup-height="500">on Twitter</a></li>
+            <li><a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;u=http%3A%2F%2Fmathayward.com/whats-behind-the-mask&amp;t=%E2%80%9CWhat's behind the mask?%E2%80%9D+by+Mat+Hayward" class="social__link social__link--facebook" data-popup data-popup-width="685" data-popup-height="500">on Facebook</a></li>
+        </ul>
+    </div>
+
+    
+
+    
+        <div class="nav--cycle">
+    
+    
+    
+    
+        <a href="/responsive-email-newsletters" class="nav__item--cycle nav__item--cycle--next">
+            <h2>Responsive email newsletters</h2>
+        </a>
+    
+
+    
+        </div>
+    
+    
+</section>
+
+
+
+            <footer class="post__footer">
+                <nav class="nav--footer">
+                    <p>&copy; <a href="https://plus.google.com/117510067130914002427?rel=author" class="nav__item">Mat Hayward</a> | <a href="http://www.twitter.com/mathaywarduk" class="nav__item" title="Follow me">Twitter</a></p>
+                    <a href="#top" class="nav__item nav__item--top" data-scroll-to-target>Back to top</a>
+                </nav>
+            </footer>
+        </article>
+    </body>
+</html>

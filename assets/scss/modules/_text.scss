@@ -158,20 +158,36 @@ pre {
     color: $color__highlight;
 
     &:after {
-        content: "";
+        content: "Tweet this";
+        @include rems(font-size, $text__size--delta);
+        line-height: 0.9;
         background-image: image-url('logos/twitter.png');
-        @include rems(width, 15);
         @include rems(height, 15);
         @include inline-block();
         @include rems(background-size, 15);
         background-repeat: no-repeat;
         @include rems(margin-left, 5);
+        @include rems(padding-left, 20);
+        width: auto;
+        overflow: hidden;
+        color: transparent;
+        @include rems(text-indent, -150);
+        @include transition(text-indent 250ms, color 500ms);
+    }
+
+    &:hover,
+    &:focus {
+        &:after {
+            @include rems(text-indent, 0); 
+            color: $color__neutral--dark;
+        }
     }
 
     @include respond-to("large and above") {
 
         &:after {
-            @include rems(width, 25);
+            @include rems(padding-left, 30);
+            line-height: 1.5;
             @include rems(height, 25);
             @include rems(background-size, 25);
             @include rems(margin-left, 10);

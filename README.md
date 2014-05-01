@@ -1,25 +1,25 @@
 mathayward.com
 ====
 
-## Requires
+# Getting started
 
-* [Sass](http://sass-lang.com/)
-* [Compass](http://compass-style.org/)
-* [Jekyll](http://jekyllrb.com/)
-* [Grunt](http://gruntjs.com/)
- 
-
-## Running
-
-If search function is required, change ```url``` in ```config.yml``` to http://localhost:4000 
-
-Clone repository on local machine:
+Clone to local machine
 
     $ git clone git://github.com/mathaywarduk/.com.git
+ 
+Set up a new gemset and install dependencies (requires RVM - http://rvm.io/rvm/install)
 
-Install grunt dependencies
+    $ rvm gemset create mathayward
+    $ bundle install
+
+Install grunt (http://gruntjs.com/getting-started) and dependencies 
 
     $ sudo npm install
+
+
+# Running
+
+If search function is required, change ```url``` in ```config.yml``` to http://localhost:4000 
 
 In one terminal window:
 
@@ -31,7 +31,8 @@ In another terminal window
 
 Navigate to [http://localhost:4000](http://localhost:4000)
 
-## Deploying
+
+# Deploying
 
 Ensure ```url``` in ```config.yml``` is set to http://mathayward.com 
 

@@ -43,7 +43,7 @@ With this data, it's pretty simple to output the results directly into the DOM u
 
 That's it explained in it's simplest form anyway. Try it out for yourself over on the [search page](/search) and let me know what you think.
 
-If you are interested in exactly how I've gone about this, you're in luck. It's definitely not perfect yet, but, regardless, I have released the code [on GitHub](https://github.com/mathaywarduk/jekyll-search) so other Jekyll users can use it, alter it, even improve on it.
+If you're interested in exactly how I've gone about this, you're in luck. It's definitely not perfect yet, but, regardless, I have released the code [on GitHub](https://github.com/mathaywarduk/jekyll-search) so other Jekyll users can use it, alter it, even improve on it.
 
 There are a few things things I'd like to fix/tidy up in the future, like:
 

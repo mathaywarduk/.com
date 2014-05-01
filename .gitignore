@@ -2,4 +2,5 @@ _drafts
 .sass-cache
 static/images/blog/web_celeb_1*
 static/css
-/node_modules
+node_modules
+_site

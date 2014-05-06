@@ -10,7 +10,7 @@ keywords: "Jekyll search JSON"
 date: 2014-02-26 17:33:00
 pub-time: 2014-02-26T17:33
 
-share-img: "social/search.jpg"
+share-img: "social/search.png"
 snippet: "Without a database there's nothing to query when wanting a search function, so I went about building a work around."
 ---
 

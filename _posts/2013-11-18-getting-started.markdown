@@ -12,7 +12,7 @@ pub-time: 2013-11-18T17:36
 posted-on: Erskine Design
 posted-on-url: http://www.erskindesign.com/blog/getting-started/
 
-share-img: "social/getting-started.jpg"
+share-img: "social/getting-started.png"
 snippet: "Being approached by a couple of enthusiastic students and asked <em>&ldquo;how do we get a job in the industry?&rdquo;</em> was a surprisingly awkward experience."
 ---
 

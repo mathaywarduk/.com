@@ -10,7 +10,7 @@ keywords: "sass"
 date: 2013-10-18 15:39:00
 pub-time: 2013-10-18T15:39
 
-share-img: "social/progress.jpg"
+share-img: "social/progress.png"
 snippet: "This week one of my colleagues was amazed to hear that Twitter is written using pure CSS and not a preprocessor."
 ---
 

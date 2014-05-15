@@ -9,10 +9,6 @@
         <title>{{ title }}</title>
         {% if page.posted-on-url %}<link rel="canonical" href="{{ page.posted-on-url }}"/>{% endif %}
 
-        <!-- Scripts -->
-        <script src="/static/js/build/app.min.js" async></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
         <!-- Icons -->
         <link rel="shortcut icon" type="image/png" href="/static/images/icons/favicon.png">
 
@@ -57,7 +53,7 @@
         <b id="top"></b>
         <header class="header" itemscope itemtype="http://data-vocabulary.org/Person">
             <div class="header__avatar">
-                <a href="/"><img src="https://lh3.googleusercontent.com/-QlmUfD33DRk/AAAAAAAAAAI/AAAAAAAABig/NVgoYx97Y1U/s120-c/photo.jpg" alt="Oooo yeah, click my face!" title="Oooo yeah, click my face!"></a>
+                <a href="/"><img src="http://lh3.googleusercontent.com/-QlmUfD33DRk/AAAAAAAAAAI/AAAAAAAABig/NVgoYx97Y1U/s120-c/photo.jpg" alt="Oooo yeah, click my face!" title="Oooo yeah, click my face!"></a>
             </div>
 
             <h1 itemprop="name"><a href="/">Mat Hayward</a></h1>
@@ -85,10 +81,14 @@
 
             <footer class="post__footer">
                 <nav class="nav--footer">
-                    <p>&copy; <a href="https://plus.google.com/117510067130914002427?rel=author" class="nav__item">Mat Hayward</a> | <a href="http://www.twitter.com/mathaywarduk" class="nav__item" title="Follow me">Twitter</a></p>
+                    <p>&copy; <a href="http://plus.google.com/117510067130914002427?rel=author" class="nav__item">Mat Hayward</a> | <a href="http://www.twitter.com/mathaywarduk" class="nav__item" title="Follow me">Twitter</a></p>
                     <a href="#top" class="nav__item nav__item--top" data-scroll-to-target>Back to top</a>
                 </nav>
             </footer>
         </{{ page.container-type }}>
+
+        <!-- Scripts -->
+        <script src="/static/js/build/app.min.js" async></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </body>
 </html>

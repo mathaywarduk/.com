@@ -17,6 +17,7 @@ module.exports = function(grunt) {
                     'static/js/lib/jquery.scrolltop.js',
                     'static/js/lib/jquery.photogrid.js',
                     'static/js/global.js',
+                    'static/js/search.js',
                     ],
                 dest: 'static/js/build/app.js',
             }

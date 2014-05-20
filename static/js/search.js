@@ -1,3 +1,4 @@
+(function ($) {
 /**
  * A simple JSON search
  * Requires jQuery (v 1.7+)
@@ -5,7 +6,6 @@
  * @author  Mat Hayward - Erskine Design
  * @version  0.1
  */
-
 
  /* ==========================================================================
     Initialisation
@@ -25,7 +25,6 @@ var q, jsonFeedUrl = "/feeds/feed.json",
 
 
 $(document).ready( function() {
-    
     // hide items found string
     $foundContainer.hide();
 
@@ -232,3 +231,5 @@ function formatDate(date) {
 
         return "" + days[date.getDay()] + " " + n + suffix + " " + months[date.getMonth()] + " " + date.getFullYear();
 }
+
+})(jQuery);

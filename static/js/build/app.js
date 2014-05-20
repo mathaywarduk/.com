@@ -275,7 +275,6 @@ var q, jsonFeedUrl = "/feeds/feed.json",
 
 
 $(document).ready( function() {
-    console.log('ready');
     // hide items found string
     $foundContainer.hide();
 

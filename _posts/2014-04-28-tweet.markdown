@@ -1,0 +1,9 @@
+---
+type: tweet
+date: 2014-04-28 17:19:00
+pub-time: 2014-04-28T17:19
+twitter-id: 460815683451121664
+url-out: https://twitter.com/mathaywarduk/status/460815683451121664
+search_omit: true
+---
+Gave my website a bit of a 'performance polish'. It's pretty damn fast now! [mathayward.com](http://www.mathayward.com) [#geektweet](https://twitter.com/hashtag/geektweet?src=hash)

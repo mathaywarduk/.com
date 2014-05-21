@@ -23,11 +23,11 @@ With the [Liquid templating](http://jekyllrb.com/docs/templates/) language, used
 {% raw %}
 <pre><code>[
     {
-        "title": "{{post.title}}",
-        "content": "{{post.content | markdownify | strip_html"}}",
-        "link": "{{site.url}}{{post.url}}",
-        "date": "{{post.date}}",
-        "excerpt": "{{post.snippet}}"
+        "title": "{{ post.title }}",
+        "content": "{{ post.content | markdownify | strip_html }}",
+        "link": "{{ site.url }}{{ post.url }}",
+        "date": "{{ post.date }}",
+        "excerpt": "{{ post.snippet }}"
     }
     ...
 ]</code></pre>
@@ -52,3 +52,35 @@ There are a few things things I'd like to fix/tidy up in the future, like:
 * Date formatting would be nice. - I've done this on this site myself by tweaking the Javascript file, but it's not ideal to force people to use my date formatting, so it's not in the repo. 
 
 * Make the script into a jQuery plugin - This would make it possible to customise your search function without having to change the plugin itself.
+
+## Update
+
+Thanks to [this pull request](https://github.com/mathaywarduk/jekyll-search/commit/7c48400dc9b633c56fe2f2900c1b548bf368d3d0) from [Marcel van der Boom](https://github.com/mrvdb) I now escape JSON using the ruby 'json' gem.
+
+To do this, Marcel added a plugin which registers a filter:
+
+<pre><code>require 'json'
+
+module JsonFilter
+  def json(input)
+    input.to_json
+  end
+
+  Liquid::Template.register_filter self
+end</code></pre>
+
+After that, he uses that filter to escape the JSON, removing the need for quotes in the Liquid template and ensuring special characters don't cause any errors.
+
+
+{% raw %}
+<pre><code>[
+    {
+        "title": {{ post.title | json }},
+        "content": {{ post.content | markdownify | strip_html | json}},
+        "link": "{{ site.url }}{{ post.url }}",
+        "date": {{ post.date | json }},
+        "excerpt": {{ post.snippet | json }}
+    }
+    ...
+]</code></pre>
+{% endraw %}

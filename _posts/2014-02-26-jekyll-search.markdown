@@ -76,7 +76,7 @@ After that, he uses that filter to escape the JSON, removing the need for quotes
 <pre><code>[
     {
         "title": {{ post.title | json }},
-        "content": {{ post.content | markdownify | strip_html | json}},
+        "content": {{ post.content | markdownify | strip_html | json }},
         "link": "{{ site.url }}{{ post.url }}",
         "date": {{ post.date | json }},
         "excerpt": {{ post.snippet | json }}

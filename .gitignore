@@ -4,3 +4,4 @@ static/images/blog/web_celeb_1*
 static/css
 node_modules
 _site
+build.sh

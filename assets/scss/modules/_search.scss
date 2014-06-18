@@ -40,6 +40,7 @@
         @include text($text__size--delta, $text__line--delta);
         color: $color__neutral--dark;
         margin-bottom: 0;
+        display: none;
     }
 }
 

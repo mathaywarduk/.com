@@ -1,4 +1,4 @@
-$work__places: erskine, tribe, bep, chemistry;
+$work__places: kind, erskine, tribe, bep, chemistry;
 
 
 .work {
@@ -7,9 +7,14 @@ $work__places: erskine, tribe, bep, chemistry;
         @include rems(padding, 0, 30);
     }
 
-    @include respond-to("xlarge and above") {
+    @include respond-to("large and above") {
         padding-left: 20%;
         padding-right: 20%;
+    }
+
+    @include respond-to("xlarge and above") {
+        padding-left: 25%;
+        padding-right: 25%;
     }
 
 }
@@ -45,15 +50,13 @@ $work__places: erskine, tribe, bep, chemistry;
 
     @include respond-to("large and above") {
 
-        width: percentage(92/300);
-
         &:nth-of-type(2n+1) {
             clear: none;
         }
-        &:nth-of-type(2n+2) {
+        &:nth-of-type(2n) {
             margin-right: 4%;
         }
-        &:nth-of-type(3n+4) {
+        &:nth-of-type(2n+3) {
             margin-right: 0;
         }
     }
@@ -95,11 +98,6 @@ $work__places: erskine, tribe, bep, chemistry;
     @include hide-text();
     position: relative;
 
-    @include respond-to("medium and above") {
-        margin: 0 auto;
-        background-position: center center;
-    }
-
     a {
         position: absolute;
         top: 0;
@@ -116,25 +114,21 @@ $work__places: erskine, tribe, bep, chemistry;
     }
 }
 
-.work__logo--erskine {
+.work__logo--kind {
+
     @include respond-to("large and above") {
-        @include rems(width, 250);
-        @include rems(height, 150);
+        margin: 0 auto;
+        background-position: center center;
+        @include rems(width, 152);
+        @include rems(height, 120);
+        @include rems(margin-top, 20);
+        @include rems(margin-bottom, 20);
     }
 }
 
-.work__logo--tribe {
-
-}
-
 .work__logo--bep {
-    @include rems(margin-bottom, 10);
-    @include rems(width, 125);
-    @include rems(height, 65);
-}
-
-.work__logo--chemistry {
-
+    // @include rems(margin-bottom, 10);
+    // @include rems(height, 65);
 }
 
 .work__related {

@@ -1,0 +1,65 @@
+/*
+Error: File to import not found or unreadable: compass/reset.
+       Load path: /Users/matthewhayward/src/development
+        on line 6 of ./mathayward/com/assets/scss/screen.scss
+
+1: /* Welcome to Compass.
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/static/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: @import "compass/reset";
+7: @import "compass";
+8: @import "breakpoint";
+9: @import "config";
+10: 
+11: @import "modules/rems";
+
+Backtrace:
+./mathayward/com/assets/scss/screen.scss:6
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/import_node.rb:45:in `import'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/plugin.rb:108:in `method_missing'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/exec/sass_scss.rb:370:in `watch_or_update'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/exec/base.rb:52:in `parse'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/lib/sass/exec/base.rb:19:in `parse!'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0@global/gems/sass-3.4.5/bin/sass:13:in `<top (required)>'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0/bin/sass:23:in `load'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0/bin/sass:23:in `<main>'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/matthewhayward/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/reset.\A        Load path: /Users/matthewhayward/src/development\A         on line 6 of ./mathayward/com/assets/scss/screen.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/static/css/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";\A 7: @import \"compass\";\A 8: @import \"breakpoint\";\A 9: @import \"config\";\A 10: \A 11: @import \"modules/rems\";"; }

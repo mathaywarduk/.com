@@ -52,52 +52,52 @@
 
 }
 
-.search__form {
-    position: relative;
-    @include respond-to("medium and above") {
-        margin: 0 auto;
-        max-width: 50%;
-    }
-}
+// .search__form {
+//     position: relative;
+//     @include respond-to("medium and above") {
+//         margin: 0 auto;
+//         max-width: 50%;
+//     }
+// }
 
-.search__label {
-    display: none;
-}
+// .search__label {
+//     display: none;
+// }
 
-.search__input {
-    -webkit-appearance: none;
-    border: none;
-    font-family: $font__base--body;
-    @include text($text__size--delta, $text__line--delta);
-    @include rems(margin-bottom, $text__base-margin);
-    font-style: italic;
-    width: 100%;
-    border-bottom: 1px dotted $color__neutral--light;
-    @include rems(padding, 18, 60, 18, 0);
-    cursor: pointer;
+// .search__input {
+//     -webkit-appearance: none;
+//     border: none;
+//     font-family: $font__base--body;
+//     @include text($text__size--delta, $text__line--delta);
+//     @include rems(margin-bottom, $text__base-margin);
+//     font-style: italic;
+//     width: 100%;
+//     border-bottom: 1px dotted $color__neutral--light;
+//     @include rems(padding, 18, 60, 18, 0);
+//     cursor: pointer;
 
-    @include respond-to("small and above") {
-        @include text($text__size--gamma, $text__line--gamma);
-        font-size: 150%;
-        @include rems(padding, 10, 60, 10, 0);
-    }
+//     @include respond-to("small and above") {
+//         @include text($text__size--gamma, $text__line--gamma);
+//         font-size: 150%;
+//         @include rems(padding, 10, 60, 10, 0);
+//     }
 
-    &:focus {
-        outline: 0;
-    }
-}
+//     &:focus {
+//         outline: 0;
+//     }
+// }
 
-.search__button {
-    font-family: $font__base--body;
-    @include text($text__size--delta, $text__line--delta);
-    text-align: left;
-    width: auto;
-    @include rems(padding-right, 16);
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+// .search__button {
+//     font-family: $font__base--body;
+//     @include text($text__size--delta, $text__line--delta);
+//     text-align: left;
+//     width: auto;
+//     @include rems(padding-right, 16);
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+// }
 
-::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-}
+// ::-webkit-search-cancel-button {
+//     -webkit-appearance: none;
+// }

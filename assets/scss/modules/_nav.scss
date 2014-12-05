@@ -140,6 +140,7 @@
 
     @include respond-to("large and above") {
         position: fixed;
+        z-index: 2;
         top: 25%;
         @include rems(min-height, 38);
         @include rems(width, 35);

@@ -35,9 +35,9 @@ layout: default
 
 {% assign previous = page.previous %}
 
-{% if previous.twitter-id %}
+{% if previous.title == 'Tweet' %}
     {% assign previous = previous.previous %}
-    {% if previous.twitter-id %}
+    {% if previous.title == 'Tweet' %}
         {% assign previous = previous.previous %}
     {% endif %}
 {% endif %}
@@ -47,9 +47,10 @@ layout: default
 
 {% assign next = page.next %}
 
-{% if next.twitter-id %}
+
+{% if next.title == 'Tweet' %}
     {% assign next = next.next %}
-    {% if next.twitter-id %}
+    {% if next.title == 'Tweet' %}
         {% assign next = next.next %}
     {% endif %}
 {% endif %}

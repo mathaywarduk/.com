@@ -1,0 +1,17 @@
+// ==========================================================================
+// PARAGRAPHS MODULE
+// ==========================================================================
+
+
+p {
+    @include font-weight(medium);
+    @include font-scale(large, chaparral);
+    margin-bottom: rem-calc($base-unit * 7);
+
+    &:first-child {
+        @include font-weight(medium);
+        @include font-scale(xlarge, chaparral);
+        margin-bottom: rem-calc($base-unit * 8);
+    }
+}
+

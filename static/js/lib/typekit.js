@@ -1,6 +1,6 @@
 (function() {
     var config = {
-      kitId: 'rgc4dxh',
+      kitId: 'iva6sds',
       scriptTimeout: 3000
     };
     var h = document.getElementsByTagName('html')[0];

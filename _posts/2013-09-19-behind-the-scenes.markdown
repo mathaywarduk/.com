@@ -20,7 +20,7 @@ The desire was to promote the [art direction](http://www.tribeuk.co.uk/portfolio
 
 Although it was all but finished when I left the company a month later, it&rsquo;s taken a while to get the final tweaks done as is always the case with internal projects, especially with the attention to detail Tribe are known for.
 
-<figure class="media">
+<figure>
     <a href="http://behindthescenes.tribeuk.co.uk/go"><img src="/static/images/blog/behind-the-scenes.jpg" alt="Behind the scenes" class="media__item"></a>
     <figcaption class="media__caption">Behind the scenes at a Tribe photoshoot</figcaption>
 </figure>

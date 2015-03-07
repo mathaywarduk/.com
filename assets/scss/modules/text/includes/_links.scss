@@ -1,0 +1,12 @@
+// ==========================================================================
+// LINKS MODULE
+// ==========================================================================
+
+a {
+    @include link() {
+        color: palette(teal);   
+        text-decoration: none;
+        background-image: linear-gradient(to bottom, rgba(0,153,153,0) 86%, #009999 86%, #009999 90%, rgba(0,153,153,0) 90%);
+        // @include text-shadow(1px 0px 0px #fff, 2px 1px 0px #fff, -1px 0px 0px #fff, -2px 1px 0px #fff);
+    }
+}

@@ -1,0 +1,23 @@
+// ==========================================================================
+// WRAPPER MODULE
+// ==========================================================================
+//
+// Adds padding left and right of viewport
+
+
+.wrapper {
+    padding-left: rem-calc(10);
+    padding-right: rem-calc(10);
+
+    @include respond-to("medium") {
+        padding-left: rem-calc(20);
+        padding-right: rem-calc(20);
+        
+    }
+
+    @include respond-to("large") {
+        padding-left: rem-calc(40);
+        padding-right: rem-calc(40);
+        
+    }
+}

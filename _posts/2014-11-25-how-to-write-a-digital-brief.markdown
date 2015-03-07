@@ -16,7 +16,7 @@ share-img: "social/digital-brief.png"
 snippet: "When organising a digital project, it&rsquo;s often difficult to communicate what it is you&rsquo;re looking for to a prospective agency, especially if you haven&rsquo;t run a digital project before, or if you have and it didn&rsquo;t go to plan."
 ---
 
-<figure class="media">
+<figure>
     <img src="/static/images/social/digital-brief.png" alt="How to write a digital brief" class="media__item">
 </figure>
 

@@ -16,8 +16,9 @@ snippet: "I wrote a feature for Net magazine's December issue about creating a l
 
 I wrote a feature for <a href="http://netmagazine.com">Net magazine</a>&rsquo;s December issue about creating a living modular framework.
 
-<figure class="media">
+<figure>
     <img src="/static/images/blog/write-modular-css-with-sass-and-bem.jpg" alt="Net Magazine" class="media__item">
+    <figcaption>How the featured appeared in Net magazine</figcaption>
 </figure>
 
 Here it is.
@@ -26,9 +27,7 @@ Here it is.
 
 While there are already many frontend frameworks available for free, it&rsquo;s often preferable to write the code yourself. In this tutorial, we will explore how to use the [Sass](http://www.sass-lang.com) CSS preprocessor and the [BEM](http://bem.info/) methodology to write a ‘living framework&rsquo; that can be adapted to suit any development project.
 
-> Sass enables us to write CSS in small, easy-to-navigate modules.
-
-Meaning we can start with base styles and bolt on any components we might need for the system we&rsquo;re currently building.
+Sass enables us to write CSS in small, easy-to-navigate modules, meaning we can start with base styles and bolt on any components we might need for the system we&rsquo;re currently building.
 
 We can also make our code easier to understand using well-constructed comments and clear naming conventions for our classes and variables. The BEM methodology gives us this clarity. BEM stands for Block-Element-Modifier and is designed to help modularise frontend development by breaking everything into blocks containing elements, then using modifiers to tweak them.
 
@@ -188,9 +187,7 @@ $text__colour--delta: $text__colour--base;</code></pre>
 
 You may ask what the point of declaring then overriding these variables is, and, for one-off use, there isn&rsquo;t one. But what we have now is the beginnings of a modular framework that we can use as a basis for any frontend project, adding and importing more modules as we add more elements to our system.
 
-> Redeclaring variables simply reduces the need for dependency between modules.
-
-And gives us a cleaner starting point for each new project.
+Redeclaring variables simply reduces the need for dependency between modules and gives us a cleaner starting point for each new project.
 
 ## Making code easier to understand
 You could be forgiven for thinking that any developer could now pick up your work and understand italmost instantly, but that&rsquo;s not always the case. Fortunately, there are ways to make your code even easier to understand. Firstly, Sass comments are not compiled, so will not add any weight to our compiled CSS file, so we can write as much as we like to be extra helpful. For instance, I always like to add comment blocks to mixins and functions.
@@ -298,7 +295,7 @@ For example:
 
 There are examples of a layout and a media module in the [Github repository](https://github.com/mathaywarduk/simple-sass-framework) that accompanies this tutorial, but I&rsquo;ll let you be creative here and decide for yourself how to build them.
 
-<figure class="media">
+<figure>
     <img src="/static/images/blog/BEM_Sass_3.png" alt="Module files" class="media__item">
     <figcaption class="media__caption">Self-contained module files set out base styles for content types. They&rsquo;re used only when needed</figcaption>
 </figure>

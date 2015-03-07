@@ -1,0 +1,30 @@
+// ==========================================================================
+// LINK MIXIN
+// ==========================================================================
+//
+// 
+// Sets colour of text elements to inverse of default.
+//
+// Example:
+//
+// footer {
+//    @include inverse();
+// }
+//
+
+
+@mixin link() {
+    &,
+    &:link,
+    &:visited {
+        @content;
+    }
+}
+
+
+@mixin link--hover() {
+    &:hover,
+    &:focus {
+        @content;
+    }
+}

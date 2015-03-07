@@ -40,7 +40,7 @@ pub-time: 2013-09-19T18:07
         <article class="posts-list__item--twitter">
             <section class="posts-list__content posts-list__content--twitter">
                 {{ post.content }}
-                <h2 class="post__date"><a href="{{ post.url-out }}">{{ date_string }}</a></h2>
+                <time datetime="{{ post.date }}" class="post__date"><a href="{{ post.url-out }}">{{ date_string }}</a></time>
                 <div class="post__links">
                     <a href="https://twitter.com/intent/tweet?in_reply_to={{ post.twitter-id }}" class="btn btn--link">Reply</a> | <a href="https://twitter.com/intent/retweet?tweet_id={{ post.twitter-id }}" class="btn btn--link">Retweet</a> | <a href="https://twitter.com/intent/favorite?tweet_id={{ post.twitter-id }}" class="btn btn--link">Favourite</a>
                 </div>
@@ -52,8 +52,8 @@ pub-time: 2013-09-19T18:07
 
         <article class="posts-list__item">
             <header class="posts-list__header">
-                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-                <h2 class="post__date"><a href="{{ post.url }}">{{ date_string }}</a></h2>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <time datetime="{{ post.date }}" class="post__date"><a href="{{ post.url }}">{{ date_string }}</a></time>
             </header>
             <section class="posts-list__content">
                 {{ post.snippet | markdownify }}

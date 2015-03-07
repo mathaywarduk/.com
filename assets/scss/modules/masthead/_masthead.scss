@@ -1,0 +1,58 @@
+// ==========================================================================
+// MASTHEAD MODULE
+// ==========================================================================
+
+
+.masthead {
+    padding-top: rem-calc($base-spacing);
+    padding-bottom: rem-calc($base-spacing);
+    text-align: center;
+
+    @include respond-to("medium") {
+        margin-bottom: rem-calc(60);
+        border-bottom: 2px solid palette(neutral, dark);
+        text-align: left;
+        @include pie-clearfix();
+    }
+}
+
+.masthead__avatar {
+    margin: 0 auto;
+    margin-bottom: rem-calc($base-spacing);
+
+    @include respond-to("medium") {
+        float: left;
+    }
+}
+
+.masthead__logo {
+    margin-bottom: rem-calc(15);
+
+    @include respond-to("medium") {
+        margin-top: rem-calc(50);
+        margin-left: rem-calc(170);
+    }
+    
+    a {
+        @include link() {
+            color: black;
+            background: none;
+        }
+    }
+}
+
+.masthead__description {
+    font-style: italic;
+    margin-bottom: rem-calc($base-spacing);
+    
+    @include respond-to("medium") {
+        margin-left: rem-calc(170);
+    }
+}
+
+.masthead__nav {
+    @include respond-to("medium") {
+        margin-left: rem-calc(150);
+    }
+}
+

@@ -18,7 +18,7 @@ layout: default
     {% assign suffix = "th" %}
 {% endcase %}
 
-{% capture date_string %}{{ page.date | date: "%A" }} {{ d }}{{ suffix }} {{ page.date | date: "%B" }} {{ page.date | date: "%Y" }}{% endcapture %}
+{% capture date_string %}{{ d }}{{ suffix }} {{ page.date | date: "%b" }} {{ page.date | date: "%Y" }}{% endcapture %}
 
 
 {% comment %} Check if posted on third-party website {% endcomment %}
@@ -60,7 +60,7 @@ layout: default
 <div class="post__text-wrapper">
     <header class="post__header">
         <h1>{{ page.title }}</h1>
-        <h2 class="post__date">{{ date_string }}</h2>
+        <time datetime="{{page.date}}" class="post__date">{{ date_string }}</time>
     </header>
 </div>
 

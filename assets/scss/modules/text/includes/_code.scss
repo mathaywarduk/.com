@@ -4,7 +4,7 @@
 
 pre {
     border: 1px solid palette(neutral);
-    margin-bottom: rem-calc($base-spacing);
+    margin-bottom: rem-calc($base-unit * 7);
     overflow: auto;
     padding: rem-calc($base-spacing);
 

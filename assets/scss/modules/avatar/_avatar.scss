@@ -6,11 +6,6 @@
 
     @include link() {
         width: rem-calc(100);
-        display: block;
         background: none;
-
-        @include respond-to("medium") {
-            width: rem-calc(140);
-        }
     }
 }

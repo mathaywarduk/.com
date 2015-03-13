@@ -1,6 +1,7 @@
 ---
 layout: default
-title:
+title: 
+section: Read
 container-type: section
 content-type: posts-list
 description: Ramblings and such from Mat Hayward, Operations Director at Kind.
@@ -9,11 +10,7 @@ share-img: social/default.jpg
 pub-time: 2013-09-19T18:07
 ---
 
-    <div class="content-block intro">
-        <p>Operations director at <a href="http://www.madebykind.com">Kind</a> / Front-end-phile / Uncle / Weekend&nbsp;goalkeeper / Handsome&nbsp;bastard.</p>
-    </div>
-
-    <div class="content-wrapper">
+    <div class="cols" id="read">
 
     {% for post in site.posts %}
 
@@ -21,47 +18,31 @@ pub-time: 2013-09-19T18:07
 
         {% assign d = post.date | date: "%d" | plus: "0" %}
 
-        {% case d %}
-          {% when 1 or 21 or 31 %}
-            {% assign suffix = "st" %}
-          {% when 2 or 22 %}
-            {% assign suffix = "nd" %}
-          {% when 3 or 23 %}
-            {% assign suffix = "rd" %}
-          {% else %}
-            {% assign suffix = "th" %}
-        {% endcase %}
-
-        {% capture date_string %}{{ post.date | date: "%A" }} {{ d }}{{ suffix }} {{ post.date | date: "%B" }} {{ post.date | date: "%Y" }}{% endcapture %}
+        {% capture date_string %}{{ d }}{{ suffix }} {{ post.date | date: "%b" }} {{ post.date | date: "%Y" }}{% endcapture %}
 
 
         {% if post.type == 'tweet' %}
 
-        <article class="posts-list__item--twitter">
-            <section class="posts-list__content posts-list__content--twitter">
-                {{ post.content }}
-                <time datetime="{{ post.date }}" class="post__date"><a href="{{ post.url-out }}">{{ date_string }}</a></time>
-                <div class="post__links">
-                    <a href="https://twitter.com/intent/tweet?in_reply_to={{ post.twitter-id }}" class="btn btn--link">Reply</a> | <a href="https://twitter.com/intent/retweet?tweet_id={{ post.twitter-id }}" class="btn btn--link">Retweet</a> | <a href="https://twitter.com/intent/favorite?tweet_id={{ post.twitter-id }}" class="btn btn--link">Favourite</a>
-                </div>
-            </section>
+        <article class="col col--full col--half--small tweet">
+            {{ post.content }}
+            <time datetime="{{ post.date }}" class="tweet__date"><a href="{{ post.url-out }}">{{ date_string }}</a></time>
+            <div class="tweet__links">
+                <a href="https://twitter.com/intent/tweet?in_reply_to={{ post.twitter-id }}" class="btn btn--link">Reply</a> | <a href="https://twitter.com/intent/retweet?tweet_id={{ post.twitter-id }}" class="btn btn--link">Retweet</a> | <a href="https://twitter.com/intent/favorite?tweet_id={{ post.twitter-id }}" class="btn btn--link">Favourite</a>
+            </div>
         </article>
-        <div class="hr hidden--small"></div>
 
         {% else %}
 
-        <article class="posts-list__item">
-            <header class="posts-list__header">
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <time datetime="{{ post.date }}" class="post__date"><a href="{{ post.url }}">{{ date_string }}</a></time>
-            </header>
-            <section class="posts-list__content">
+        <article class="col col--full col--half--small article">
+            <h2 class="article__header"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <time datetime="{{ post.date }}" class="article__date">{{ date_string }}</time>
+            <div class="article__content">
                 {{ post.snippet | markdownify }}
 
-                <div class="post__links">
+                <div class="article__links">
                     <a href="{{ post.url }}" class="btn btn--cta btn--forward">Read on</a>
                 </div>
-            </section>
+            </div>
         </article>
 
         {% endif %}

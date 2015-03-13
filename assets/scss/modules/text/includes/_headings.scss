@@ -28,3 +28,24 @@ h3, .h3 {
     margin-bottom: rem-calc($base-unit * 2);
 }
 
+// 
+// Header groups
+// ==========================================================================
+
+.h--group {
+    border-bottom: 1px solid palette(neutral);
+    margin-bottom: rem-calc(60);
+    @include clearfix();
+
+    @include respond-to("medium") {
+        border-bottom: 2px solid palette(neutral);
+        margin-bottom: rem-calc(80);
+    }
+}
+
+.h--date {
+    float: right;
+    margin-bottom: rem-calc(5);
+    color: palette(teal, light);
+    font-style: italic;
+}

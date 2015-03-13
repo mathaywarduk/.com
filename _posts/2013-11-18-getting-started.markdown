@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Getting started"
 description: "Being approached by a couple of enthusiastic students and asked &ldquo;how do we get a job in the industry?&rdquo; was a surprisingly awkward experience."

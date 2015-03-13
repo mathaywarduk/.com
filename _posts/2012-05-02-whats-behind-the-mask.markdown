@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "What's behind the mask?"
 description: "Rob Antill recently launched his website showcasing his talent for Stereographic photography. By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit"

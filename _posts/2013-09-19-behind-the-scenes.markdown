@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Behind the scenes"
 description: "A while back I started working on a pretty nice, but simple, interactive HTML5 video."

@@ -6,19 +6,24 @@
 .masthead {
     padding-top: rem-calc($base-spacing);
     padding-bottom: rem-calc($base-spacing);
-    text-align: center;
+    text-align: left;
+    border-bottom: 1px solid palette(neutral, dark);
+    margin-bottom: rem-calc(50);
 
     @include respond-to("medium") {
-        margin-bottom: rem-calc(60);
         border-bottom: 2px solid palette(neutral, dark);
-        text-align: left;
+        margin-bottom: rem-calc(100);
         @include pie-clearfix();
     }
 }
 
 .masthead__avatar {
-    margin: 0 auto;
+    display: none;
     margin-bottom: rem-calc($base-spacing);
+
+    @include respond-to("small") {
+        display: block;
+    }
 
     @include respond-to("medium") {
         float: left;
@@ -26,11 +31,11 @@
 }
 
 .masthead__logo {
-    margin-bottom: rem-calc(15);
+    margin-bottom: rem-calc(10);
 
     @include respond-to("medium") {
-        margin-top: rem-calc(50);
-        margin-left: rem-calc(170);
+        @include font-scale(xlarge, futura);
+        margin-left: rem-calc(130);
     }
     
     a {
@@ -46,13 +51,59 @@
     margin-bottom: rem-calc($base-spacing);
     
     @include respond-to("medium") {
-        margin-left: rem-calc(170);
+        margin-left: rem-calc(130);
     }
 }
 
 .masthead__nav {
     @include respond-to("medium") {
-        margin-left: rem-calc(150);
+        margin-left: rem-calc(0);
+        clear: both;
     }
 }
 
+
+.masthead--small {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: rem-calc(20);
+
+    .masthead__avatar {
+        width: rem-calc(50);
+        margin-right: rem-calc(20);
+        margin-bottom: 0;
+    }
+
+    .masthead__nav {
+        float: left;
+        clear: none;
+        margin-top: rem-calc(15);
+        margin-bottom: 0;
+    }
+
+    .masthead__social {
+        float: right;
+        margin-top: rem-calc(22);
+
+        .nav__item {
+            padding: 0;
+            background-size: rem-calc(30);
+            font: 0/0 a;
+
+            a {
+                @include link() {
+                    display: block;
+                    width: rem-calc(30);
+                    height: rem-calc(30);
+                    background-image: none; 
+                }
+            }
+        }
+
+    }
+
+
+}

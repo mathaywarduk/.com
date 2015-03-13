@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "The responsive web"
 description: "Last month Craig and I gave a talk at Second Wednesday, a monthly Nottingham-based event for creative and digital people, entitled The Responsive Web."

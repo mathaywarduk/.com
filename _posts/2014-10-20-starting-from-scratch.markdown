@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Starting (almost) from scratch"
 description: "Kind was born 3 months ago, but wasn't christened for a good few weeks as we searched for a name that was 'just right'"

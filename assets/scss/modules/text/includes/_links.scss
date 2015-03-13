@@ -6,7 +6,15 @@ a {
     @include link() {
         color: palette(teal);   
         text-decoration: none;
-        background-image: linear-gradient(to bottom, rgba(0,153,153,0) 86%, #009999 86%, #009999 90%, rgba(0,153,153,0) 90%);
+        background-image: linear-gradient(to bottom, transparentize(palette(teal), 1) 86%, palette(teal) 86%, palette(teal) 90%, transparentize(palette(teal), 1) 90%);
         // @include text-shadow(1px 0px 0px #fff, 2px 1px 0px #fff, -1px 0px 0px #fff, -2px 1px 0px #fff);
     }
+
+    @include link--hover {
+        color: palette(accent, pink);
+        background-image: linear-gradient(to bottom, transparentize(palette(accent, pink), 1) 86%, palette(accent, pink) 86%, palette(accent, pink) 90%, transparentize(palette(accent, pink), 1) 90%);
+    }
 }
+
+
+

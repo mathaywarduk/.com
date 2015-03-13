@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "What's in a name?"
 description: "This is a real discussion within the Erskine front-end team about CSS naming conventions for a button."

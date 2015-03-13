@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Justifying the cost of quality"
 description: "Being seated next to new people at weddings, birthdays etc. the go-to conversation starters pop up early on: 'So, how do you know x?', 'What do you do for a living?'"

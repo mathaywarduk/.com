@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Teach me web design"
 description: "As a web developer, there are two things I&rsquo;m regularly asked by friends and acquaintances."

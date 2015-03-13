@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Responsive email newsletters"
 description: "I recently wrote a feature about responsive email design for Creative Bloq."

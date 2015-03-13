@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Jekyll search with JSON"
 description: "Without a database there's nothing to query when wanting a search function, so I went about building a work around."

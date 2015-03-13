@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Modular CSS with Sass &amp; BEM"
 description: "While there are already many front-end frameworks available for free, it&rsquo;s often preferable to write code ourselves. We can build a Sass and BEM based living framework to use as a basis for any project."
@@ -300,7 +301,7 @@ There are examples of a layout and a media module in the [Github repository](htt
     <figcaption class="media__caption">Self-contained module files set out base styles for content types. They&rsquo;re used only when needed</figcaption>
 </figure>
 
-## Converting to ems
+## Converting to rems
 In this framework we&rsquo;ve been using em sizing units throughout, which on smaller scale projects isn&rsquo;t a problem. But issues surrounding compounding font-sizes can crop up when we nest HTML elements. To combat this, we can use rem (root em) units. To do this, we&rsquo;d set a base font size on our HTML element. We already have a variable for this. For example:
 
 <pre><code>html {

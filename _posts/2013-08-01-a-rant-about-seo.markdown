@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "A rant about SEO"
 description: "SEO shouldn&rsquo;t exist. In a perfect world, there would be no place for Brian the Search Engine Optimisation Consultant or any of his cronies."

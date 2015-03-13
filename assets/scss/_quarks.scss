@@ -62,3 +62,17 @@ strong, b {
 }
 
 
+// 
+// MISCELLANEOUS
+// ==========================================================================
+
+hr {
+  margin: rem-calc(($base-unit * 7) 0);
+  border: none;
+  background-color: palette(neutral, light);
+  height: 1px;
+  font: 0/0 a;
+}
+
+
+

@@ -6,18 +6,19 @@
 
 
 .wrapper {
-    padding-left: rem-calc(10);
-    padding-right: rem-calc(10);
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
+    max-width: rem-calc(1400);
 
     @include respond-to("medium") {
-        padding-left: rem-calc(20);
-        padding-right: rem-calc(20);
+        padding-left: rem-calc(40);
+        padding-right: rem-calc(40);
         
     }
 
     @include respond-to("large") {
-        padding-left: rem-calc(40);
-        padding-right: rem-calc(40);
+        padding-left: rem-calc(80);
+        padding-right: rem-calc(80);
         
     }
 }

@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "How to write a digital brief"
 description: "When organising a digital project, it's often difficult to communicate what it is you're looking for to a prospective agency, especially if you haven't run a digital project before, or if you have and it didn't go to plan."

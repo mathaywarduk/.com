@@ -8,11 +8,11 @@
     padding-bottom: rem-calc($base-spacing);
     text-align: left;
     border-bottom: 1px solid palette(neutral, dark);
-    margin-bottom: rem-calc(50);
+    margin-bottom: rem-calc(25);
 
     @include respond-to("medium") {
         border-bottom: 2px solid palette(neutral, dark);
-        margin-bottom: rem-calc(100);
+        margin-bottom: rem-calc(50);
         @include pie-clearfix();
     }
 }

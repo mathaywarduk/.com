@@ -84,7 +84,7 @@
                 </div>
 
                 
-                <nav class="nav masthead__nav">
+                <nav class="nav masthead__nav" id="topnav">
                     <ul>
                         <li class="nav__item{% if page.section == 'Read' %} nav__item--current{% endif %}"><a href="/" title="Ramblings and such">Read</a></li>
                         <li class="nav__item{% if page.title == 'Work' %} nav__item--current{% endif %}"><a href="/work" title="Details of where I've worked with selected projects">Work</a></li>
@@ -113,7 +113,7 @@
             </footer>
         </{{ page.container-type }}>
 
-        <div class="masthead masthead--small s--hidden" data-scroll-show data-scroll-show-id="article-top">
+        <div class="masthead masthead--small s--hidden" data-scroll-show data-scroll-show-selector="#topnav">
             <div class="wrapper">
                 <a href="/" class="masthead__avatar avatar"><img src="/static/images/avatars/avatar.png" alt="Oooo yeah, click my face!" title="Oooo yeah, click my face!"></a>
 

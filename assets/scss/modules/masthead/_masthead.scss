@@ -72,9 +72,14 @@
     padding: rem-calc(20);
 
     .masthead__avatar {
-        width: rem-calc(50);
-        margin-right: rem-calc(20);
-        margin-bottom: 0;
+        display: none;
+
+        @include respond-to("medium") {
+            display: block;
+            width: rem-calc(50);
+            margin-right: rem-calc(20);
+            margin-bottom: 0;
+        }
     }
 
     .masthead__nav {
@@ -82,16 +87,42 @@
         clear: none;
         margin-top: rem-calc(15);
         margin-bottom: 0;
+
+        .nav__item {
+            font-size: rem-calc(13);
+        
+            @include respond-to("medium") {
+                @include font-scale(small);
+            }
+
+            a {
+                @include link() {
+                    padding: rem-calc(5 10);
+        
+                    @include respond-to("medium") {
+                        padding: rem-calc(10 20);
+                    }
+                }
+            }
+        }
     }
 
     .masthead__social {
-        float: right;
-        margin-top: rem-calc(22);
+        display: none;
+        
+        @include respond-to("medium") {
+            display: block;
+            float: right;
+            margin-top: rem-calc(22);
+            // margin-right: rem-calc(-20);
+        }
 
         .nav__item {
             padding: 0;
             background-size: rem-calc(30);
             font: 0/0 a;
+            float: left;
+            // margin-right: rem-calc(20);
 
             a {
                 @include link() {

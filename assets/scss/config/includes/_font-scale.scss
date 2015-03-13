@@ -66,6 +66,10 @@ $fonts: (
         async: true,
         normal: ("futura-pt", #{$font-sans-fallback-stack}),
 
+        xsmall: (
+            font-size: 13,
+            line-height: 15
+        ),
         small: (
             font-size: 18,
             line-height: 24

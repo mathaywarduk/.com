@@ -5,6 +5,8 @@
 
 .article {
     margin-bottom: rem-calc(30);
+    padding-bottom: rem-calc(30);
+    border-bottom: 1px solid palette(neutral, light);
 }
 
 .article__header {

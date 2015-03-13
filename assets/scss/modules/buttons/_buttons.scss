@@ -1,0 +1,110 @@
+// ==========================================================================
+// BUTTONS MODULE
+// ==========================================================================
+// 
+//
+
+
+
+
+.btn {
+    display: inline-block;
+    border: none;
+
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    @include link() {
+        outline: none;
+        text-decoration: none;
+    }
+
+}
+
+
+//
+// Button sizes
+// ==========================================================================
+
+.btn {
+    @include font-family(futura);
+    @include font-scale(xsmall, futura);
+    @include font-weight(medium);
+    padding: rem-calc(10 15);
+    margin-bottom: rem-calc(5);
+}
+
+
+//
+// Button colours
+// ==========================================================================
+
+.btn {
+    @include link() {
+        color: white;
+        background-color: palette(teal, light);
+        background-image: linear-gradient(0deg, lighten(palette(teal, light), 3%), palette(teal, light));
+    }
+
+    @include link--hover() {
+        color: white;
+        background-color: darken(palette(accent, pink), 3%);
+        background-image: linear-gradient(0deg, lighten(palette(accent, pink), 1%), darken(palette(accent, pink), 3%));
+    }
+
+    &:active {
+        color: white;
+        background-color: darken(palette(accent, pink), 6%);
+        background-image: linear-gradient(0deg, lighten(palette(accent, pink), 2%), darken(palette(accent, pink), 6%));
+        box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+
+    }
+}
+
+
+//
+// Link buttons
+// ==========================================================================
+
+.btn--link {
+    @include link() {
+        display: inline-block;
+        padding: rem-calc(5);
+        background: none;
+        text-decoration: underline;
+    }
+}
+
+
+// 
+// Forward links
+// ==========================================================================
+
+
+.btn--forward {
+    @include link() {
+        position: relative;
+        padding-right: rem-calc(40);
+
+        &:after {
+            position: absolute;
+            right: rem-calc(15);
+            content: '\2192';
+            @include font-scale(small, futura);
+            top: 50%;
+            margin-top: rem-calc(-12);
+            @include transition(right 250ms);
+        }
+    }
+
+    @include link--hover() {
+        &:after {
+            right: rem-calc(10);
+        }
+    }
+}
+

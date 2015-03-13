@@ -39,6 +39,7 @@ $font-serif-fallback-stack: "Georgia, serif" !global;
 //
 $fonts: (
     chaparral: (
+        async: true,
         normal: ("chaparral-pro", #{$font-serif-fallback-stack}),
 
         small: (
@@ -62,6 +63,7 @@ $fonts: (
         )
     ),
     futura: (
+        async: true,
         normal: ("futura-pt", #{$font-sans-fallback-stack}),
 
         small: (
@@ -82,6 +84,7 @@ $fonts: (
         )
     ),
     mono: (
+        async: true,
         normal: ("sax-mono,  monospace"),
 
         base: (

@@ -142,13 +142,12 @@
 }
 
 %async-font-fade-in {
-    .wf-inactive &
+    opacity: 0;
+    
+    .wf-inactive &,
     .wf-active & {
         @include single-transition(opacity, .2s);
         opacity: inherit;
-    }
-    .custom-js.wf-loading & {
-        opacity: 0;
     }
     .no-js & {
         opacity: inherit !important;

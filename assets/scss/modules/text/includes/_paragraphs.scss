@@ -15,3 +15,10 @@ p {
     }
 }
 
+.p--small {
+    &,
+    &:first-child {
+        @include font-scale(small);
+        margin-bottom: rem-calc($base-unit * 2);
+    }
+}

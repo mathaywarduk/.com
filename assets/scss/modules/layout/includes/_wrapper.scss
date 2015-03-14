@@ -9,6 +9,7 @@
     padding-left: rem-calc(20);
     padding-right: rem-calc(20);
     max-width: rem-calc(1400);
+    margin: 0 auto;
 
     @include respond-to("medium") {
         padding-left: rem-calc(40);

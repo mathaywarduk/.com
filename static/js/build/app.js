@@ -268,7 +268,7 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
             this.$element.slideDown();
         },
         hide: function() {
-            this.$element.slideUp();
+            this.$element.fadeOut();
         }
     }
 

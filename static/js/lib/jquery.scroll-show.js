@@ -44,7 +44,7 @@
             this.$element.slideDown();
         },
         hide: function() {
-            this.$element.slideUp();
+            this.$element.fadeOut();
         }
     }
 

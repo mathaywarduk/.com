@@ -13,6 +13,8 @@ pub-time: 2014-01-17T09:45
 
 share-img: "blog/write-modular-css-with-sass-and-bem.jpg"
 snippet: "I wrote a feature for Net magazine's December issue about creating a living modular framework."
+
+featured: true
 ---
 
 I wrote a feature for <a href="http://netmagazine.com">Net magazine</a>&rsquo;s December issue about creating a living modular framework.

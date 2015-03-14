@@ -4,6 +4,41 @@
 
 
 .tweet {
-    
+    border: 1px solid transparentize(palette(accent, gold), 0.5);
+    border-radius: rem-calc(5);
+    padding: rem-calc(20);
+    margin-bottom: rem-calc(50);
+
+    background-image: url("/static/images/icons/social--twitter.png");
+    background-repeat: no-repeat;
+    background-size: rem-calc(40);
+    background-position: center rem-calc(20);
+    padding-top: rem-calc(70);
+    text-align: center;
+    overflow: hidden;
+
+
+    @include respond-to("below medium") {
+        max-width: rem-calc(400);
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    p {
+        word-break: break-word;
+    }
 }
 
+.tweet__date {
+    float: left;
+    text-align: left;
+    margin-top: rem-calc(10);
+    font-style: italic;
+}
+
+.tweet__links {
+    float: right;
+    text-align: right;
+    margin-top: rem-calc(10);
+    font-style: italic;
+}

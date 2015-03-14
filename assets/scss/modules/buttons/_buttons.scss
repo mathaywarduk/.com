@@ -47,43 +47,28 @@
     @include link() {
         color: white;
         background-color: palette(teal, light);
-        background-image: linear-gradient(0deg, lighten(palette(teal, light), 3%), palette(teal, light));
+        background-image: none;
+        // background-image: linear-gradient(0deg, lighten(palette(teal, light), 3%), palette(teal, light));
     }
 
     @include link--hover() {
         color: white;
         background-color: darken(palette(accent, pink), 3%);
-        background-image: linear-gradient(0deg, lighten(palette(accent, pink), 1%), darken(palette(accent, pink), 3%));
+        // background-image: linear-gradient(0deg, lighten(palette(accent, pink), 1%), darken(palette(accent, pink), 3%));
     }
 
     &:active {
         color: white;
         background-color: darken(palette(accent, pink), 6%);
-        background-image: linear-gradient(0deg, lighten(palette(accent, pink), 2%), darken(palette(accent, pink), 6%));
+        // background-image: linear-gradient(0deg, lighten(palette(accent, pink), 2%), darken(palette(accent, pink), 6%));
         box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
 
     }
 }
 
-
-//
-// Link buttons
-// ==========================================================================
-
-.btn--link {
-    @include link() {
-        display: inline-block;
-        padding: rem-calc(5);
-        background: none;
-        text-decoration: underline;
-    }
-}
-
-
 // 
 // Forward links
 // ==========================================================================
-
 
 .btn--forward {
     @include link() {
@@ -108,3 +93,13 @@
     }
 }
 
+.btn--inverse {
+    @include link() {
+        color: palette(accent, pink);
+        background-color: white;
+    }
+
+    @include link--hover() {
+        color: black;
+    }
+}

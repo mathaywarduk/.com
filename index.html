@@ -30,24 +30,24 @@ pub-time: 2013-09-19T18:07
 
         {% if post.type == 'tweet' %}
 
-        <article class="col col--full col--half--small tweet">
+        <article class="col col--full col--half--medium tweet">
             {{ post.content }}
             <time datetime="{{ post.date }}" class="tweet__date"><a href="{{ post.url-out }}">{{ date_string }}</a></time>
             <div class="tweet__links">
-                <a href="https://twitter.com/intent/tweet?in_reply_to={{ post.twitter-id }}" class="btn--link">Reply</a> | <a href="https://twitter.com/intent/retweet?tweet_id={{ post.twitter-id }}" class="btn--link">Retweet</a> | <a href="https://twitter.com/intent/favorite?tweet_id={{ post.twitter-id }}" class="btn--link">Favourite</a>
+                <a href="https://twitter.com/intent/tweet?in_reply_to={{ post.twitter-id }}">Reply</a> | <a href="https://twitter.com/intent/retweet?tweet_id={{ post.twitter-id }}">Retweet</a> | <a href="https://twitter.com/intent/favorite?tweet_id={{ post.twitter-id }}">Favourite</a>
             </div>
         </article>
 
         {% else %}
 
-        <article class="col col--full col--half--small article">
+        <article class="col col--full col--half--medium article {% if post.featured %} article--featured{% endif %}">
             <h2 class="article__header"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <time datetime="{{ post.date }}" class="article__date">{{ date_string }}</time>
             <div class="article__content">
                 {{ post.snippet | markdownify }}
 
                 <div class="article__links">
-                    <a href="{{ post.url }}" class="btn btn--cta btn--forward">Read on</a>
+                    <a href="{{ post.url }}" class="btn btn--cta btn--forward {% if post.featured %} btn--inverse{% endif %}">Read on</a>
                 </div>
             </div>
         </article>

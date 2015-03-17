@@ -19,7 +19,7 @@ As a web developer of some 10 years, there are two things I&rsquo;m regularly as
 
 The answer to the first question has changed a bit over the years from <em>&ldquo;Yes, for a price&rdquo;</em> to <em>&ldquo;No, but I know someone who can&rdquo;</em>. I&rsquo;ve come to value my free time more and more as I&rsquo;ve got older. The answer to the other has always been:
 
-> &ldquo;Sure, have you got 5 years?&rdquo;
+&ldquo;Sure, have you got 5 years?&rdquo;
 
 A number plucked arbitrarily from the air, but large enough to make a point; learning &lsquo;web design&rsquo; is not a quick thing.
 
@@ -29,7 +29,7 @@ More recently however, we&rsquo;ve seen services like [Treehouse](http://teamtre
 
 This has got me thinking recently;
 
-> Q. Could I teach someone all this in 5 days? A. Most probably, but with a few caveats.
+Q. Could I teach someone all this in 5 days? A. Most probably, but with a few caveats.
 
 First of all, I could only teach [HTML](http://www.w3.org/html/wg/drafts/html/master/) and [CSS](http://www.w3.org/TR/CSS/) to the latest W3C draft (and so I should) but unfortunately it would take an age to go through every little browser quirk and the preferred solution (if there is one).
 

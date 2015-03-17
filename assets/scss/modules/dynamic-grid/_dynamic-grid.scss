@@ -1,0 +1,85 @@
+// ==========================================================================
+// DYNAMIC GRID MODULE
+// ==========================================================================
+
+
+
+
+.dynamic-grid {
+    width: 100%;
+    padding: rem-calc(5 0 0 5);
+}
+
+.dynamic-grid__row {
+    clear: both;
+}
+
+.dynamic-grid__item {
+    display: inline-block;
+    padding: rem-calc(0 5 5 0);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    @include respond-to("medium") {
+        float: left;
+        width: auto;
+    }
+
+    &:hover,
+    &:focus {
+        overflow: visible;
+
+        .dynamic-grid__content {
+            bottom: 0;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        float: left;
+        width: 100%;
+
+        @include respond-to("medium") {
+            width: auto;
+        }
+
+        .no-js & {
+            @include respond-to("medium") {
+                height: rem-calc(400);
+            }
+
+        }
+    }
+}
+
+.dynamic-grid__content {
+    padding: rem-calc(20 10 30 10);
+    clear: both;
+    background-color: transparentize(white, 0.1);
+    width: 100%;
+
+    @include respond-to("medium") {
+        padding: rem-calc(100);
+        position: absolute;
+        bottom: rem-calc(-400);
+        left: 0;
+        @include transition(bottom 250ms);
+        padding: rem-calc(10 10 30 10);
+    }
+
+    @include respond-to("large") {
+        padding-bottom: rem-calc(50);
+        bottom: rem-calc(-500);
+    }
+
+    @include respond-to("xlarge") {
+        padding-bottom: rem-calc(150);
+    }
+
+    p {
+        @include font-weight(medium);
+        @include font-scale(large, chaparral);
+        margin-bottom: rem-calc($base-unit * 5);
+    }
+}

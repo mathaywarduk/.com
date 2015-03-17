@@ -18,7 +18,9 @@ snippet: "This is a real discussion within the Erskine front-end team about CSS 
 keywords: "css naming conventions"
 ---
 
-This is a real discussion (with most of the swearing removed) within the Erskine front-end team about CSS naming conventions for a button. Hopefully it illustrates our attention to detail and how much we care about getting things right... or at least our stubborn and argumentative side.
+This is a real discussion (with most of the swearing removed) within the Erskine front-end team about CSS naming conventions for a button. 
+
+Hopefully it illustrates our attention to detail and how much we care about getting things right... or at least our stubborn and argumentative side.
 
 **Mat:** *&ldquo;What should I call this button?&rdquo;*
 

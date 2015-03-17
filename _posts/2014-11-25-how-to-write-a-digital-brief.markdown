@@ -17,11 +17,13 @@ share-img: "social/digital-brief.png"
 snippet: "When organising a digital project, it&rsquo;s often difficult to communicate what it is you&rsquo;re looking for to a prospective agency, especially if you haven&rsquo;t run a digital project before, or if you have and it didn&rsquo;t go to plan."
 ---
 
+When organising a digital project, it&rsquo;s often difficult to communicate what it is you&rsquo;re looking for to a prospective agency, especially if you haven&rsquo;t run a digital project before, or if you have and it didn&rsquo;t go to plan.
+
+This is the reason why, after more than 10 years in the industry, I&rsquo;ve only ever seen one or two briefs that hit the&nbsp;mark.
+
 <figure>
     <img src="/static/images/social/digital-brief.png" alt="How to write a digital brief" class="media__item">
 </figure>
-
-When organising a digital project, it&rsquo;s often difficult to communicate what it is you&rsquo;re looking for to a prospective agency, especially if you haven&rsquo;t run a digital project before, or if you have and it didn&rsquo;t go to plan. This is the reason why, after more than 10 years in the industry, I&rsquo;ve only ever seen one or two briefs that hit the&nbsp;mark.
 
 So where to start? Unless working for a brand with a large digital presence, many people tasked with running digital projects will have little or no experience of doing so. The first place they might look for help is Google. Having a quick look myself, I notice quite a few checklist guides to writing briefs, most of which tell you to be specific in your requirements for a final&nbsp;solution.
 

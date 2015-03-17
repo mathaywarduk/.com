@@ -71,7 +71,7 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
 
 (function ($) {
 
-    var PhotoGrid = function(el, opts) {
+    var DynamicGrid = function(el, opts) {
         $element = this.$element = $(el);
         breakpoints = this.breakpoints = [481, 767, 1200, 1500];
         baseHeight = this.baseHeight = 250;
@@ -80,8 +80,8 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
         this.init();
     }
 
-    PhotoGrid.prototype = {
-        constructor: PhotoGrid,
+    DynamicGrid.prototype = {
+        constructor: DynamicGrid,
         init: function() {
             this.bind();
         },
@@ -139,7 +139,7 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
 
             $("[data-grid-row]").each( function() {
                 baseWidth = 0;
-                var desiredWidth = $(window).width() - 15 - ( 5 * $(this).children().length ) - 5; // window width - body padding left - right padding of each item - row padding
+                var desiredWidth = $(window).width() - 5 - ( 5 * $(this).children().length ) - 5; // window width - body padding left - right padding of each item - row padding
                 var $imgs = $(this).find('img');
 
                 $imgs.each( function() {
@@ -186,36 +186,36 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
         }
     }
 
-    $.fn.photoGrid = function(option, param) {
+    $.fn.dynamicGrid = function(option, param) {
         var opts;
 
         if (typeof option === 'object' && option) {
-            opts = $.extend(true, {}, $.fn.photoGrid.defaults, option);
+            opts = $.extend(true, {}, $.fn.dynamicGrid.defaults, option);
         } else {
-            opts = $.extend(true, {}, $.fn.photoGrid.defaults);
+            opts = $.extend(true, {}, $.fn.dynamicGrid.defaults);
         }
         return this.each(function() {
             var $this = $(this),
             // don't call again if already initialised on this object
-            data = $this.data('photoGrid');
+            data = $this.data('dynamicGrid');
             if(!data){
-                $this.data('photoGrid', data = new PhotoGrid(this, opts));
+                $this.data('dynamicGrid', data = new DynamicGrid(this, opts));
             }
-            // allow the calling of plugin methods on an instance by name, eg: $item.photoGrid('bind')
+            // allow the calling of plugin methods on an instance by name, eg: $item.dynamicGrid('bind')
             if (typeof option === 'string') {
                 data[option](param);
             }
         });
     };
 
-    $.fn.photoGrid.defaults = {
+    $.fn.dynamicGrid.defaults = {
         breakpoint: 767
     };
 
 
     $(window).load( function() {
-        $("[data-photo-grid]").each( function() {
-            $(this).photoGrid();
+        $("[data-dynamic-grid]").each( function() {
+            $(this).dynamicGrid();
         });
     });
 
@@ -265,7 +265,7 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
             }
         },
         show: function() {
-            this.$element.slideDown();
+            this.$element.show();
         },
         hide: function() {
             this.$element.fadeOut();

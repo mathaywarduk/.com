@@ -5,3 +5,9 @@
 .s--hidden {
     display: none;
 }
+
+.s--sticky--top {
+    position: fixed;
+    top: 0;
+    left: 0;
+}

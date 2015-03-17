@@ -15,7 +15,7 @@ module.exports = function(grunt) {
                     'static/js/lib/jquery.blockquote.tweet.js',
                     'static/js/lib/jquery.popup.js',
                     'static/js/lib/jquery.scrolltop.js',
-                    'static/js/lib/jquery.photogrid.js',
+                    'static/js/lib/jquery.dynamic-grid.js',
                     'static/js/lib/jquery.scroll-show.js',
                     'static/js/global.js',
                     'static/js/search.js',

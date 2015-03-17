@@ -19,7 +19,7 @@ SEO shouldn&rsquo;t exist. In a perfect world, there would be no place for Brian
 
 Every client includes it on a brief, &lsquo;first page ranking&rsquo;, &lsquo;top of Google&rsquo;. That&rsquo;s easy. Almost every page on every site on the internet is top of Google, [if the search term is specific enough](https://www.google.com/search?q=mat+hayward+nottingham). But that&rsquo;s not what they want. What they really want is conversions.
 
-> Search engines present users with the most relevant pages based on the search terms they enter.
+Search engines present users with the most relevant pages based on the search terms they enter.
 
 The SEO _wizards_ know the &lsquo;tricks-of-the-trade&rsquo; to falsify your web page&rsquo;s relevance for the keywords required, giving your page a higher ranking than it actually deserves, and they&rsquo;ll happily charge you to do it. They&rsquo;ll have you believe it&rsquo;s some kind of magical dark art, passed from generation-to-generation. It&rsquo;s not. And there are two problems with their ideals and their methods. When Google, Yahoo!, Bing and the others find out these tricks, they change their algorithms in order to nullify them. What&rsquo;s worse, users tricked into visiting the wrong page, leave. Leading to reduced conversion rates and increased bounce rates.
 
@@ -27,7 +27,7 @@ Google (et al) are in the game to make money, and they do this by serving the mo
 
 To achieve a high ranking that leads to conversions, don&rsquo;t use tricks and cheats that will be out-of-date by the time your next birthday comes around. Look at the content from the users&rsquo; point of view. The best way to appear relevant is to **actually be&nbsp;relevant**.
 
-> How do you convince the search engines that your page is the best result? Start by being the best result.
+How do you convince the search engines that your page is the best result? Start by being the best result.
 
 Employing a good web copywriter and a decent development team is a good first step on any project but it&rsquo;s also a good first step to achieving a true high ranking.
 
@@ -37,7 +37,7 @@ A page with a large amount of inbound links is obviously influential. A page wit
 
 If the content is good enough that it will be linked to, and linked to from influential sites, then the ranking will improve. But it&rsquo;s possible to help it along without being naughty. If a website is for a business that operates in a localised area, it&rsquo;s useful to add it to web directories to improve in-linking. The most influential of these are [Google Places](http://www.google.co.uk/business/placesforbusiness/), [Yell](http://yell.com) and [Dmoz](http://dmoz.org).
 
-> Good developers will always write valid, semantic code and keep page load to a minimum. Search engines like both of these things.
+Good developers will always write valid, semantic code and keep page load to a minimum. Search engines like both of these things.
 
 Firstly, semantic code often presents less code and more content, so a greater percentage of the document read by a search engine index will be keywords.
 

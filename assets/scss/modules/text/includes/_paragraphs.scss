@@ -8,7 +8,7 @@ p {
     @include font-scale(large, chaparral);
     margin-bottom: rem-calc($base-unit * 5);
 
-    &:first-child {
+    &:first-of-type {
         @include font-weight(medium);
         @include font-scale(xlarge, chaparral);
         margin-bottom: rem-calc($base-unit * 6);

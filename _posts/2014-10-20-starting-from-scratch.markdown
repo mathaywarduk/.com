@@ -17,7 +17,9 @@ share-img: "social/kind.jpg"
 snippet: "Kind was born 3 months ago, but wasn't christened for a good few weeks as we searched for a name that was &lsquo;just right&rsquo;"
 ---
 
-All good things come to an end, and unfortunately one of those things was Erskine Design. For almost a decade Erskine helped lead the digital industry in the right direction. Building websites properly and responsibly, writing for publications, speaking at huge events and building useful apps like Gridpak.
+All good things come to an end, and unfortunately one of those things was Erskine Design.
+
+For almost a decade Erskine helped lead the digital industry in the right direction. Building websites properly and responsibly, writing for publications, speaking at huge events and building useful apps like Gridpak.
 
 In July this year the owners decided that while Erskine still had a great team, it was time to move on and do something new.
 

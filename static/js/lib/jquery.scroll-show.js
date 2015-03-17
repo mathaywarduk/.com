@@ -41,7 +41,7 @@
             }
         },
         show: function() {
-            this.$element.slideDown();
+            this.$element.show();
         },
         hide: function() {
             this.$element.fadeOut();

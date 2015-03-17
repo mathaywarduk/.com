@@ -17,7 +17,9 @@ share-img: "social/mask.png"
 snippet: "Rob Antill recently launched his website showcasing his talent for Stereographic photography. By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit."
 ---
 
-Our resident photography genius, Rob, recently launched his new website: [panodrop.com](http://www.panodrop.com/), showcasing his talent for Stereographic photography. By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit. So with all the interest, we thought we&rsquo;d share, roughly, how we did it.
+Our resident photography genius, Rob, recently launched his new website: [panodrop.com](http://www.panodrop.com/), showcasing his talent for Stereographic photography.
+
+By the end of the first day it had received over 6,000 hits and the logo masking was the hottest web design topic on Reddit. So with all the interest, we thought we&rsquo;d share, roughly, how we did it.
 
 We started with the basic mask, a cut out of the logo placed on top of an image of pure white using CSS. Together these created the part of logo that changes.
 

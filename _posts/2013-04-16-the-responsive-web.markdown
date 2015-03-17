@@ -31,7 +31,7 @@ We&rsquo;re going to talk today about the Responsive Web, and how we can build w
 
 We&rsquo;ll start with a bit of a history lesson. This is taken from Mat&rsquo;s personal portfolio back in 2002. It was common back then as the number of different screen sizes was low, and I have to admit I put something similar on a website back then.
 
-> This website is best viewed at 1024×768 resolution using Internet Explorer 6.0 or higher.
+This website is best viewed at 1024×768 resolution using Internet Explorer 6.0 or higher.
 
 But it&rsquo;s just not acceptable nowadays, because there are so many different screen sizes (I have seven just in my house). So we can&rsquo;t afford to be complacent and expect the user to do the work. Users want it to be easy, and they want it to be quick.
 
@@ -41,7 +41,7 @@ And it&rsquo;s not like we can aim for one or two screen sizes and that will ser
 
 So that&rsquo;s the challenge:
 
-> How can we keep the user happy, whatever device they might be using?
+How can we keep the user happy, whatever device they might be using?
 
 And we thought of 3 solutions for that:
 
@@ -75,7 +75,7 @@ The last option, which is the one we&rsquo;re going to focus on is to Make it Re
 
 Here&rsquo;s Dave, he couldn&rsquo;t be with us tonight, but he&rsquo;s useful here as an analogy. We all like Dave, in whatever capacity he&rsquo;s in, whether it&rsquo;s Olympic Ambassador, unpaid Footballer or Forgetter of Clothes, but whatever he&rsquo;s wearing, or not wearing, and whatever he&rsquo;s doing, he&rsquo;s always the same Dave. His content never changes, but the way that content is displayed changes. And it&rsquo;s always displayed in the best way for the situation.
 
-> And that&rsquo;s the basis of Responsive Design. Change your pants, but don&rsquo;t change your content!
+And that&rsquo;s the basis of Responsive Design. Change your pants, but don&rsquo;t change your content!
 
 Here&rsquo;s a good example. This is [The Great Discontent](http://thegreatdiscontent.com/) on a large desktop monitor. You can see the large hero image and headline, and the navigation and logo are relatively small at the top.
 
@@ -199,4 +199,4 @@ The more we know about the user, the more we can structure the content to suit t
 
 And remember that:
 
-> &ldquo;Devices don&rsquo;t use websites, people do.&rdquo;
+&ldquo;Devices don&rsquo;t use websites, people do.&rdquo;

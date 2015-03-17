@@ -2,17 +2,25 @@
 // MASTHEAD MODULE
 // ==========================================================================
 
+.masthead__wrapper {
+
+    margin-bottom: rem-calc(25);
+
+    @include respond-to("medium") {
+        margin-bottom: rem-calc(50);
+    }
+}
 
 .masthead {
     padding-top: rem-calc($base-spacing);
     padding-bottom: rem-calc($base-spacing);
     text-align: left;
-    border-bottom: 1px solid palette(neutral, dark);
-    margin-bottom: rem-calc(25);
+    // border-bottom: 1px solid palette(neutral, dark);
+    // margin-bottom: rem-calc(25);
 
     @include respond-to("medium") {
-        border-bottom: 2px solid palette(neutral, dark);
-        margin-bottom: rem-calc(50);
+        // border-bottom: 2px solid palette(neutral, dark);
+        // margin-bottom: rem-calc(50);
         @include pie-clearfix();
     }
 }
@@ -20,6 +28,12 @@
 .masthead__avatar {
     display: none;
     margin-bottom: rem-calc($base-spacing);
+
+    &.masthead__avatar {
+        @include link--hover() {
+            background-image: none;
+        }
+    }
 
     @include respond-to("small") {
         display: block;
@@ -62,14 +76,23 @@
     }
 }
 
+.masthead__social {
+
+    .nav__item {
+        a {
+            @include link() {
+                background-image: linear-gradient(to bottom, transparentize(white, 1) 86%, white 86%, white 90%, transparentize(white, 1) 90%);
+            }
+        }
+    }
+}
+
 
 .masthead--small {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     background-color: white;
     padding: rem-calc(20);
+    // border-bottom: 2px solid palette(neutral, dark);
 
     .masthead__avatar {
         display: none;

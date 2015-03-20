@@ -1,0 +1,134 @@
+// ==========================================================================
+// CYCLE NAVIGATION
+// ==========================================================================
+
+.nav--cycle {
+    clear: both;
+    border-top: 1px solid palette(neutral, light);
+    margin-top: rem-calc(30);
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(20);
+    @include pie-clearfix();
+
+    @include respond-to("medium") {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+
+    .nav__item {
+        display: inline-block;
+        width: auto;
+        @include font-scale(base);
+        margin-bottom: rem-calc(10);
+
+        @include respond-to("medium") {
+            position: fixed;
+            top: 25%;
+            z-index: 2;
+            width: rem-calc(30);
+            @include transition(all 250ms);
+
+            @include link--hover() {
+                width: 45%;
+            }
+        }
+
+        a {
+            @include link() {
+                display: block;
+                position: relative;
+                background-color: transparentize(palette(accent, gold), 0.5);
+                background-image: none;
+                color: white;  
+                padding: rem-calc(12 10 10);
+                @include transition(all 250ms);
+
+                &:after {
+                    position: absolute;
+                    top: rem-calc(13);
+                }
+
+                @include respond-to("medium") {
+                    span {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        display: block;
+                    }
+                }
+            }
+
+            @include link--hover() {
+                background-color: palette(accent, gold);
+                
+                span {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .nav__item--previous {
+        float: left;
+        margin-left: rem-calc(-20);
+
+        @include respond-to("medium") {
+            left: 0;
+            margin-left: 0;
+            text-align: right;
+        }
+
+        a {
+            @include link() {
+                padding-left: rem-calc(30);
+                border-radius: rem-calc(0 5 5 0);
+
+                @include respond-to("medium") {
+                    padding-left: rem-calc(10);
+
+                    span {
+                        margin-left: rem-calc(20);
+                    }
+                }
+
+                &:after {
+                    content: '\2190';
+                    left: rem-calc(5);
+                }
+            }
+
+        }
+    }
+
+    .nav__item--next {
+        float: right;
+        margin-right: rem-calc(-20);
+
+        @include respond-to("medium") {
+            right: 0;
+            margin-right: 0;
+        }
+
+        a {
+            @include link() {
+                padding-right: rem-calc(30);
+                border-radius: rem-calc(5 0 0 5);
+
+                @include respond-to("medium") {
+                    padding-right: rem-calc(10);
+
+                    span {
+                        margin-right: rem-calc(30);
+                    }
+                }
+
+                &:after {
+                    content: '\2192';
+                    right: rem-calc(5);
+                }
+            }
+
+        }
+    }
+}

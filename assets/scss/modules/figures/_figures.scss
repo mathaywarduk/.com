@@ -37,3 +37,9 @@ figcaption, .figcaption {
         height: 100%;
     }
 }
+
+.figure--full {
+    @include respond-to("medium") {
+        margin-right: -50%;
+    }
+}

@@ -35,13 +35,16 @@
 
 .col--2--medium {
     @include respond-to("medium") {
-        width: percentage(2/3);   
+        float: left;
+        width: 62%;
+        margin-right: 5%;
     }
 }
 
 .col--1--medium {
     @include respond-to("medium") {
-        width: percentage(1/3);  
+        float: left;
+        width: 33%;  
     }
 }
 

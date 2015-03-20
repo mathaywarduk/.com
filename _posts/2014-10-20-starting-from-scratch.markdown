@@ -19,13 +19,13 @@ snippet: "Kind was born 3 months ago, but wasn't christened for a good few weeks
 
 All good things come to an end, and unfortunately one of those things was Erskine Design.
 
-For almost a decade Erskine helped lead the digital industry in the right direction. Building websites properly and responsibly, writing for publications, speaking at huge events and building useful apps like Gridpak.
+For almost a decade [Erskine](http://erskinedesign.com) helped lead the digital industry in the right direction. Building websites properly and responsibly, writing for publications, speaking at huge events and building useful apps like Gridpak.
 
 In July this year the owners decided that while Erskine still had a great team, it was time to move on and do something new.
 
 As part of moving on, Tom, Christina and I have fulfilled our shared ambition of setting up our own agency. It&rsquo;s something we&rsquo;d all individually thought about but had never had the opportunity, or the balls, to go for it.
 
-Kind was born, but wasn&rsquo;t christened for a good few weeks as we searched for a name that was just right. Now, despite our initial sadness about Erskine, we&rsquo;re really excited by the opportunity to build something special of our own.
+[Kind](http://madebykind.com) was born, but wasn&rsquo;t christened for a good few weeks as we searched for a name that was just right. Now, despite our initial sadness about Erskine, we&rsquo;re really excited by the opportunity to build something special of our own.
 
 At Kind we will focus on solving problems creatively through digital, rather than simply &lsquo;building websites&rsquo;, while maintaining the high standards that Erskine was famous for. After all a website is the tool, not the end-goal.
 

@@ -5,7 +5,10 @@
 //
 
 .nav--social {
-    margin-left: rem-calc(-20);
+
+    @include respond-to("medium") {
+        margin-left: rem-calc(-20);
+    }
 
     .nav__item {
         background-repeat: no-repeat;

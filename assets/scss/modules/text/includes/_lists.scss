@@ -1,0 +1,55 @@
+// ==========================================================================
+// LISTS MODULE
+// ==========================================================================
+
+.post {
+
+    ul, ol {
+        list-style-type: none;
+        @include font-weight(medium);
+        @include font-scale(large, chaparral);
+        margin-bottom: rem-calc($base-unit * 5);
+
+        li {
+            margin-bottom: rem-calc($base-unit * 3);
+            position: relative;
+            padding-left: rem-calc(20);
+
+            &:before {
+                position: absolute;
+                left: rem-calc(0);
+                top: rem-calc(10);
+            }
+        }
+    }
+
+    ul {
+        li {
+            &:before {
+                content: "";
+                width: rem-calc(8);
+                height: rem-calc(8);
+                background-color: palette(neutral, dark);
+                border-radius: 50%;
+            }
+        }
+    }
+
+    ol {
+        counter-reset: ol;
+        li {
+            counter-increment: ol;
+            padding-left: rem-calc(30);
+
+            &:before {
+                content: counter(ol) ".";
+                top: rem-calc(0);
+                color: palette(neutral, dark);
+            }
+
+        }
+    }
+    
+}
+
+

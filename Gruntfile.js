@@ -17,6 +17,7 @@ module.exports = function(grunt) {
                     'static/js/lib/jquery.scrolltop.js',
                     'static/js/lib/jquery.dynamic-grid.js',
                     'static/js/lib/jquery.scroll-show.js',
+                    'static/js/lib/jquery.large-period.js',
                     'static/js/global.js',
                     'static/js/search.js',
                     ],

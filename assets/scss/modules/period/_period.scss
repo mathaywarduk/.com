@@ -1,0 +1,16 @@
+// ==========================================================================
+// PERIOD MODULE
+// ==========================================================================
+
+
+.period {
+    display: inline-block;
+    width: rem-calc(8);
+    height: rem-calc(8);
+    background-color: palette(accent, gold);
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+    margin-left: rem-calc(5);
+    margin-top: rem-calc(2);
+}

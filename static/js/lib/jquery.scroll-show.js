@@ -41,10 +41,18 @@
             }
         },
         show: function() {
-            this.$element.show();
+            if ($("body").hasClass("is--home")) {
+                this.$element.slideDown();   
+            } else {
+                this.$element.show();
+            }
         },
         hide: function() {
-            this.$element.fadeOut();
+            if ($("body").hasClass("is--home")) {
+                this.$element.slideUp(); 
+            } else {
+                this.$element.hide();
+            }
         }
     }
 

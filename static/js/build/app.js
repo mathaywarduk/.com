@@ -325,10 +325,12 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
             var html = lastPara.html();
             var lastChar = html.substr(html.length-1);
             var period = '<span class="' + this.opts.periodClass + '">.</span>';
+            var newHTML = html + period;
             if (lastChar == ".") {
-                var newHTML = html.substr(0, html.length-1) + period;
-                lastPara.html(newHTML);
+                newHTML = html.substr(0, html.length-1) + period;
             }
+            
+            lastPara.html(newHTML);
 
         },
         

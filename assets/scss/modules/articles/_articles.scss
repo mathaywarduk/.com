@@ -18,7 +18,7 @@
 .article__header {
     margin-bottom: rem-calc(5);
 
-    background-image: url("/static/images/icons/article.png");
+    background-image: image-url("icons/article.png");
     background-repeat: no-repeat;
     background-size: rem-calc(40);
     background-position: center rem-calc(10);
@@ -67,7 +67,7 @@
     border-radius: rem-calc(5);
 
     .article__header {
-        background-image: url("/static/images/icons/article--white.png");
+        background-image: image-url("icons/article--white.png");
         
         a {
             @include link() {

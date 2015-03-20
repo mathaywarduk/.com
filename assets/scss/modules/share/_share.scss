@@ -1,0 +1,54 @@
+// ==========================================================================
+// SHARE MODULE
+// ==========================================================================
+
+.share {
+    margin-bottom: rem-calc(25);
+}
+
+.share__header {
+    @extend .h3;
+    @extend .h--border-left;
+    font-style: normal;
+    margin: rem-calc(4 10 10 0);
+    float: left;
+}
+
+.share__links {
+    @include pie-clearfix();
+    margin-left: rem-calc(10);
+    white-space: nowrap;
+}
+
+.share__link {
+    @include link() {
+        float: left;
+        width: rem-calc(25);
+        height: rem-calc(25);
+        font-size: 0;
+        line-height: 0;
+        background-image: none;
+        background-size: cover;
+        @include transition(all 250ms);
+        margin-left: rem-calc(10);
+        margin-bottom: rem-calc(10);
+    }
+
+    @include link--hover() {
+        position: relative;
+        top: rem-calc(-3);
+    }
+}
+
+.share__link--twitter {
+    @include link() {
+        background-image: image-url("icons/social--twitter.png");
+    }
+}
+
+.share__link--facebook {
+    @include link() {
+        background-image: image-url("icons/social--facebook.png");
+    }
+
+}

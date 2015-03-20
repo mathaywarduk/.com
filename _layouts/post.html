@@ -13,11 +13,12 @@ layout: default
 
     {% comment %} Check if posted on third-party website {% endcomment %}
 
-
     {% if page.posted-on %}
-
-    {% capture posted_on %}This article was originally posted on {{ page.posted-on }}. <a href="{{ page.posted-on-url }}">Read the original</a>.{% endcapture %}
-
+        {% if page.posted-on-text %}
+            {% capture posted_on %}{{ page.posted-on-text }} <a href="{{ page.posted-on-url }}">{{ page.posted-on }}</a>.{% endcapture %}
+        {% else %}
+            {% capture posted_on %}This article was originally posted on {{ page.posted-on }}. <a href="{{ page.posted-on-url }}">Read the original</a>.{% endcapture %}
+        {% endif %}
     {% endif %}
 
 
@@ -25,9 +26,9 @@ layout: default
 
     {% assign previous = page.previous %}
 
-    {% if previous.title == 'Tweet' %}
+    {% if previous.type == 'tweet' %}
         {% assign previous = previous.previous %}
-        {% if previous.title == 'Tweet' %}
+        {% if previous.type == 'tweet' %}
             {% assign previous = previous.previous %}
         {% endif %}
     {% endif %}
@@ -38,9 +39,9 @@ layout: default
     {% assign next = page.next %}
 
 
-    {% if next.title == 'Tweet' %}
+    {% if next.type == 'tweet' %}
         {% assign next = next.next %}
-        {% if next.title == 'Tweet' %}
+        {% if next.type == 'tweet' %}
             {% assign next = next.next %}
         {% endif %}
     {% endif %}
@@ -64,9 +65,9 @@ layout: default
         {% endif %}
         
         <div class="share">
-            <h2 class="share__header">Share this article</h2>
+            <h2 class="h3 h--border-left share__header">Share this article:</h2>
             <ul class="share__links">
-                <li><a href="http://twitter.com/intent/tweet?url=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;related=mathaywarduk&amp;text=%E2%80%9C{{ page.title | UrlEncode | replace: "&amp;", "%26" }}%E2%80%9D+(via+@mathaywarduk)" class="share__link share__link--twitter"data-popup data-popup-width="685" data-popup-height="500">Share <em>&ldquo;{{ page.title }}&rdquo;</em> on Twitter</a></li>
+                <li><a href="http://twitter.com/intent/tweet?url=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;related=mathaywarduk&amp;text=%E2%80%9C{{ page.title | UrlEncode | replace: "&amp;", "%26" }}%E2%80%9D+(via+@mathaywarduk)" class="share__link share__link--twitter" data-popup data-popup-width="685" data-popup-height="500">Share <em>&ldquo;{{ page.title }}&rdquo;</em> on Twitter</a></li>
                 <li><a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;u=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;t=%E2%80%9C{{ page.title | UrlEncode | replace: "&amp;", "%26" }}%E2%80%9D+by+Mat+Hayward" class="share__link share__link--facebook" data-popup data-popup-width="685" data-popup-height="500">Share <em>&ldquo;{{ page.title }}&rdquo;</em> on Facebook</a></li>
             </ul>
         </div>

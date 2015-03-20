@@ -5,6 +5,7 @@
 //
 
 .nav--social {
+    margin-left: rem-calc(-20);
 
     .nav__item {
         background-repeat: no-repeat;
@@ -15,7 +16,7 @@
 
         @include respond-to("medium") {
             float: left;   
-            margin-right: rem-calc(20);
+            margin-left: rem-calc(20);
         }
     }
 }

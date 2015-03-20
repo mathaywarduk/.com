@@ -7,6 +7,9 @@ section: Read
 title: "Modular CSS with Sass &amp; BEM"
 description: "While there are already many front-end frameworks available for free, it&rsquo;s often preferable to write code ourselves. We can build a Sass and BEM based living framework to use as a basis for any project."
 keywords: "Living framework"
+posted-on: Net Magazine
+posted-on-url: http://www.netmagazine.com
+posted-on-text: This article originally appeared in issue 249 of
 
 date: 2014-01-17 09:45:00
 pub-time: 2014-01-17T09:45
@@ -325,7 +328,3 @@ This is a very simple example, but the potential of a Sass and BEM-based framewo
 Using the workflow outlined in this tutorial, you can create an essential building block that you can make use of for all your future projects, no matter how large they are, simply by adding modules as necessary.
 
 It&rsquo;s important to remember that while you are building one system, you should make the base module as simple, and therefore reusable, as possible. Specificity can then be added using the **_config.scss** file and BEM modifiers.
-
-<hr />
-
-<p>This article originally appeared in issue 249 of <a href="http://www.netmagazine.com">Net Magazine</a>.</p>

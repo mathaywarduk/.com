@@ -10,7 +10,7 @@ keywords: "css naming conventions"
 
 date: 2014-01-07 11:30:00
 pub-time: 2014-01-07T11:30
-posted-on: Erskine Design
+posted-on: Erskine Design&rsquo;s blog
 posted-on-url: http://www.erskinedesign.com/blog/whats-name/
 
 share-img: "social/name.png"

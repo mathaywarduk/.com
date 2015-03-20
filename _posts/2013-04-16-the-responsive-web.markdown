@@ -10,7 +10,7 @@ keywords: "Responsive web"
 
 date: 2013-04-16 14:42:00
 pub-time: 2013-02-16T14:42
-posted-on: Tribe UK
+posted-on: Tribe&rsquo;s blog
 posted-on-url: http://www.tribeuk.co.uk/blog/the-responsive-web/
 
 share-img: "social/responsive-web.jpg"

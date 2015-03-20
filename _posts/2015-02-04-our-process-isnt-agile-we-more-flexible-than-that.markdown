@@ -10,7 +10,7 @@ keywords: "Agile process"
 
 date: 2015-02-04 14:42:00
 pub-time: 2015-02-04T14:42
-posted-on: Kind's blog
+posted-on: Kind&rsquo;s blog
 posted-on-url: http://madebykind.com/blog/our-process-isnt-agile-we-more-flexible-than-that/
 
 share-img: "social/process.jpg"

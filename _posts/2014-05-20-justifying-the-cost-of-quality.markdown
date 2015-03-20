@@ -10,7 +10,7 @@ keywords: "web design cost"
 
 date: 2014-05-20 11:30:00
 pub-time: 2014-05-20T11:30
-posted-on: Erskine Design
+posted-on: Erskine Design&rsquo;s blog
 posted-on-url: http://erskinedesign.com/blog/justifying-the-cost-of-quality/
 
 share-img: "social/default.png"

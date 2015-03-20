@@ -21,7 +21,7 @@ When organising a digital project, it&rsquo;s often difficult to communicate wha
 
 This is the reason why, after more than 10 years in the industry, I&rsquo;ve only ever seen one or two briefs that hit the&nbsp;mark.
 
-<figure>
+<figure class="figure--full">
     <img src="/static/images/social/digital-brief.png" alt="How to write a digital brief" class="media__item">
 </figure>
 

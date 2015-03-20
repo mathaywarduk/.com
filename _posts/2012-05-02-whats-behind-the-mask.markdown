@@ -10,7 +10,7 @@ keywords: "Sexy javascript"
 
 date: 2012-05-02 11:13:00
 pub-time: 2012-05-02T11:13
-posted-on: Tribe UK
+posted-on: Tribe&rsquo;s blog
 posted-on-url: http://www.tribeuk.co.uk/blog/whats-behind-the-mask/
 
 share-img: "social/mask.png"

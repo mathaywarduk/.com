@@ -9,6 +9,14 @@
     @include respond-to("medium") {
         margin-bottom: rem-calc(50);
     }
+
+    .is--home & {
+        border-bottom: rem-calc(5) solid palette(neutral, mid);
+
+        @include respond-to("medium") {
+            border-bottom: rem-calc(10) solid palette(neutral, mid);
+        }
+    }
 }
 
 .masthead {
@@ -91,6 +99,7 @@
     width: 100%;
     background-color: white;
     padding: rem-calc(20);
+    border-bottom: rem-calc(5) solid palette(neutral, mid);
 
     .masthead__avatar {
         display: none;

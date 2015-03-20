@@ -10,7 +10,7 @@ keywords: "Erskine design"
 
 date: 2014-10-20 15:13:00
 pub-time: 2014-10-20T15:13
-posted-on: Kind
+posted-on: Kind&rsquo;s blog
 posted-on-url: http://madebykind.com/blog/starting-from-scratch/
 
 share-img: "social/kind.jpg"

@@ -52,16 +52,17 @@ layout: default
         <time datetime="{{page.date}}" class="h--date">{{ date_string }}</time>
     </header>
 
-    {% if page.posted-on %}
-        <div class="message--posted-on">{{ posted_on }}</div>
-    {% endif %}
-
     <section class="col col--full col--2--medium" role="main">
 
         {{ content }}
 
     </section>
     <aside class="col col--full col--1--medium">
+
+        {% if page.posted-on %}
+            <div class="message--posted-on">{{ posted_on }}</div>
+        {% endif %}
+        
         <div class="share">
             <h2 class="share__header">Share this article</h2>
             <ul class="share__links">

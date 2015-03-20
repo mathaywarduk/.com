@@ -10,7 +10,7 @@ keywords: "Living styleguides"
 
 date: 2015-03-05 14:42:00
 pub-time: 2015-03-05T14:42
-posted-on: Kind's blog
+posted-on: Kind&rsquo;s blog
 posted-on-url: http://madebykind.com/blog/the-ultimate-front-end-handover/
 
 share-img: "social/living-styleguide.jpg"

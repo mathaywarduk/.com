@@ -10,7 +10,7 @@ keywords: "Digital brief"
 
 date: 2014-11-25 15:13:00
 pub-time: 2014-11-25T15:13
-posted-on: Kind
+posted-on: Kind&rsquo;s blog
 posted-on-url: http://madebykind.com/blog/guide-to-writing-a-digital-brief/
 
 share-img: "social/digital-brief.png"

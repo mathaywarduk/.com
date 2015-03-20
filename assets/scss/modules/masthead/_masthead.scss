@@ -15,12 +15,8 @@
     padding-top: rem-calc($base-spacing);
     padding-bottom: rem-calc($base-spacing);
     text-align: left;
-    // border-bottom: 1px solid palette(neutral, dark);
-    // margin-bottom: rem-calc(25);
 
     @include respond-to("medium") {
-        // border-bottom: 2px solid palette(neutral, dark);
-        // margin-bottom: rem-calc(50);
         @include pie-clearfix();
     }
 }
@@ -81,6 +77,9 @@
     .nav__item {
         a {
             @include link() {
+                background-image: linear-gradient(to bottom, transparentize(palette(neutral, mid), 1) 86%, palette(neutral, mid) 86%, palette(neutral, mid) 90%, transparentize(palette(neutral, mid), 1) 90%);
+            }
+            @include link--hover() {
                 background-image: linear-gradient(to bottom, transparentize(white, 1) 86%, white 86%, white 90%, transparentize(white, 1) 90%);
             }
         }
@@ -92,7 +91,6 @@
     width: 100%;
     background-color: white;
     padding: rem-calc(20);
-    // border-bottom: 2px solid palette(neutral, dark);
 
     .masthead__avatar {
         display: none;

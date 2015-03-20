@@ -6,7 +6,7 @@
 .tweet {
     border: 1px solid transparentize(palette(accent, gold), 0.5);
     border-radius: rem-calc(5);
-    padding: rem-calc(20);
+    padding: rem-calc(20 30);
     margin-bottom: rem-calc(50);
 
     background-image: image-url("icons/social--twitter.png");

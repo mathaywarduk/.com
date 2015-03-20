@@ -1,0 +1,11 @@
+---
+type: tweet
+date: 2015-03-09 10:39:00
+pub-time: 2015-03-09T10:39
+twitter-id: 574882082956181504
+url-out: https://twitter.com/mathaywarduk/status/574882082956181504
+search_omit: true
+---
+
+
+RT [@madebykind](https://twitter.com/madebykind) Vision first. Planning second. Why strategy is important. [madebykind.com/blog/...](hhttp://madebykind.com/blog/why-strategy-is-important/)

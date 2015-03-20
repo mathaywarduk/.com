@@ -37,7 +37,8 @@
     }
 }
 
-.article__date {
+.article__date,
+.article__subtitle {
     color: palette(teal, light);
     font-style: italic;
     margin-bottom: rem-calc(20);

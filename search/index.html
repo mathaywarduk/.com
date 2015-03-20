@@ -11,36 +11,39 @@ search_omit: true
 ---
 
 
-    <div class="content-block intro search">
-        <noscript><p>This search relies on Javascript, sorry!</p></noscript>
-        <form method="get" action="/search" data-search-form class="form form--centered">
-            <label for="q" class="form__label">Search term</label>
-            <input type="search" name="q" id="q" placeholder="What are you looking for?" data-search-input autocomplete="off" class="form__input" />
-            <input type="submit" value="Go" class="form__button btn btn--cta btn--forward" />
-        </form>
-    </div>
+    <div class="wrapper post">
+        <div class="cols">
+            <div class="col col--full">
+                <div class="center--h">
+                    <noscript><p>This search relies on Javascript, sorry!</p></noscript>
+                    <form method="get" action="/search" data-search-form class="search">
+                        <div class="control">
+                            <label for="q" class="s--hidden">Search term</label>
+                            <input type="search" name="q" id="q" placeholder="What are you looking for?" data-search-input autocomplete="off" class="control__field search__field" />
+                            <input type="submit" value="Go" class="btn" />
+                        </div>
+                    </form>
+                </div>
 
-    <div class="content-wrapper search__results-wrapper posts-list">
-        <div class="search__found-string">
-            <p data-search-found><span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.</p>
+                <p class="search__meta" data-search-found><span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.</p>
+            </div>
         </div>
-        <div class="search__results" data-search-results></div>
+        <div class="cols search__results" data-search-results></div>
     </div>
 
     <script type="text/x-template" id="search-result">
-        <div class="posts-list__item search__item">
-            <header class="posts-list__header">
-                <h1><a href="##Url##">##Title##</a></h1>
-                ##SubTitle##
-            </header>
-            <section class="posts-list__content">
+        <div class="col col--full col--half--medium article">
+            <h2 class="article__header"><a href="##Url##">##Title##</a></h2>
+            <span class="article__subtitle">##SubTitle##</span>
+            <div class="article__content">
                 <p>##Excerpt##</p>
-                <div class="post__links">
-                    <a href="##Url##" class="btn btn--cta btn--forward">Read on</a>
+
+                <div class="article__links">
+                    <a href="##Url##" class="btn btn--forward">Read on</a>
                 </div>
-            </section>
+            </div>
         </div>
     </script>
     <script type="text/x-template" id="search-date">
-        <h2 class="post__date"><a href="##Url##">##Date##</a></h2>
+        <time datetime="">##Date##</time>
     </script>

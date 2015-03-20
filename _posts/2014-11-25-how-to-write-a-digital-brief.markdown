@@ -80,9 +80,9 @@ Hopefully you now have a good idea of where to start. To make things easier we&r
 
 We&rsquo;re hosting a full day workshop where you&rsquo;ll work with practical, everyday examples of digital briefs and see how they shape a project from beginning to end. You&rsquo;ll also walk away with a full set of resources and example files to help you on future&nbsp;projects.
 
-<form action="http://madebykind.createsend.com/t/t/s/dhxiy/" method="post" class="form" data-cm-ajax>
-        <label for="fieldEmail" class="form__label">Email</label>
-        <input type="email" id="fieldEmail" name="cm-dhxiy-dhxiy" class="form__input" required placeholder="Email address" autocorrect="off" autocapitalize="off" />
-        <input type="submit" class="form__button btn btn--cta btn--forward" value="Register" data-track data-track-href="/digital-brief/workshop/signup">
+<form action="http://madebykind.createsend.com/t/t/s/dhxiy/" method="post" class="" data-cm-ajax>
+    <label for="fieldEmail" class="control__label s--hidden">Email</label>
+    <input type="email" id="fieldEmail" name="cm-dhxiy-dhxiy" class="control__field" required placeholder="Enter your email address" autocorrect="off" autocapitalize="off" />
+    <input type="submit" class="btn" value="Register" data-track data-track-href="/digital-brief/workshop/signup">
 </form>
 

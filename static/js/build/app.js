@@ -603,11 +603,12 @@ function showSearchResults(results) {
  * @return {String} Populated HTML
  */
 function populateResultContent(html, item) {
-    if (item.date != "") {
+    console.log(item.date);
+    if (!!item.date) {
         var dateString = $("#search-date").html();
         html = injectContent(html, populateDateString(dateString, item), '##SubTitle##');
     } else {
-        html = injectContent(html, "", '##SubTitle##');
+        html = injectContent(html, item.subtitle, '##SubTitle##');
     }
     html = injectContent(html, item.title, '##Title##');
     html = injectContent(html, item.link, '##Url##');

@@ -46,7 +46,8 @@ layout: null
             "link": "{{ site.url }}{{ page.url | replace: 'index.html', '' }}",
             "date": {{ page.date | jsonify }},
             "excerpt": {{ page.description | jsonify }},
-            "seach_omit": "{{ post.search_omit }}"
+            "subtitle": {{ page.subtitle | jsonify }},
+            "seach_omit": "{{ page.search_omit }}"
         }
         {% assign first = false %}
         {% endif %}

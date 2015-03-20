@@ -1,0 +1,56 @@
+// ==========================================================================
+// WORK MODULE
+// ==========================================================================
+
+.work {
+
+}
+
+.work__logo {
+    max-width: rem-calc(100);
+    margin-bottom: rem-calc(10);
+}
+
+.work__description,
+p.work__description,
+p.work__description:first-child, {
+    @include font-weight(medium);
+    @include font-scale(large, chaparral);
+    margin-bottom: rem-calc($base-unit * 10);
+}
+
+ul.work__links {
+    li {
+        margin-bottom: rem-calc($base-unit);
+    }
+}
+
+
+// 
+// FEATURED ITEM
+// ==========================================================================
+
+.work--featured {
+
+    .work__logo {
+        max-width: rem-calc(125);
+        margin-bottom: rem-calc(20);
+    }
+
+    .work__description,
+    p.work__description,
+    p.work__description:first-child, {
+
+    }
+
+    ul.work__links {
+        @include columns(2);
+        @include column-gap(rem-calc(30));
+
+        li {
+            @include break-inside(avoid);
+        }
+        
+    }
+
+}

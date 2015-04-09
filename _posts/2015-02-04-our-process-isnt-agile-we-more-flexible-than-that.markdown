@@ -4,7 +4,7 @@ container-type: article
 content-type: post
 section: Read
 
-title: "Our process isn&rsquo;t agile, we&rsquo;re more flexible than that"
+title: Our process isn't agile, we're more flexible than that
 description: "Every project, and every client, is different. Different constraints, different objectives and different personalities mean that we can't always fit a project into a process we decided on months or even years ago."
 keywords: "Agile process"
 

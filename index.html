@@ -43,10 +43,11 @@ schemaType: Blog
 
             {% else %}
 
-            <article class="col col--full col--half--medium article {% if post.featured %} article--featured{% endif %}" itemscope itemtype="http://schema.org/BlogPost">
-                <h2 class="article__header"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <time datetime="{{ post.date }}" class="article__date">{{ date_string }}</time>
+            <article class="col col--full col--half--medium article {% if post.featured %} article--featured{% endif %}" itemscope itemtype="http://schema.org/BlogPosting">
+                <h2 class="article__header" itemprop="headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <time datetime="{{ post.date }}" class="article__date" itemprop="datePublished" content="{{ post.pub-time }}">{{ date_string }}</time>
                 <div class="article__content">
+                    <span itemprop="image" content="{{site.url}}/static/images/{{ post.share-img }}" class="is--hidden"></span>
                     {{ post.snippet | markdownify }}
 
                     <div class="article__links">

@@ -4,7 +4,7 @@
 {% endif %}
 {% capture title %}{{ page.title }}{{ divider }}Front-end Developer ~ Mat Hayward{% endcapture %}
 <!DOCTYPE html>
-<html dir="ltr" lang="en-GB">
+<html dir="ltr" lang="en-GB" itemscope itemtype="http://schema.org/{{ page.schemaType }}">
     <head>
         <title>{{ title }}</title>
         {% if page.posted-on-url %}<link rel="canonical" href="{{ page.posted-on-url }}"/>{% endif %}
@@ -50,6 +50,11 @@
         <meta name="twitter:description" content="{{ page.description }}">
         <meta name="twitter:title" content="{{ title }}">
         <meta name="twitter:url" content="{{site.url}}{{ page.url }}/">
+ 
+        <!-- Schema.org -->
+        <meta itemprop="name" content="{{ title }}">
+        <meta itemprop="description" content="{{ page.description }}">
+        <meta itemprop="image" content="{{site.url}}/static/images/{{ page.share-img }}">
 
         <script>
             (function(f,b){
@@ -86,7 +91,7 @@
 
         <footer class="footer island--black">
             <nav class="wrapper">
-                <p class="p--small footer__credits">Made by <a href="http://madebykind.com">Kind</a> for <a href="http://plus.google.com/117510067130914002427?rel=author">Mat Hayward</a></p>
+                <p class="p--small footer__credits">Made by <a href="http://madebykind.com">Kind</a> for <a href="http://plus.google.com/u/0/117510067130914002427?rel=author" rel="author">Mat Hayward</a></p>
                 <p class="p--small footer__back"><a href="#top" data-scroll-to-target>Back to top</a></p>
             </nav>
         </footer>

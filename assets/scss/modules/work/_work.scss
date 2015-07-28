@@ -44,11 +44,14 @@ ul.work__links {
     }
 
     ul.work__links {
-        @include columns(2);
-        @include column-gap(rem-calc(30));
+        @include respond-to("large") {
+            @include columns(2);
+            @include column-gap(rem-calc(30));
 
-        li {
-            @include break-inside(avoid);
+            li {
+                @include break-inside(avoid);
+            }
+
         }
         
     }

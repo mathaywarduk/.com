@@ -1,5 +1,6 @@
 ---
 layout: default
+schemaType: BlogPosting
 ---
 
 <div class="wrapper">
@@ -49,11 +50,11 @@ layout: default
 
 
     <header class="h--group" data-no-widows>
-        <h1>{{ page.title }}</h1>
-        <time datetime="{{page.date}}" class="h--date">{{ date_string }}</time>
+        <h1 itemprop="headline">{{ page.title }}</h1>
+        <time datetime="{{ page.date }}" class="h--date" itemprop="datePublished" content="{{ page.pub-time }}">{{ date_string }}</time>
     </header>
 
-    <section class="col col--full col--2--medium post" role="main" data-large-period data-no-widows>
+    <section class="col col--full col--2--medium post" role="main" data-large-period data-no-widows itemprop="articleBody">
 
         {{ content }}
 

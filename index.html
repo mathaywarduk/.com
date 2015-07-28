@@ -9,6 +9,7 @@ description: Ramblings and such from Mat Hayward, Operations Director at Kind.
 keywords: Front-end Developer, Nottingham
 share-img: social/default.jpg
 pub-time: 2013-09-19T18:07
+schemaType: Blog
 ---
     
     <div class="wrapper">
@@ -42,7 +43,7 @@ pub-time: 2013-09-19T18:07
 
             {% else %}
 
-            <article class="col col--full col--half--medium article {% if post.featured %} article--featured{% endif %}">
+            <article class="col col--full col--half--medium article {% if post.featured %} article--featured{% endif %}" itemscope itemtype="http://schema.org/BlogPost">
                 <h2 class="article__header"><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <time datetime="{{ post.date }}" class="article__date">{{ date_string }}</time>
                 <div class="article__content">

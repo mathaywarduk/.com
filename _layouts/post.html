@@ -54,12 +54,21 @@ schemaType: BlogPosting
         <time datetime="{{ page.date }}" class="h--date" itemprop="datePublished" content="{{ page.pub-time }}">{{ date_string }}</time>
     </header>
 
+
     <section class="col col--full col--2--medium post" role="main" data-large-period data-no-widows itemprop="articleBody">
 
         {{ content }}
 
     </section>
+
     <aside class="col col--full col--1--medium">
+
+        {% if page.update %}
+            <div class="message--update">
+                <strong>Update: </strong><br>
+                {{ page.update }}
+            </div>
+        {% endif %}
 
         {% if page.posted-on %}
             <div class="message--posted-on">{{ posted_on }}</div>
@@ -80,10 +89,10 @@ schemaType: BlogPosting
     {% endif %}
     
     {% if previous.url %}
-        <li class="nav__item nav__item--previous"><a href="{{previous.url}}"><span>{{previous.title}}</span></a><li>
+        <li class="nav__item nav__item--previous"><a href="{{previous.url}}" data-track data-track-category="navigation" data-track-action="clicked" data-track-label="previous"><span>{{previous.title}}</span></a><li>
     {% endif %}
     {% if next.url %}
-        <li class="nav__item nav__item--next"><a href="{{next.url}}"><span>{{next.title}}</span></a></li>
+        <li class="nav__item nav__item--next"><a href="{{next.url}}" data-track data-track-category="navigation" data-track-action="clicked" data-track-label="next"><span>{{next.title}}</span></a></li>
     {% endif %}
 
     {% if previous.url or next.url %}

@@ -9,3 +9,20 @@
 }
 
 
+.message--primary {
+    background-color: palette(accent, pink);
+    margin-bottom: rem-calc(35);
+    padding: rem-calc(12 15 10);
+    @include inverse();
+
+    a {
+        @include link() {
+            background-image: linear-gradient(to bottom, transparentize(white, 1) 86%, transparentize(white, 0.5) 86%, transparentize(white, 0.5) 90%, transparentize(white, 1) 90%);
+        }
+        @include link--hover() {
+            background-image: linear-gradient(to bottom, transparentize(white, 1) 86%, white 86%, white 90%, transparentize(white, 1) 90%);
+        }
+    }
+}
+
+

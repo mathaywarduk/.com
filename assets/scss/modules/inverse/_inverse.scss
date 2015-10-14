@@ -4,7 +4,7 @@
 
 
 @mixin inverse() {
-    h1, h2, h3, .h1, .h2, .h3, p, ul, ol {
+    &, h1, h2, h3, .h1, .h2, .h3, p, ul, ol {
         color: white;
     }
 

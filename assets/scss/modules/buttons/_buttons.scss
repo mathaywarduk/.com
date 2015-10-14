@@ -103,3 +103,15 @@
         color: black;
     }
 }
+
+.btn--white {
+    @include link() {
+        color: palette(accent, pink) !important;
+        background-color: white;
+    }
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}

@@ -6,6 +6,12 @@
     display: none;
 }
 
+.s--invisible--medium {
+    @include respond-to('medium') {
+        visibility: hidden;
+    }
+}
+
 .s--sticky--top {
     position: fixed;
     top: 0;

@@ -18,6 +18,13 @@ share-img: "blog/write-modular-css-with-sass-and-bem.jpg"
 snippet: "I wrote a feature for Net magazine's December issue about creating a living modular framework."
 
 featured: true
+
+sticky:
+    title: Modular Sass &amp; BEM training for teams
+    content: At Kind we provide tailored training for development teams based on these methods.
+    cta: Find out more
+    url: http://madebykind.com/services/front-end-training
+
 ---
 
 I wrote a feature for <a href="http://netmagazine.com">Net magazine</a>&rsquo;s December issue about creating a living modular framework.

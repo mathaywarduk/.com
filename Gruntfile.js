@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                     'static/js/lib/jquery.popup.js',
                     'static/js/lib/jquery.scrolltop.js',
                     'static/js/lib/jquery.track.js',
+                    'static/js/lib/jquery.sticky.js',
                     'static/js/lib/jquery.dynamic-grid.js',
                     'static/js/lib/jquery.scroll-show.js',
                     'static/js/lib/jquery.large-period.js',

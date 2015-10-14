@@ -64,7 +64,7 @@ schemaType: BlogPosting
     <aside class="col col--full col--1--medium">
 
         {% if page.update %}
-            <div class="message--update">
+            <div class="message--primary">
                 <strong>Update: </strong><br>
                 {{ page.update }}
             </div>
@@ -81,6 +81,16 @@ schemaType: BlogPosting
                 <li><a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;u=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;t=%E2%80%9C{{ page.title | UrlEncode | replace: "&amp;", "%26" }}%E2%80%9D+by+Mat+Hayward" class="share__link share__link--facebook" data-popup data-popup-width="685" data-popup-height="500">Share <em>&ldquo;{{ page.title }}&rdquo;</em> on Facebook</a></li>
             </ul>
         </div>
+
+        {% if page.sticky.title %}
+        <div class="message--primary s--invisible--medium" data-sticky data-sticky-anim="fade">
+            <h2>{{ page.sticky.title }}</h2>
+            {{ page.sticky.content }}<br>
+            <br>
+            <a href="{{ page.sticky.url }}" class="btn btn--white btn--block">{{ page.sticky.cta }}</a>
+        </div>
+        {% endif %}
+        
     </aside>
 
 

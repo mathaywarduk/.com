@@ -25,13 +25,14 @@
 
         @include respond-to("medium") {
             position: fixed;
-            top: 45%;
+            top: 50%;
+            margin-top: rem-calc(-35);
             z-index: 2;
             width: rem-calc(30);
-            @include transition(all 250ms);
+            height: rem-calc(70);
 
             @include link--hover() {
-                width: 45%;
+                min-width: rem-calc(250);
             }
         }
 
@@ -43,7 +44,8 @@
                 background-image: none;
                 color: white;  
                 padding: rem-calc(12 10 10);
-                @include transition(all 250ms);
+                height: rem-calc(70);
+                overflow: hidden;
 
                 &:after {
                     position: absolute;
@@ -52,9 +54,8 @@
 
                 @include respond-to("medium") {
                     span {
-                        white-space: nowrap;
-                        overflow: hidden;
                         display: block;
+                        opacity: 0;
                     }
                 }
             }
@@ -64,6 +65,7 @@
                 
                 span {
                     margin: 0;
+                    opacity: 1;
                 }
             }
         }

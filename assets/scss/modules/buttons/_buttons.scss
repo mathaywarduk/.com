@@ -48,6 +48,7 @@
         color: white;
         background-color: palette(teal, light);
         background-image: none;
+        @include transition(background-color 250ms, color 250ms);
         // background-image: linear-gradient(0deg, lighten(palette(teal, light), 3%), palette(teal, light));
     }
 
@@ -81,7 +82,7 @@
             content: '\2192';
             @include font-scale(small, futura);
             top: 50%;
-            margin-top: rem-calc(-12);
+            margin-top: rem-calc(-13);
             @include transition(right 250ms);
         }
     }

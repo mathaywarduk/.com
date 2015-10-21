@@ -18,12 +18,13 @@ share-img: "blog/write-modular-css-with-sass-and-bem.jpg"
 snippet: "I wrote a feature for Net magazine's December issue about creating a living modular framework."
 
 featured: true
+# update: Our workflow has evolved since this article was published. Read the article &ldquo;<a href="/an-improved-modular-workflow/">An improved modular workflow</a>&rdquo; to see how.
 
 sticky:
     title: Modular Sass &amp; BEM training for teams
     content: At Kind we provide tailored training for development teams based on these methods.
-    cta: Find out more
-    url: http://madebykind.com/services/front-end-training
+    cta: Contact Kind for more information
+    url: "mailto:hello@madebykind.com?subject=Front%20end%20training"
 
 ---
 

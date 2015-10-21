@@ -1,0 +1,11 @@
+---
+type: tweet
+date: 2015-07-09 16:01:00
+pub-time: 2015-07-09T16:01
+twitter-id: 626407307149221892
+url-out: https://twitter.com/mathaywarduk/status/626407307149221892
+search_omit: true
+---
+
+
+We&rsquo;re looking for a Digital Designer and a Front-end Dev at Kind ([@madebykind](https://twitter.com/madebykind)). Want to work for a great agency? [madebykind.com/careers/](http://madebykind.com/careers/)

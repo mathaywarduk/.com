@@ -21,30 +21,27 @@
             this.offsetLeft = this.$element.offset().left;
             this.maxScroll = that.offsetTop - $('.masthead').outerHeight() - 20;
             this.anim = this.$element.data('stickyAnim');
-            if (this.anim) {
-                this.$element.hide();
-            }
-
+            
             this.setDimensions();
-            this.test();
+            this.testPosition();
 
             $(window).on('scroll', function() {
-                that.test();
+                that.testPosition();
             });
 
             $(window).on('resize', function() {
                 that.setDimensions();
                 that.getOffset();
-                that.test();
+                that.testPosition();
             });
 
         },
-        test: function() {
+        testPosition: function() {
             var that = this;
             var scrollTop = $(document).scrollTop();
 
-            if ($(window).width() > 766) {
 
+            if ($(window).width() > 766) {
                 if (scrollTop > that.maxScroll) {
                     that.stick();
                 } else {
@@ -55,10 +52,11 @@
             }
         },
         stick: function() {
+            var that = this;
             this.$element.css({
                 "position"  : "fixed",
                 "top"       : ($('.masthead').outerHeight() + 20) + "px",
-                "left"       : (this.offsetLeft) + "px"
+                "left"       : (that.offsetLeft) + "px"
             });
 
             if (this.anim) {
@@ -66,18 +64,20 @@
             }
         },
         unstick: function() {
+            var that = this;
             this.$element.css({
-                "position"  : "relative",
-                "top"  : "0",
-                "left"  : "0",
+                "position" : "relative",
+                "top" : 0,
+                "left" : 0,
             });
 
-            if (this.anim) {
-                this.$element.fadeOut();
-            }
         },
         setDimensions: function() {
-            this.$element.removeAttr('style');
+            this.unstick();
+            this.$element.css({
+                'width' : "auto",
+                "height" : "auto"
+            });
             this.$element.outerWidth(this.$element.parent().width());
         },
         getOffset: function() {

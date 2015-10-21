@@ -20,6 +20,7 @@ sticky:
     content: At Kind, we can help you find the right solution to improve your site&rsquo;s mobile experience
     cta: Contact Kind
     url: http://madebykind.com/services/mobile-first/
+    url: "mailto:hello@madebykind.com?subject=Mobile-first%20development"
 ---
 
 Recently, we&rsquo;ve seen a lot of articles and tweets from digital agencies proclaiming &ldquo;Mobilegeddon&rdquo; is coming on 21st April (argh, that&rsquo;s tomorrow!). And, coincidentally, all you have to do to avoid the apocalypse is commission them to build a responsive website.

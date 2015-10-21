@@ -327,7 +327,7 @@ Then we would write a function to calculate rems and use that in place or our or
     @return ($target / $base_font-size) * 1 rem;
 }</code></pre>
 
-Rems are supported in later versions of [all major browsers](caniuse.com/rem), but for legacy support, we can use a pixel fallback.
+Rems are supported in later versions of [all major browsers](http://caniuse.com/rem), but for legacy support, we can use a pixel fallback.
 
 ## Going further
 

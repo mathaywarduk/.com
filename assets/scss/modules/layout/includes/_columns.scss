@@ -1,0 +1,55 @@
+// ==========================================================================
+// COLUMNS MODULE
+// ==========================================================================
+//
+// We don't need a grid... there are only two columns
+//
+
+.cols {
+    @include clearfix();
+}
+
+.col {
+    float: left;
+    margin-right: rem-calc(40);
+}
+
+.col--full {
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+
+.col--half--medium {
+    @include respond-to("medium") {
+        width: 45%;
+        margin-left: 10%;
+        float: left;
+
+        &:nth-child(2n+1) {
+            margin-left: 0;
+            clear: left;
+        }
+    }
+}
+
+.col--2--medium {
+    @include respond-to("medium") {
+        float: left;
+        width: 62%;
+        margin-right: 5%;
+    }
+}
+
+.col--1--medium {
+    @include respond-to("medium") {
+        float: left;
+        width: 33%;  
+    }
+}
+
+.col--right--medium {
+    @include respond-to("medium") {
+        float: right;
+    }
+}

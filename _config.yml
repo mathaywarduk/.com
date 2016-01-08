@@ -1,8 +1,8 @@
 name: Front-end Developer ~ Mat Hayward
 author: Mat Hayward
 markdown: redcarpet
-pygments: true
+highlighter: true
 permalink: /:title
 exclude: [assets, config.rb, README.md, Gruntfile.js, package.json, node_modules, Gemfile, Gemfile.lock, build.sh]
-strapline: Nottingham&rsquo;s answer to a question nobody asked.
+strapline: Nottingham&rsquo;s answer to a question nobody&nbsp;asked.
 url: http://mathayward.com

@@ -1,0 +1,115 @@
+// ==========================================================================
+// FONT-SETTINGS MODULE
+// ==========================================================================
+//
+// This module contains all of the default font sizes and line heights.
+//
+// After settings the base font-size we group these settings into specific
+// font-families.
+//
+//
+// CONTENTS
+// 1. Base font-size variable.
+// 2. Font-set variables.
+
+// FONT STACK VARIABLES
+// ==========================================================================
+//
+
+$font-default: chaparral !global;
+
+// BASE FONT-SIZE
+// ==========================================================================
+//
+// This variable sets the base font-size that can be used for calculating REM
+// values with a specific tool such as rem.scss.
+//
+
+$font-base-size: 16 !global;
+
+$font-sans-fallback-stack: "'Helvetica Neue', Helvetica, Arial, sans-serif" !global;
+$font-serif-fallback-stack: "Georgia, serif" !global;
+
+
+
+// FONT-SET VARIABLES
+// ==========================================================================
+//
+// We’re using two fonts in this project, Merriweather (serif) and Open Sans (serif)
+//
+$fonts: (
+    chaparral: (
+        async: true,
+        normal: ("chaparral-pro", #{$font-serif-fallback-stack}),
+
+        small: (
+            font-size: 16,
+            line-height: 24
+        ),
+
+        base: (
+            font-size: 18,
+            line-height: 24
+        ),
+
+        large: (
+            font-size: 22,
+            line-height: 30
+        ),
+
+        xlarge: (
+            font-size: 30,
+            line-height: 38
+        )
+    ),
+    futura: (
+        async: true,
+        normal: ("futura-pt", #{$font-sans-fallback-stack}),
+
+        xsmall: (
+            font-size: 13,
+            line-height: 15
+        ),
+        small: (
+            font-size: 18,
+            line-height: 24
+        ),
+        base: (
+            font-size: 30,
+            line-height: 36
+        ),
+        large: (
+            font-size: 48,
+            line-height: 52
+        ),
+        xlarge: (
+            font-size: 60,
+            line-height: 72
+        )
+    ),
+    mono: (
+        async: true,
+        normal: ("sax-mono,  monospace"),
+
+        base: (
+            font-size: 15,
+            line-height: 20
+        ),
+    )
+) !global;
+
+// FONT WEIGHT VARIABLES
+// ==========================================================================
+
+$weights: (
+    extra-light: 200,
+    light: 300,
+    book: 400,
+    regular: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+    black: 800
+) !global;
+
+

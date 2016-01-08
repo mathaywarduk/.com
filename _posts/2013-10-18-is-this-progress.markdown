@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Is this progress?"
 description: "This week one of my colleagues was amazed to hear that Twitter is written using pure CSS and not a preprocessor."
@@ -20,7 +21,7 @@ That same colleague also couldn't remember if CSS selectors were nested within m
 
 I've done it. The other weekend I made a quick holding page for my parent's allotment association. For the first time in months I wasn't using Sass and Compass and so I couldn't use a nice mixin for rem sizing. Instead I had to calculate the values myself using good old fashioned mathematics. Google was my saviour. As it was with text-shadow, box-shadow and border-radius.
 
-> Are these tools, that make our lives as developers easier, progressing our skills or reducing our basic skillset?
+Are these tools, that make our lives as developers easier, progressing our skills or reducing our basic skillset?
 
  Can I still put CSS on my CV? Yeah, and of course I can. Not that I need a CV, <a href="/mark-as-spam">LinkedIn recruiters</a> have every job anyone could ever want, and they're gonna tell you about them whether you like it or not!
 

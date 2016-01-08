@@ -1,0 +1,25 @@
+// ==========================================================================
+// COLOR VARIABLES
+// ==========================================================================
+//
+// Global color variables which can then be used by tools such as _palette.scss
+// which will iterate over this list and creat the right color values without
+// having to add magic color values like #333335.
+//
+$palettes: (
+    neutral: (
+        dark: #2f2f2f,
+        mid: #8a8a8a,
+        base: #b4b4b4,
+        light: #e5e5e5,
+    ),
+    teal: (
+        base: #009999,
+        light: #61b6b6,
+    ),
+    accent: (
+        gold: #bd9e62,
+        pink: #f16162
+    )
+)!global;
+

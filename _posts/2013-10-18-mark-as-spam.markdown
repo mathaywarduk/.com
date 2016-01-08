@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Mark as spam"
 description: "The definition of spam is an unsolicited electronic message. (That and canned meat of dubious origins)"

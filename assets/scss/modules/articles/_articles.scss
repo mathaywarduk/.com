@@ -1,0 +1,90 @@
+// ==========================================================================
+// ARTICLES MODULE
+// ==========================================================================
+
+
+.article {
+    margin-bottom: rem-calc(50);
+    padding-bottom: rem-calc(30);
+
+    @include respond-to("below medium") {
+        max-width: rem-calc(400);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.article__header {
+    margin-bottom: rem-calc(5);
+
+    background-image: image-url("icons/article.png");
+    background-repeat: no-repeat;
+    background-size: rem-calc(40);
+    background-position: center rem-calc(10);
+    padding-top: rem-calc(70);
+    text-align: center;
+
+    a {
+        @include link() {
+            color: black;
+            background-image: none;   
+        }
+
+        @include link--hover() {
+            background-image: linear-gradient(to bottom, transparentize(black, 1) 86%, black 86%, black 90%, transparentize(black, 1) 90%);
+        }
+    }
+}
+
+.article__date,
+.article__subtitle {
+    color: palette(teal, light);
+    font-style: italic;
+    margin-bottom: rem-calc(20);
+    display: block;
+    text-align: center;
+}
+
+.article__content {
+    p {
+        @include font-scale(large, chaparral);
+        text-align: center;
+    }
+}
+
+.article__links {
+    text-align: center;
+}
+
+// 
+// FEATURED ARTICLE
+// ==========================================================================
+
+
+.article--featured {
+    background-color: palette(accent, pink);
+    padding: rem-calc(20);
+    border-radius: rem-calc(5);
+
+    .article__header {
+        background-image: image-url("icons/article--white.png");
+        
+        a {
+            @include link() {
+                color: white;
+            }
+
+            @include link--hover() {
+                background-image: linear-gradient(to bottom, transparentize(white, 1) 86%, white 86%, white 90%, transparentize(white, 1) 90%);
+            }
+        }
+
+    }
+
+    .article__date,
+    .article__content p {
+        color: white;
+    }
+}
+

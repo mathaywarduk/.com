@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Justifying the cost of quality"
 description: "Being seated next to new people at weddings, birthdays etc. the go-to conversation starters pop up early on: 'So, how do you know x?', 'What do you do for a living?'"
@@ -9,7 +10,7 @@ keywords: "web design cost"
 
 date: 2014-05-20 11:30:00
 pub-time: 2014-05-20T11:30
-posted-on: Erskine Design
+posted-on: Erskine Design&rsquo;s blog
 posted-on-url: http://erskinedesign.com/blog/justifying-the-cost-of-quality/
 
 share-img: "social/default.png"
@@ -20,7 +21,7 @@ Being seated next to new people at weddings, birthdays etc. the go-to conversati
 
 10 years ago when I answered the latter, people would say things like "Cool", sit forward in their seat and ask me how it all works. On Saturday I was asked this:
 
-> I recently had a quote for a website with a contact form and it came back at over £3k. Why is it so expensive?
+I recently had a quote for a website with a contact form and it came back at over £3k. Why is it so expensive?
 
 Similar questions are asked of my colleagues and me all the time and, to be honest, it used to annoy me. Why couldn&rsquo;t people see the value of the service we provide? A service I&rsquo;ve spent a very long time learning and constantly improving.
 

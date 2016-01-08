@@ -1,0 +1,15 @@
+// ==========================================================================
+// ISLANDS MODULE
+// ==========================================================================
+
+%island {
+    overflow: hidden;
+}
+
+
+.island--black {
+    @extend %island;
+    @include inverse();
+    background-color: black;
+}
+

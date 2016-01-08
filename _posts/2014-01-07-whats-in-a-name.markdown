@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "What's in a name?"
 description: "This is a real discussion within the Erskine front-end team about CSS naming conventions for a button."
@@ -9,7 +10,7 @@ keywords: "css naming conventions"
 
 date: 2014-01-07 11:30:00
 pub-time: 2014-01-07T11:30
-posted-on: Erskine Design
+posted-on: Erskine Design&rsquo;s blog
 posted-on-url: http://www.erskinedesign.com/blog/whats-name/
 
 share-img: "social/name.png"
@@ -17,7 +18,9 @@ snippet: "This is a real discussion within the Erskine front-end team about CSS 
 keywords: "css naming conventions"
 ---
 
-This is a real discussion (with most of the swearing removed) within the Erskine front-end team about CSS naming conventions for a button. Hopefully it illustrates our attention to detail and how much we care about getting things right... or at least our stubborn and argumentative side.
+This is a real discussion (with most of the swearing removed) within the Erskine front-end team about CSS naming conventions for a button. 
+
+Hopefully it illustrates our attention to detail and how much we care about getting things right... or at least our stubborn and argumentative side.
 
 **Mat:** *&ldquo;What should I call this button?&rdquo;*
 

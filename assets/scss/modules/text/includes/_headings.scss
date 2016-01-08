@@ -1,0 +1,58 @@
+// ==========================================================================
+// HEADINGS MODULE
+// ==========================================================================
+
+
+h1, .h1 {
+    @include font-family(futura);
+    @include font-weight(medium);
+    font-style: italic;
+    @include font-scale(large, futura);
+    margin-bottom: rem-calc($base-spacing);
+
+}
+
+h2, .h2 {
+    @include font-family(futura);
+    @include font-weight(medium);
+    font-style: italic;
+    @include font-scale(base, futura);
+    margin-bottom: rem-calc($base-spacing);
+}
+
+h3, .h3 {
+    @include font-family(futura);
+    @include font-weight(heavy);
+    text-transform: uppercase;
+    @include font-scale(small, futura);
+    margin-bottom: rem-calc($base-unit * 2);
+    font-style: normal;
+}
+
+.h--border-left {
+    border-left: 5px solid palette(teal, base);
+    text-indent: rem-calc(15);
+    line-height: 1;
+}
+
+// 
+// Header groups
+// ==========================================================================
+
+.h--group {
+    border-bottom: 1px solid palette(neutral);
+    margin-bottom: rem-calc(60);
+    @include clearfix();
+
+    @include respond-to("medium") {
+        border-bottom: 2px solid palette(neutral);
+        margin-bottom: rem-calc(80);
+    }
+}
+
+.h--date {
+    float: right;
+    margin-bottom: rem-calc(5);
+    color: palette(teal, light);
+    font-style: italic;
+}

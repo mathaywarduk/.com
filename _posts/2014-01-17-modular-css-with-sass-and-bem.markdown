@@ -2,22 +2,37 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Modular CSS with Sass &amp; BEM"
 description: "While there are already many front-end frameworks available for free, it&rsquo;s often preferable to write code ourselves. We can build a Sass and BEM based living framework to use as a basis for any project."
 keywords: "Living framework"
+posted-on: Net Magazine
+posted-on-url: http://www.netmagazine.com
+posted-on-text: This article originally appeared in issue 249 of
 
 date: 2014-01-17 09:45:00
 pub-time: 2014-01-17T09:45
 
 share-img: "blog/write-modular-css-with-sass-and-bem.jpg"
 snippet: "I wrote a feature for Net magazine's December issue about creating a living modular framework."
+
+featured: true
+# update: Our workflow has evolved since this article was published. Read the article &ldquo;<a href="/an-improved-modular-workflow/">An improved modular workflow</a>&rdquo; to see how.
+
+sticky:
+    title: Modular Sass &amp; BEM training for teams
+    content: At Kind we provide tailored training for development teams based on these methods.
+    cta: Contact Kind for more information
+    url: "mailto:hello@madebykind.com?subject=Front%20end%20training"
+
 ---
 
 I wrote a feature for <a href="http://netmagazine.com">Net magazine</a>&rsquo;s December issue about creating a living modular framework.
 
-<figure class="media">
+<figure>
     <img src="/static/images/blog/write-modular-css-with-sass-and-bem.jpg" alt="Net Magazine" class="media__item">
+    <figcaption>How the featured appeared in Net magazine</figcaption>
 </figure>
 
 Here it is.
@@ -26,9 +41,7 @@ Here it is.
 
 While there are already many frontend frameworks available for free, it&rsquo;s often preferable to write the code yourself. In this tutorial, we will explore how to use the [Sass](http://www.sass-lang.com) CSS preprocessor and the [BEM](http://bem.info/) methodology to write a ‘living framework&rsquo; that can be adapted to suit any development project.
 
-> Sass enables us to write CSS in small, easy-to-navigate modules.
-
-Meaning we can start with base styles and bolt on any components we might need for the system we&rsquo;re currently building.
+Sass enables us to write CSS in small, easy-to-navigate modules, meaning we can start with base styles and bolt on any components we might need for the system we&rsquo;re currently building.
 
 We can also make our code easier to understand using well-constructed comments and clear naming conventions for our classes and variables. The BEM methodology gives us this clarity. BEM stands for Block-Element-Modifier and is designed to help modularise frontend development by breaking everything into blocks containing elements, then using modifiers to tweak them.
 
@@ -188,9 +201,7 @@ $text__colour--delta: $text__colour--base;</code></pre>
 
 You may ask what the point of declaring then overriding these variables is, and, for one-off use, there isn&rsquo;t one. But what we have now is the beginnings of a modular framework that we can use as a basis for any frontend project, adding and importing more modules as we add more elements to our system.
 
-> Redeclaring variables simply reduces the need for dependency between modules.
-
-And gives us a cleaner starting point for each new project.
+Redeclaring variables simply reduces the need for dependency between modules and gives us a cleaner starting point for each new project.
 
 ## Making code easier to understand
 You could be forgiven for thinking that any developer could now pick up your work and understand italmost instantly, but that&rsquo;s not always the case. Fortunately, there are ways to make your code even easier to understand. Firstly, Sass comments are not compiled, so will not add any weight to our compiled CSS file, so we can write as much as we like to be extra helpful. For instance, I always like to add comment blocks to mixins and functions.
@@ -298,12 +309,12 @@ For example:
 
 There are examples of a layout and a media module in the [Github repository](https://github.com/mathaywarduk/simple-sass-framework) that accompanies this tutorial, but I&rsquo;ll let you be creative here and decide for yourself how to build them.
 
-<figure class="media">
+<figure>
     <img src="/static/images/blog/BEM_Sass_3.png" alt="Module files" class="media__item">
     <figcaption class="media__caption">Self-contained module files set out base styles for content types. They&rsquo;re used only when needed</figcaption>
 </figure>
 
-## Converting to ems
+## Converting to rems
 In this framework we&rsquo;ve been using em sizing units throughout, which on smaller scale projects isn&rsquo;t a problem. But issues surrounding compounding font-sizes can crop up when we nest HTML elements. To combat this, we can use rem (root em) units. To do this, we&rsquo;d set a base font size on our HTML element. We already have a variable for this. For example:
 
 <pre><code>html {
@@ -316,7 +327,7 @@ Then we would write a function to calculate rems and use that in place or our or
     @return ($target / $base_font-size) * 1 rem;
 }</code></pre>
 
-Rems are supported in later versions of [all major browsers](caniuse.com/rem), but for legacy support, we can use a pixel fallback.
+Rems are supported in later versions of [all major browsers](http://caniuse.com/rem), but for legacy support, we can use a pixel fallback.
 
 ## Going further
 
@@ -325,7 +336,3 @@ This is a very simple example, but the potential of a Sass and BEM-based framewo
 Using the workflow outlined in this tutorial, you can create an essential building block that you can make use of for all your future projects, no matter how large they are, simply by adding modules as necessary.
 
 It&rsquo;s important to remember that while you are building one system, you should make the base module as simple, and therefore reusable, as possible. Specificity can then be added using the **_config.scss** file and BEM modifiers.
-
-<hr />
-
-<p>This article originally appeared in issue 249 of <a href="http://www.netmagazine.com">Net Magazine</a>.</p>

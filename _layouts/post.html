@@ -1,107 +1,113 @@
 ---
 layout: default
+schemaType: BlogPosting
 ---
 
+<div class="wrapper">
 
-{% comment %} Produce a date string {% endcomment %}
+    {% comment %} Produce a date string {% endcomment %}
 
-{% assign d = page.date | date: "%d" | plus: "0" %}
+    {% assign d = page.date | date: "%d" | plus: "0" %}
 
-{% case d %}
-  {% when 1 or 21 or 31 %}
-    {% assign suffix = "st" %}
-  {% when 2 or 22 %}
-    {% assign suffix = "nd" %}
-  {% when 3 or 23 %}
-    {% assign suffix = "rd" %}
-  {% else %}
-    {% assign suffix = "th" %}
-{% endcase %}
-
-{% capture date_string %}{{ page.date | date: "%A" }} {{ d }}{{ suffix }} {{ page.date | date: "%B" }} {{ page.date | date: "%Y" }}{% endcapture %}
+    {% capture date_string %}{{ d }}{{ suffix }} {{ page.date | date: "%b" }} {{ page.date | date: "%Y" }}{% endcapture %}
 
 
-{% comment %} Check if posted on third-party website {% endcomment %}
+    {% comment %} Check if posted on third-party website {% endcomment %}
+
+    {% if page.posted-on %}
+        {% if page.posted-on-text %}
+            {% capture posted_on %}{{ page.posted-on-text }} <a href="{{ page.posted-on-url }}">{{ page.posted-on }}</a>.{% endcapture %}
+        {% else %}
+            {% capture posted_on %}This article was originally posted on {{ page.posted-on }}. <a href="{{ page.posted-on-url }}">Read the original</a>.{% endcapture %}
+        {% endif %}
+    {% endif %}
 
 
-{% if page.posted-on %}
+    {% comment %} Get previous page link {% endcomment %}
 
-{% capture posted_on %}This article was originally posted on {{ page.posted-on }}. <a href="{{ page.posted-on-url }}">Read the original</a>.{% endcapture %}
+    {% assign previous = page.previous %}
 
-{% endif %}
-
-
-{% comment %} Get previous page link {% endcomment %}
-
-{% assign previous = page.previous %}
-
-{% if previous.twitter-id %}
-    {% assign previous = previous.previous %}
-    {% if previous.twitter-id %}
+    {% if previous.type == 'tweet' %}
         {% assign previous = previous.previous %}
+        {% if previous.type == 'tweet' %}
+            {% assign previous = previous.previous %}
+        {% endif %}
     {% endif %}
-{% endif %}
 
 
-{% comment %} Get next page link {% endcomment %}
+    {% comment %} Get next page link {% endcomment %}
 
-{% assign next = page.next %}
+    {% assign next = page.next %}
 
-{% if next.twitter-id %}
-    {% assign next = next.next %}
-    {% if next.twitter-id %}
+
+    {% if next.type == 'tweet' %}
         {% assign next = next.next %}
+        {% if next.type == 'tweet' %}
+            {% assign next = next.next %}
+        {% endif %}
     {% endif %}
-{% endif %}
 
 
 
-<div class="post__text-wrapper">
-    <header class="post__header">
-        <h1>{{ page.title }}</h1>
-        <h2 class="post__date">{{ date_string }}</h2>
+    <header class="h--group" data-no-widows>
+        <h1 itemprop="headline">{{ page.title }}</h1>
+        <time datetime="{{ page.date }}" class="h--date" itemprop="datePublished" content="{{ page.pub-time }}">{{ date_string }}</time>
     </header>
-</div>
 
-<section class="post__content" role="main">
-    <div class="post__text-wrapper">
+
+    <section class="col col--full col--2--medium post" role="main" data-large-period data-no-widows itemprop="articleBody">
+
         {{ content }}
 
-        {% if page.posted-on %}
-        <hr />
-        <p>{{ posted_on }}</p>
+    </section>
+
+    <aside class="col col--full col--1--medium">
+
+        {% if page.update %}
+            <div class="message--primary">
+                <strong>Update: </strong><br>
+                {{ page.update }}
+            </div>
         {% endif %}
-    </div>
 
+        {% if page.posted-on %}
+            <div class="message--posted-on">{{ posted_on }}</div>
+        {% endif %}
+        
+        <div class="share">
+            <h2 class="h3 h--border-left share__header">Share this article:</h2>
+            <ul class="share__links">
+                <li><a href="http://twitter.com/intent/tweet?url=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;related=mathaywarduk&amp;text=%E2%80%9C{{ page.title | UrlEncode | replace: "&amp;", "%26" }}%E2%80%9D+(via+@mathaywarduk)" class="share__link share__link--twitter" data-popup data-popup-width="685" data-popup-height="500">Share <em>&ldquo;{{ page.title }}&rdquo;</em> on Twitter</a></li>
+                <li><a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;u=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;t=%E2%80%9C{{ page.title | UrlEncode | replace: "&amp;", "%26" }}%E2%80%9D+by+Mat+Hayward" class="share__link share__link--facebook" data-popup data-popup-width="685" data-popup-height="500">Share <em>&ldquo;{{ page.title }}&rdquo;</em> on Facebook</a></li>
+            </ul>
+        </div>
 
-    <div class="social">
-        <h4 class="social__header">Share <em>&ldquo;{{ page.title }}&rdquo;</em></h4>
-        <ul class="social__links">
-            <li><a href="http://twitter.com/intent/tweet?url=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;related=mathaywarduk&amp;text=%E2%80%9C{{ page.title | UrlEncode | replace: "&amp;", "%26" }}%E2%80%9D+(via+@mathaywarduk)" class="social__link social__link--twitter"data-popup data-popup-width="685" data-popup-height="500">on Twitter</a></li>
-            <li><a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;u=http%3A%2F%2Fmathayward.com{{ page.url | UrlEncode }}&amp;t=%E2%80%9C{{ page.title | UrlEncode | replace: "&amp;", "%26" }}%E2%80%9D+by+Mat+Hayward" class="social__link social__link--facebook" data-popup data-popup-width="685" data-popup-height="500">on Facebook</a></li>
-        </ul>
-    </div>
+        {% if page.sticky.title %}
+        <div class="message--primary s--invisible--medium" data-sticky data-sticky-anim="fade">
+            <h2>{{ page.sticky.title }}</h2>
+            {{ page.sticky.content }}<br>
+            <br>
+            <a href="{{ page.sticky.url }}" class="btn btn--white btn--block">{{ page.sticky.cta }}</a>
+        </div>
+        {% endif %}
+        
+    </aside>
 
-    
 
     {% if previous.url or next.url %}
-        <div class="nav--cycle">
+        <ul class="nav--cycle">
     {% endif %}
     
     {% if previous.url %}
-        <a href="{{previous.url}}" class="nav__item--cycle nav__item--cycle--previous">
-            <h2>{{previous.title}}</h2>
-        </a>
+        <li class="nav__item nav__item--previous"><a href="{{previous.url}}" data-track data-track-category="navigation" data-track-action="clicked" data-track-label="previous"><span>{{previous.title}}</span></a><li>
     {% endif %}
     {% if next.url %}
-        <a href="{{next.url}}" class="nav__item--cycle nav__item--cycle--next">
-            <h2>{{next.title}}</h2>
-        </a>
+        <li class="nav__item nav__item--next"><a href="{{next.url}}" data-track data-track-category="navigation" data-track-action="clicked" data-track-label="next"><span>{{next.title}}</span></a></li>
     {% endif %}
 
     {% if previous.url or next.url %}
-        </div>
+        </ul>
     {% endif %}
-    
-</section>
+        
 
+</div>

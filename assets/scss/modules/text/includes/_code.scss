@@ -1,0 +1,16 @@
+// ==========================================================================
+// CODE MODULE
+// ==========================================================================
+
+pre {
+    border: 1px solid palette(neutral);
+    margin-bottom: rem-calc($base-unit * 7);
+    overflow: auto;
+    padding: rem-calc($base-spacing);
+
+    code {
+        @include font-family(mono);
+        @include font-scale(base, mono);
+        color: palette(teal);
+    }
+}

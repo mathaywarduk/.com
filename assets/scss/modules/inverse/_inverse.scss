@@ -1,0 +1,26 @@
+// ==========================================================================
+// INVERSE MODULE
+// ==========================================================================
+
+
+@mixin inverse() {
+    &, h1, h2, h3, .h1, .h2, .h3, p, ul, ol {
+        color: white;
+    }
+
+    a {
+        @include link() {
+            color: white;
+            background-image: none;
+        }
+
+        @include link--hover() {
+            background-image: linear-gradient(to bottom, transparentize(white, 1) 86%, white 86%, white 90%, transparentize(white, 1) 90%);
+        }
+    }
+}
+
+
+.inverse {
+    @include inverse();
+}

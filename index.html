@@ -1,69 +1,62 @@
 ---
 layout: default
-title:
+title: 
+home: true
+section: Read
 container-type: section
 content-type: posts-list
-description: Ramblings and such from Mat Hayward, front-end developer at Erskine Design in Nottingham.
-keywords: Front-end Developer Nottingham
+description: Ramblings and such from Mat Hayward, Operations Director at Kind.
+keywords: Front-end Developer, Nottingham
 share-img: social/default.jpg
 pub-time: 2013-09-19T18:07
+schemaType: Blog
 ---
+    
+    <div class="wrapper">
+        <div class="cols">
+            <div class="col col--full col--2--medium">
+                <p id="read">Recent posts and selected tweets.</p>
+                <hr>
+            </div>
+        </div>
 
-    <div class="content-block intro">
-        <p>Daytime at <a href="http://www.erskinedesign.com">Erskine&nbsp;Design</a> / Uncle / Weekend&nbsp;goalkeeper / Handsome&nbsp;bastard.</p>
-    </div>
+        <div class="cols">
 
-    <div class="content-wrapper">
+        {% for post in site.posts %}
 
-    {% for post in site.posts %}
+            {% comment %} Produce a date string {% endcomment %}
 
-        {% comment %} Produce a date string {% endcomment %}
+            {% assign d = post.date | date: "%d" | plus: "0" %}
 
-        {% assign d = post.date | date: "%d" | plus: "0" %}
-
-        {% case d %}
-          {% when 1 or 21 or 31 %}
-            {% assign suffix = "st" %}
-          {% when 2 or 22 %}
-            {% assign suffix = "nd" %}
-          {% when 3 or 23 %}
-            {% assign suffix = "rd" %}
-          {% else %}
-            {% assign suffix = "th" %}
-        {% endcase %}
-
-        {% capture date_string %}{{ post.date | date: "%A" }} {{ d }}{{ suffix }} {{ post.date | date: "%B" }} {{ post.date | date: "%Y" }}{% endcapture %}
+            {% capture date_string %}{{ d }}{{ suffix }} {{ post.date | date: "%b" }} {{ post.date | date: "%Y" }}{% endcapture %}
 
 
-        {% if post.type == 'tweet' %}
+            {% if post.type == 'tweet' %}
 
-        <article class="posts-list__item--twitter">
-            <section class="posts-list__content posts-list__content--twitter">
+            <article class="col col--full col--half--medium tweet">
                 {{ post.content }}
-                <h2 class="post__date"><a href="{{ post.url-out }}">{{ date_string }}</a></h2>
-                <div class="post__links">
-                    <a href="https://twitter.com/intent/tweet?in_reply_to={{ post.twitter-id }}" class="btn btn--link">Reply</a> | <a href="https://twitter.com/intent/retweet?tweet_id={{ post.twitter-id }}" class="btn btn--link">Retweet</a> | <a href="https://twitter.com/intent/favorite?tweet_id={{ post.twitter-id }}" class="btn btn--link">Favourite</a>
+                <time datetime="{{ post.date }}" class="tweet__date"><a href="{{ post.url-out }}">{{ date_string }}</a></time>
+                <div class="tweet__links">
+                    <a href="https://twitter.com/intent/tweet?in_reply_to={{ post.twitter-id }}">Reply</a> | <a href="https://twitter.com/intent/retweet?tweet_id={{ post.twitter-id }}">Retweet</a> | <a href="https://twitter.com/intent/favorite?tweet_id={{ post.twitter-id }}">Favourite</a>
                 </div>
-            </section>
-        </article>
-        <div class="hr hidden--small"></div>
+            </article>
 
-        {% else %}
+            {% else %}
 
-        <article class="posts-list__item">
-            <header class="posts-list__header">
-                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-                <h2 class="post__date"><a href="{{ post.url }}">{{ date_string }}</a></h2>
-            </header>
-            <section class="posts-list__content">
-                {{ post.snippet | markdownify }}
+            <article class="col col--full col--half--medium article {% if post.featured %} article--featured{% endif %}" itemscope itemtype="http://schema.org/BlogPosting">
+                <h2 class="article__header" itemprop="headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <time datetime="{{ post.date }}" class="article__date" itemprop="datePublished" content="{{ post.pub-time }}">{{ date_string }}</time>
+                <div class="article__content">
+                    <span itemprop="image" content="{{site.url}}/static/images/{{ post.share-img }}" class="is--hidden"></span>
+                    {{ post.snippet | markdownify }}
 
-                <div class="post__links">
-                    <a href="{{ post.url }}" class="btn btn--cta btn--forward">Read on</a>
+                    <div class="article__links">
+                        <a href="{{ post.url }}" class="btn btn--forward {% if post.featured %} btn--inverse{% endif %}">Read on</a>
+                    </div>
                 </div>
-            </section>
-        </article>
+            </article>
 
-        {% endif %}
-    {% endfor %}
+            {% endif %}
+        {% endfor %}
+        </div>
     </div>

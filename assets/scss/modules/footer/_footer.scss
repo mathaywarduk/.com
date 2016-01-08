@@ -1,0 +1,36 @@
+// ==========================================================================
+// FOOTER MODULE
+// ==========================================================================
+
+
+.footer {
+    clear: both;
+    @include clearfix();
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(20);
+}
+
+.footer__credits {
+    float: right;
+}
+
+.footer__back {
+    float: left;
+    margin-right: rem-calc(20);
+
+    a {
+        padding-left: rem-calc(20);
+        position: relative;
+
+        &:after {
+            position: absolute;
+            left: rem-calc(0);
+            content: '\2191';
+            @include font-scale(small, futura);
+            top: 50%;
+            margin-top: rem-calc(-12);
+            @include transition(right 250ms);
+        }
+    }
+}
+

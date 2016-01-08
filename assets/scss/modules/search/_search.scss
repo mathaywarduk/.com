@@ -1,0 +1,25 @@
+// ==========================================================================
+// SEARCH MODULE
+// ==========================================================================
+//
+// Styles specific to search
+
+.search {
+
+}
+
+.search__field {
+
+}
+
+.search__meta,
+p.search__meta,
+p.search__meta:first-of-type {
+    border-top: 1px solid palette(neutral, light);
+    border-bottom: 1px solid palette(neutral, light);
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+    @include font-weight(medium);
+    @include font-scale(large, chaparral);
+    margin-bottom: rem-calc($base-unit * 5);
+}

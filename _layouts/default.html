@@ -4,7 +4,7 @@
 {% endif %}
 {% capture title %}{{ page.title }}{{ divider }}Front-end Developer ~ Mat Hayward{% endcapture %}
 <!DOCTYPE html>
-<html dir="ltr" lang="en-GB">
+<html dir="ltr" lang="en-GB" itemscope itemtype="http://schema.org/{{ page.schemaType }}">
     <head>
         <title>{{ title }}</title>
         {% if page.posted-on-url %}<link rel="canonical" href="{{ page.posted-on-url }}"/>{% endif %}
@@ -14,13 +14,16 @@
 
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" media="all" href="/static/css/screen.css">
+        <!--[if lte IE 8]>
+            <link href="/static/css/screen_ie8.css" rel="stylesheet" type="text/css" />
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
         <!-- Meta -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{ page.description }}">
         <meta name="author" content="Mat Hayward">
-        <meta name="keywords" content="{{ page.keywords }}">
 
         <!-- RSS -->
         <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.url}}/feed.xml">
@@ -47,48 +50,56 @@
         <meta name="twitter:description" content="{{ page.description }}">
         <meta name="twitter:title" content="{{ title }}">
         <meta name="twitter:url" content="{{site.url}}{{ page.url }}/">
+ 
+        <!-- Schema.org -->
+        <meta itemprop="name" content="{{ title }}">
+        <meta itemprop="description" content="{{ page.description }}">
+        <meta itemprop="image" content="{{site.url}}/static/images/{{ page.share-img }}">
+
+        <script>
+            (function(f,b){
+                var c;
+                f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+                f._hjSettings={hjid:20761, hjsv:3};
+                c=b.createElement("script");c.async=1;
+                c.src="//static.hotjar.com/c/hotjar-20761.js?sv=3";
+                b.getElementsByTagName("head")[0].appendChild(c); 
+            })(window,document);
+        </script>
+
 
     </head>
-    <body class="no-js">
+    <body class="no-js {% if page.home %}is--home{% endif %}">
         <b id="top"></b>
-        <header class="header" itemscope itemtype="http://data-vocabulary.org/Person">
-            <div class="header__avatar">
-                <a href="/"><img src="http://lh3.googleusercontent.com/-QlmUfD33DRk/AAAAAAAAAAI/AAAAAAAABig/NVgoYx97Y1U/s120-c/photo.jpg" alt="Oooo yeah, click my face!" title="Oooo yeah, click my face!"></a>
+        {% if page.home  %}
+        <header class="island--black masthead__wrapper" itemscope itemtype="http://data-vocabulary.org/Person">
+            <div class="wrapper">
+                {% include nav/masthead.html %}
             </div>
-
-            <h1 itemprop="name"><a href="/">Mat Hayward</a></h1>
-            <div class="subheader">{{ site.strapline }}</div>
-            <div class="layout--hidden">
-                <a href="{{site.url}}" itemprop="url">mathayward.com</a>.
-                <span itemprop="address" itemscope
-                itemtype="http://data-vocabulary.org/Address">
-                <span itemprop="locality">Nottingham</span>
-                <span itemprop="country-name">United Kingdom</span>
-                <span itemprop="title">Front-end developer</span> at <span itemprop="affiliation">Erskine Design</span>
-                </span>
-            </div>
-            <nav class="nav">
-                <a href="/" class="nav__item" title="Ramblings and such">Read</a><span class="nav__divider"> | </span>
-                <a href="/work" class="nav__item" title="Details of where I've worked with selected projects">Work</a><span class="nav__divider"> | </span>
-                <a href="/photography" class="nav__item" title="Some of the photographs I've taken">Photography</a><span class="nav__divider"> | </span>
-                <a href="/search" class="nav__item" title="Feeling lazy? Use the search function to find things quickly">Search</a></b>
-            </nav>
         </header>
+        {% else %}
+        <header class="island--black masthead__wrapper" id="topnav">
+            {% include nav/masthead--small.html %}
+        </header>
+        {% endif %}
 
-        <{{ page.container-type }} class="content-block {{ page.content-type }}" id="article-top">
+        <{{ page.container-type }}" id="article-top">
 
             {{ content }}
 
-            <footer class="post__footer">
-                <nav class="nav--footer">
-                    <p>&copy; <a href="http://plus.google.com/117510067130914002427?rel=author" class="nav__item">Mat Hayward</a> | <a href="http://www.twitter.com/mathaywarduk" class="nav__item" title="Follow me">Twitter</a></p>
-                    <a href="#top" class="nav__item nav__item--top" data-scroll-to-target>Back to top</a>
-                </nav>
-            </footer>
         </{{ page.container-type }}>
 
+        <footer class="footer island--black">
+            <nav class="wrapper">
+                <p class="p--small footer__credits">Made by <a href="http://madebykind.com">Kind</a> for <a href="http://plus.google.com/u/0/117510067130914002427?rel=author" rel="author">Mat Hayward</a></p>
+                <p class="p--small footer__back"><a href="#top" data-scroll-to-target>Back to top</a></p>
+            </nav>
+        </footer>
+
+
+        {% include nav/masthead--small.html sticky="true" %}
+
         <!-- Scripts -->
-        <script src="/static/js/build/app.min.js" async></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" src="/static/js/build/app.js" async></script>
     </body>
 </html>

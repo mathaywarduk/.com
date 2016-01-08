@@ -1,0 +1,43 @@
+// ==========================================================================
+// BREAKPOINT SETTINGS
+// ==========================================================================
+//
+//
+// This module defines the global breakpoints and width variables for
+// generating media queries in CSS.
+//
+// First we set the default min-width breakpoints and then add these values
+// to the $breakpoints list. With the breakpoint respond-to feature we can then
+// use media queries like this:
+//
+//
+// @include respond-to("small and above") {
+//      @content
+// }
+//
+
+
+
+$width__small: 490px;
+$width__medium: 767px;
+$width__large: 1200px;
+$width__xlarge: 1500px;
+
+
+
+
+// BREAKPOINTS
+// ==========================================================================
+
+$breakpoint-to-ems: true !global;
+
+$no-queries: 'no-query' true !global;
+
+$breakpoints: add-breakpoint('small', ($width__small)) !global;
+$breakpoints: add-breakpoint('medium', ($width__medium)) !global;
+$breakpoints: add-breakpoint('large', ($width__large, $no-queries)) !global;
+$breakpoints: add-breakpoint('xlarge', ($width__xlarge)) !global;
+
+
+$breakpoints: add-breakpoint('below medium', (max-width $width__medium - 1px)) !global;
+

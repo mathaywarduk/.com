@@ -1,0 +1,58 @@
+// ==========================================================================
+// NAVIGATION MODULE
+// ==========================================================================
+
+.nav {
+
+    overflow: auto;
+    margin-bottom: rem-calc($base-spacing);
+
+    @include respond-to("medium") {
+        margin-left: rem-calc(-20);
+    }
+
+    .nav__item {
+        @include font-family(futura);
+        @include font-scale(small);
+        text-transform: uppercase;
+        display: inline-block;
+        margin-right: rem-calc(10);
+        margin-bottom: rem-calc(10);
+        float: left;
+
+        &:nth-child(3) {
+            clear: both;
+        }
+
+        @include respond-to("small") {
+            &:nth-child(3) {
+                clear: none;
+            }
+        }
+
+        a {
+            @include link() {
+                display: block;
+                color: white;
+                background-image: none;
+                background-color: black;
+                padding: rem-calc(10 20 10 20);
+                @include transition(background 200ms, color 200ms);
+            }
+
+            @include link--hover() {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    .nav__item--current {
+        a {
+            @include link() {
+                background-color: palette(accent, pink);
+                color: white;
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Getting started"
 description: "Being approached by a couple of enthusiastic students and asked &ldquo;how do we get a job in the industry?&rdquo; was a surprisingly awkward experience."
@@ -9,14 +10,16 @@ keywords: ""
 
 date: 2013-11-18 17:36:00
 pub-time: 2013-11-18T17:36
-posted-on: Erskine Design
+posted-on: Erskine Design&rsquo;s blog
 posted-on-url: http://www.erskindesign.com/blog/getting-started/
 
 share-img: "social/getting-started.png"
 snippet: "Being approached by a couple of enthusiastic students and asked <em>&ldquo;how do we get a job in the industry?&rdquo;</em> was a surprisingly awkward experience."
 ---
 
-Being approached by a couple of enthusiastic students and asked <em>&ldquo;how do we get a job in the industry?&rdquo;</em> was a surprisingly awkward experience. I had no idea at first. I just told them how I got into it and then the ideas starting spouting out, from myself, from other members of the Erskine team, and other industry professionals who were around at the time.
+Being approached by a couple of enthusiastic students and asked <em>&ldquo;how do we get a job in the industry?&rdquo;</em> was a surprisingly awkward experience.
+
+I had no idea at first. I just told them how I got into it and then the ideas starting spouting out, from myself, from other members of the Erskine team, and other industry professionals who were around at the time.
 
 All of them were different. That&rsquo;s our industry, there&rsquo;s no set path into it. Some will have been to university, some will be &lsquo;self-taught&rsquo; and some will have progressed from an internship.
 
@@ -28,7 +31,7 @@ The first thing I&rsquo;d suggest to any budding developer or designer is to put
 
 When a potential employer is looking through CVs and portfolios the fact that you might have done some work for a big brand like Nike or the BBC definitely stands out. But the likelihood is that you haven&rsquo;t, so you need to stand out in other ways. Real enthusiasm can beat qualifications and experience.
 
-> Start by not doing the same as everyone else. No redesigns of Twitter, Facebook or whatever.
+Start by not doing the same as everyone else. No redesigns of Twitter, Facebook or whatever.
 
 Do some real work if you can, for friends or family, they might even agree to throw you some cash for it, but remember that, at this point, it&rsquo;s not about the money. Go all out and produce something you&rsquo;re proud of, it&rsquo;ll pay off later.
 
@@ -68,14 +71,16 @@ If you received an application that was riddled with errors, you&rsquo;d assume 
 
 Check everything you send out, from the CV to the portfolio itself. Have someone you trust check it too (there&rsquo;s a reason we never check our own work) and be open to suggestions.
 
-> Only when you are 100% happy with what you&rsquo;re sending should you send it.
+Only when you are 100% happy with what you&rsquo;re sending should you send it.
 
 ## Good luck
 
 Other things to remember would be:
 
-* Always be humble – don&rsquo;t pretend you&rsquo;re the best designer the world has ever seen. You&rsquo;re not. At least not yet.
+<ul>
+    <li>Always be humble – don&rsquo;t pretend you&rsquo;re the best designer the world has ever seen. You&rsquo;re not. At least not yet.</li>
 
-* Be professional – as an example, don&rsquo;t tell the company who&rsquo;ve offered you an internship that you&rsquo;re waiting on an answer from one of their competitors. Their offer will be withdrawn. Quickly.
+    <li>Be professional – as an example, don&rsquo;t tell the company who&rsquo;ve offered you an internship that you&rsquo;re waiting on an answer from one of their competitors. Their offer will be withdrawn. Quickly.</li>
 
-* Avoid buzzwords – It&rsquo;s fine to use terms like Responsive Web Design, because it&rsquo;s an actual valid approach to design. But you&rsquo;re not a web curator or a thought leader. A quick and easy rule: If it sounds like bullshit, it is bullshit.
+    <li>Avoid buzzwords – It&rsquo;s fine to use terms like Responsive Web Design, because it&rsquo;s an actual valid approach to design. But you&rsquo;re not a web curator or a thought leader. A quick and easy rule: If it sounds like bullshit, it is bullshit.</li>
+</ul>

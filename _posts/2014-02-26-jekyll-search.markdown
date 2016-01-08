@@ -2,6 +2,7 @@
 layout: post
 container-type: article
 content-type: post
+section: Read
 
 title: "Jekyll search with JSON"
 description: "Without a database there's nothing to query when wanting a search function, so I went about building a work around."
@@ -37,7 +38,7 @@ I then wrote a Javascript plugin which receives a search term, either from a que
 
 With this data, it's pretty simple to output the results directly into the DOM using a template partial.
 
-<figure class="media">
+<figure>
     <img src="/static/images/blog/jekyll-search.png" alt="Jekyll search" class="media__item">
 </figure>
 

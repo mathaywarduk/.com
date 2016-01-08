@@ -1,0 +1,33 @@
+// ==========================================================================
+// SOCIAL NAVIGATION MODULE
+// ==========================================================================
+//
+//
+
+.nav--social {
+
+    @include respond-to("medium") {
+        margin-left: rem-calc(-20);
+    }
+
+    .nav__item {
+        background-repeat: no-repeat;
+        background-size: rem-calc(20);
+        background-position: left center;
+        padding-left: rem-calc(25);
+        margin-bottom: rem-calc(5);
+
+        @include respond-to("medium") {
+            float: left;   
+            margin-left: rem-calc(20);
+        }
+    }
+}
+
+.nav__item--twitter {
+    background-image: image-url("icons/social--twitter.png");
+}
+
+.nav__item--linkedin {
+    background-image: image-url("icons/social--linkedin.png");
+}

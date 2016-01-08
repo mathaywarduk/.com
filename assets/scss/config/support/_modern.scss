@@ -1,0 +1,8 @@
+@import './browsers';
+
+$browser-minimum-versions: ("ie": "9", "chrome": "19", "firefox": "19", "ios-safari": "6.1", "safari": "6.1")  !default;
+
+$supports: (
+    rem: true,
+    svg: true
+) !default;

@@ -1,0 +1,30 @@
+// ==========================================================================
+// CONTROLS MODULE
+// ==========================================================================
+
+
+.control {
+    @include pie-clearfix();
+    margin-bottom: rem-calc(30);
+}
+
+.control__label {
+
+}
+
+.control__field {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid palette(neutral, light);
+    background-color: white;
+    padding: rem-calc(5 5 4 5);
+    @include font-scale(base, chaparral);
+    @include font-family(chaparral);
+    min-width: rem-calc(240);
+
+    &:focus {
+        outline: none;
+        border-color: palette(accent, gold);
+    }
+}

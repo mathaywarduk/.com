@@ -6,7 +6,7 @@
     <OutputEncoding>UTF-8</OutputEncoding>
     <Language>en-gb</Language>
     <Developer>Mat Hayward</Developer>
-    <Contact>mat@mathayward.com</Contact>
+    <Contact>mat.hayward@gmail.com</Contact>
     <SyndicationRight>open</SyndicationRight>
     <Query role="example" searchTerms="Apple"/>
     <Image height="128" width="128" type="image/png">http://mathayward.com//static/images/icons/favicon.png</Image>

@@ -1,7 +1,7 @@
 _drafts
 .sass-cache
 static/images/blog/web_celeb_1*
-static/css
+# static/css
 node_modules
 _site
 build.sh

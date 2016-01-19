@@ -39,7 +39,7 @@ In 2013, Google started to use whether a website was properly configured for use
 
 As Google are always working to deliver the most relevant results for any given user&rsquo;s current context, they not only take into account the keywords entered, but also the device being used and it&rsquo;s location.
 
-### It&rsquo;s not imperative to have a responsive website.
+### It&rsquo;s not imperative to have a responsive website
 
 While a responsive website will usually show up as &ldquo;Mobile-Friendly&rdquo; in search results, so will a stand-alone mobile website. For instance, theTrainline.com uses separate mobile and desktop sites, which is shown will depend on the type of device requesting the site. This passes Google&rsquo;s Mobile Friendly test [as you can see from the result](https://www.google.com/webmasters/tools/mobile-friendly/?url=thetrainline.com).
 
@@ -61,7 +61,7 @@ Some responsive sites will fail the Mobile-Friendly test, as they only respond t
 
 When Responsive Web Design is executed well it leads to a quick and usable experience for all, but too often, less experienced developers will create a site that&rsquo;s much slower than it could (and should) be.
 
-While it&rsquo;s not part of the latest update to the algorithm, page speed is an important factor for users, with most expecting a mobile site to load with 3‑5 seconds.
+While it&rsquo;s not part of the latest update to the algorithm, page speed is an important factor for users, with most expecting a mobile site to load within 3‑5 seconds.
 
 Google have recently been experimenting with [the slow label](http://www.webperformancetoday.com/2015/02/25/google-new-slow-label-web-performance/). Similar to the Mobile-Friendly label, it shows users when a site takes a long time to load, and if history is any indicator could soon be part of the ranking algorithm. You might therefore want to take a look at Google&rsquo;s [Page Speed rules](https://developers.google.com/speed/docs/insights/rules) and see how your site measures up using [Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/).
 
@@ -75,5 +75,5 @@ If you&rsquo;re unsure about how this change is going to affect you, then you pr
 * What are the conversion rates on mobile and desktop?
 * What percentage of your incoming traffic comes from Google?
 
-Once we know these things, we can find a solution to fits your site and your business perfectly. And even if that solution is what you originally envisaged, you&rsquo;ll have a better understanding of why, and be able to make more informed decisions in the future.
+Once we know these things, we can find a solution that fits your site and your business perfectly. And even if that solution is what you originally envisaged, you&rsquo;ll have a better understanding of why, and be able to make more informed decisions in the future.
 

@@ -9,7 +9,9 @@ html {
 }
 
 body {
-    background-color: #c9ebe7;
+    background-color: #ebe7c9;
+    background-image: linear-gradient(135deg, #ebe7c9 0%, #c9ebe7 100%);
+    // background-image: linear-gradient(135deg, #c9ebe7 0%, #74cba5 100%);
     padding: rem-calc(75 25);
     font-family: 'Arapey', serif;
     font-style: italic;
@@ -83,6 +85,7 @@ form {
         font-size: rem-calc(16);
         color: black;
         width: 100%;
+        border-radius: 0;
 
         &:focus {
             outline: none;

@@ -1,0 +1,33 @@
+// ==========================================================================
+// PLACEHOLDER MIXIN
+// ==========================================================================
+// Set cross-browser placeholder styles
+//
+// Pass an @content block of the styles you want to apply
+//
+// Example:
+//
+// input[type=text] {
+//     @include placeholder {
+//         text-transform: uppercase;
+//     }
+// }
+//
+//
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &::-moz-placeholder { // Firefox 19+
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder { // Firefox 18-
+        @content;
+    }
+    &::placeholder {
+        @content;
+    }
+}

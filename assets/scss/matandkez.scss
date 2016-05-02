@@ -4,12 +4,18 @@
 @import "tools/tools";
 
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #c9ebe7;
     padding: rem-calc(75 25);
     font-family: 'Arapey', serif;
     font-style: italic;
     border: rem-calc(10) solid white;
+    min-height: 100%;
+    box-sizing: border-box;
 
     @include respond-to(medium) {
         padding: rem-calc(100 50);

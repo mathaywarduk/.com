@@ -923,12 +923,15 @@ p {
 
 /* line 49, atoms/_btn.scss */
 .btn--footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
   border-top: 1px solid #d8d8d8;
   padding: 1.25rem 1.875rem; }
+  @media (min-height: 36.875em) {
+    /* line 49, atoms/_btn.scss */
+    .btn--footer {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0; } }
   @media (min-width: 30.25em) {
     /* line 49, atoms/_btn.scss */
     .btn--footer {
@@ -948,11 +951,11 @@ p {
       top: auto;
       position: fixed; } }
 
-/* line 78, atoms/_btn.scss */
+/* line 81, atoms/_btn.scss */
 .btn__group {
   margin-bottom: 2.5rem; }
   @media (min-width: 48em) {
-    /* line 81, atoms/_btn.scss */
+    /* line 84, atoms/_btn.scss */
     p + .btn__group, ul + .btn__group, ol + .btn__group {
       margin-top: -1.25rem; } }
 
@@ -1362,7 +1365,8 @@ hr, .hr {
 
 /* line 5, molecules/_map.scss */
 .m-map {
-  width: 100%; }
+  width: 100%;
+  min-height: 20.625rem; }
   @media (min-width: 30.25em) {
     /* line 5, molecules/_map.scss */
     .m-map {
@@ -1384,13 +1388,13 @@ hr, .hr {
       padding: 0 1.875rem;
       margin-top: 5vh; } }
 
-/* line 29, molecules/_map.scss */
+/* line 30, molecules/_map.scss */
 .m-map__bg {
   padding: 3.4375rem 1.875rem 0 1.875rem;
   width: 20rem;
   margin: 0 auto; }
   @media (min-width: 30.25em) {
-    /* line 29, molecules/_map.scss */
+    /* line 30, molecules/_map.scss */
     .m-map__bg {
       width: 20.625rem;
       height: 37.5rem;
@@ -1401,12 +1405,12 @@ hr, .hr {
       position: relative;
       margin-left: -1.875rem; } }
   @media (min-width: 37.5em) {
-    /* line 29, molecules/_map.scss */
+    /* line 30, molecules/_map.scss */
     .m-map__bg {
       width: 30rem;
       height: 50rem; } }
   @media (min-width: 64em) {
-    /* line 29, molecules/_map.scss */
+    /* line 30, molecules/_map.scss */
     .m-map__bg {
       margin: 0 auto;
       width: 34.375rem;
@@ -1414,18 +1418,18 @@ hr, .hr {
       background-size: contain;
       margin-top: 5vh; } }
 
-/* line 60, molecules/_map.scss */
+/* line 61, molecules/_map.scss */
 .m-map__group {
   position: relative;
   padding-left: 1.875rem;
   padding-bottom: 3.125rem; }
-  /* line 66, molecules/_map.scss */
+  /* line 67, molecules/_map.scss */
   .m-map__group:last-child {
     padding-bottom: 0; }
-    /* line 69, molecules/_map.scss */
+    /* line 70, molecules/_map.scss */
     .m-map__group:last-child:after {
       display: none; }
-  /* line 74, molecules/_map.scss */
+  /* line 75, molecules/_map.scss */
   .m-map__group:before {
     content: "";
     position: absolute;
@@ -1436,7 +1440,7 @@ hr, .hr {
     border-radius: 0.5rem;
     top: 0.3125rem;
     left: 0; }
-  /* line 86, molecules/_map.scss */
+  /* line 87, molecules/_map.scss */
   .m-map__group:after {
     content: "";
     position: absolute;
@@ -1447,10 +1451,10 @@ hr, .hr {
     top: 0.3125rem;
     left: 0.4375rem; }
   @media (min-width: 30.25em) {
-    /* line 98, molecules/_map.scss */
+    /* line 99, molecules/_map.scss */
     .m-map__group:after, .m-map__group:before {
       display: none; } }
-  /* line 104, molecules/_map.scss */
+  /* line 105, molecules/_map.scss */
   .m-map__group a {
     display: inline-block;
     text-shadow: 1px 1px 0 #FCFBF9, -1px 1px 0 #FCFBF9, 2px 0 0 #FCFBF9, -2px 0 0 #FCFBF9;
@@ -1461,7 +1465,7 @@ hr, .hr {
     /* line 26, tools/includes/_link.scss */
     .m-map__group a:hover, .m-map__group a:focus {
       box-shadow: inset 0 -6px 0 0 #FCFBF9, inset 0 -7px 0 0 #D1AF4D; }
-    /* line 116, molecules/_map.scss */
+    /* line 117, molecules/_map.scss */
     .m-map__group a:before {
       content: "";
       width: 0.375rem;
@@ -1474,101 +1478,101 @@ hr, .hr {
       left: -0.9375rem;
       top: 0.5625rem; }
     @media (min-width: 48em) {
-      /* line 104, molecules/_map.scss */
+      /* line 105, molecules/_map.scss */
       .m-map__group a {
         font-size: 1.125rem;
         line-height: 1.75rem;
         line-height: 1.9; }
-        /* line 130, molecules/_map.scss */
+        /* line 131, molecules/_map.scss */
         .m-map__group a:before {
           height: 0.75rem;
           top: 0.75rem; } }
-  /* line 138, molecules/_map.scss */
+  /* line 139, molecules/_map.scss */
   .m-map__group img {
     position: absolute;
     top: 0; }
     @media (min-width: 30.25em) {
-      /* line 138, molecules/_map.scss */
+      /* line 139, molecules/_map.scss */
       .m-map__group img {
         display: none; } }
 
-/* line 149, molecules/_map.scss */
+/* line 150, molecules/_map.scss */
 .m-map__group--glentruim img {
   width: 7rem;
   right: -1.25rem;
   top: 0.625rem; }
 @media (min-width: 30.25em) {
-  /* line 148, molecules/_map.scss */
+  /* line 149, molecules/_map.scss */
   .m-map__group--glentruim {
     position: absolute;
     top: 3.75rem;
     left: 8.75rem; } }
 @media (min-width: 37.5em) {
-  /* line 148, molecules/_map.scss */
+  /* line 149, molecules/_map.scss */
   .m-map__group--glentruim {
     top: 4.875rem;
     left: 12.8125rem; } }
 @media (min-width: 48em) {
-  /* line 148, molecules/_map.scss */
+  /* line 149, molecules/_map.scss */
   .m-map__group--glentruim {
     top: 4.5625rem;
     left: 13.125rem; } }
 @media (min-width: 64em) {
-  /* line 148, molecules/_map.scss */
+  /* line 149, molecules/_map.scss */
   .m-map__group--glentruim {
     top: 5rem;
     left: 15.3125rem; } }
 
-/* line 178, molecules/_map.scss */
+/* line 179, molecules/_map.scss */
 .m-map__group--monachyle img {
   width: 7rem;
   right: -1.25rem;
   top: -1.5625rem; }
 @media (min-width: 30.25em) {
-  /* line 177, molecules/_map.scss */
+  /* line 178, molecules/_map.scss */
   .m-map__group--monachyle {
     position: absolute;
     top: 10.9375rem;
     left: -1.25rem; } }
 @media (min-width: 37.5em) {
-  /* line 177, molecules/_map.scss */
+  /* line 178, molecules/_map.scss */
   .m-map__group--monachyle {
     top: 15.3125rem;
     left: 2.5rem; } }
 @media (min-width: 48em) {
-  /* line 177, molecules/_map.scss */
+  /* line 178, molecules/_map.scss */
   .m-map__group--monachyle {
     top: 15rem;
     left: 1.875rem; } }
 @media (min-width: 64em) {
-  /* line 177, molecules/_map.scss */
+  /* line 178, molecules/_map.scss */
   .m-map__group--monachyle {
     top: 17.0625rem;
     left: 3.75rem; } }
 
-/* line 208, molecules/_map.scss */
+/* line 209, molecules/_map.scss */
 .m-map__group--nottingham img {
   width: 8rem;
   right: -1.25rem;
   top: -1.25rem; }
 @media (min-width: 30.25em) {
-  /* line 207, molecules/_map.scss */
+  /* line 208, molecules/_map.scss */
   .m-map__group--nottingham {
     position: absolute;
     top: 31.875rem;
     right: -3.75rem; } }
 @media (min-width: 37.5em) {
-  /* line 207, molecules/_map.scss */
+  /* line 208, molecules/_map.scss */
   .m-map__group--nottingham {
     top: 45.9375rem;
     right: -2.9375rem; } }
 @media (min-width: 48em) {
-  /* line 207, molecules/_map.scss */
+  /* line 208, molecules/_map.scss */
   .m-map__group--nottingham {
     top: 45.5rem;
     right: -4.375rem; } }
 @media (min-width: 64em) {
-  /* line 207, molecules/_map.scss */
+  /* line 208, molecules/_map.scss */
   .m-map__group--nottingham {
     top: 52.0625rem;
     right: -3.75rem; } }

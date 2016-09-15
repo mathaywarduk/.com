@@ -1488,94 +1488,122 @@ hr, .hr {
           height: 0.75rem;
           top: 0.75rem; } }
   /* line 139, molecules/_map.scss */
+  .m-map__group span {
+    display: inline-block;
+    position: relative;
+    margin-left: 0.9375rem;
+    color: #979797; }
+    /* line 145, molecules/_map.scss */
+    .m-map__group span:before {
+      content: "";
+      width: 0.375rem;
+      height: 0.5rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("/matandkez/assets/images/icons/angle-right.svg");
+      position: absolute;
+      left: -0.9375rem;
+      top: 0.5625rem; }
+    @media (min-width: 48em) {
+      /* line 139, molecules/_map.scss */
+      .m-map__group span {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        line-height: 1.9; }
+        /* line 159, molecules/_map.scss */
+        .m-map__group span:before {
+          height: 0.75rem;
+          top: 0.75rem; } }
+  /* line 167, molecules/_map.scss */
   .m-map__group img {
     position: absolute;
     top: 0; }
     @media (min-width: 30.25em) {
-      /* line 139, molecules/_map.scss */
+      /* line 167, molecules/_map.scss */
       .m-map__group img {
         display: none; } }
 
-/* line 150, molecules/_map.scss */
+/* line 178, molecules/_map.scss */
 .m-map__group--glentruim img {
   width: 7rem;
   right: -1.25rem;
   top: 0.625rem; }
 @media (min-width: 30.25em) {
-  /* line 149, molecules/_map.scss */
+  /* line 177, molecules/_map.scss */
   .m-map__group--glentruim {
     position: absolute;
     top: 3.75rem;
     left: 8.75rem; } }
 @media (min-width: 37.5em) {
-  /* line 149, molecules/_map.scss */
+  /* line 177, molecules/_map.scss */
   .m-map__group--glentruim {
     top: 4.875rem;
     left: 12.8125rem; } }
 @media (min-width: 48em) {
-  /* line 149, molecules/_map.scss */
+  /* line 177, molecules/_map.scss */
   .m-map__group--glentruim {
     top: 4.5625rem;
     left: 13.125rem; } }
 @media (min-width: 64em) {
-  /* line 149, molecules/_map.scss */
+  /* line 177, molecules/_map.scss */
   .m-map__group--glentruim {
     top: 5rem;
     left: 15.3125rem; } }
 
-/* line 179, molecules/_map.scss */
+/* line 207, molecules/_map.scss */
 .m-map__group--monachyle img {
   width: 7rem;
   right: -1.25rem;
   top: -1.5625rem; }
 @media (min-width: 30.25em) {
-  /* line 178, molecules/_map.scss */
+  /* line 206, molecules/_map.scss */
   .m-map__group--monachyle {
     position: absolute;
     top: 10.9375rem;
     left: -1.25rem; } }
 @media (min-width: 37.5em) {
-  /* line 178, molecules/_map.scss */
+  /* line 206, molecules/_map.scss */
   .m-map__group--monachyle {
     top: 15.3125rem;
     left: 2.5rem; } }
 @media (min-width: 48em) {
-  /* line 178, molecules/_map.scss */
+  /* line 206, molecules/_map.scss */
   .m-map__group--monachyle {
     top: 15rem;
     left: 1.875rem; } }
 @media (min-width: 64em) {
-  /* line 178, molecules/_map.scss */
+  /* line 206, molecules/_map.scss */
   .m-map__group--monachyle {
     top: 17.0625rem;
     left: 3.75rem; } }
 
-/* line 209, molecules/_map.scss */
+/* line 237, molecules/_map.scss */
 .m-map__group--nottingham img {
   width: 8rem;
   right: -1.25rem;
   top: -1.25rem; }
 @media (min-width: 30.25em) {
-  /* line 208, molecules/_map.scss */
+  /* line 236, molecules/_map.scss */
   .m-map__group--nottingham {
     position: absolute;
     top: 31.875rem;
-    right: -3.75rem; } }
+    right: -4.6875rem; } }
 @media (min-width: 37.5em) {
-  /* line 208, molecules/_map.scss */
+  /* line 236, molecules/_map.scss */
   .m-map__group--nottingham {
     top: 45.9375rem;
-    right: -2.9375rem; } }
+    right: -3.25rem; } }
 @media (min-width: 48em) {
-  /* line 208, molecules/_map.scss */
+  /* line 236, molecules/_map.scss */
   .m-map__group--nottingham {
     top: 45.5rem;
-    right: -4.375rem; } }
+    right: -5rem; } }
 @media (min-width: 64em) {
-  /* line 208, molecules/_map.scss */
+  /* line 236, molecules/_map.scss */
   .m-map__group--nottingham {
     top: 52.0625rem;
-    right: -3.75rem; } }
+    right: -4.375rem; } }
 
 /* line 9, molecules/_places.scss */
 .m-places__item {

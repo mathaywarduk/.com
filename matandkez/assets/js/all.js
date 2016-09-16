@@ -31,12 +31,19 @@ $(document).ready( function() {
             var _self = this;
             this.$form.on('submit', function(e) {
                 e.preventDefault();
+                var rand = _self.rand();
+                $("#fieldEmail").val(rand + '@matandkez.com');
                 _self.handleSubmit(this);
             });
+        },
+        rand: function() {
+            return Math.random().toString(36).replace(/[^a-z]+/g, '');
         },
         handleSubmit: function(form) {
             var _self = this;
             this.serialized = $(form).serialize();
+            console.log(this.serialized);
+            return;
             $.getJSON(
                 form.action + '?callback=?',
                 this.serialized, function(data) {

@@ -42,8 +42,6 @@ $(document).ready( function() {
         handleSubmit: function(form) {
             var _self = this;
             this.serialized = $(form).serialize();
-            console.log(this.serialized);
-            return;
             $.getJSON(
                 form.action + '?callback=?',
                 this.serialized, function(data) {

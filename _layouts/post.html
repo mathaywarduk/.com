@@ -18,7 +18,7 @@ schemaType: BlogPosting
         {% if page.posted-on-text %}
             {% capture posted_on %}{{ page.posted-on-text }} <a href="{{ page.posted-on-url }}">{{ page.posted-on }}</a>.{% endcapture %}
         {% else %}
-            {% capture posted_on %}This article was originally posted on {{ page.posted-on }}. <a href="{{ page.posted-on-url }}">Read the original</a>.{% endcapture %}
+            {% capture posted_on %}This article was originally posted on <a href="{{ page.posted-on-url }}">{{ page.posted-on }}</a>.{% endcapture %}
         {% endif %}
     {% endif %}
 

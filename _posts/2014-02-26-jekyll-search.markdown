@@ -48,11 +48,9 @@ If you're interested in exactly how I've gone about this, you're in luck. It's d
 
 There are a few things things I'd like to fix/tidy up in the future, like:
 
-* The JSON feed isn't very 'pretty' - I know this isn't important, but I'm all for well-formed markup.
-
-* Date formatting would be nice. - I've done this on this site myself by tweaking the Javascript file, but it's not ideal to force people to use my date formatting, so it's not in the repo. 
-
-* Make the script into a jQuery plugin - This would make it possible to customise your search function without having to change the plugin itself.
+- The JSON feed isn't very 'pretty' - I know this isn't important, but I'm all for well-formed markup.
+- Date formatting would be nice. - I've done this on this site myself by tweaking the Javascript file, but it's not ideal to force people to use my date formatting, so it's not in the repo. 
+- Make the script into a jQuery plugin - This would make it possible to customise your search function without having to change the plugin itself.
 
 ## Update
 

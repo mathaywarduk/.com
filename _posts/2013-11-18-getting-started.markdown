@@ -77,10 +77,6 @@ Only when you are 100% happy with what you&rsquo;re sending should you send it.
 
 Other things to remember would be:
 
-<ul>
-    <li>Always be humble – don&rsquo;t pretend you&rsquo;re the best designer the world has ever seen. You&rsquo;re not. At least not yet.</li>
-
-    <li>Be professional – as an example, don&rsquo;t tell the company who&rsquo;ve offered you an internship that you&rsquo;re waiting on an answer from one of their competitors. Their offer will be withdrawn. Quickly.</li>
-
-    <li>Avoid buzzwords – It&rsquo;s fine to use terms like Responsive Web Design, because it&rsquo;s an actual valid approach to design. But you&rsquo;re not a web curator or a thought leader. A quick and easy rule: If it sounds like bullshit, it is bullshit.</li>
-</ul>
+- Always be humble – don&rsquo;t pretend you&rsquo;re the best designer the world has ever seen. You&rsquo;re not. At least not yet.
+- Be professional – as an example, don&rsquo;t tell the company who&rsquo;ve offered you an internship that you&rsquo;re waiting on an answer from one of their competitors. Their offer will be withdrawn. Quickly.
+- Avoid buzzwords – It&rsquo;s fine to use terms like Responsive Web Design, because it&rsquo;s an actual valid approach to design. But you&rsquo;re not a web curator or a thought leader. A quick and easy rule: If it sounds like bullshit, it is bullshit.

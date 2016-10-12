@@ -26,7 +26,7 @@ An excellent way to combat this is for documentation to exist, in snippets, with
 All built by the framework itself. Inception.
 
 <figure class="figure--full">
-    <img src="http://madebykind.com/static/images/blog/living-styleguide.png">
+    <img src="http://madebykind.com/uploads/blogImages/living-styleguide.png">
     <figcaption>A living styleguide built by using documented Sass</figcaption>
 </figure>
 

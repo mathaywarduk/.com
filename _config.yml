@@ -1,6 +1,5 @@
 name: Front-end Developer ~ Mat Hayward
 author: Mat Hayward
-markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 exclude: [assets, config.rb, README.md, Gruntfile.js, package.json, node_modules, Gemfile, Gemfile.lock, build.sh]

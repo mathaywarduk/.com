@@ -13,7 +13,7 @@ pub-time: 2016-12-31T23:59:59
 posted-on: Kind&rsquo;s blog
 posted-on-url: http://madebykind.com/blog/a-year-to-walk-the-walk/
 
-share-img: "social/resolutuions.jpg"
+share-img: "social/resolutions.png"
 snippet: "2016 was a good year for Kind. We completed some great work for our clients, won some exciting new ones and took on our first employees. So what does 2017 hold for us?"
 ---
 

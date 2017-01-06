@@ -1,0 +1,10 @@
+---
+type: tweet
+date: 2016-06-27 09:53:00
+pub-time: 2016-06-27T09:53
+twitter-id: 747533274424180738
+url-out: https://twitter.com/mathaywarduk/status/747533274424180738
+search_omit: true
+---
+
+Worst performance since... 2014 [#ENGISL](https://twitter.com/hashtag/ENGISL?src=hash)

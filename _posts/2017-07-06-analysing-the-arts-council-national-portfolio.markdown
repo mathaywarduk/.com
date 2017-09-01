@@ -14,7 +14,7 @@ date: 2017-07-06 09:45:00
 pub-time: 2017-07-06T09:45
 
 share-img: "social/arts-council.png"
-snippet: "We watched with interest last week as the Arts Council England announced their National Portfolio for 2018-2022. And while we were pleased to discover the additional investment outside of London, we wanted to look further into the figures and make our own minds up."
+snippet: "We watched with interest last week as the Arts Council England announced their National Portfolio for 2018-2022."
 
 sticky:
     title: View the infographic

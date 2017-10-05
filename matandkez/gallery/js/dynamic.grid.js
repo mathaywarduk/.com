@@ -119,15 +119,6 @@ function init() {
 
     });
 
-    // $('body').animate({
-    //     'opacity': 1
-    // });
-
-    // $("img").each( function() {
-    //     var newSrc = $(this).data('imageSrc');
-    //     $(this).attr("src", newSrc);
-    // });
-
 
     $('.image').swipebox();
     

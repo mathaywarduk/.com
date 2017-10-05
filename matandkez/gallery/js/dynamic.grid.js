@@ -134,7 +134,6 @@ function loadVisibleImages() {
         }
 
     });
-
 }
 
 function checkVisible($el, threshold) {

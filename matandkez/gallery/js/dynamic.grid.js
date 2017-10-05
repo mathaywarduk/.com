@@ -1,15 +1,12 @@
-(function ($) {
 
+(function ($) {
 
     $(window).on("load", function() {
         init();
         loadVisibleImages();
-
     });
 
     $(window).smartresize( function() {
-        reset();
-        init();
         loadVisibleImages();
     });
     

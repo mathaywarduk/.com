@@ -82,6 +82,9 @@ function init() {
             var $image = this[0];
             var imageWidth = this[1];
 
+            var percentWidth = (imageWidth / rowWidth) * 100;
+
+
             $image.width(((imageWidth/rowWidth) * 100) + "%");
 
         });

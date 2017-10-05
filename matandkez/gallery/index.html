@@ -28,12 +28,22 @@
         clear: both;
         overflow: hidden;
         width: 100%;
-        display: flex;
     }
 
     .image {
         float: left;
-        padding: 5px;
+        position: relative;
+    }
+
+    .image:after {
+        content:"";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: calc(100% - 10px);;
+        height: calc(100% - 10px);;
+        border: 5px solid white;
     }
 
     .image img {

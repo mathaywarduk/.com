@@ -1,6 +1,9 @@
 <html>
 <head>
     <title>Mat &amp; Kez&rsquo;s wedding pics</title>
+    <link rel="stylesheet" href="css/swipebox.min.css">
+    <link href="http://mathayward.com/matandkez/assets/styles/site.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Arapey:400italic|Roboto+Slab:300,400' rel='stylesheet' type='text/css'>
     <style type="text/css">
 
     * {
@@ -11,9 +14,14 @@
         padding: 20px;
     }
 
-    .grid {
+    .container {
         max-width: 1500px;
         margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 20px;
     }
 
     .row {
@@ -33,7 +41,6 @@
         float: left;
     }
     </style>
-    <link rel="stylesheet" href="css/swipebox.min.css">
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/jquery.debouncedresize.js"></script>
@@ -41,7 +48,11 @@
     <script src="js/dynamic.grid.js"></script>
 </head>
 <body>
-    <div class="grid" data-dynamic-grid>
+    <div class="container">
+        <h1>Mat &amp; Kez wedding pics</h1>
+    </div>
+    
+    <div class="container" data-dynamic-grid>
         <a rel="gallery-1" href="images/lores/kerry-&-mat-011.jpg" class="image"><img data-image-src="images/thumbnails/kerry-&-mat-011.jpg" src="images/placeholder.png" width="525" height="350"></a>
         <a rel="gallery-1" href="images/lores/kerry-&-mat-029.jpg" class="image"><img data-image-src="images/thumbnails/kerry-&-mat-029.jpg" src="images/placeholder.png" width="233" height="350"></a>
         <a rel="gallery-1" href="images/lores/kerry-&-mat-039.jpg" class="image"><img data-image-src="images/thumbnails/kerry-&-mat-039.jpg" src="images/placeholder.png" width="233" height="350"></a>

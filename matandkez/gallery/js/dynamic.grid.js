@@ -21,18 +21,6 @@
 
 })(jQuery);
 
-function getOrientation($image) {
-    var orientation;
-    if ($image.width() == $image.height()) {
-        orientation = 'square';
-    } else if ($image.width() > $image.height()) {
-        orientation = 'landscape';
-    }
-    else {
-        orientation = 'portrait';
-    }
-    return orientation;
-}
 
 function randomNumber(min, max) {
     return Math.floor(Math.random()*(max-min+1)+min);
@@ -41,19 +29,11 @@ function randomNumber(min, max) {
 function reset() {
     var grid = $("[data-dynamic-grid]");
 
-    // $('body').animate({
-    //     'opacity': 0
-    // });
-
     $('img, .image').removeAttr('style');
 
 }
 
 function init() {
-
-    // $('body').animate({
-    //     'opacity': 0
-    // });
 
     var grid = $("[data-dynamic-grid]");
     var images = $('.image');
@@ -65,7 +45,6 @@ function init() {
     $.each(images, function() {
 
         var $image = $(this);
-        var orientation = getOrientation($image);
 
         if (imageRow.length == rowLength) {
             allImages.push(imageRow);
@@ -76,6 +55,10 @@ function init() {
         imageRow.push([$image, $image.width(), $image.height()]);
         
     });
+
+    if (imageRow.length) {
+        allImages.push(imageRow);
+    }
 
 
     grid.empty();

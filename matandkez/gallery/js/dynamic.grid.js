@@ -1,7 +1,7 @@
 
 (function ($) {
 
-    $(window).on("load", function() {
+    $(document).on("ready", function() {
         init();
         loadVisibleImages();
     });
@@ -21,13 +21,6 @@
 
 function randomNumber(min, max) {
     return Math.floor(Math.random()*(max-min+1)+min);
-}
-
-function reset() {
-    var grid = $("[data-dynamic-grid]");
-
-    $('img, .image').removeAttr('style');
-
 }
 
 function init() {
@@ -85,7 +78,9 @@ function init() {
             var percentWidth = (imageWidth / rowWidth) * 100;
 
 
-            $image.width(((imageWidth/rowWidth) * 100) + "%");
+            $image.css({
+                width: ((imageWidth/rowWidth) * 100) + "%"
+            });
 
         });
 
@@ -109,10 +104,10 @@ function init() {
 
 function loadVisibleImages() {
 
-    $("img").each( function() {
+    $("body").find("img").each( function() {
         var newSrc = $(this).data('imageSrc');
 
-        if(checkVisible($(this), 100) && $(this).attr("src") != newSrc) {
+        if(checkVisible($(this), 50) && $(this).attr("src") != newSrc) {
             $(this).attr("src", newSrc);
         }
 
@@ -120,14 +115,18 @@ function loadVisibleImages() {
 }
 
 function checkVisible($el, threshold) {
-    var elementTop = $el.position().top;
+    var elementTop = $el.offset().top;
     var elementHeight = $el.height();
+    var elementBottom = elementTop + elementHeight;
     var scrollPosition = $(document).scrollTop();
     var viewportHeight = document.body.clientHeight;
 
-    var visibleTop = scrollPosition;
+    var visibleTop = scrollPosition - threshold;
     var visibleBottom = (scrollPosition + viewportHeight) + threshold;
 
-    return (elementTop >= visibleTop && elementTop <= visibleBottom)
+    var topIsIn = (elementTop >= visibleTop && elementTop <= visibleBottom)
+    var bottomIsIn = (elementBottom <= visibleBottom && elementBottom >= visibleTop)
+
+    return (topIsIn || bottomIsIn)
 
 }

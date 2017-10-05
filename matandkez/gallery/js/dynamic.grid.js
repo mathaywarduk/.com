@@ -70,6 +70,7 @@ function init() {
         
     });
 
+
     grid.empty();
 
     // Each row
@@ -116,7 +117,7 @@ function init() {
     // });
 
     $("img").each( function() {
-        var newSrc = $(this).attr('src').replace('super-lores', 'thumbnails');
+        var newSrc = $(this).data('imageSrc');
         $(this).attr("src", newSrc);
     });
 

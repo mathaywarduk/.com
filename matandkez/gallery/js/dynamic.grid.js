@@ -114,6 +114,13 @@ function init() {
     // $('body').animate({
     //     'opacity': 1
     // });
+
+    $("img").each( function() {
+        var newSrc = $(this).attr('src').replace('super-lores', 'thumbnails');
+        $(this).attr("src", newSrc);
+    });
+
+
     $('.image').swipebox();
     
 }

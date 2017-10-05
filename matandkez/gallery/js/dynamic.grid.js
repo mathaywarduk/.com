@@ -143,7 +143,7 @@ function checkVisible($el, threshold) {
     var viewportHeight = document.body.clientHeight;
 
     var visibleTop = scrollPosition;
-    var visibleBottom = (scrollPosition + viewportHeight) - threshold;
+    var visibleBottom = (scrollPosition + viewportHeight) + threshold;
 
     return (elementTop >= visibleTop && elementTop <= visibleBottom)
 

@@ -3,11 +3,18 @@
 
     $(window).on("load", function() {
         init();
+        loadVisibleImages();
 
     });
+
     $(window).smartresize( function() {
         reset();
         init();
+        loadVisibleImages();
+    });
+    
+    $(window).on("scroll", function() {
+        loadVisibleImages();
     });
 
 
@@ -116,12 +123,38 @@ function init() {
     //     'opacity': 1
     // });
 
-    $("img").each( function() {
-        var newSrc = $(this).data('imageSrc');
-        $(this).attr("src", newSrc);
-    });
+    // $("img").each( function() {
+    //     var newSrc = $(this).data('imageSrc');
+    //     $(this).attr("src", newSrc);
+    // });
 
 
     $('.image').swipebox();
     
+}
+
+function loadVisibleImages() {
+
+    $("img").each( function() {
+        var newSrc = $(this).data('imageSrc');
+
+        if(checkVisible($(this), 100) && $(this).attr("src") != newSrc) {
+            $(this).attr("src", newSrc);
+        }
+
+    });
+
+}
+
+function checkVisible($el, threshold) {
+    var elementTop = $el.position().top;
+    var elementHeight = $el.height();
+    var scrollPosition = $(document).scrollTop();
+    var viewportHeight = document.body.clientHeight;
+
+    var visibleTop = scrollPosition;
+    var visibleBottom = (scrollPosition + viewportHeight) - threshold;
+
+    return (elementTop >= visibleTop && elementTop <= visibleBottom)
+
 }

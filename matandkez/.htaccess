@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/gallery$
+RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js)$
+RewriteRule .* /gallery [L,R=302]

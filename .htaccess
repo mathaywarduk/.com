@@ -22,3 +22,8 @@ ExpiresByType text/javascript "access plus 1 month"
 ExpiresDefault "access plus 7 days"
 </IfModule>
 ## EXPIRES CACHING ##
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/matandkez/gallery$
+RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js)$
+RewriteRule ^matandkez/(.*)$ /matandkez/gallery/ [R=301,NC,L]

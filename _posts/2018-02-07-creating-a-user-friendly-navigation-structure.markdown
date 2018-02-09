@@ -67,7 +67,7 @@ Creating an IA without visualising how a user will physically navigate it can pr
 
 This is particularly useful when certain elements of an IA are not defined as individual ‘pages&rsquo;. For instance when a landing page is broken into sections, we might want to reflect this in the IA but those sections won&rsquo;t exist as pages themselves.
 
-Again, wherever we&rsquo;ve made assumptions it is beneficial to test with real users and so for wireframes and prototypes we use [Chalkmark](https://www.optimalworkshop.com/chalkmark, another part of Optimal Workshop&rsquo;s testing suite, to analyse users&rsquo; first clicks when attempting to complete a task.
+Again, wherever we&rsquo;ve made assumptions it is beneficial to test with real users and so for wireframes and prototypes we use [Chalkmark](https://www.optimalworkshop.com/chalkmark), another part of Optimal Workshop&rsquo;s testing suite, to analyse users&rsquo; first clicks when attempting to complete a task.
 
 Using this information we can see how often users set off down the wrong path and make alterations to correct them.
 

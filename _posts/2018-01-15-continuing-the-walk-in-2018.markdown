@@ -44,7 +44,7 @@ This is a serious objective for us, not just political positioning. After discov
 
 Shopping locally should help us in some way, as small suppliers aren&rsquo;t as reliant on plastic packaging for freshness as the supermarkets, but we&rsquo;re open to looking for more ways to help with this.
 
-###Improve the working environment
+### Improve the working environment
 
 We have a nice office in the Birkin Building in Nottingham&rsquo;s Lace Market but, as the saying goes, if it&rsquo;s no moving forwards it going backwards.
 
@@ -52,12 +52,13 @@ We won&rsquo;t be installing a slide or a football table, as our team are all fu
 
 As well as updating some of the furniture and sprucing up the decor, we&rsquo;ll arrange regular Kind socials, focused on activities other than drinking (see below), celebrating our wins (whether that be new clients or a job well done) and having a free team lunch once a week with no phones and no shop talk allowed.
 
-Share and share alike
+### Share and share alike
+
 The vast majority of our development work at Kind relies on using open source tools and software libraries. As a result of the contributions of other developers to open source projects like [Vue.js](https://vuejs.org/), [Babel](https://babeljs.io/) and [Webpack](https://webpack.js.org/), we&rsquo;re able to do work better and faster for our clients. 
 
 While we&rsquo;ve open sourced projects in an ad hoc way in the past, this year we&rsquo;re getting serious about putting back into the Open Source community that we get so much benefit from ourselves. Our development team will have ring-fenced time to both contribute to improving existing open source projects and for documenting, releasing and supporting the tools we build ourselves. And we&rsquo;ll bring all of our open source projects together in a new developer-friendly website
 
-###Eat better
+### Eat better
 
 A new year wouldn&rsquo;t be be right without a resolution to be healthier, but everyone can benefit from eating better.
 
@@ -65,4 +66,4 @@ We&rsquo;re not going to police our team&rsquo;s lunch choices or anything like 
 
 ---
 
-We're really looking forward to seeing how 2018 pans out.
+We&rsquo;re really looking forward to seeing how 2018 pans out.

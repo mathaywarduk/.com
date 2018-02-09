@@ -15,8 +15,6 @@ pub-time: 2018-01-15T09:45
 share-img: "social/continuing_2018.jpg"
 snippet: "Last year we decided to make some resolutions to help us go further in our mission to be a responsible business, for our team, society and the&nbsp;environment."
 
-featured: true
-
 ---
 
 Last year we decided to make [some resolutions](https://madebykind.com/blog/a-year-to-walk-the-walk) to help us go further in our mission to be a responsible business, for our team, society and the environment.

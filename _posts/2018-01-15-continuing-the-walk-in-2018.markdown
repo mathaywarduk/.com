@@ -25,7 +25,7 @@ For 2017 we planned to be a better employer, achieve carbon neutrality and join 
 
 All-in-all we&rsquo;ve achieved what we set out to do. We have an employee representative on the board, training and conference budgets, a profit-based bonus scheme and a new review process which includes help with personal and professional aspirations. We joined 1% for the Planet in early January and, despite some difficulty, have calculated our carbon footprint for the year and will be offsetting twice that, just to be sure!
 
-On the environmental side, we spent our [summer getaway in Wales](https://madebykind.com/blog/kind-go-wild-in-wales, carrying out beach clean on Newborough Beach and this Christmas, instead of gifts for our clients, we had trees planted for them in a wildfire regeneration project in Portugal.
+On the environmental side, we spent our [summer getaway in Wales](https://madebykind.com/blog/kind-go-wild-in-wales), carrying out beach clean on Newborough Beach and this Christmas, instead of gifts for our clients, we had trees planted for them in a wildfire regeneration project in Portugal.
 
 
 <figure>
